@@ -7,7 +7,7 @@
 #include "greedy_version3.hpp"
 #include "greedy_version4.hpp"
 #include "LocalSearchbySwap.hpp"
-#include "LocalSearchGPU.hpp"
+// #include "LocalSearchGPU.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
 
@@ -76,7 +76,7 @@ int main (int argc, char *argv[])
       std::string result_filename = method + "_schedule.csv";
       if (method == "FedeCpp_R"  || method == "FedeCpp1_R" ||
           method == "FedeCpp2_R" || method == "FedeCpp3_R" ||
-          method == "FedeCpp4_R")
+          method == "FedeCpp4_R" || method == "LocalSearchbySwap")
       {
         if (argc < 10)
           std::cerr << "\nERROR: additional arguments are required "

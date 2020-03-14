@@ -115,6 +115,9 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
   while (iter < MAX_ITER && !stop)
   {
     changed = (visit_neighbor() == true) ? true : changed;
+
+    std::cout<< "delta value = "<< best_schedule_value_t << std::endl; 
+
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 
     //se ho visitato l'intorno ma non ho trovato una opzione miglore
@@ -126,13 +129,16 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
     //controllo che la best appena trovata (quindi solo se changed = true) non sia una che avevo già trovato
     // questo può succedere solo se usiamo come objective function la funzione totale, mentre con il solo delta (differenza dei finisch time)
     // non aggiorniamo se non è strettamente migliroante
+
+    /*
     for (const job_schedule_t & i : previous_best)
       if (i == best_schedule) // sono in un ciclo perchè ho ottenuto una funzione già trovata
         {
           stop = true;
           break;
         }
-
+    */
+  
   }
   if (changed)
   {
