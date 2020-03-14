@@ -46,6 +46,8 @@ protected:
 
 	bool update_schedule (Schedule & old_sch, Schedule & new_sch);
 
+	bool equalSchedule(const Schedule & lhs, const Schedule & rhs);
+
 public:
     LocalSearch(const std::string&, const std::string&, const std::string&,
 	                   const std::string&, const std::string&);

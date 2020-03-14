@@ -25,7 +25,7 @@ LocalSearch::true_first_finish_time(job_schedule_t& job_schedule) const
   job_schedule_t::const_iterator cit;
   for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
   {
-    Schedule & sch = cit->second;
+    const Schedule & sch = cit->second;
     double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
     double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
     double time_remaining = (1-completion_percent) * time_needed;
@@ -45,7 +45,7 @@ LocalSearch::true_last_finish_time(job_schedule_t& job_schedule) const
   job_schedule_t::const_iterator cit;
   for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
   {
-    Schedule & sch = cit->second;
+    const Schedule & sch = cit->second;
     double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
     double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
     double time_remaining = (1-completion_percent) * time_needed;
@@ -114,7 +114,7 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
   bool stop = false;
   while (iter < MAX_ITER && !stop)
   {
-    changed = (visit_neighbor(best_fit) == true) ? true : changed;
+    changed = (visit_neighbor() == true) ? true : changed;
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 
     //se ho visitato l'intorno ma non ho trovato una opzione miglore
@@ -167,8 +167,28 @@ LocalSearch::assign_to_selected_node (const Job& j,
 bool
 LocalSearch::update_schedule (Schedule & old_sch, Schedule & new_sch)
 {
-  new_sch.set_simTime(old_sch.get_simTime);
-  new_sch.set_completionPercent(old_sch.get_completionPercent);
-  new_sch.set_cP_step(old_sch.get_cP_step); // dovrebbe essere zero.
-  new_sch.set_tardiness(old_sch.get_tardiness);
+  new_sch.set_simTime(old_sch.get_simTime());
+  new_sch.set_completionPercent(old_sch.get_completionPercent());
+  new_sch.set_cP_step(old_sch.get_cP_step()); // dovrebbe essere zero.
+  new_sch.set_tardiness(old_sch.get_tardiness());
+}
+
+
+bool
+LocalSearch::equalSchedule(const Schedule & lhs, const Schedule & rhs)
+{
+  if (lhs.isEmpty() == rhs.isEmpty())
+    return 1;
+
+  return (lhs.get_startTime() == rhs.get_startTime()
+      && lhs. get_completionPercent() == rhs.get_completionPercent()
+      && lhs. get_startTime() == rhs.get_startTime()
+      && lhs.get_cP_step() == rhs.get_cP_step()
+      && lhs.get_simTime() == rhs.get_simTime()
+      && lhs.get_tardiness() == rhs.get_tardiness()
+      && lhs.get_vmCost() == rhs.get_vmCost()
+      && lhs.get_tardinessCost() == rhs.get_tardinessCost()
+      && lhs.get_setup() == rhs.get_setup()
+      && lhs.get_selectedTime() == rhs.get_selectedTime()
+      && lhs.get_node_idx() == rhs.get_node_idx());
 }
