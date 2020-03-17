@@ -1,0 +1,5 @@
+ alias scancella='make distclean testclean clean';
+ alias builda='scancella;make;make list;make data;make tests';
+ alias runna='make testclean;make;make list;make tests';
+ alias changeconf='mv config.ini temp.ini;mv other_config.ini config.ini;mv temp.ini other_config.ini';
+

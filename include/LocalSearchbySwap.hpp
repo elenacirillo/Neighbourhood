@@ -20,7 +20,6 @@ class LocalSearchbySwap : public LocalSearch
 {
 
 private:
-    unsigned neigh_size = 5;
     neigh_type neigh_def = neigh_1;
     row_j A_job_ids;
     row_j B_job_ids;

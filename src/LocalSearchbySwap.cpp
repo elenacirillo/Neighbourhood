@@ -104,7 +104,7 @@ row_j
 LocalSearchbySwap::top_tardiness_jobs() const
 {
   map_value_j omega_t_ordered; //faccio una mappa così me li ordina per tardiness weight (omega)
-  for (const auto & i : initial_schedule)
+  for (const auto & i : best_schedule)
   {
     if (i.second.get_vmCost() != 0)
       omega_t_ordered.insert(std::make_pair (i.first.get_tardinessWeight(), i.first));
@@ -116,7 +116,7 @@ row_j
 LocalSearchbySwap::top_cost_jobs(void) const
 {
   map_value_j costs_ordered;
-  for (const auto & i : initial_schedule)
+  for (const auto & i : best_schedule)
   { // qua non dovrebbe servire il controllo vmCost != 0 perchè prendiamo i maggiori per vmCost
     costs_ordered.insert(std::make_pair(i.second.get_vmCost(), i.first));
   }
@@ -127,7 +127,7 @@ row_j
 LocalSearchbySwap::top_margin_jobs(void) const
 {
   map_value_j margin_ordered;
-  for (const auto & i : initial_schedule)
+  for (const auto & i : best_schedule)
   {
     if (i.second.get_vmCost() != 0)
       {
@@ -140,10 +140,17 @@ LocalSearchbySwap::top_margin_jobs(void) const
 void
 LocalSearchbySwap::fill_swapping_sets(void)
 {
+    std::cout << "SONO NEL NEIGH: " << neigh_def << std::endl;
+
   if (neigh_def != neigh_2 && neigh_def != neigh_3) // qualsiasi cosa che non sia due e tre è 1
   {
     A_job_ids = top_tardiness_jobs();
     B_job_ids = top_cost_jobs();
+    
+    std::cout << "INISIEME A size: " << A_job_ids.size()<<std::endl;
+    std::cout << "JOBBINO 1 ID: " << A_job_ids[0].get_ID()<<std::endl;
+
+
   }
 
   if (neigh_def == neigh_2)
@@ -164,9 +171,11 @@ LocalSearchbySwap::visit_neighbor()
 {
   //ciclo sugli intorni per farli tutti e tre
   possible_swap_indices = get_base_possible_swaps();
+    std::cout << "HO GLI INDICI!: " << possible_swap_indices[0][0]<< std::endl;
+  
   fill_swapping_sets();
-
-  bool changed;
+    std::cout << "HO FILLATO " << std::endl;
+  bool changed = false;
   /*
   // BEST FIT
   if (best_fit)
@@ -200,7 +209,10 @@ LocalSearchbySwap::visit_neighbor()
    //in maniera più compatta
   for (auto v : possible_swap_indices)
     {
+      std::cout << "STO PER SWAPPARE.........." << std::endl;
       job_schedule_t candidate_schedule = perform_swap(v);
+      std::cout << "HO PERFORMATO LO SWAP ALLA FACCIA DI CHI NON CI CREDEVA" << std::endl;
+
       double candidate_value = evaluate_objective(candidate_schedule);
       if (candidate_value < best_schedule_value_t)
       {
@@ -220,21 +232,22 @@ job_schedule_t
 LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
 {
   job_schedule_t new_schedule = initial_schedule;
-  for (unsigned i = 0; i < swap_indices.size(); ++i)
+  for (unsigned idx_A = 0; idx_A < swap_indices.size(); ++idx_A)
   {
-    int index = swap_indices[i];
-    if (index < 4 && index > -1)
+    int idx_B = swap_indices[idx_A];
+    if (idx_A > -1 and idx_B < neigh_size)
     {
       job_schedule_t temp = new_schedule;
-      const auto elem_of_A = temp.find(A_job_ids[i]);
+      const auto elem_of_A = temp.find(A_job_ids[idx_A]);
       Schedule old_A = elem_of_A-> second;
       const unsigned old_node_A = elem_of_A->second.get_node_idx();
       Job jobA = elem_of_A->first;
-      const auto elem_of_B = temp.find(B_job_ids[index]);
+
+      const auto elem_of_B = temp.find(B_job_ids[idx_B]);
       Schedule old_B = elem_of_B-> second;
       const unsigned old_node_B = elem_of_B->second.get_node_idx();
       Job jobB = elem_of_B->first;
-
+      std::cout << "HO APPENA SELEZIONATO CHI SCAMBIARE EHEHEHEHE" << std::endl;
       // codice da perform_assignement, nella parte dove lo assegna a un nodo esistente
 
       // prima provo ad assegnare A dove c'era B
@@ -243,21 +256,34 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
       if (! full_greedy)
         dstarA.set_random_parameter(alpha);
       setup_time_t::const_iterator best_stpA = dstarA.get_best_setup(generator);
-      temp.erase(B_job_ids[index]);
+
+      unsigned num_gpu_used_by_B = elem_of_B->second.get_setup().get_nGPUs();
+      temp.erase(elem_of_B);
+      std::cout << "HO SCANCELLATO IL JOB IN IDX_B" << std::endl;
+
+      nodes[old_node_B].set_remainingGPUs(nodes[old_node_B].get_remainingGPUs()+num_gpu_used_by_B);
+
+      std::cout << "HO RI-SETTATO LE GPU" << std::endl;
+
       bool assignedAtoB = assign_to_selected_node(jobA, best_stpA, temp, old_node_B);
+      std::cout << "HO ASSEGNATO AL NODO?: " << assignedAtoB <<  std::endl;
 
       if (assignedAtoB)
       {
-        temp.erase(elem_of_A);
-        update_schedule(old_A, temp.find(A_job_ids[i])->second);
 
+        unsigned num_gpu_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
+        temp.erase(elem_of_A);
+        std::cout << "HO SCANCELLATO IL JOB IN IDX_A" << std::endl;
+        update_schedule(old_A, temp.find(A_job_ids[idx_A])->second);
+        nodes[old_node_A].set_remainingGPUs(nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A);
+        std::cout << "HO RI-SETTATO LE GPU di A" << std::endl;
         const setup_time_t& tjvg_B = ttime.at(jobB.get_ID());
         Dstar dstarB (jobB, tjvg_B, current_time);
         if (! full_greedy)
           dstarB.set_random_parameter(alpha);
         setup_time_t::const_iterator best_stpB = dstarB.get_best_setup(generator);
         bool assignedBtoA = assign_to_selected_node(jobB, best_stpB, temp, old_node_A);
-        update_schedule(old_B, temp.find(B_job_ids[index])->second);
+        update_schedule(old_B, temp.find(B_job_ids[idx_B])->second);
         if (assignedBtoA)
         {
           new_schedule = temp;

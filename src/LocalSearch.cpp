@@ -90,6 +90,7 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
     std::swap(nodes, opened_nodes);
   }
   search_better_schedule(best_schedule);
+  std::swap(best_schedule, this->best_schedule);
 
   return updated;
 }
@@ -97,10 +98,18 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 void
 LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
 {
+
+  if(actual_schedule.size() < neigh_size)
+  {
+    std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
+    return;
+  }
+  std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
   previous_best.clear();
-   best_schedule = actual_schedule;
-   initial_schedule = actual_schedule;
-   previous_best.push_back(actual_schedule);
+  best_schedule = actual_schedule;
+  initial_schedule = actual_schedule;
+  std::cout<< "INITIAL SCHEDULE HA SIZE: "<< initial_schedule.size()<< std::endl; 
+  previous_best.push_back(actual_schedule);
    /*double elapsed_time = std::min(
                                 scheduling_interval,
                                 first_finish_time
@@ -108,15 +117,21 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
    best_schedule_value_t = evaluate_objective(actual_schedule, );
    */
   best_schedule_value_t = evaluate_objective(actual_schedule);
+  std::cout<< "HO CALCOLATO LA OBJ"<< std::endl; 
 
   unsigned iter = 0;
   bool changed = false;
   bool stop = false;
-  while (iter < MAX_ITER && !stop)
+  while ((iter < MAX_ITER) and !(stop))
   {
-    changed = (visit_neighbor() == true) ? true : changed;
+    std::cout<< "STO PER VISITARE...."<< std::endl; 
+    
+    changed = visit_neighbor();
 
-    std::cout<< "delta value = "<< best_schedule_value_t << std::endl; 
+
+    std::cout<< "HO VISITATOOOO"<< std::endl; 
+
+    std::cout<< "DELTA VALUE = "<< best_schedule_value_t << std::endl; 
 
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 
@@ -125,7 +140,6 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
       {
         break; //usciamo dal while
       }
-
     //controllo che la best appena trovata (quindi solo se changed = true) non sia una che avevo già trovato
     // questo può succedere solo se usiamo come objective function la funzione totale, mentre con il solo delta (differenza dei finisch time)
     // non aggiorniamo se non è strettamente migliroante
@@ -138,9 +152,9 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
           break;
         }
     */
-  
+    iter++;
   }
-  if (changed)
+  if (changed) //TODO entrare qui
   {
     std::cout << "better configuration found via local search" << std::endl;
   }
