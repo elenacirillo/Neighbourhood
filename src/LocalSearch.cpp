@@ -82,17 +82,23 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
   double current_cost = objective_function(new_schedule, first_finish_time);
 
   // determine best schedule
+  std::swap(nodes, opened_nodes);
   if (current_cost < minTotalCost)
   {
     updated = true;
     minTotalCost = current_cost;
     std::swap(new_schedule, best_schedule);
-    std::swap(nodes, opened_nodes);
   }
   updated = search_better_schedule(best_schedule)? true:updated;
-  std::swap(best_schedule, this->best_schedule);
-  minTotalCost = objective_function(best_schedule,find_first_finish_time(best_schedule));
-
+  if(updated)
+  {
+    std::swap(best_schedule, local_best_schedule);
+    minTotalCost = objective_function(best_schedule,find_first_finish_time(best_schedule));//TODO: non performare questo calcolo se non ho updatato
+  }
+  else
+  {
+  std::swap(nodes, opened_nodes);
+  }
   return updated;
 }
 
@@ -107,7 +113,7 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
   }
   std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
   previous_best.clear();
-  best_schedule = actual_schedule;
+  local_best_schedule = actual_schedule;
   initial_schedule = actual_schedule;
   std::cout<< "INITIAL SCHEDULE HA SIZE: "<< initial_schedule.size()<< std::endl; 
   previous_best.push_back(actual_schedule);

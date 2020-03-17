@@ -8,7 +8,7 @@ class LocalSearch : public Greedy_version4 {
 
 protected:
 	// maximum number of local search iterations
-	unsigned long MAX_ITER = 1;
+	unsigned long MAX_ITER = 10;
 	// tolerance
 	double TOL;
 	/*
@@ -22,7 +22,7 @@ protected:
 	// tabu list (tabu search optimization)
 	std::vector<job_schedule_t> previous_best; // per non ricadere in ottimi locali già visitati nelle iterazioni
     job_schedule_t initial_schedule;
-    job_schedule_t best_schedule;
+    job_schedule_t local_best_schedule;
     double best_schedule_value_t = INF;
 	double evaluate_objective(job_schedule_t& job_schedule) const;
     //double evaluate_objective(job_schedule_t& job_schedule, double elapsed_time);

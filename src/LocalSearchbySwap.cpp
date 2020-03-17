@@ -104,7 +104,7 @@ row_j
 LocalSearchbySwap::top_tardiness_jobs() const
 {
   map_value_j omega_t_ordered; //faccio una mappa così me li ordina per tardiness weight (omega)
-  for (const auto & i : best_schedule)
+  for (const auto & i : local_best_schedule)
   {
     if (i.second.get_vmCost() != 0)
       omega_t_ordered.insert(std::make_pair (i.first.get_tardinessWeight(), i.first));
@@ -116,7 +116,7 @@ row_j
 LocalSearchbySwap::top_cost_jobs(void) const
 {
   map_value_j costs_ordered;
-  for (const auto & i : best_schedule)
+  for (const auto & i : local_best_schedule)
   { // qua non dovrebbe servire il controllo vmCost != 0 perchè prendiamo i maggiori per vmCost
     costs_ordered.insert(std::make_pair(i.second.get_vmCost(), i.first));
   }
@@ -127,7 +127,7 @@ row_j
 LocalSearchbySwap::top_margin_jobs(void) const
 {
   map_value_j margin_ordered;
-  for (const auto & i : best_schedule)
+  for (const auto & i : local_best_schedule)
   {
     if (i.second.get_vmCost() != 0)
       {
@@ -211,19 +211,20 @@ LocalSearchbySwap::visit_neighbor()
     {
       std::cout << "STO PER SWAPPARE.........." << std::endl;
       job_schedule_t candidate_schedule = perform_swap(v);
-      std::cout << "HO PERFORMATO LO SWAP ALLA FACCIA DI CHI NON CI CREDEVA" << std::endl;
-
+      
       double candidate_value = evaluate_objective(candidate_schedule);
+      std::cout << "CANDIDATE VALUE: " << candidate_value << std::endl;
+      std::cout << "BEST VALUE: " << best_schedule_value_t << std::endl;
+
       if (candidate_value < best_schedule_value_t)
       {
-        best_schedule = candidate_schedule;
+        local_best_schedule = candidate_schedule;
         best_schedule_value_t = candidate_value;
         changed = true;
         if (!best_fit)
-          break; // dovrebbe uscire dal for, giusto?
+          return changed;
       }
     }
-
 
    return changed;
 }
@@ -231,13 +232,23 @@ LocalSearchbySwap::visit_neighbor()
 job_schedule_t
 LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
 {
-  job_schedule_t new_schedule = best_schedule;
+
+  for(auto el: swap_indices)
+    std::cout<<el<< " ";
+  std::cout<<std::endl;
+
+
+  job_schedule_t new_schedule = local_best_schedule;
   for (unsigned idx_A = 0; idx_A < swap_indices.size(); ++idx_A)
   {
+    std::cout << "CICLO SUGLI INDICI DI A" << std::endl;
     int idx_B = swap_indices[idx_A];
-    if (idx_A > -1 and idx_B < neigh_size)
+    if (idx_B > -1 and idx_B<B_job_ids.size())
     {
       job_schedule_t temp = new_schedule;
+
+      A_job_ids[idx_A].print(std::cout);
+
       const auto elem_of_A = temp.find(A_job_ids[idx_A]);
       Schedule old_A = elem_of_A-> second;
       const unsigned old_node_A = elem_of_A->second.get_node_idx();
@@ -295,6 +306,6 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
       }
     }
   }
-  swap(new_schedule, best_schedule);
-  return best_schedule;
+  swap(new_schedule, local_best_schedule);
+  return local_best_schedule;
 }
