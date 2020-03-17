@@ -13,7 +13,7 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
 {
   double fft = true_first_finish_time(job_schedule);
   double lft = true_last_finish_time(job_schedule);
-  return (fft - lft) ;
+  return std::max(lft - fft, fft - lft) ;
 }
 
 // get the time of the first job to finish
@@ -89,20 +89,21 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
     std::swap(new_schedule, best_schedule);
     std::swap(nodes, opened_nodes);
   }
-  search_better_schedule(best_schedule);
+  updated = search_better_schedule(best_schedule)? true:updated;
   std::swap(best_schedule, this->best_schedule);
+  minTotalCost = objective_function(best_schedule,find_first_finish_time(best_schedule));
 
   return updated;
 }
 
-void
+bool
 LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
 {
 
   if(actual_schedule.size() < neigh_size)
   {
     std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
-    return;
+    return false;
   }
   std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
   previous_best.clear();
@@ -158,7 +159,7 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
   {
     std::cout << "better configuration found via local search" << std::endl;
   }
-  return;
+  return changed;
 }
 
 
@@ -191,6 +192,7 @@ LocalSearch::update_schedule (Schedule & old_sch, Schedule & new_sch)
   new_sch.set_completionPercent(old_sch.get_completionPercent());
   new_sch.set_cP_step(old_sch.get_cP_step()); // dovrebbe essere zero.
   new_sch.set_tardiness(old_sch.get_tardiness());
+  return true;
 }
 
 

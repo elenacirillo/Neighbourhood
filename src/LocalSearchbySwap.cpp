@@ -231,7 +231,7 @@ LocalSearchbySwap::visit_neighbor()
 job_schedule_t
 LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
 {
-  job_schedule_t new_schedule = initial_schedule;
+  job_schedule_t new_schedule = best_schedule;
   for (unsigned idx_A = 0; idx_A < swap_indices.size(); ++idx_A)
   {
     int idx_B = swap_indices[idx_A];
@@ -261,6 +261,8 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
       temp.erase(elem_of_B);
       std::cout << "HO SCANCELLATO IL JOB IN IDX_B" << std::endl;
 
+
+      std::cout << "STO PER SETTARE NUMERO DI GPU: "<<nodes[old_node_B].get_remainingGPUs()+num_gpu_used_by_B << std::endl;
       nodes[old_node_B].set_remainingGPUs(nodes[old_node_B].get_remainingGPUs()+num_gpu_used_by_B);
 
       std::cout << "HO RI-SETTATO LE GPU" << std::endl;
@@ -275,6 +277,8 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
         temp.erase(elem_of_A);
         std::cout << "HO SCANCELLATO IL JOB IN IDX_A" << std::endl;
         update_schedule(old_A, temp.find(A_job_ids[idx_A])->second);
+
+        std::cout << "STO PER SETTARE NUMERO DI GPU: "<<nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A<< std::endl;
         nodes[old_node_A].set_remainingGPUs(nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A);
         std::cout << "HO RI-SETTATO LE GPU di A" << std::endl;
         const setup_time_t& tjvg_B = ttime.at(jobB.get_ID());
@@ -291,5 +295,6 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
       }
     }
   }
-  swap(new_schedule, initial_schedule);
+  swap(new_schedule, best_schedule);
+  return best_schedule;
 }

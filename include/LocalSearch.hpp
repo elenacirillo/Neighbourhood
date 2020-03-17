@@ -8,7 +8,7 @@ class LocalSearch : public Greedy_version4 {
 
 protected:
 	// maximum number of local search iterations
-	unsigned long MAX_ITER = 100;
+	unsigned long MAX_ITER = 1;
 	// tolerance
 	double TOL;
 	/*
@@ -38,7 +38,7 @@ protected:
 	//
 	double true_last_finish_time(job_schedule_t& job_schedule) const;
 
-	void search_better_schedule(job_schedule_t&);
+	bool search_better_schedule(job_schedule_t&);
 
 	bool update_best_schedule (job_schedule_t& new_schedule,
                               double& minTotalCost, 
