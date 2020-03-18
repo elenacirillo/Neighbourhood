@@ -140,11 +140,12 @@ LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
 
   if(!jobs_to_modify.empty())
   {
+    
+/*
     // consider one of these jobs
     Job & j = *jobs_to_modify.begin();
     Schedule & sch = new_schedule[j];
 
-/*
     // old setup of the node
     stp = sch.get_setup();
 
