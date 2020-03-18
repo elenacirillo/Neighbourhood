@@ -28,7 +28,7 @@ LocalSearchGPU::initialize_all_neighborhoods(void)
     // cycle over all its setups
     for (auto pair: setup_time)
     {
-      Setup & stp = pair.first;
+      const Setup & stp = pair.first;
       unsigned max_nGPUs = stp.get_maxnGPUs();
       unsigned nGPUs = stp.get_nGPUs();
 
@@ -52,7 +52,7 @@ LocalSearchGPU::update_node_jobs(void)
   // cycle over the initial schedule
   for(auto pair: initial_schedule)
   {
-    Job & job = pair.first;
+    const Job & job = pair.first;
     Schedule & sch = pair.second;
 
     unsigned node_idx = sch.get_node_idx();
@@ -66,7 +66,7 @@ LocalSearchGPU::update_node_jobs(void)
 
 // look for a better schedule by visiting the neighborhood of initial schedule
 bool
-LocalSearchGPU::visit_neighbor(bool best_fit) override
+LocalSearchGPU::visit_neighbor()
 {
   // true if the function finds a better schedule and updates it
   bool changed = false;
@@ -91,11 +91,11 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
     double candidate_value = evaluate_objective(candidate_schedule);
 
     // if this schedule improves the objective function
-    if(candidate_value < best_schedule_value)
+    if(candidate_value < best_schedule_value_t)
     {
       // update the best schedule and the best value
-      best_schedule = candidate_schedule;
-      best_schedule_value = candidate_value;
+      local_best_schedule = candidate_schedule;
+      best_schedule_value_t = candidate_value;
       changed = true;
 
       // --------------------------------------------------
@@ -132,7 +132,7 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
 // create a new schedule by changing the type of GPU on node node_idx and updating the schedules of the jobs on that node
 // input: temp_stp, va modificato per ogni job aggiornando nGPUs
 job_schedule_t
-LocalSearchGPU::change_GPU(unsigned node_idx, Setup & temp_stp)
+LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & temp_stp)
 {
   // new schedule to modify
   job_schedule_t new_schedule = initial_schedule;
@@ -147,7 +147,7 @@ LocalSearchGPU::change_GPU(unsigned node_idx, Setup & temp_stp)
     Schedule & sch = new_schedule[j];
 
     // old setup
-    Setup & old_stp = sch.get_setup();
+    const Setup & old_stp = sch.get_setup();
 
     // old number of GPU used
     unsigned nGPUs = old_stp.get_nGPUs(); // questa info è diversa per ogni job!
@@ -161,7 +161,7 @@ LocalSearchGPU::change_GPU(unsigned node_idx, Setup & temp_stp)
     build_stp.push_back(std::to_string(temp_stp.get_cost()));
     
     // new setup
-    setup new_stp(build_stp);
+    Setup new_stp(build_stp);
 
     // get the setup infos related to job "j" and "new_stp"
     setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);

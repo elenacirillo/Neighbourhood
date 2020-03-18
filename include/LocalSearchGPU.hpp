@@ -3,9 +3,18 @@
 
 #include "LocalSearch.hpp"
 
+    // map a maxGPU in un setup
+    typedef std::unordered_multimap<unsigned, Setup> boh_t;
+
+    // neighboorhood type: maps the index of a node into a possible setups
+    typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
+
+    // associates to every node the set of jobs in execution on that specific node
+    typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
+
 class LocalSearchGPU : public LocalSearch
 {
-
+/*
 public:
 
     // map a maxGPU in un setup
@@ -16,7 +25,7 @@ public:
 
     // associates to every node the set of jobs in execution on that specific node
     typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
-
+*/
 private:
 
     //
@@ -32,7 +41,7 @@ private:
     neighborhood_t generate_neighborhood(void);
 
     // changes the schedule according to node and GPU_type
-    job_schedule_t change_GPU(unsigned, std::string);
+    job_schedule_t change_GPU(unsigned, const Setup &);
 
     //initialize the map GPU-VM starting from ttime (ttime is a protected memeber of the parent class Heuristic)
     void initialize_all_neighborhoods(void);

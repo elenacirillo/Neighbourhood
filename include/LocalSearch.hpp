@@ -2,6 +2,8 @@
 #define LOCAL_SEARCH_HH
 
 #include "greedy_version4.hpp"
+#include <set>
+#include <unordered_set>
 #include <algorithm>
 
 class LocalSearch : public Greedy_version4 {
