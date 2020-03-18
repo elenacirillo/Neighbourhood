@@ -80,7 +80,7 @@ LocalSearchbySwap::get_possible_swaps(void) const
 }
 
 row_j
-LocalSearchbySwap::get_top(const map_value_j& map) const
+LocalSearchbySwap::get_top(const map_value_j& map) 
 {
   row_j N;
 
@@ -101,7 +101,7 @@ LocalSearchbySwap::get_top(const map_value_j& map) const
 }
 
 row_j
-LocalSearchbySwap::top_tardiness_jobs() const
+LocalSearchbySwap::top_tardiness_jobs() 
 {
   map_value_j omega_t_ordered; //faccio una mappa così me li ordina per tardiness weight (omega)
   for (const auto & i : local_best_schedule)
@@ -113,7 +113,7 @@ LocalSearchbySwap::top_tardiness_jobs() const
 }
 
 row_j
-LocalSearchbySwap::top_cost_jobs(void) const
+LocalSearchbySwap::top_cost_jobs(void) 
 {
   map_value_j costs_ordered;
   for (const auto & i : local_best_schedule)
@@ -124,7 +124,7 @@ LocalSearchbySwap::top_cost_jobs(void) const
 }
 
 row_j
-LocalSearchbySwap::top_margin_jobs(void) const
+LocalSearchbySwap::top_margin_jobs(void) 
 {
   map_value_j margin_ordered;
   for (const auto & i : local_best_schedule)
@@ -246,13 +246,19 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
     if (idx_B > -1 and idx_B<B_job_ids.size())
     {
       job_schedule_t temp = new_schedule;
+      std::cout << "HO CREATE TEMP" << std::endl;
 
-      A_job_ids[idx_A].print(std::cout);
+      //A_job_ids[idx_A].print(std::cout);
 
       const auto elem_of_A = temp.find(A_job_ids[idx_A]);
+      std::cout << "PRENDO ELEM DI A" << std::endl;
       Schedule old_A = elem_of_A-> second;
+      std::cout << "PRENDO LA VECCHIA SCHEDULE DI A" << std::endl;
       const unsigned old_node_A = elem_of_A->second.get_node_idx();
+      std::cout << "PRENDO VECCHIO NODO DI A" << std::endl;
       Job jobA = elem_of_A->first;
+      std::cout << "JOB A, CHE HA TARDINESS" << jobA.get_tardinessWeight << std::endl;
+
 
       const auto elem_of_B = temp.find(B_job_ids[idx_B]);
       Schedule old_B = elem_of_B-> second;
