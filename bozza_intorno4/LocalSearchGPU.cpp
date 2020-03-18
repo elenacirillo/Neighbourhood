@@ -78,13 +78,15 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
     std::string GPU_type = neighbor.second;
 
     // candidate schedule, obtained by modifying the initial schedule accordingly to neighbor infos
-    job_schedule_t candidate_schedule = change_GPU(node_idx, GPU_type).first;
-    setup new_stp=change_GPU(node_idx, GPU_type).second;
+    auto pair = change_GPU(node_idx, GPU_type);
+    job_schedule_t candidate_schedule = pair.first;
+    setup new_stp = pair.second;
+
     // evaluate the objective in this point of the neighborhood
     double candidate_value = evaluate_objective(candidate_schedule);
 
     // if this schedule improves the objective function
-    if (candidate_value < best_schedule_value)
+    if(candidate_value < best_schedule_value)
     {
       // update the best schedule and the best value
       best_schedule = candidate_schedule;
@@ -134,25 +136,41 @@ LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
     unsigned nGPUs=stp.get_usedGPUs();
     unsigned max_nGPUs=stp.get_maxnGPUs();
     double cost=get_cost();
+
+    // row to initialize a new setup
     row_t build_stp;
     build_stp.push_back(VM_type);
     build_stp.push_back(GPU_type);
     build_stp.push_back(std::to_string(nGPUs));
     build_stp.push_back(std::to_string(max_nGPUs));
     build_stp.push_back(std::to_string(cost));
-    setup new_stp(build_stp);
-    setup_time_t new_stp_time_t;
-    new_stp_time_t[new_stp]=sch.get_selectedTime();
-    setup_time_t::const_iterator c_newsetup= new_stp_time_t.cbegin();
 
+    // new setup
+    setup new_stp(build_stp);
+
+    // cycle over these jobs
     for(Job j: jobs_to_modify)
     {
       // schedule of job j
       Schedule & sch = new_schedule[j];
+
+      // get the setup infos related to job "j" and "new_stp"
+      setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);
+
+      // modify the schedule of job j according to the new setup
       sch.change_setup(c_newsetup);
+
     }
   return std::make_pair(new_schedule,new_stp);
   }
+
+  else
+  {
+    // ciò non dovrebbe mai capitare però: se non ho job da modificare allora il nodo sarebbe vuoto e la funzione non verrebbe chiamata
+    // POTREMMO TOGLIERE if else
+    return std::make_pair(initial_schedule, /* ? ? */);
+  }
+
 }
 
 //________________________________________________________________________________________________________________________________
@@ -164,64 +182,70 @@ LocalSearchGPU::generate_neighborhood(void)
   // neighbourhood
   neighborhood_t neighbourhood;
   unsigned neigh_size=5; // number of nodes to change in the neighbourhood
-  std::set<unsigned> tochange=FindTopNodes(neigh_size);
+  std::set<unsigned> tochange = FindTopNodes(neigh_size);
   if (!tochange.empty())
   {
     for(auto n: tochange)
     {
       std::string VM=nodes[n].get_VMtype();
-      std::list<std::string> possible_gpus= vm_gpus[VM];
+      std::list<std::string> possible_gpus = vm_gpus[VM];
       //here I assume that the GPUs are ordered by power
-      neighbourhood[n]=possible_gpus.front();
+      neighbourhood[n] = possible_gpus.front();
     }
   return neighbourhood;
   }
   // I take the first nodes and in this case I take a less powerful GPU
+  // TODO: randomize?
   else
   {
     // I count the number of open nodes
     for(auto i=0;i<neigh_size;i++)
     {
-      if (nodes[i].get_usedGPUs()>0)
+      if (nodes[i].get_usedGPUs() > 0)
       {
         tochange.insert(i);
       }
     }
     for(auto n: tochange)
     {
-      std::string VM=nodes[n].get_VMtype();
-      std::list<std::string> possible_gpus= vm_gpus[VM];
+      std::string VM = nodes[n].get_VMtype();
+      std::list<std::string> possible_gpus = vm_gpus[VM];
       //here I assume that the GPUs are ordered by power
-      auto pos=possible_gpus.find(nodes[n].get_GPUtype());
+      auto pos=possible_gpus.find(nodes[n].get_GPUtype()); // NON ESISTE find per std::list
       if (pos!= possible_gpus.end())
       {
-        neighbourhood[n]= *(pos+1);
+        neighbourhood[n] = *(pos+1);
       }
       else
       {
-        neighbourhood[n]=possible_gpus.back();
+        neighbourhood[n] = possible_gpus.back();
       }
     }
   return neighbourhood;
   }
 }
 
+//________________________________________________________________________________________________________________________________
+
 // returns the indexes of the 5 nodes with the highest number of jobs in tardiness;
 std::set<unsigned> LocalSearchGPU::FindTopNodes(unsigned top)
 {
   // TODO here I should add a comparator ot order by number of jobs in tardiness
+  // map <node_idx, numero di job in tardiness>
   std::map<unsigned,unsigned> topnodes;
   //count the jobs in each node that have tardiness>0
   for (auto js:initial_schedule)
   {
-    if (js.second.get_tardiness>0.)
-    topnodes[js.second.get_node_idx]++;
+    if (js.second.get_tardiness()>0)
+      topnodes[js.second.get_node_idx()]++;
   }
   std::set<unsigned> result;
+  // da sistemare, devo inserire solo i primi top
   for(auto node_count:topnodes)
   {
     result.insert(node_count.first);
   }
   return result;
 }
+
 //________________________________________________________________________________________________________________________________

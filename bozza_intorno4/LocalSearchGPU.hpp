@@ -8,7 +8,8 @@ class LocalSearchGPU : public LocalSearch
 
 public:
 	// maps a VMtype (std::string) into a list of GPUs (std::list<std::string>) that can be mounted on that VM
-    typedef std::unordered_map<std::string, std::list<std::string>> vm_gpus_t;
+	// TODO: capire se ha senso std::list, potremmo usare un set ordinato da un nostro comparator
+	typedef std::unordered_map<std::string, std::list<std::string>> vm_gpus_t;
 
     // neighboorhood type: maps the index of a node into a GPU_type
     typedef std::unordered_multimap<unsigned, std::string> neighborhood_t;
@@ -40,7 +41,6 @@ private:
     void update_node_jobs(void);
 
     // find the indexes of top nodes to change in the neighbourhood
-
     std::set<unsigned> FindTopNodes(unsigned);
 
 public:
