@@ -144,6 +144,7 @@ LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
     Job & j = *jobs_to_modify.begin();
     Schedule & sch = new_schedule[j];
 
+/*
     // old setup of the node
     stp = sch.get_setup();
 
@@ -158,18 +159,30 @@ LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
     row_t build_stp;
     build_stp.push_back(VM_type);
     build_stp.push_back(GPU_type);
-    build_stp.push_back(std::to_string(nGPUs));
+    build_stp.push_back(std::to_string(nGPUs)); // non va bene, deve essere diverso per ogni job
     build_stp.push_back(std::to_string(max_nGPUs));
     build_stp.push_back(std::to_string(cost)); // non va bene, cost è una info nuova, relativa al nuovo setup
 
     // new setup
     setup new_stp(build_stp);
+*/
 
     // cycle over these jobs
     for(Job j: jobs_to_modify)
     {
       // schedule of job j
       Schedule & sch = new_schedule[j];
+
+      // row to initialize a new setup
+      row_t build_stp;
+      build_stp.push_back(VM_type);  // da dove pesco VM_type?
+      build_stp.push_back(GPU_type);  // da dove pesco GPU_type?
+      build_stp.push_back(std::to_string(nGPUs)); // questa info è diversa per ogni job!
+      build_stp.push_back(std::to_string(max_nGPUs)); // da dove pesco max_nGPUs? (volendo dal vecchio setup)
+      build_stp.push_back(std::to_string(cost)); // da dove pesco il nuovo cost?
+      
+      // new setup
+      setup new_stp(build_stp);
 
       // get the setup infos related to job "j" and "new_stp"
       setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);
