@@ -10,26 +10,33 @@ LocalSearchGPU::LocalSearchGPU(const std::string& args, const std::string& d,
 {
 
   // initialize vm_gpus starting from ttime
-  initialize_vm_gpus();
+  initialize_all_neighborhoods();
 
 }
 
 //________________________________________________________________________________________________________________________________-
 
-// initialize the map GPU-VM starting from ttime (ttime is a protected memeber of the parent class Heuristic)
+// initialize all_neighborhoods starting from ttime (ttime is a protected memeber of the parent class Heuristic)
 void
-LocalSearchGPU::initialize_vm_gpus(void)
+LocalSearchGPU::initialize_all_neighborhoods(void)
 {
   if(! ttime.empty())
   {
-    // consider the setups related to the first job
-    // Here  I am assuming that all jobs work with all setups hence it is enough to cycle over the first jobś setups
+    // consider the setups related to the first job (all jobs work with all setups)
     setup_time_t & setup_time = ttime.begin()->second;
-    // cycle over all its setups. TODO Here I want types to be ordered by type???
-    // namely the most powerful first
-    for (auto stp_t: setup_time)
+
+    // cycle over all its setups
+    for (auto pair: setup_time)
     {
-      vm_gpus[stp_t.first.get_VMtype()] = stp_t.first.get_GPUtype();
+      Setup & stp = pair.first;
+      unsigned max_nGPUs = stp.get_maxnGPUs();
+      unsigned nGPUs = stp.get_nGPUs();
+
+      // avoid multiple insertions
+      if(max_nGPUs == nGPUs)
+      {
+        all_neighborhoods.insert({max_nGPUs, stp});
+      }
     }
   }
 }
@@ -73,15 +80,12 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
   // visit the neighbourhood
   for(auto neighbor: neighborhood)
   {
-    // a neighbor is made of a node and a new GPU_type
-    unsigned node_idx = ?? //neighbor.first;
-    std::string VM_type = ??
-    std::string GPU_type = ?? //neighbor.second;
+    // a neighbor is made of a pair <node_idx, Setup>
+    unsigned node_idx = neighbor.first;
+    Setup & new_stp = neighbor.second;
 
     // candidate schedule, obtained by modifying the initial schedule accordingly to neighbor infos
-    auto pair = change_GPU(node_idx, GPU_type);
-    job_schedule_t candidate_schedule = pair.first;
-    setup new_stp = pair.second;
+    job_schedule_t candidate_schedule = change_GPU(node_idx, new_stp);
 
     // evaluate the objective in this point of the neighborhood
     double candidate_value = evaluate_objective(candidate_schedule);
@@ -97,16 +101,13 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
       // --------------------------------------------------
       // update the configuration of the node accordingly:
 
-      // GPU used with the old configuration (deve rimanere invariato)
+      // GPU used with the old configuration (deve rimanere invariato nel cambio di VM)
       unsigned used_GPUs = nodes[node_idx].get_usedGPUs();
 
-      // cambio la configuration del nodo a partire dal setup di uno dei job su questo nodo
-      //   Nota Bene: i setup di job diversi sullo stesso nodo differiscono SOLO per il numero di GPU che stanno usando,
-      //   ma tanto questa info non viene usata per costruire la configuration del nodo, quindi posso usare un setup a caso!
+      // cambio la configuration del nodo a partire da quella del neighbor
       nodes[node_idx].change_setup(new_stp);
 
       // ora però devo aggiornare il numero di GPU in uso su questo nodo
-      //   set_remainingGPUs(g) modifica la configuration del nodo: used_GPUs += g; remaining_GPUs -= g;
       nodes[node_idx].set_remainingGPUs(used_GPUs);
 
       // --------------------------------------------------
@@ -129,8 +130,9 @@ LocalSearchGPU::visit_neighbor(bool best_fit) override
 //________________________________________________________________________________________________________________________________
 
 // create a new schedule by changing the type of GPU on node node_idx and updating the schedules of the jobs on that node
-std::pair<job_schedule_t, setup>
-LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
+// input: temp_stp, va modificato per ogni job aggiornando nGPUs
+job_schedule_t
+LocalSearchGPU::change_GPU(unsigned node_idx, Setup & temp_stp)
 {
   // new schedule to modify
   job_schedule_t new_schedule = initial_schedule;
@@ -138,69 +140,37 @@ LocalSearchGPU::change_GPU(unsigned node_idx, std::string GPU_type)
   // get the jobs in execution on the node "node_idx"
   std::unordered_set<Job> jobs_to_modify = node_jobs[node_idx];
 
-  if(!jobs_to_modify.empty())
+  // cycle over these jobs
+  for(Job j: jobs_to_modify)
   {
-    
-/*
-    // consider one of these jobs
-    Job & j = *jobs_to_modify.begin();
+    // schedule of job j
     Schedule & sch = new_schedule[j];
 
-    // old setup of the node
-    stp = sch.get_setup();
+    // old setup
+    Setup & old_stp = sch.get_setup();
 
-    // new setup
-    //get information from existing setup to build setup
-    std::string VM_type = stp.get_VMtype();
-    unsigned nGPUs=stp.get_usedGPUs();
-    unsigned max_nGPUs=stp.get_maxnGPUs();
-    double cost=get_cost(); 
+    // old number of GPU used
+    unsigned nGPUs = old_stp.get_nGPUs(); // questa info è diversa per ogni job!
 
     // row to initialize a new setup
     row_t build_stp;
-    build_stp.push_back(VM_type);
-    build_stp.push_back(GPU_type);
-    build_stp.push_back(std::to_string(nGPUs)); // non va bene, deve essere diverso per ogni job
-    build_stp.push_back(std::to_string(max_nGPUs));
-    build_stp.push_back(std::to_string(cost)); // non va bene, cost è una info nuova, relativa al nuovo setup
-
+    build_stp.push_back(temp_stp.get_VMtype());
+    build_stp.push_back(temp_stp.get_GPUtype());
+    build_stp.push_back(std::to_string(nGPUs));
+    build_stp.push_back(std::to_string(temp_stp.get_maxnGPUs()));
+    build_stp.push_back(std::to_string(temp_stp.get_cost()));
+    
     // new setup
     setup new_stp(build_stp);
-*/
 
-    // cycle over these jobs
-    for(Job j: jobs_to_modify)
-    {
-      // schedule of job j
-      Schedule & sch = new_schedule[j];
+    // get the setup infos related to job "j" and "new_stp"
+    setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);
 
-      // row to initialize a new setup
-      row_t build_stp;
-      build_stp.push_back(VM_type);  // da dove pesco VM_type?
-      build_stp.push_back(GPU_type);  // da dove pesco GPU_type?
-      build_stp.push_back(std::to_string(nGPUs)); // questa info è diversa per ogni job!
-      build_stp.push_back(std::to_string(max_nGPUs)); // da dove pesco max_nGPUs? (volendo dal vecchio setup)
-      build_stp.push_back(std::to_string(cost)); // da dove pesco il nuovo cost?
-      
-      // new setup
-      setup new_stp(build_stp);
-
-      // get the setup infos related to job "j" and "new_stp"
-      setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);
-
-      // modify the schedule of job j according to the new setup
-      sch.change_setup(c_newsetup);
-    }
-
-  return std::make_pair(new_schedule,new_stp);
+    // modify the schedule of job j according to the new setup
+    sch.change_setup(c_newsetup);
   }
 
-  else
-  {
-    // ciò non dovrebbe mai capitare però: se non ho job da modificare allora il nodo sarebbe vuoto e la funzione non verrebbe chiamata
-    // POTREMMO TOGLIERE if else
-    return std::make_pair(initial_schedule, /* ? ? */);
-  }
+  return new_schedule;
 
 }
 
@@ -216,47 +186,28 @@ LocalSearchGPU::generate_neighborhood(void)
   // nodes with the highest number of jobs in tardiness
   std::set<unsigned> tochange = FindTopNodes(neigh_size);
 
-  if (!tochange.empty())
+  // I take the first nodes
+  if (tochange.empty())
   {
-    for(auto n: tochange)
+    for(int i=0; i < std::min(last_node_idx,neigh_size); ++i) // TODO: capire come funzione last_node_idx
     {
-      std::string VM=nodes[n].get_VMtype();
-      std::list<std::string> possible_gpus = vm_gpus[VM];
-      //here I assume that the GPUs are ordered by power
-      neighbourhood[n] = possible_gpus.front();
+      tochange.insert(i);
     }
-  return neighbourhood;
+  }
+  
+
+  for(auto n: tochange)
+  {
+    unsigned max_nGPUs = nodes[n].get_usedGPUs() + nodes[n].get_remainingGPUs();
+    auto pair = all_neighborhoods.equal_range(max_nGPUs);
+    for(auto it = pair.first; it != pair.second; ++it)
+    {
+      neighbourhood[n] = it->second; // setup
+    }
   }
 
-  // I take the first nodes and in this case I take a less powerful GPU
-  // TODO: randomize?
-  else
-  {
-    // I count the number of open nodes
-    for(auto i=0;i<neigh_size;i++)
-    {
-      if (nodes[i].get_usedGPUs() > 0)
-      {
-        tochange.insert(i);
-      }
-    }
-    for(auto n: tochange)
-    {
-      std::string VM = nodes[n].get_VMtype();
-      std::list<std::string> possible_gpus = vm_gpus[VM];
-      //here I assume that the GPUs are ordered by power
-      auto pos=possible_gpus.find(nodes[n].get_GPUtype()); // NON ESISTE find per std::list
-      if (pos!= possible_gpus.end())
-      {
-        neighbourhood[n] = *(pos+1);
-      }
-      else
-      {
-        neighbourhood[n] = possible_gpus.back();
-      }
-    }
   return neighbourhood;
-  }
+  
 }
 
 //________________________________________________________________________________________________________________________________
