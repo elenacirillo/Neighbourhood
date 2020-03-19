@@ -18,7 +18,7 @@ protected:
     *  		"true" if best improvement
     *  		"false" if 1st improvement
 	*/
-	bool best_fit = true; // TODO: initialize it in the constructor and update the code of the functions that uses this datum
+	bool best_fit = false; // TODO: initialize it in the constructor and update the code of the functions that uses this datum
 
     unsigned neigh_size = 3;
 	// tabu list (tabu search optimization)
