@@ -80,7 +80,7 @@ LocalSearchbySwap::get_possible_swaps(void) const
 }
 
 row_j
-LocalSearchbySwap::get_top(const map_value_j& map) 
+LocalSearchbySwap::get_top(const map_value_j& map)
 {
   row_j N;
 
@@ -101,7 +101,7 @@ LocalSearchbySwap::get_top(const map_value_j& map)
 }
 
 row_j
-LocalSearchbySwap::top_tardiness_jobs() 
+LocalSearchbySwap::top_tardiness_jobs()
 {
   map_value_j omega_t_ordered; //faccio una mappa così me li ordina per tardiness weight (omega)
   for (const auto & i : local_best_schedule)
@@ -113,7 +113,7 @@ LocalSearchbySwap::top_tardiness_jobs()
 }
 
 row_j
-LocalSearchbySwap::top_cost_jobs(void) 
+LocalSearchbySwap::top_cost_jobs(void)
 {
   map_value_j costs_ordered;
   for (const auto & i : local_best_schedule)
@@ -124,7 +124,7 @@ LocalSearchbySwap::top_cost_jobs(void)
 }
 
 row_j
-LocalSearchbySwap::top_margin_jobs(void) 
+LocalSearchbySwap::top_margin_jobs(void)
 {
   map_value_j margin_ordered;
   for (const auto & i : local_best_schedule)
@@ -146,7 +146,7 @@ LocalSearchbySwap::fill_swapping_sets(void)
   {
     A_job_ids = top_tardiness_jobs();
     B_job_ids = top_cost_jobs();
-    
+
     std::cout << "INISIEME A size: " << A_job_ids.size()<<std::endl;
     std::cout << "JOBBINO 1 ID: " << A_job_ids[0].get_ID()<<std::endl;
 
@@ -172,7 +172,7 @@ LocalSearchbySwap::visit_neighbor()
   //ciclo sugli intorni per farli tutti e tre
   possible_swap_indices = get_base_possible_swaps();
     std::cout << "HO GLI INDICI!: " << possible_swap_indices[0][0]<< std::endl;
-  
+
   fill_swapping_sets();
     std::cout << "HO FILLATO " << std::endl;
   bool changed = false;
@@ -211,7 +211,7 @@ LocalSearchbySwap::visit_neighbor()
     {
       std::cout << "STO PER SWAPPARE.........." << std::endl;
       job_schedule_t candidate_schedule = perform_swap(v);
-      
+
       double candidate_value = evaluate_objective(candidate_schedule);
       std::cout << "CANDIDATE VALUE: " << candidate_value << std::endl;
       std::cout << "BEST VALUE: " << best_schedule_value_t << std::endl;
@@ -257,7 +257,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int>& swap_indices)
       const unsigned old_node_A = elem_of_A->second.get_node_idx();
       std::cout << "PRENDO VECCHIO NODO DI A" << std::endl;
       Job jobA = elem_of_A->first;
-      std::cout << "JOB A, CHE HA TARDINESS" << jobA.get_tardinessWeight << std::endl;
+      std::cout << "JOB A, CHE HA TARDINESS" << jobA.get_tardinessWeight() << std::endl;
 
 
       const auto elem_of_B = temp.find(B_job_ids[idx_B]);

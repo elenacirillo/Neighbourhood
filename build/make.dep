@@ -51,6 +51,14 @@ heuristic.o: ../src/heuristic.cpp ../include/heuristic.hpp \
  ../include/setup.hpp ../include/node.hpp ../include/configuration.hpp \
  ../include/schedule.hpp
 job.o: ../src/job.cpp ../include/job.hpp ../include/utilities.hpp
+LocalSearchbySwap.o: ../src/LocalSearchbySwap.cpp \
+ ../include/LocalSearchbySwap.hpp ../include/LocalSearch.hpp \
+ ../include/greedy_version4.hpp ../include/greedy_version3.hpp \
+ ../include/greedy_version2.hpp ../include/greedy_version1.hpp \
+ ../include/greedy.hpp ../include/heuristic.hpp ../include/fileIO.hpp \
+ ../include/utilities.hpp ../include/job.hpp ../include/setup.hpp \
+ ../include/node.hpp ../include/configuration.hpp ../include/schedule.hpp \
+ ../include/dstar.hpp
 LocalSearch.o: ../src/LocalSearch.cpp ../include/LocalSearch.hpp \
  ../include/greedy_version4.hpp ../include/greedy_version3.hpp \
  ../include/greedy_version2.hpp ../include/greedy_version1.hpp \
