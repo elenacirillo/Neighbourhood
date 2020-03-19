@@ -23,8 +23,10 @@ protected:
     unsigned neigh_size = 3;
 	// tabu list (tabu search optimization)
 	std::vector<job_schedule_t> previous_best; // per non ricadere in ottimi locali già visitati nelle iterazioni
-    job_schedule_t initial_schedule;
+    
+    job_schedule_t initial_schedule; // TODO: vedere se si può rimuovere
     job_schedule_t local_best_schedule;
+    
     double best_schedule_value_t = INF;
 	double evaluate_objective(job_schedule_t& job_schedule) const;
     //double evaluate_objective(job_schedule_t& job_schedule, double elapsed_time);
@@ -40,12 +42,17 @@ protected:
 	//
 	double true_last_finish_time(job_schedule_t& job_schedule) const;
 
-	bool search_better_schedule(job_schedule_t&);
+	bool perform_local_search(job_schedule_t&);
 
+/*
 	bool update_best_schedule (job_schedule_t& new_schedule,
                               double& minTotalCost, 
                               job_schedule_t& best_schedule,
                               std::vector<Node>& opened_nodes) override;
+
+*/
+	//oveeride perform_scheduling, apply LocalSearch at the end
+	job_schedule_t perform_scheduling (unsigned max_random_iter) override;
 
 	bool update_schedule (Schedule & old_sch, Schedule & new_sch);
 

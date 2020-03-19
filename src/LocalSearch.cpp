@@ -7,6 +7,68 @@ LocalSearch::LocalSearch(const std::string& args, const std::string& d,
 {}
 
 
+//________________________________________________________________________________________________________________________________
+// Non modifichiamo nulla, se non alla fine, prim del return
+job_schedule_t 
+LocalSearch::perform_scheduling (unsigned max_random_iter)
+{
+  // (STEP #0)
+  preprocessing();
+
+  // initialization of minimum total cost, best schedule and corresponding
+  // index by a step of pure greedy
+  full_greedy = true;
+  job_schedule_t best_schedule;
+  scheduling_step(best_schedule);
+  double fft = find_first_finish_time(best_schedule);
+  double minTotalCost = objective_function(best_schedule,fft);
+  full_greedy = false;
+  
+  std::vector<Node> opened_nodes(nodes);
+  unsigned best_lni = last_node_idx;
+  unsigned best_idx = 0;
+
+  // random iterations
+  for (unsigned random_iter = 1; random_iter < max_random_iter; 
+       ++random_iter)
+  {
+    std::cout << "\n\tRANDOM ITERATION " << random_iter << std::endl;
+    //std::cout << "," << random_iter;
+
+    // determine new schedule
+    job_schedule_t new_schedule;
+    scheduling_step(new_schedule, true);
+
+    // update best schedule according to the value of the objective
+    bool updated = update_best_schedule(new_schedule, minTotalCost, 
+                                        best_schedule, opened_nodes);
+    if (updated)
+    {
+      best_idx = random_iter;
+      best_lni = last_node_idx;
+    }
+  }
+
+  std::cout << "\n\t### MINIMUM COST: " << minTotalCost << "; idx: " 
+            << best_idx << std::endl;
+
+  std::swap(opened_nodes, nodes);
+  last_node_idx = best_lni;
+
+  // Perform Local Search
+  bool ls_updated = perform_local_search(best_schedule);
+
+  // Se migliora la schedule faccio l'update
+  if (ls_updated)
+  {
+    best_schedule = local_best_schedule;
+  }
+
+  return best_schedule;
+}
+
+//________________________________________________________________________________________________________________________________
+
 
 double
 LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
@@ -67,6 +129,10 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule, double elapsed_tim
   return (objective_function(job_schedule, elapsed_time) + fft - lft) ;
 }
 */
+
+
+// TODO: forse la cancelliamo
+/*
 bool
 LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
                               double& minTotalCost, 
@@ -101,9 +167,11 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
   }
   return updated;
 }
+*/
+
 
 bool
-LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
+LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
 
   if(actual_schedule.size() < neigh_size)
@@ -112,20 +180,19 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
     return false;
   }
   std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
+  
+  // initialize members
   previous_best.clear();
   local_best_schedule = actual_schedule;
   initial_schedule = actual_schedule;
   std::cout<< "INITIAL SCHEDULE HA SIZE: "<< initial_schedule.size()<< std::endl; 
   previous_best.push_back(actual_schedule);
-   /*double elapsed_time = std::min(
-                                scheduling_interval,
-                                first_finish_time
-                              );
-   best_schedule_value_t = evaluate_objective(actual_schedule, );
-   */
+
+  // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
   std::cout<< "HO CALCOLATO LA OBJ"<< std::endl; 
 
+  // Iniziamo la local search
   unsigned iter = 0;
   bool changed = false;
   bool stop = false;
@@ -134,7 +201,6 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
     std::cout<< "STO PER VISITARE...."<< std::endl; 
     
     changed = visit_neighbor();
-
 
     std::cout<< "HO VISITATOOOO"<< std::endl; 
 
@@ -161,10 +227,12 @@ LocalSearch::search_better_schedule(job_schedule_t& actual_schedule)
     */
     iter++;
   }
+
   if (changed) //TODO entrare qui
   {
     std::cout << "better configuration found via local search" << std::endl;
   }
+
   return changed;
 }
 

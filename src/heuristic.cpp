@@ -265,7 +265,7 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
 
       // determine the best schedule
       job_schedule_t best_schedule = perform_scheduling(max_random_iter);
-      
+
       // add the best schedule to scheduled_jobs
       scheduled_jobs.push_back(best_schedule);
 
