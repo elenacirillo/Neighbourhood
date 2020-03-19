@@ -6,7 +6,7 @@
 #include "greedy_version2.hpp"
 #include "greedy_version3.hpp"
 #include "greedy_version4.hpp"
-#include "LocalSearchbySwap.hpp"
+//#include "LocalSearchbySwap.hpp"
 #include "LocalSearchGPU.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
@@ -37,7 +37,7 @@ int main (int argc, char *argv[])
     factory["FedeCpp2_R"] = GreedyBuilder(new Builder<Greedy_version2, Heuristic>);
     factory["FedeCpp3_R"] = GreedyBuilder(new Builder<Greedy_version3, Heuristic>);
     factory["FedeCpp4_R"] = GreedyBuilder(new Builder<Greedy_version4, Heuristic>);
-    factory["LocalSearchbySwap"] = GreedyBuilder(new Builder<LocalSearchbySwap, Heuristic>);
+    //factory["LocalSearchbySwap"] = GreedyBuilder(new Builder<LocalSearchbySwap, Heuristic>);
     factory["LocalSearchGPU"] = GreedyBuilder(new Builder<LocalSearchGPU, Heuristic>);
 
     // method
@@ -76,7 +76,7 @@ int main (int argc, char *argv[])
       std::string result_filename = method + "_schedule.csv";
       if (method == "FedeCpp_R"  || method == "FedeCpp1_R" ||
           method == "FedeCpp2_R" || method == "FedeCpp3_R" ||
-          method == "FedeCpp4_R" || method == "LocalSearchbySwap"
+          method == "FedeCpp4_R" || method == "LocalSearchbySwap" ||
           method == "LocalSearchGPU")
       {
         if (argc < 10)

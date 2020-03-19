@@ -50,15 +50,19 @@ LocalSearchGPU::update_node_jobs(void)
   node_jobs.clear();
 
   // cycle over the initial schedule
+  // Inserisco controllo che la schedule non sia vuota
   for(auto pair: initial_schedule)
   {
     const Job & job = pair.first;
     Schedule & sch = pair.second;
+    if(!sch.isEmpty())
+    {
+      unsigned node_idx = sch.get_node_idx();
 
-    unsigned node_idx = sch.get_node_idx();
+      // insert the job in the unordered_set associated with the node idx
+      node_jobs[node_idx].insert(job);
+    }
 
-    // insert the job in the unordered_set associated with the node idx
-    node_jobs[sch.get_node_idx()].insert(job);
   }
 }
 
@@ -159,7 +163,7 @@ LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & temp_stp)
     build_stp.push_back(std::to_string(nGPUs));
     build_stp.push_back(std::to_string(temp_stp.get_maxnGPUs()));
     build_stp.push_back(std::to_string(temp_stp.get_cost()));
-    
+
     // new setup
     Setup new_stp(build_stp);
 
@@ -194,7 +198,7 @@ LocalSearchGPU::generate_neighborhood(void)
       tochange.insert(i);
     }
   }
-  
+
 
   for(auto n: tochange)
   {
@@ -202,12 +206,12 @@ LocalSearchGPU::generate_neighborhood(void)
     auto pair = all_neighborhoods.equal_range(max_nGPUs);
     for(auto it = pair.first; it != pair.second; ++it)
     {
-      neighbourhood[n] = it->second; // setup
+      neighbourhood.insert({n,it->second}); // setup
     }
   }
 
   return neighbourhood;
-  
+
 }
 
 //________________________________________________________________________________________________________________________________
@@ -221,8 +225,11 @@ std::set<unsigned> LocalSearchGPU::FindTopNodes(unsigned top)
   //count the jobs in each node that have tardiness>0
   for (auto js:initial_schedule)
   {
-    if (js.second.get_tardiness()>0)
+    if(!js.second.isEmpty())
+    {
+      if (js.second.get_tardiness()>0)
       topnodes[js.second.get_node_idx()]++;
+    }
   }
   std::set<unsigned> result;
   // da sistemare, devo inserire solo i primi top
