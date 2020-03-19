@@ -8,7 +8,8 @@ LocalSearch::LocalSearch(const std::string& args, const std::string& d,
 
 
 //________________________________________________________________________________________________________________________________
-// Non modifichiamo nulla, se non alla fine, prim del return
+// é la funzione di Greedy, noi modifchiamo solo la fine, ci inseriamo e facciamo la Local Search
+
 job_schedule_t 
 LocalSearch::perform_scheduling (unsigned max_random_iter)
 {
