@@ -76,6 +76,10 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
 {
   double fft = true_first_finish_time(job_schedule);
   double lft = true_last_finish_time(job_schedule);
+
+  std::cout << "fft:" << fft << std::endl;
+  std::cout << "lft:" << lft << std::endl;
+  
   return std::max(lft - fft, fft - lft) ;
 }
 
@@ -85,6 +89,7 @@ LocalSearch::true_first_finish_time(job_schedule_t& job_schedule) const
 {
   double fft = INF;
 
+  // cycle over the schedule
   job_schedule_t::const_iterator cit;
   for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
   {
@@ -175,6 +180,7 @@ bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
 
+  // perform local search only if there are enough jobs
   if(actual_schedule.size() < neigh_size)
   {
     std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
@@ -191,12 +197,15 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  std::cout<< "HO CALCOLATO LA OBJ"<< std::endl; 
+  std::cout<< "HO CALCOLATO LA OBJ,  VALORE=" << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
   bool changed = false;
   bool stop = false;
+
+  stop = true; //RIMUOVERLOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
   while ((iter < MAX_ITER) and !(stop))
   {
     std::cout<< "STO PER VISITARE...."<< std::endl; 

@@ -3,33 +3,22 @@
 
 #include "LocalSearch.hpp"
 
-    // map a maxGPU in un setup
-    typedef std::unordered_multimap<unsigned, Setup> boh_t;
+// map a maxGPU in a setup
+typedef std::unordered_multimap<unsigned, Setup> boh_t;
 
-    // neighboorhood type: maps the index of a node into a possible setups
-    typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
+// neighboorhood type: maps the index of a node into a possible setups
+typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
 
-    // associates to every node the set of jobs in execution on that specific node
-    typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
+// associates to every node the set of jobs in execution on that specific node
+typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
 
 class LocalSearchGPU : public LocalSearch
 {
-/*
-public:
 
-    // map a maxGPU in un setup
-    typedef std::unordered_multimap<unsigned, Setup> boh_t;
-
-    // neighboorhood type: maps the index of a node into a possible setups
-    typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
-
-    // associates to every node the set of jobs in execution on that specific node
-    typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
-*/
 private:
 
     //
-    boh_t all_neighborhoods; //TODO: costruirla
+    boh_t all_neighborhoods;
 
     // pairings node_idx - jobs on that node (it should be updated every time initial_schedule changes)
     node_jobs_t node_jobs;
@@ -54,6 +43,7 @@ private:
 
 public:
 
+    // constructor
     LocalSearchGPU (const std::string&, const std::string&, const std::string&, const std::string&, const std::string&);
 
 };
