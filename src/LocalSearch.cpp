@@ -204,8 +204,6 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   bool changed = false;
   bool stop = false;
 
-  stop = true; //RIMUOVERLOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-
   while ((iter < MAX_ITER) and !(stop))
   {
     std::cout<< "STO PER VISITARE...."<< std::endl; 
