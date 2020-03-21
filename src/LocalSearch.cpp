@@ -70,61 +70,26 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
 
 //________________________________________________________________________________________________________________________________
 
-
 double
 LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
 {
-  double fft = true_first_finish_time(job_schedule);
-  double lft = true_last_finish_time(job_schedule);
+  double fft = find_first_finish_time(job_schedule);
+  double lft = find_last_finish_time(job_schedule);
 
-  std::cout << "fft:" << fft << std::endl;
-  std::cout << "lft:" << lft << std::endl;
-  
   return std::max(lft - fft, fft - lft) ;
 }
 
-// get the time of the first job to finish
 double
-LocalSearch::true_first_finish_time(job_schedule_t& job_schedule) const
-{
-  double fft = INF;
-
-  // cycle over the schedule
-  job_schedule_t::const_iterator cit;
-  for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
-  {
-    const Schedule & sch = cit->second;
-    double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
-    double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
-    double time_remaining = (1-completion_percent) * time_needed;
-
-    fft = std::min(fft, time_remaining);
-  }
-
-  return fft;
-}
-
-// get the time of the last job to finish
-double
-LocalSearch::true_last_finish_time(job_schedule_t& job_schedule) const
+LocalSearch::find_last_finish_time (const job_schedule_t& last_schedule) const
 {
   double lft = 0;
 
   job_schedule_t::const_iterator cit;
-  for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
-  {
-    const Schedule & sch = cit->second;
-    double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
-    double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
-    double time_remaining = (1-completion_percent) * time_needed;
-
-    lft = std::max(lft, time_remaining);
-  }
+  for (cit = last_schedule.cbegin(); cit != last_schedule.cend(); ++cit)
+    lft = std::max(lft, (cit->second).get_selectedTime());
 
   return lft;
 }
-
-
 
 /*
 double
@@ -197,7 +162,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  std::cout<< "HO CALCOLATO LA OBJ,  VALORE=" << best_schedule_value_t << std::endl; 
+  std::cout<< "HO CALCOLATO LA OBJ,  VALORE = " << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
@@ -212,7 +177,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
     std::cout<< "HO VISITATOOOO"<< std::endl; 
 
-    std::cout<< "DELTA VALUE = "<< best_schedule_value_t << std::endl; 
+    std::cout<< "VALORE NUOVA OBJECTIVE = "<< best_schedule_value_t << std::endl; 
 
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 

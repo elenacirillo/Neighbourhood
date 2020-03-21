@@ -103,7 +103,7 @@ LocalSearchGPU::visit_neighbor()
       changed = true;
 
       // --------------------------------------------------
-      // update the configuration of the node accordingly:
+      // update the configuration of the node accordingly
 
       // GPU used with the old configuration (deve rimanere invariato nel cambio di VM)
       unsigned used_GPUs = nodes[node_idx].get_usedGPUs();
