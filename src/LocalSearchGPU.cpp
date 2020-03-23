@@ -101,9 +101,6 @@ LocalSearchGPU::visit_neighbor()
   // update the data structure that links the nodes to the jobs ("change_GPU" needs it updated)
   update_node_jobs();
 
-  // neighborhood to be explored
-  //neighborhood_t neighborhood = generate_neighborhood();
-
   // indexes of the nodes to explore
   std::list<unsigned> nodes_to_change = get_nodes_to_change(); //NEL CASO è DA SCRIVERE
 
