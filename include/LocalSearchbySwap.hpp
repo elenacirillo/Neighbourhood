@@ -3,7 +3,7 @@
 
 #include "LocalSearch.hpp"
 
-
+    // TODO: inserirle dentro la classe e adattare i return type
     typedef std::multimap<double, Job> map_value_j;
     typedef map_value_j::iterator map_it;
     typedef std::vector<Job> row_j;
@@ -39,9 +39,9 @@ private:
 
 public:
     LocalSearchbySwap(const std::string&, const std::string&, const std::string&,
-	                   const std::string&, const std::string&);
+                       const std::string&, const std::string&);
 
-	virtual ~LocalSearchbySwap (void) = default;
+    virtual ~LocalSearchbySwap (void) = default;
 };
 
 #endif /* LOCAL_SEARCH_BY_SWAP_HH */

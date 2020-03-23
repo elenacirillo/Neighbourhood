@@ -151,7 +151,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
     return false;
   }
-  std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
+  std::cout<< "SEI DENTRO perform_local_search"<< std::endl; 
   
   // initialize members
   previous_best.clear();
@@ -171,6 +171,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   while ((iter < MAX_ITER) and !(stop))
   {
+    std::cout << "~~~~~~~~ iter " << iter << " ~~~~~~~~" << std::endl;
     std::cout<< "STO PER VISITARE...."<< std::endl; 
     
     changed = visit_neighbor();
