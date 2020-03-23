@@ -36,6 +36,7 @@ private:
     std::vector< std::vector<int> > get_possible_swaps() const;
 
     bool visit_neighbor() override;
+    void erase_job_from_node(Schedule &);
 
 public:
     LocalSearchbySwap(const std::string&, const std::string&, const std::string&,

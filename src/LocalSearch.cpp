@@ -290,3 +290,35 @@ LocalSearch::equalSchedule(const Schedule & lhs, const Schedule & rhs)
       && lhs.get_selectedTime() == rhs.get_selectedTime()
       && lhs.get_node_idx() == rhs.get_node_idx());
 }
+
+/* NUOVA VERSIONE ASSEGNAMENTO A NODO CHE FA ANCHE IL CONTROLLO SUL SUBOTTIMO
+bool
+LocalSearch::assign_to_selected_node (const Job& J,
+                          job_schedule_t& new_schedule,
+                          unsigned node_index)
+{
+    Node& new_node = nodes[node_index];
+    bool assigned = false;
+    
+    const setup_time_t& tjvg = ttime.at(J.get_ID());
+    Dstar dstarA (J, tjvg, current_time);
+    if (! full_greedy)
+        dstar.set_random_parameter(alpha);
+
+    while (!dstar.is_end() && !assigned)
+    {
+        setup_time_t::const_iterator best_stp = dstar.get_best_setup(generator);
+        const Setup& best_stp = best_stp_it->first;
+        if (compare_configuration(best_stp, new_node) &&
+            best_stp.get_nGPUs() <= new_node.get_remainingGPUs())
+        {
+            assigned = true;
+            new_node.set_remainingGPUs(best_stp.get_nGPUs());
+            Schedule sch(best_stp_it, node_index);
+            new_schedule[j] = sch;
+        }
+    }
+  return assigned;
+}
+
+*/

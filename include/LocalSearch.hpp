@@ -51,6 +51,11 @@ protected:
                                         setup_time_t::const_iterator,
                                         job_schedule_t&, unsigned);
 
+	/* NUOVA VERSIONE ASSEGNAMENTO A NODO CHE FA ANCHE IL CONTROLLO SUL SUBOTTIMO
+	bool
+	LocalSearch::assign_to_selected_node (const Job&, job_schedule_t&, unsigned)
+	*/
+
     //
 	double true_first_finish_time(job_schedule_t& job_schedule) const;
 	//
