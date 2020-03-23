@@ -51,9 +51,6 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
     }
   }
 
-  std::cout << "\n\t### MINIMUM COST: " << minTotalCost << "; idx: " 
-            << best_idx << std::endl;
-
   std::swap(opened_nodes, nodes);
   last_node_idx = best_lni;
 
@@ -65,6 +62,9 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   {
     best_schedule = local_best_schedule;
   }
+
+  std::cout << "\n\t### MINIMUM COST: " << minTotalCost << "; idx: " 
+            << best_idx << std::endl;
 
   return best_schedule;
 }
@@ -181,13 +181,6 @@ bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
   std::cout<< "-------PERFORM LOCAL SEARCH-------"<< std::endl;//TOREMOVE 
-
-  // perform local search only if there are enough jobs
-  if(actual_schedule.size() < neigh_size)//TODO: spostare 
-  {
-    std::cout<< "Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
-    return false;
-  }
   
   // initialize members
   previous_best.clear();
