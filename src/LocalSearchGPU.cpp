@@ -17,45 +17,6 @@ LocalSearchGPU::LocalSearchGPU(const std::string& args, const std::string& d,
 //________________________________________________________________________________________________________________________________-
 
 // initialize all_neighborhoods starting from ttime (ttime is a protected member of the parent class Heuristic)
-/*
-void
-LocalSearchGPU::initialize_all_neighborhoods(void)
-{
-  if(! ttime.empty())
-  {
-    // consider the setups related to the first job (all jobs work with all setups)
-    setup_time_t & setup_time = ttime.begin()->second;
-
-    // cycle over all its setups
-    for (auto pair: setup_time)
-    {
-      const Setup & stp = pair.first;
-      unsigned max_nGPUs = stp.get_maxnGPUs();
-      unsigned nGPUs = stp.get_nGPUs();
-      // TODO: remove cout
-      std::cout << "max_nGPUs=" << max_nGPUs << ",  nGPUs=" << nGPUs << ", time=" << pair.second << std::endl;
-
-      // avoid multiple insertions
-      if(max_nGPUs == nGPUs)
-      {
-        all_neighborhoods.insert({max_nGPUs, stp});
-      }
-    }
-  }
-
-  // TODO: remove
-  for(auto pair : all_neighborhoods)
-  {
-    std::cout << "max_nGPUs: " << pair.first << "   ---->   ";
-    pair.second.print(std::cout);
-  }
-
-}
-*/
-
-//________________________________________________________________________________________________________________________________-
-
-// initialize all_neighborhoods starting from ttime (ttime is a protected member of the parent class Heuristic)
 void
 LocalSearchGPU::initialize_GPUs_setups(void)
 {
