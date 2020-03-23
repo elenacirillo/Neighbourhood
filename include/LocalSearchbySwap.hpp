@@ -44,4 +44,5 @@ public:
 	virtual ~LocalSearchbySwap (void) = default;
 };
 
+
 #endif /* LOCAL_SEARCH_BY_SWAP_HH */

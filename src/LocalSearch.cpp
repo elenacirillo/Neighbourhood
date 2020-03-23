@@ -1,5 +1,6 @@
 #include "LocalSearch.hpp"
 
+
 LocalSearch::LocalSearch(const std::string& args, const std::string& d,
                         const std::string& file_jobs, const std::string& file_times,
                         const std::string& file_nodes):
@@ -77,8 +78,8 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
   double fft = true_first_finish_time(job_schedule);
   double lft = true_last_finish_time(job_schedule);
 
-  std::cout << "fft:" << fft << std::endl;
-  std::cout << "lft:" << lft << std::endl;
+  std::cout << " - fft:" << fft << std::endl;
+  std::cout << " - lft:" << lft << std::endl;
   
   return std::max(lft - fft, fft - lft) ;
 }
@@ -179,25 +180,25 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
+  std::cout<< "-------PERFORM LOCAL SEARCH-------"<< std::endl;//TOREMOVE 
 
   // perform local search only if there are enough jobs
-  if(actual_schedule.size() < neigh_size)
+  if(actual_schedule.size() < neigh_size)//TODO: spostare 
   {
-    std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
+    std::cout<< "Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
     return false;
   }
-  std::cout<< "SEI DENTRO SEARCH BETTER SCHEDULE"<< std::endl; 
   
   // initialize members
   previous_best.clear();
   local_best_schedule = actual_schedule;
   initial_schedule = actual_schedule;
-  std::cout<< "INITIAL SCHEDULE HA SIZE: "<< initial_schedule.size()<< std::endl; 
+  std::cout<< "Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
   previous_best.push_back(actual_schedule);
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  std::cout<< "HO CALCOLATO LA OBJ,  VALORE=" << best_schedule_value_t << std::endl; 
+  std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
@@ -206,13 +207,13 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   while ((iter < MAX_ITER) and !(stop))
   {
-    std::cout<< "STO PER VISITARE...."<< std::endl; 
+    std::cout<< "sto per entrare in visit_neighbor()"<< std::endl; 
     
     changed = visit_neighbor();
 
-    std::cout<< "HO VISITATOOOO"<< std::endl; 
+    std::cout<< "-- uscito da visit_neighbor(). changed?: "<<changed<< std::endl;//TOREMOVE 
 
-    std::cout<< "DELTA VALUE = "<< best_schedule_value_t << std::endl; 
+    std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
 
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 
