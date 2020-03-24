@@ -14,8 +14,11 @@ void
 Configuration::update_n_GPUs (unsigned g)
 {
   used_GPUs += g;
-  remaining_GPUs -= g;
-}
+if (remaining_GPUs > g)
+  {remaining_GPUs -= g;}
+else {//std::cout << "ERROR: trying to decrease an unsigned" << std::endl;
+	remaining_GPUs = 0;
+}}
 
 void
 Configuration::delete_configuration (void)

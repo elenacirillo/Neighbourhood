@@ -55,12 +55,6 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   last_node_idx = best_lni;
 
   // Perform Local Search
-	
-	for (auto el : nodes) std::cout << el.get_ID();
-	std::cout << std::endl;
-
-	for (auto el : opened_nodes) std::cout << el.get_ID();
-	std::cout << std::endl;
 
   bool ls_updated = perform_local_search(best_schedule);
 
@@ -77,16 +71,26 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
 }
 
 //________________________________________________________________________________________________________________________________
+double
+LocalSearch::find_last_finish_time (const job_schedule_t& last_schedule) const
+{
+  double lft = 0.;
 
+  job_schedule_t::const_iterator cit;
+  for (cit = last_schedule.cbegin(); cit != last_schedule.cend(); ++cit)
+    lft = std::max(lft, (cit->second).get_selectedTime());
+
+  return lft;
+}
 
 double
 LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
 {
-  double fft = true_first_finish_time(job_schedule);
-  double lft = true_last_finish_time(job_schedule);
+  double fft = find_first_finish_time(job_schedule);
+  double lft = find_last_finish_time(job_schedule);
 
-  std::cout << " - fft:" << fft << std::endl;
-  std::cout << " - lft:" << lft << std::endl;
+  //std::cout << " -* fft:" << fft << std::endl;
+  //std::cout << " -* lft:" << lft << std::endl;
   
   return std::max(lft - fft, fft - lft) ;
 }
@@ -187,40 +191,49 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
-  std::cout<< "-------PERFORM LOCAL SEARCH-------"<< std::endl;//TOREMOVE 
+
+if(actual_schedule.size() < 2)
+  {
+    //std::cout<< "-- Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
+    return false;
+  }
+
+  std::cout<< "        PERFORM LOCAL SEARCH\n" << std::endl;//TOREMOVE 
   
   // initialize members
-  previous_best.clear();
+  //previous_best.clear();
   local_best_schedule = actual_schedule;
   initial_schedule = actual_schedule;
-  std::cout<< "Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
-  previous_best.push_back(actual_schedule);
+  std::cout<< "- Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
+  //previous_best.push_back(actual_schedule);
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
+  //std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
   bool changed = false;
+bool changed_at_least_once = false;
   bool stop = false;
 
   while ((iter < MAX_ITER) and !(stop))
-  {
-    std::cout<< "sto per entrare in visit_neighbor()"<< std::endl; 
+  {std::cout << std::endl;
+	std::cout << " - iter " << iter << " of " << MAX_ITER << std::endl;
+    //std::cout<< "- sto per entrare in visit_neighbor()"<< std::endl; 
     
     changed = visit_neighbor();
 
-    std::cout<< "-- uscito da visit_neighbor(). changed?: "<<changed<< std::endl;//TOREMOVE 
+    std::cout<< "- uscito da visit_neighbor(). changed?: "<< changed << std::endl;//TOREMOVE 
 
-    std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
+    //std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
 
-    // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
-
+	changed_at_least_once = (changed = true) ? true : changed_at_least_once;
     //se ho visitato l'intorno ma non ho trovato una opzione miglore
     if (!changed)
       {
-        break; //usciamo dal while
+	stop = true;
+        //break; //usciamo dal while
       }
     //controllo che la best appena trovata (quindi solo se changed = true) non sia una che avevo già trovato
     // questo può succedere solo se usiamo come objective function la funzione totale, mentre con il solo delta (differenza dei finisch time)
@@ -237,9 +250,9 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     iter++;
   }
 
-  if (changed) //TODO entrare qui
+  if (changed_at_least_once) //TODO entrare qui
   {
-    std::cout << "better configuration found via local search" << std::endl;
+    std::cout << "    * Better configuration found via local search *" << std::endl;
   }
 
   return changed;
@@ -263,9 +276,9 @@ LocalSearch::assign_to_selected_node (const Job& j,
     new_node.set_remainingGPUs(best_stp.get_nGPUs());
     Schedule sch(best_stp_it, node_index);
     new_schedule[j] = sch;
-  }
-if (! compare_configuration(best_stp, new_node)) std::cout << "incorrect configuration" << std::endl;
-if (best_stp.get_nGPUs() > new_node.get_remainingGPUs()) std::cout << "not enough gpu" << std::endl;
+  }/*
+if (! compare_configuration(best_stp, new_node)) std::cout << "    ---- assignement failed: incorrect configuration" << std::endl;
+if (best_stp.get_nGPUs() > new_node.get_remainingGPUs()) std::cout << "    ---- assignement failed: not enough gpu" << std::endl;*/
   return assigned;
 }
 

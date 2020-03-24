@@ -60,6 +60,7 @@ protected:
 	double true_first_finish_time(job_schedule_t& job_schedule) const;
 	//
 	double true_last_finish_time(job_schedule_t& job_schedule) const;
+	double find_last_finish_time (const job_schedule_t&) const;
 
 	// 
 	bool perform_local_search(job_schedule_t&);
