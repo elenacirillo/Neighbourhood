@@ -1,0 +1,2160 @@
+################################################################################
+cd /home/apc201819/Desktop/Neighbourhood/build/output/LocalSearchbySwap-1-2-10-45000-1-1000-0.5-1020-5; /home/apc201819/Desktop/Neighbourhood/script/sh/run_experiment.sh LocalSearchbySwap 1 2 10 45000 1 1000 0.5 1020 5 
+start time 2020-03-24 00:48:44.452093
+################################################################################
+##################### algorithm #####################
+myseed: 1020; max_random_iter: 5
+iter, random iteration, vmCost, tardiCost, worstCaseTardiness
+
+-------- iter 0 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 1
+ - fft:143833
+ - lft:143833
+- Ho valutato l'obj fun, valore = 0
+sto per entrare in visit_neighbor()
+Ce ne stan troppo poghi
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  0
+
+	### MINIMUM COST: 4.39489; idx: 0
+
+-------- iter 1 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 2
+ - fft:81969.6
+ - lft:121546
+- Ho valutato l'obj fun, valore = 39576.1
+sto per entrare in visit_neighbor()
+ - A vector: JJ1 JJ2 
+ - B vector: JJ1 JJ2 
+  --Inizio perform_swap, best_schedule_value = 39576.1
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:81969.6
+ - lft:121546
+ - candidate value: 39576.1
+ - best value : 39576.1
+  --Inizio perform_swap, best_schedule_value = 39576.1
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 1 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 2
+used by job 1, used to set0, max 2
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 2
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 1 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 2
+used by job 1, used to set0, max 2
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 2
+HO ASSEGNATO B a A? : 1
+index di B: -1
+ - fft:81969.6
+ - lft:121546
+ - candidate value: 39576.1
+ - best value : 39576.1
+  --Inizio perform_swap, best_schedule_value = 39576.1
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+
+
+
+index di B: -1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 0 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 1
+used by job 1, used to set0, max 1
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 1
+not enough gpu
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 0 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 1
+used by job 1, used to set0, max 1
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 1
+incorrect configuration
+HO ASSEGNATO B a A? : 0
+B NON ASSEGNATO AD A
+ - fft:81969.6
+ - lft:121546
+ - candidate value: 39576.1
+ - best value : 39576.1
+  --Inizio perform_swap, best_schedule_value = 39576.1
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 1 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 2
+used by job 1, used to set0, max 2
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 2
+not enough gpu
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 0 GPU rimanenti e 2 usate dal Job A
+ su questo nodo voglio settare 2
+used by job 2, used to set0, max 2
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 2
+not enough gpu
+HO ASSEGNATO B a A? : 1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 0 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 1
+used by job 1, used to set0, max 1
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 1
+incorrect configuration
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+ - fft:81969.6
+ - lft:126253
+ - candidate value: 44283.5
+ - best value : 39576.1
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  39576.1
+
+	### MINIMUM COST: 16.6216; idx: 0
+
+-------- iter 2 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 3
+ - fft:35002
+ - lft:66009.2
+- Ho valutato l'obj fun, valore = 31007.2
+sto per entrare in visit_neighbor()
+ - A vector: JJ1 JJ2 
+ - B vector: JJ2 JJ1 
+  --Inizio perform_swap, best_schedule_value = 31007.2
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:35002
+ - lft:66009.2
+ - candidate value: 31007.2
+ - best value : 31007.2
+  --Inizio perform_swap, best_schedule_value = 31007.2
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:35002
+ - lft:66009.2
+ - candidate value: 31007.2
+ - best value : 31007.2
+  --Inizio perform_swap, best_schedule_value = 31007.2
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:35002
+ - lft:66009.2
+ - candidate value: 31007.2
+ - best value : 31007.2
+  --Inizio perform_swap, best_schedule_value = 31007.2
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ2   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 2   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:35002
+ - lft:66009.2
+ - candidate value: 31007.2
+ - best value : 31007.2
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  31007.2
+
+	### MINIMUM COST: 17.501; idx: 1
+
+-------- iter 3 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 4
+ - fft:35214.2
+ - lft:188711
+- Ho valutato l'obj fun, valore = 153497
+sto per entrare in visit_neighbor()
+ - A vector: JJ1 JJ2 
+ - B vector: JJ4 JJ1 
+  --Inizio perform_swap, best_schedule_value = 153497
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:35214.2
+ - lft:188711
+ - candidate value: 153497
+ - best value : 153497
+  --Inizio perform_swap, best_schedule_value = 153497
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:35214.2
+ - lft:188711
+ - candidate value: 153497
+ - best value : 153497
+  --Inizio perform_swap, best_schedule_value = 153497
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:35214.2
+ - lft:188711
+ - candidate value: 153497
+ - best value : 153497
+  --Inizio perform_swap, best_schedule_value = 153497
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ1   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:35214.2
+ - lft:188711
+ - candidate value: 153497
+ - best value : 153497
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  153497
+
+	### MINIMUM COST: 7.19935; idx: 1
+
+-------- iter 4 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 5
+ - fft:12579.2
+ - lft:450326
+- Ho valutato l'obj fun, valore = 437747
+sto per entrare in visit_neighbor()
+ - A vector: JJ1 JJ2 
+ - B vector: JJ5 JJ2 
+  --Inizio perform_swap, best_schedule_value = 437747
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:12579.2
+ - lft:450326
+ - candidate value: 437747
+ - best value : 437747
+  --Inizio perform_swap, best_schedule_value = 437747
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:12579.2
+ - lft:450326
+ - candidate value: 437747
+ - best value : 437747
+  --Inizio perform_swap, best_schedule_value = 437747
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: -1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967293 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967294
+used by job 1, used to set10, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967294
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967293 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967294
+used by job 1, used to set10, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967294
+HO ASSEGNATO B a A? : 1
+ - fft:12579.2
+ - lft:450326
+ - candidate value: 437747
+ - best value : 437747
+  --Inizio perform_swap, best_schedule_value = 437747
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ1   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: 0
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967293 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967294
+used by job 1, used to set10, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967294
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967293 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967294
+used by job 1, used to set10, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967294
+HO ASSEGNATO B a A? : 1
+ - fft:12579.2
+ - lft:450326
+ - candidate value: 437747
+ - best value : 437747
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  437747
+
+	### MINIMUM COST: 0.838613; idx: 2
+
+-------- iter 5 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 4
+ - fft:41910.5
+ - lft:437747
+- Ho valutato l'obj fun, valore = 395837
+sto per entrare in visit_neighbor()
+ - A vector: JJ2 JJ5 
+ - B vector: JJ4 JJ5 
+  --Inizio perform_swap, best_schedule_value = 395837
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ2   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:41910.5
+ - lft:437747
+ - candidate value: 395837
+ - best value : 395837
+  --Inizio perform_swap, best_schedule_value = 395837
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ2   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:41910.5
+ - lft:437747
+ - candidate value: 395837
+ - best value : 395837
+  --Inizio perform_swap, best_schedule_value = 395837
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ2   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967291 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967292
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967291 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967292
+HO ASSEGNATO B a A? : 1
+ - fft:41910.5
+ - lft:437747
+ - candidate value: 395837
+ - best value : 395837
+  --Inizio perform_swap, best_schedule_value = 395837
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ2   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967291 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967292
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967291 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967292
+HO ASSEGNATO B a A? : 1
+ - fft:41910.5
+ - lft:437747
+ - candidate value: 395837
+ - best value : 395837
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  395837
+
+	### MINIMUM COST: 2.36418; idx: 1
+
+-------- iter 6 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 5
+ - fft:30624.8
+ - lft:427726
+- Ho valutato l'obj fun, valore = 397101
+sto per entrare in visit_neighbor()
+ - A vector: JJ2 JJ5 
+ - B vector: JJ4 JJ5 
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:30624.8
+ - lft:427726
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:30624.8
+ - lft:427726
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967290 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967291
+used by job 1, used to set13, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967291
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967290 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967291
+used by job 1, used to set13, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967291
+incorrect configuration
+HO ASSEGNATO B a A? : 0
+B NON ASSEGNATO AD A
+ - fft:30624.8
+ - lft:427726
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967290 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967291
+used by job 1, used to set13, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967291
+incorrect configuration
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+ - fft:30624.8
+ - lft:427726
+ - candidate value: 397101
+ - best value : 397101
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  397101
+
+	### MINIMUM COST: 1.60416; idx: 3
+
+-------- iter 7 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 6
+ - fft:8266.79
+ - lft:405368
+- Ho valutato l'obj fun, valore = 397101
+sto per entrare in visit_neighbor()
+ - A vector: JJ2 JJ5 
+ - B vector: JJ5 JJ4 
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:8266.79
+ - lft:405368
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:8266.79
+ - lft:405368
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:8266.79
+ - lft:405368
+ - candidate value: 397101
+ - best value : 397101
+  --Inizio perform_swap, best_schedule_value = 397101
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ2   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 9   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:8266.79
+ - lft:405368
+ - candidate value: 397101
+ - best value : 397101
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  397101
+
+	### MINIMUM COST: 1.84727; idx: 4
+
+-------- iter 8 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 5
+ - fft:21537.9
+ - lft:397101
+- Ho valutato l'obj fun, valore = 375564
+sto per entrare in visit_neighbor()
+ - A vector: JJ5 JJ3 
+ - B vector: JJ5 JJ4 
+  --Inizio perform_swap, best_schedule_value = 375564
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ3   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:21537.9
+ - lft:397101
+ - candidate value: 375564
+ - best value : 375564
+  --Inizio perform_swap, best_schedule_value = 375564
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ3   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 1 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 2
+used by job 1, used to set6, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 2
+incorrect configuration
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+index di B: -1
+ - fft:21537.9
+ - lft:397101
+ - candidate value: 375564
+ - best value : 375564
+  --Inizio perform_swap, best_schedule_value = 375564
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ3   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:21537.9
+ - lft:397101
+ - candidate value: 375564
+ - best value : 375564
+  --Inizio perform_swap, best_schedule_value = 375564
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ3   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 7   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 1 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 2
+used by job 1, used to set6, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 2
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 1 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 2
+used by job 1, used to set6, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 2
+HO ASSEGNATO B a A? : 1
+index di B: 1
+ - fft:21537.9
+ - lft:397101
+ - candidate value: 375564
+ - best value : 375564
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  375564
+
+	### MINIMUM COST: 4.85457; idx: 3
+
+-------- iter 9 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 6
+ - fft:7600.74
+ - lft:382956
+- Ho valutato l'obj fun, valore = 375355
+sto per entrare in visit_neighbor()
+ - A vector: JJ8 JJ5 
+ - B vector: JJ8 JJ5 
+  --Inizio perform_swap, best_schedule_value = 375355
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:7600.74
+ - lft:382956
+ - candidate value: 375355
+ - best value : 375355
+  --Inizio perform_swap, best_schedule_value = 375355
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967291 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967292
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967291 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967292
+HO ASSEGNATO B a A? : 1
+index di B: -1
+ - fft:7600.74
+ - lft:382956
+ - candidate value: 375355
+ - best value : 375355
+  --Inizio perform_swap, best_schedule_value = 375355
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967291 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967292
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967291 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967292
+HO ASSEGNATO B a A? : 1
+ - fft:7600.74
+ - lft:382956
+ - candidate value: 375355
+ - best value : 375355
+  --Inizio perform_swap, best_schedule_value = 375355
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967291 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967292
+HO ASSEGNATO AL NODO A a B?: 1
+STO PER SETTARE NUMERO DI GPU: 
+al momento sul nodo di A ci sono 4294967291 GPU rimanenti e 1 usate dal Job A
+ su questo nodo voglio settare 4294967292
+used by job 1, used to set12, max 8
+HO RI-SETTATO LE GPU di A ? ora le rimanenti sono 4294967292
+HO ASSEGNATO B a A? : 1
+index di B: 1
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967290 GPU rimanenti e 1 usate dal Job B
+ su questo nodo voglio settare 4294967291
+used by job 1, used to set13, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 4294967291
+incorrect configuration
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+ - fft:7600.74
+ - lft:382956
+ - candidate value: 375355
+ - best value : 375355
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  375355
+
+	### MINIMUM COST: 1.6111; idx: 1
+
+-------- iter 10 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 5
+ - fft:93063.8
+ - lft:376619
+- Ho valutato l'obj fun, valore = 283556
+sto per entrare in visit_neighbor()
+ - A vector: JJ8 JJ5 
+ - B vector: JJ5 JJ4 
+  --Inizio perform_swap, best_schedule_value = 283556
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ8   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ4   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:93063.8
+ - lft:376619
+ - candidate value: 283556
+ - best value : 283556
+  --Inizio perform_swap, best_schedule_value = 283556
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ8   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ4   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:93063.8
+ - lft:376619
+ - candidate value: 283556
+ - best value : 283556
+  --Inizio perform_swap, best_schedule_value = 283556
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ8   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ4   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:93063.8
+ - lft:376619
+ - candidate value: 283556
+ - best value : 283556
+  --Inizio perform_swap, best_schedule_value = 283556
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ8   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ5   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ4   GPU USATE: 2   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:93063.8
+ - lft:376619
+ - candidate value: 283556
+ - best value : 283556
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  283556
+
+	### MINIMUM COST: 20.9763; idx: 3
+
+-------- iter 11 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 6
+ - fft:77036.3
+ - lft:412607
+- Ho valutato l'obj fun, valore = 335570
+sto per entrare in visit_neighbor()
+ - A vector: JJ8 JJ5 
+ - B vector: JJ4 JJ8 
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:77036.3
+ - lft:412607
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:77036.3
+ - lft:412607
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:77036.3
+ - lft:412607
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ5   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+Vettore B: 
+ID: JJ4   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967290   GPU USATE SUL NODO: 14   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:77036.3
+ - lft:412607
+ - candidate value: 335570
+ - best value : 335570
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  335570
+
+	### MINIMUM COST: 17.3637; idx: 4
+
+-------- iter 12 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 7
+ - fft:54451.3
+ - lft:390022
+- Ho valutato l'obj fun, valore = 335570
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ8 
+ - B vector: JJ8 JJ6 
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:54451.3
+ - lft:390022
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:54451.3
+ - lft:390022
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:54451.3
+ - lft:390022
+ - candidate value: 335570
+ - best value : 335570
+  --Inizio perform_swap, best_schedule_value = 335570
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+Vettore B: 
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967291   GPU USATE SUL NODO: 13   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:54451.3
+ - lft:390022
+ - candidate value: 335570
+ - best value : 335570
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  335570
+
+	### MINIMUM COST: 12.0537; idx: 3
+
+-------- iter 13 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 8
+ - fft:11309.9
+ - lft:367016
+- Ho valutato l'obj fun, valore = 355706
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ8 
+ - B vector: JJ6 JJ9 
+  --Inizio perform_swap, best_schedule_value = 355706
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 4   
+Vettore B: 
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:11309.9
+ - lft:367016
+ - candidate value: 355706
+ - best value : 355706
+  --Inizio perform_swap, best_schedule_value = 355706
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 4   
+Vettore B: 
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:11309.9
+ - lft:367016
+ - candidate value: 355706
+ - best value : 355706
+  --Inizio perform_swap, best_schedule_value = 355706
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 4   
+Vettore B: 
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:11309.9
+ - lft:367016
+ - candidate value: 355706
+ - best value : 355706
+  --Inizio perform_swap, best_schedule_value = 355706
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 4   
+Vettore B: 
+ID: JJ6   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:11309.9
+ - lft:367016
+ - candidate value: 355706
+ - best value : 355706
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  355706
+
+	### MINIMUM COST: 8.8971; idx: 0
+
+-------- iter 14 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 7
+ - fft:52321.5
+ - lft:356218
+- Ho valutato l'obj fun, valore = 303896
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ8 
+ - B vector: JJ5 JJ7 
+  --Inizio perform_swap, best_schedule_value = 303896
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:52321.5
+ - lft:356218
+ - candidate value: 303896
+ - best value : 303896
+  --Inizio perform_swap, best_schedule_value = 303896
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:52321.5
+ - lft:356218
+ - candidate value: 303896
+ - best value : 303896
+  --Inizio perform_swap, best_schedule_value = 303896
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:52321.5
+ - lft:356218
+ - candidate value: 303896
+ - best value : 303896
+  --Inizio perform_swap, best_schedule_value = 303896
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:52321.5
+ - lft:356218
+ - candidate value: 303896
+ - best value : 303896
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  303896
+
+	### MINIMUM COST: 5.0093; idx: 4
+
+-------- iter 15 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 6
+ - fft:3581.66
+ - lft:303460
+- Ho valutato l'obj fun, valore = 299878
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ8 
+ - B vector: JJ5 JJ7 
+  --Inizio perform_swap, best_schedule_value = 299878
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:3581.66
+ - lft:303460
+ - candidate value: 299878
+ - best value : 299878
+  --Inizio perform_swap, best_schedule_value = 299878
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:3581.66
+ - lft:303460
+ - candidate value: 299878
+ - best value : 299878
+  --Inizio perform_swap, best_schedule_value = 299878
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:3581.66
+ - lft:303460
+ - candidate value: 299878
+ - best value : 299878
+  --Inizio perform_swap, best_schedule_value = 299878
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ8   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+ID: JJ7   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967289   GPU USATE SUL NODO: 15   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:3581.66
+ - lft:303460
+ - candidate value: 299878
+ - best value : 299878
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  299878
+
+	### MINIMUM COST: 0.233471; idx: 4
+
+-------- iter 16 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 5
+ - fft:25104.1
+ - lft:299878
+- Ho valutato l'obj fun, valore = 274774
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ8 
+ - B vector: JJ9 JJ10 
+  --Inizio perform_swap, best_schedule_value = 274774
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:25104.1
+ - lft:299878
+ - candidate value: 274774
+ - best value : 274774
+  --Inizio perform_swap, best_schedule_value = 274774
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:25104.1
+ - lft:299878
+ - candidate value: 274774
+ - best value : 274774
+  --Inizio perform_swap, best_schedule_value = 274774
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:25104.1
+ - lft:299878
+ - candidate value: 274774
+ - best value : 274774
+  --Inizio perform_swap, best_schedule_value = 274774
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ8   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 1   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967293   GPU USATE SUL NODO: 11   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:25104.1
+ - lft:299878
+ - candidate value: 274774
+ - best value : 274774
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  274774
+
+	### MINIMUM COST: 3.76561; idx: 0
+
+-------- iter 17 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 4
+ - fft:3723.15
+ - lft:274774
+- Ho valutato l'obj fun, valore = 271051
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ5 
+ - B vector: JJ5 JJ9 
+  --Inizio perform_swap, best_schedule_value = 271051
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:3723.15
+ - lft:274774
+ - candidate value: 271051
+ - best value : 271051
+  --Inizio perform_swap, best_schedule_value = 271051
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:3723.15
+ - lft:274774
+ - candidate value: 271051
+ - best value : 271051
+  --Inizio perform_swap, best_schedule_value = 271051
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:3723.15
+ - lft:274774
+ - candidate value: 271051
+ - best value : 271051
+  --Inizio perform_swap, best_schedule_value = 271051
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+Vettore B: 
+ID: JJ5   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967292   GPU USATE SUL NODO: 12   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:3723.15
+ - lft:274774
+ - candidate value: 271051
+ - best value : 271051
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  271051
+
+	### MINIMUM COST: 0.227526; idx: 3
+
+-------- iter 18 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 3
+ - fft:25104.2
+ - lft:259642
+- Ho valutato l'obj fun, valore = 234538
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ5 
+ - B vector: JJ10 JJ9 
+  --Inizio perform_swap, best_schedule_value = 234538
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ5   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 4   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:25104.2
+ - lft:259642
+ - candidate value: 234538
+ - best value : 234538
+  --Inizio perform_swap, best_schedule_value = 234538
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ5   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 4   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967294 GPU rimanenti e 2 usate dal Job B
+ su questo nodo voglio settare 0
+used by job 2, used to set8, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 0
+incorrect configuration
+not enough gpu
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+index di B: -1
+ - fft:25104.2
+ - lft:259642
+ - candidate value: 234538
+ - best value : 234538
+  --Inizio perform_swap, best_schedule_value = 234538
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ5   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 4   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:25104.2
+ - lft:259642
+ - candidate value: 234538
+ - best value : 234538
+  --Inizio perform_swap, best_schedule_value = 234538
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ5   GPU USATE: 1   NODO USATO: n2   GPU RIMANENTI SUL NODO: 0   GPU USATE SUL NODO: 1   
+Vettore B: 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+ID: JJ9   GPU USATE: 4   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967294   GPU USATE SUL NODO: 10   
+
+
+
+index di B: 0
+  -- ciclo su indici di B
+al momento sul nodo di B ci sono 4294967294 GPU rimanenti e 2 usate dal Job B
+ su questo nodo voglio settare 0
+used by job 2, used to set8, max 8
+HO RI-SETTATO LE GPU ? ora le rimanenti sono 0
+not enough gpu
+HO ASSEGNATO AL NODO A a B?: 0
+A NON ASSEGNATO A B
+index di B: 1
+ - fft:25104.2
+ - lft:259642
+ - candidate value: 234538
+ - best value : 234538
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  234538
+
+	### MINIMUM COST: 6.16447; idx: 2
+
+-------- iter 19 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 2
+ - fft:75846
+ - lft:244844
+- Ho valutato l'obj fun, valore = 168998
+sto per entrare in visit_neighbor()
+ - A vector: JJ10 JJ9 
+ - B vector: JJ9 JJ10 
+  --Inizio perform_swap, best_schedule_value = 168998
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+
+
+
+index di B: -1
+index di B: -1
+ - fft:75846
+ - lft:244844
+ - candidate value: 168998
+ - best value : 168998
+  --Inizio perform_swap, best_schedule_value = 168998
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 -1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+
+
+
+index di B: 0
+index di B: -1
+ - fft:75846
+ - lft:244844
+ - candidate value: 168998
+ - best value : 168998
+  --Inizio perform_swap, best_schedule_value = 168998
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+-1 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+
+
+
+index di B: -1
+index di B: 1
+ - fft:75846
+ - lft:244844
+ - candidate value: 168998
+ - best value : 168998
+  --Inizio perform_swap, best_schedule_value = 168998
+
+
+### PRINTO INFO SU A e B PER LO SWAP ###
+0 1 
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+Vettore B: 
+ID: JJ9   GPU USATE: 1   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+ID: JJ10   GPU USATE: 2   NODO USATO: n1   GPU RIMANENTI SUL NODO: 4294967295   GPU USATE SUL NODO: 3   
+
+
+
+index di B: 0
+index di B: 1
+ - fft:75846
+ - lft:244844
+ - candidate value: 168998
+ - best value : 168998
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  168998
+
+	### MINIMUM COST: 2.31752; idx: 1
+
+-------- iter 20 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+n1n2
+n1n2
+-------PERFORM LOCAL SEARCH-------
+Initial Schedule size: 1
+ - fft:168998
+ - lft:168998
+- Ho valutato l'obj fun, valore = 0
+sto per entrare in visit_neighbor()
+Ce ne stan troppo poghi
+-- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  0
+
+	### MINIMUM COST: 5.16382; idx: 0
+
+-------- iter 21 --------
+total cost: 75.6346; tardiness: 0
+
+################################################################################
+finish time 2020-03-24 00:48:44.574519
+################################################################################

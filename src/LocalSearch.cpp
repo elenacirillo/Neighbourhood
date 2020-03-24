@@ -55,6 +55,13 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   last_node_idx = best_lni;
 
   // Perform Local Search
+	
+	for (auto el : nodes) std::cout << el.get_ID();
+	std::cout << std::endl;
+
+	for (auto el : opened_nodes) std::cout << el.get_ID();
+	std::cout << std::endl;
+
   bool ls_updated = perform_local_search(best_schedule);
 
   // Se migliora la schedule faccio l'update
@@ -257,6 +264,8 @@ LocalSearch::assign_to_selected_node (const Job& j,
     Schedule sch(best_stp_it, node_index);
     new_schedule[j] = sch;
   }
+if (! compare_configuration(best_stp, new_node)) std::cout << "incorrect configuration" << std::endl;
+if (best_stp.get_nGPUs() > new_node.get_remainingGPUs()) std::cout << "not enough gpu" << std::endl;
   return assigned;
 }
 
