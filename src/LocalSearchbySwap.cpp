@@ -6,7 +6,7 @@ LocalSearchbySwap::LocalSearchbySwap(const std::string &args, const std::string 
 {
 }
 
-std::vector<std::vector<int>>
+vecvec
 LocalSearchbySwap::get_base_possible_swaps(void) const
 {
   /*
@@ -41,7 +41,7 @@ LocalSearchbySwap::get_base_possible_swaps(void) const
   return res;
 }
 
-std::vector<std::vector<int>>
+vecvec
 LocalSearchbySwap::permute_unique(std::vector<int> vec) const
 {
   /*
@@ -60,7 +60,7 @@ LocalSearchbySwap::permute_unique(std::vector<int> vec) const
   return res;
 }
 
-std::vector<std::vector<int>>
+vecvec
 LocalSearchbySwap::get_possible_swaps(void) const
 {
   /*
@@ -80,7 +80,8 @@ LocalSearchbySwap::get_possible_swaps(void) const
   return res;
 }
 
-row_j LocalSearchbySwap::get_top(const map_value_j &map)
+row_j
+LocalSearchbySwap::get_top(const map_value_j &map)
 {
   row_j N;
   if (map.size() == 0)
@@ -88,54 +89,48 @@ row_j LocalSearchbySwap::get_top(const map_value_j &map)
     std::cout << "ERROR: get_top mappa vuota" << std::endl;
     return N;
   }
-/*  auto it = map.begin();
-  unsigned i = 0;
-  while (i < neigh_size)
-  {
-    //std::pair <map_it, map_it>
-    auto ret = map.equal_range(it->first);
-    for (auto j = ret.first; j != ret.second && i < neigh_size; ++j)
-    {
-      N.push_back(j->second);
-      i++;
-    }
-    it++;
-  }
-  return N;*/
-  unsigned cnt=0;
-  for(auto it = map.begin(); it != map.end() and cnt < neigh_size; ++it)
-  {
-	if (! local_best_schedule.find(it->second)->second.isEmpty() )
-		{N.push_back(it->second);
-    		cnt++;}
-	else std::cout << "ERROR " << it->second.get_ID() << " has empty schedule" << std::endl;
-  }
-  return N;
 
+  unsigned cnt = 0;
+  for (auto it = map.begin(); it != map.end() and cnt < neigh_size; ++it)
+  {
+    if (! local_best_schedule.find(it->second)->second.isEmpty() )
+		{
+      N.push_back(it->second);
+    	cnt++;
+    }
+    else
+    {
+      std::cout << "ERROR " << it->second.get_ID() << " has empty schedule" << std::endl;
+    }
+  }
+
+  return N;
 }
 
-row_j LocalSearchbySwap::top_tardiness_jobs()
+row_j
+LocalSearchbySwap::top_tardiness_jobs()
 {
   map_value_j omega_t_ordered; //faccio una mappa così me li ordina per tardiness weight (omega)
   for (const auto &i : local_best_schedule)
   {
-    //if (i.second.get_vmCost() != 0)
       omega_t_ordered.insert(std::make_pair(i.first.get_tardinessWeight(), i.first));
   }
   return get_top(omega_t_ordered);
 }
 
-row_j LocalSearchbySwap::top_cost_jobs(void)
+row_j
+LocalSearchbySwap::top_cost_jobs(void)
 {
   map_value_j costs_ordered;
   for (const auto &i : local_best_schedule)
-  { // qua non dovrebbe servire il controllo vmCost != 0 perchè prendiamo i maggiori per vmCost
+  {
     costs_ordered.insert(std::make_pair(i.second.get_vmCost(), i.first));
   }
   return get_top(costs_ordered);
 }
 
-row_j LocalSearchbySwap::top_margin_jobs(void)
+row_j
+LocalSearchbySwap::top_margin_jobs(void)
 {
   map_value_j margin_ordered;
   for (const auto &i : local_best_schedule)
@@ -145,11 +140,12 @@ row_j LocalSearchbySwap::top_margin_jobs(void)
   return get_top(margin_ordered);
 }
 
-void LocalSearchbySwap::fill_swapping_sets(void)
+void
+LocalSearchbySwap::fill_swapping_sets(void)
 {
   //std::cout << "   --- Sono nel neigh numero: " << neigh_def << std::endl;
 
-  if (neigh_def != neigh_2 && neigh_def != neigh_3) // qualsiasi cosa che non sia due e tre è 1
+  if (neigh_def != neigh_2 && neigh_def != neigh_3)
   {
     A_job_ids = top_tardiness_jobs();
     B_job_ids = top_cost_jobs();
@@ -250,7 +246,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
 
   //for (auto el : swap_indices) std::cout << el << " ";
   //std::cout << std::endl;
-  for(auto el: A_job_ids)
+  for (auto el: A_job_ids)
   {
     std::cout<<"ID: "<<el.get_ID()<<"   ";
     std::cout<<"GPU USATE: "<<local_best_schedule.find(el)->second.get_setup().get_nGPUs()<< "   ";
@@ -260,7 +256,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
     std::cout<<std::endl; 
   }
     std::cout<<"Vettore B: "<<std::endl;    
-  for(auto el: B_job_ids)
+  for (auto el: B_job_ids)
   {
     std::cout<<"ID: "<<el.get_ID()<<"   ";
     std::cout<<"GPU USATE: "<<local_best_schedule.find(el)->second.get_setup().get_nGPUs()<< "   ";
@@ -270,27 +266,23 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
     
     std::cout<<std::endl;    
   }
- std::cout << "\n\n"<< std::endl;
-
-
-
-
+  std::cout << "\n\n"<< std::endl;
   //end PRINTINO
 
   job_schedule_t new_schedule = local_best_schedule;
   std::vector<Node> open_nodes = nodes;
   for (unsigned idx_A = 0; idx_A < swap_indices.size(); ++idx_A)
   {
-	std::cout << " --- index di A " << idx_A << std::endl;
+    std::cout << " --- index di A " << idx_A << std::endl;
     //std::cout << "   --- ciclo su indici di A" << std::endl;          //TOREMOVE
     std::cout << "  -- index_A e A job id: " << idx_A << std::endl; //TOREMOVE
     std::cout << " " << A_job_ids[idx_A].get_ID() << std::endl;     //TOREMOVE
     int idx_B = swap_indices[idx_A];
     std::cout << "index di B: " << idx_B << std::endl; //TOREMOVE
     if (idx_B > -1 and idx_B < B_job_ids.size() and 
-		new_schedule.find(A_job_ids[idx_A])->first.get_ID() == new_schedule.find(B_job_ids[idx_B])->first.get_ID())
+        new_schedule.find(A_job_ids[idx_A])->first.get_ID() == new_schedule.find(B_job_ids[idx_B])->first.get_ID())
     {
-	//std::cout << " --- index di B " << idx_B << std::endl;
+      //std::cout << " --- index di B " << idx_B << std::endl;
       std::cout << "   --- ciclo su indici di B" << std::endl; //TOREMOVE
       job_schedule_t temp = new_schedule;
 
@@ -359,17 +351,17 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
 
         //nodes[old_node_A].set_remainingGPUs(nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A);
 
-      unsigned node_A_remaining_GPU = nodes[old_node_A].get_remainingGPUs();
-      unsigned GPU_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
-      //std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
-      std::cout << "al momento sul nodo di A ci sono " << node_A_remaining_GPU << " GPU rimanenti e " << GPU_used_by_A  << " usate dal Job A" << std::endl;
+        unsigned node_A_remaining_GPU = nodes[old_node_A].get_remainingGPUs();
+        unsigned GPU_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
+        //std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
+        std::cout << "al momento sul nodo di A ci sono " << node_A_remaining_GPU << " GPU rimanenti e " << GPU_used_by_A  << " usate dal Job A" << std::endl;
       
-      unsigned old_node_A_new_numGPU = node_A_remaining_GPU + GPU_used_by_A;
-      std::cout << " su questo nodo voglio settare " << old_node_A_new_numGPU << std::endl;
+        unsigned old_node_A_new_numGPU = node_A_remaining_GPU + GPU_used_by_A;
+        std::cout << " su questo nodo voglio settare " << old_node_A_new_numGPU << std::endl;
 
-      //nodes[old_node_A].set_remainingGPUs(old_node_A_new_numGPU);
+        //nodes[old_node_A].set_remainingGPUs(old_node_A_new_numGPU);
 
-      erase_job_from_node(old_A);
+        erase_job_from_node(old_A);
 
         //std::cout << "HO RI-SETTATO LE GPU di A ? ora le rimanenti sono " << nodes[old_node_A].get_remainingGPUs() << std::endl;
         const setup_time_t &tjvg_B = ttime.at(jobB.get_ID());
@@ -381,39 +373,37 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
         //std::cout << "sto per chiamare update_schedule su B" << std::endl;
         //update_schedule(old_B, temp.find(B_job_ids[idx_B])->second);
 
-	std::cout << "   --- HO ASSEGNATO B a A? : " << assignedBtoA << std::endl;
+      	std::cout << "   --- HO ASSEGNATO B a A? : " << assignedBtoA << std::endl;
 
         if (assignedBtoA)
         {
-		std::cout << "   --- swap " << idx_A << " RIUSCITO !" << std::endl;
+	      	std::cout << "   --- swap " << idx_A << " RIUSCITO !" << std::endl;
           swap(new_schedule,temp);
         }
         else
         {
-	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;	
-//std::cout << "B NON ASSEGNATO AD A" << std::endl;
-	  swap(nodes, open_nodes);
+        	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;	
+          //std::cout << "B NON ASSEGNATO AD A" << std::endl;
+	        swap(nodes, open_nodes);
           //nodes[old_node_A].set_remainingGPUs(node_A_remaining_GPU);
           //nodes[old_node_B].set_remainingGPUs(node_B_remaining_GPU);
         }
         
       }
       else
-	{
-	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;
-	//std::cout << "A NON ASSEGNATO A B" << std::endl;
-	  swap(nodes, open_nodes);
-	  //nodes[old_node_B].set_remainingGPUs(node_B_remaining_GPU);
-	  return new_schedule;
-	}
+      {
+      	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;
+      	//std::cout << "A NON ASSEGNATO A B" << std::endl;
+	      swap(nodes, open_nodes);
+	      //nodes[old_node_B].set_remainingGPUs(node_B_remaining_GPU);
+	      return new_schedule;
+	    }
       
     }
   }
   //swap(new_schedule, local_best_schedule);
   return new_schedule;
 }
-
-
 
 
 void
@@ -425,10 +415,11 @@ LocalSearchbySwap::erase_job_from_node(Schedule & sch)
 
   unsigned max = node.get_usedGPUs() + node.get_remainingGPUs();
   unsigned used = node.get_usedGPUs() - GPU_used_by_job;
-if (node.get_usedGPUs() <= GPU_used_by_job) used = 0;
-//std::cout << "used by job " << GPU_used_by_job << ", used to set" << used << ", max " << max << std::endl;
-
-//std::cout << "used " << std::to_string(used) << ", max " << std::to_string(max) << std::endl;
+  if (node.get_usedGPUs() <= GPU_used_by_job)
+    used = 0;
+    
+  //std::cout << "used by job " << GPU_used_by_job << ", used to set" << used << ", max " << max << std::endl;
+  //std::cout << "used " << std::to_string(used) << ", max " << std::to_string(max) << std::endl;
  
   row_t Row {node.get_VMtype(), node.get_GPUtype(), std::to_string(used), std::to_string(max), std::to_string(node.get_cost())}; 
  

@@ -14,7 +14,7 @@ protected:
 	unsigned long MAX_ITER = 10;
 
 	// tolerance
-	double TOL;
+	double TOL; //UNUDES BY SWAP
 
 	/*
     *  binary parameter to decide the type of search:
@@ -27,7 +27,7 @@ protected:
     unsigned neigh_size = 3;
 
 	// tabu list (tabu search optimization)
-	std::vector<job_schedule_t> previous_best; // per non ricadere in ottimi locali già visitati nelle iterazioni
+	std::vector<job_schedule_t> previous_best;
     
     // schedule after Federica's random iteration
     job_schedule_t initial_schedule; // TODO: vedere se si può rimuovere
@@ -38,10 +38,8 @@ protected:
     // obj function value of the best schedule found by local search so far
     double best_schedule_value_t = INF;
 
-	double evaluate_objective(job_schedule_t& job_schedule) const;
-    //double evaluate_objective(job_schedule_t& job_schedule, double elapsed_time);
-	// evaluate non può essere const perch objective_function chiamata al suo interno non è const
-	// allo stesso modo non può prendere in ingresso un const job_schedule
+	double evaluate_objective(job_schedule_t&) const;
+    //double evaluate_objective(job_schedule_t& job_schedule); // NON CONST perchè chiama objective_function che non lo è
     
     // 
     virtual bool visit_neighbor() = 0;
@@ -52,14 +50,14 @@ protected:
                                         job_schedule_t&, unsigned);
 
 	/* NUOVA VERSIONE ASSEGNAMENTO A NODO CHE FA ANCHE IL CONTROLLO SUL SUBOTTIMO
-	bool
-	LocalSearch::assign_to_selected_node (const Job&, job_schedule_t&, unsigned)
+	bool assign_to_selected_node (const Job&, job_schedule_t&, unsigned);
 	*/
 
-    //
+    // first_finish_time looking at completion percentage
 	double true_first_finish_time(job_schedule_t& job_schedule) const;
-	//
+	// last_finish_time looking at completion percentage
 	double true_last_finish_time(job_schedule_t& job_schedule) const;
+	//  last_finish_time come Federica fa il first
 	double find_last_finish_time (const job_schedule_t&) const;
 
 	// 
@@ -70,7 +68,7 @@ protected:
 
 	bool update_schedule (Schedule & old_sch, Schedule & new_sch);
 
-	bool equalSchedule(const Schedule & lhs, const Schedule & rhs);
+	bool equalSchedule(const Schedule & lhs, const Schedule & rhs); // 
 
 public:
 	// constructor

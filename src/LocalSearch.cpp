@@ -140,11 +140,11 @@ LocalSearch::true_last_finish_time(job_schedule_t& job_schedule) const
 
 /*
 double
-LocalSearch::evaluate_objective(job_schedule_t& job_schedule, double elapsed_time)
+LocalSearch::evaluate_objective(job_schedule_t& job_schedule)
 {
   double fft = find_first_finish_time(job_schedule);
   double lft = find_last_finish_time(job_schedule);
-  return (objective_function(job_schedule, elapsed_time) + fft - lft) ;
+  return (objective_function(job_schedule, fft) + fft - lft) ;
 }
 */
 
@@ -191,8 +191,7 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
-
-if(actual_schedule.size() < 2)
+  if(actual_schedule.size() < 2)
   {
     //std::cout<< "-- Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
     return false;
@@ -214,7 +213,7 @@ if(actual_schedule.size() < 2)
   // Iniziamo la local search
   unsigned iter = 0;
   bool changed = false;
-bool changed_at_least_once = false;
+  bool changed_at_least_once = false;
   bool stop = false;
 
   while ((iter < MAX_ITER) and !(stop))
@@ -227,21 +226,18 @@ bool changed_at_least_once = false;
     std::cout<< "- uscito da visit_neighbor(). changed?: "<< changed << std::endl;//TOREMOVE 
 
     //std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
-
-	changed_at_least_once = (changed = true) ? true : changed_at_least_once;
+    
+    changed_at_least_once = (changed = true) ? true : changed_at_least_once;
     //se ho visitato l'intorno ma non ho trovato una opzione miglore
     if (!changed)
-      {
-	stop = true;
-        //break; //usciamo dal while
-      }
-    //controllo che la best appena trovata (quindi solo se changed = true) non sia una che avevo già trovato
-    // questo può succedere solo se usiamo come objective function la funzione totale, mentre con il solo delta (differenza dei finisch time)
-    // non aggiorniamo se non è strettamente migliroante
+    {
+      stop = true;
+      //break; //usciamo dal while
+    }
 
     /*
     for (const job_schedule_t & i : previous_best)
-      if (i == best_schedule) // sono in un ciclo perchè ho ottenuto una funzione già trovata
+      if (equalScheule(i, local_best_schedule)) // sono in un ciclo perchè ho ottenuto una funzione già trovata
         {
           stop = true;
           break;
@@ -276,9 +272,17 @@ LocalSearch::assign_to_selected_node (const Job& j,
     new_node.set_remainingGPUs(best_stp.get_nGPUs());
     Schedule sch(best_stp_it, node_index);
     new_schedule[j] = sch;
-  }/*
-if (! compare_configuration(best_stp, new_node)) std::cout << "    ---- assignement failed: incorrect configuration" << std::endl;
-if (best_stp.get_nGPUs() > new_node.get_remainingGPUs()) std::cout << "    ---- assignement failed: not enough gpu" << std::endl;*/
+  }
+  /*
+  if (! compare_configuration(best_stp, new_node))
+  {
+    std::cout << "    ---- assignement failed: incorrect configuration" << std::endl;
+  }
+  if (best_stp.get_nGPUs() > new_node.get_remainingGPUs())
+  {
+    std::cout << "    ---- assignement failed: not enough gpu" << std::endl;
+  }
+  */
   return assigned;
 }
 
