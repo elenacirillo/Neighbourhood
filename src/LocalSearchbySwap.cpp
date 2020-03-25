@@ -129,7 +129,9 @@ LocalSearchbySwap::top_cost_jobs(void)
   }
   for (const auto &i: temp)
   {
-    costs_ordered.insert(std::make_pair(i.second.get_vmCost(), i.first));
+    Node N = nodes[i.second.get_node_idx()];
+    double cost = N.get_cost() * i.second.get_setup().get_nGPUs / (N.get_remainingGPUs() + N.get_usedGPUs());
+    costs_ordered.insert(std::make_pair(cost, i.first));
   }
   return get_top(costs_ordered);
 }
@@ -171,7 +173,8 @@ LocalSearchbySwap::fill_swapping_sets(void)
   }
 }
 
-bool LocalSearchbySwap::visit_neighbor()
+bool
+LocalSearchbySwap::visit_neighbor()
 {
   // perform local search only if there are enough jobs
  /* if(local_best_schedule.size() < 2)
