@@ -128,11 +128,12 @@ LocalSearchbySwap::top_cost_jobs(void)
     temp.erase(j);
   }
   for (const auto &i: temp)
-  {
+  {if (! i.second.isEmpty() )
+		{
     Node N = nodes[i.second.get_node_idx()];
-    double cost = N.get_cost() * i.second.get_setup().get_nGPUs / (N.get_remainingGPUs() + N.get_usedGPUs());
+    double cost = N.get_cost() * i.second.get_setup().get_nGPUs() / (N.get_remainingGPUs() + N.get_usedGPUs());
     costs_ordered.insert(std::make_pair(cost, i.first));
-  }
+  }}
   return get_top(costs_ordered);
 }
 
