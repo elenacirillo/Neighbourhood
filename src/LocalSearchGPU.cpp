@@ -105,6 +105,7 @@ LocalSearchGPU::visit_neighbor()
     // candidate schedule, obtained by modifying the initial schedule accordingly to neighbor infos
     job_schedule_t candidate_schedule = change_GPU(node_idx, new_stp);
 
+
     // evaluate the objective in this point of the neighborhood
     double candidate_value = evaluate_objective(candidate_schedule);
 
@@ -167,9 +168,10 @@ LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & temp_stp)
     // old setup
     const Setup & old_stp = sch.get_setup();
 
-    // if the setup is the same return
-    //if(temp_stp == old_stp)
-    //  break;
+    // if the new setup is the same as the current then return
+    // (if it happens, it happens in the first iteration)
+    if(temp_stp == old_stp)
+      break;
 
     // old number of GPU used
     unsigned nGPUs = old_stp.get_nGPUs(); // questa info è diversa per ogni job!
@@ -212,7 +214,7 @@ LocalSearchGPU::generate_neighborhood(void)
   if (tochange.empty())
   {
     // I take the first neigh_size nodes
-    for(int i=0; i < std::min<unsigned long>(nodes.size()-1,neigh_size); ++i)
+    for(int i=0; i < std::min<unsigned long>(last_node_idx,neigh_size); ++i)
     {
       tochange.insert(i);
     }
@@ -221,8 +223,10 @@ LocalSearchGPU::generate_neighborhood(void)
   // build the neighbourhood of each node
   for(unsigned n: tochange)
   {
+    std::cout << n << ", " << std::endl;
+
     // max num of GPU for the current node
-    unsigned max_nGPUs = nodes[n].get_usedGPUs() + nodes[n].get_remainingGPUs();
+    unsigned max_nGPUs = nodes[n].get_usedGPUs() + nodes[n].get_remainingGPUs(); // nodes[2] non è open
 
     // possible setups with the same max num of GPU
     std::unordered_set<Setup> stps = GPUs_setups[max_nGPUs];
