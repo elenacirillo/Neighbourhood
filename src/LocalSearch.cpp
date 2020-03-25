@@ -62,6 +62,7 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   if (ls_updated)
   {
     best_schedule = local_best_schedule;
+    std::cout << "    * Better configuration found via local search * " << std::endl;
   }
 
   std::cout << "\n\t### MINIMUM COST: " << minTotalCost << "; idx: " 
@@ -208,7 +209,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
+  std::cout<< "- Ho valutato l'obj fun delta, valore = " << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
@@ -216,9 +217,10 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   bool changed_at_least_once = false;
   bool stop = false;
 
-  while ((iter < MAX_ITER) and !(stop))
-  {std::cout << std::endl;
-	std::cout << " - iter " << iter << " of " << MAX_ITER << std::endl;
+  while ((iter < MAX_ITER) and !(stop)) //for (unsigned iter = 0; iter < MAX_ITER && !stop; +iter ++)
+  {
+    std::cout << std::endl;
+    std::cout << " - iter " << iter << " of " << MAX_ITER << std::endl;
     //std::cout<< "- sto per entrare in visit_neighbor()"<< std::endl; 
     
     changed = visit_neighbor();
@@ -246,12 +248,12 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     iter++;
   }
 
-  if (changed_at_least_once) //TODO entrare qui
+  /*if (changed_at_least_once) //TODO entrare qui
   {
     std::cout << "    * Better configuration found via local search *" << std::endl;
   }
-
-  return changed;
+*/
+  return changed_at_least_once;
 }
 
 

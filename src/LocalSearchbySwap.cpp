@@ -218,12 +218,13 @@ LocalSearchbySwap::visit_neighbor()
 
 
   bool changed = false;
-unsigned iter = 0;
+  unsigned iter = 0;
+
   for (auto v : possible_swap_indices)
   {
-std::cout << "\n -- swap vector " << iter << " of " << possible_swap_indices.size() << " : ";
-for (auto el : v) std::cout << el << " ";
-std::cout << std::endl;
+    std::cout << "\n -- swap vector " << iter << " of " << possible_swap_indices.size() << " : ";
+    for (auto el : v) std::cout << el << " ";
+    std::cout << std::endl;
     std::cout << "  -- sto per entrare in perform_swap" << std::endl;
     job_schedule_t candidate_schedule = perform_swap(v);
 
@@ -239,7 +240,7 @@ std::cout << std::endl;
       if (!best_fit)
         return changed;
     }
-iter ++;
+    iter ++;
   }
 
   return changed;
