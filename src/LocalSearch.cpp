@@ -191,7 +191,7 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
-  if(actual_schedule.size() < 2)
+  if(actual_schedule.size() < 3)
   {
     //std::cout<< "-- Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
     return false;
@@ -203,12 +203,12 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   //previous_best.clear();
   local_best_schedule = actual_schedule;
   initial_schedule = actual_schedule;
-  std::cout<< "- Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
+  //std::cout<< "- Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
   //previous_best.push_back(actual_schedule);
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
-  //std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
+  std::cout<< "- Ho valutato l'obj fun, valore = " << best_schedule_value_t << std::endl; 
 
   // Iniziamo la local search
   unsigned iter = 0;
@@ -225,7 +225,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
     std::cout<< "- uscito da visit_neighbor(). changed?: "<< changed << std::endl;//TOREMOVE 
 
-    //std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
+    std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
     
     changed_at_least_once = (changed = true) ? true : changed_at_least_once;
     //se ho visitato l'intorno ma non ho trovato una opzione miglore

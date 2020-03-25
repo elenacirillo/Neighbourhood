@@ -122,7 +122,12 @@ row_j
 LocalSearchbySwap::top_cost_jobs(void)
 {
   map_value_j costs_ordered;
-  for (const auto &i : local_best_schedule)
+  job_schedule_t temp = local_best_schedule;
+  for(const auto &j: A_job_ids)
+  {
+    temp.erase(j);
+  }
+  for (const auto &i: temp)
   {
     costs_ordered.insert(std::make_pair(i.second.get_vmCost(), i.first));
   }
@@ -175,7 +180,7 @@ bool LocalSearchbySwap::visit_neighbor()
     return false;
   }*/
   //neigh_size = std::min(neigh_size, local_best_schedule.size());
-if (local_best_schedule.size() < neigh_size) neigh_size = local_best_schedule.size();
+  //if (local_best_schedule.size() < neigh_size)  neigh_size = local_best_schedule.size();
 
 
 
@@ -186,9 +191,9 @@ if (local_best_schedule.size() < neigh_size) neigh_size = local_best_schedule.si
   //std::cout << "  -- Entro in fill_swapping_sets()" << std::endl; //TOREMOVE
   fill_swapping_sets();
 
-  if (A_job_ids.size() == 0 || B_job_ids.size() == 0)
+  if (A_job_ids.size() == 0 || B_job_ids.size() == 0 || !(A_job_ids.size()==B_job_ids.size() and A_job_ids.size()==neigh_size))
   {
-    std::cout << " -- ERRORE: A o B vuoti dopo il fill" << std::endl; //TOREMOVE
+    std::cout << " -- Non ci sono abbastanza jobs schedulati per riempire A e B" << std::endl; //TOREMOVE
     return false;
   }
   /* start //TOREMOVE*/
@@ -206,6 +211,7 @@ if (local_best_schedule.size() < neigh_size) neigh_size = local_best_schedule.si
   std::cout << std::endl;
 */
   /*END TO REMOVE*/
+
 
   bool changed = false;
 unsigned iter = 0;
@@ -239,13 +245,12 @@ job_schedule_t
 LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
 {
 
-  std::cout << "   --- Inizio perform_swap, best_schedule_value = " << best_schedule_value_t << std::endl; //TOREMOVE
+  //std::cout << "   --- Inizio perform_swap, best_schedule_value = " << best_schedule_value_t << std::endl; //TOREMOVE
 
   // PRINTINO DEI TUTTE LE INFO SU A e B 
- std::cout << "\n\n### PRINTO INFO SU A e B PER LO SWAP ###"<< std::endl;
-
-  //for (auto el : swap_indices) std::cout << el << " ";
-  //std::cout << std::endl;
+  std::cout << "\n\n### PRINTO INFO SU A e B PER LO SWAP ###"<< std::endl;
+  for (auto el : swap_indices) std::cout << el << " ";
+  std::cout << std::endl;
   for (auto el: A_job_ids)
   {
     std::cout<<"ID: "<<el.get_ID()<<"   ";
@@ -273,17 +278,17 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
   std::vector<Node> open_nodes = nodes;
   for (unsigned idx_A = 0; idx_A < swap_indices.size(); ++idx_A)
   {
-    std::cout << " --- index di A " << idx_A << std::endl;
+   // std::cout << " --- index di A " << idx_A << std::endl;
     //std::cout << "   --- ciclo su indici di A" << std::endl;          //TOREMOVE
-    std::cout << "  -- index_A e A job id: " << idx_A << std::endl; //TOREMOVE
-    std::cout << " " << A_job_ids[idx_A].get_ID() << std::endl;     //TOREMOVE
+    //std::cout << "  -- index_A e A job id: " << idx_A << std::endl; //TOREMOVE
+   // std::cout << " " << A_job_ids[idx_A].get_ID() << std::endl;     //TOREMOVE
     int idx_B = swap_indices[idx_A];
-    std::cout << "index di B: " << idx_B << std::endl; //TOREMOVE
+    //std::cout << "index di B: " << idx_B << std::endl; //TOREMOVE
     if (idx_B > -1 and idx_B < B_job_ids.size() and 
         new_schedule.find(A_job_ids[idx_A])->first.get_ID() == new_schedule.find(B_job_ids[idx_B])->first.get_ID())
     {
       //std::cout << " --- index di B " << idx_B << std::endl;
-      std::cout << "   --- ciclo su indici di B" << std::endl; //TOREMOVE
+   //   std::cout << "   --- ciclo su indici di B" << std::endl; //TOREMOVE
       job_schedule_t temp = new_schedule;
 
       const auto &  elem_of_A = temp.find(A_job_ids[idx_A]);
@@ -298,11 +303,12 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
       const Job & jobB = elem_of_B->first;
       Node  & nodeB = nodes[old_node_B];
 
+/*
       std::cout << "  -- elem_of_A contiene: " << elem_of_A->first.get_ID()<< std::endl;//TOREMOVE
       std::cout << "  -- seleziono vecchio nodo di elem_of_A: "<<old_node_A<< std::endl; //TOREMOVE
       std::cout << "  -- elem_of_B contiene: " << elem_of_B->first.get_ID()<< std::endl;//TOREMOVE
       std::cout << "  -- seleziono vecchio nodo di elem_of_B: "<<old_node_B<< std::endl; //TOREMOVE
-	
+*/	
 
       // prima provo ad assegnare A dove c'era B
       const setup_time_t &tjvg_A = ttime.at(jobA.get_ID());
@@ -317,20 +323,20 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
       unsigned node_B_remaining_GPU = nodeB.get_remainingGPUs();
       unsigned GPU_used_by_B = elem_of_B->second.get_setup().get_nGPUs();
       //std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
-      std::cout << "al momento sul nodo di B ci sono " << node_B_remaining_GPU << " GPU rimanenti e " << GPU_used_by_B  << " usate dal Job B" << std::endl;
+      //std::cout << "al momento sul nodo di B ci sono " << node_B_remaining_GPU << " GPU rimanenti e " << GPU_used_by_B  << " usate dal Job B" << std::endl;
       
       unsigned old_node_B_new_numGPU = node_B_remaining_GPU + GPU_used_by_B;
-      std::cout << " su questo nodo voglio settare " << old_node_B_new_numGPU << std::endl;
+     // std::cout << " su questo nodo voglio settare " << old_node_B_new_numGPU << std::endl;
 
       // l'errore è qua ! set_remaining funziona solo con unsigned e non setta ma decresce il numero delle rimanenti,
       //mentre noi volevamo usarlo per aumentare il numero
       //nodes[old_node_B].set_remainingGPUs(old_node_B_new_numGPU); 
       
       erase_job_from_node(old_B);
-      std::cout << "HO RI-SETTATO LE GPU ? ora le rimanenti sono " << nodeB.get_remainingGPUs() << std::endl; //TOREMOVE
+     // std::cout << "HO RI-SETTATO LE GPU ? ora le rimanenti sono " << nodeB.get_remainingGPUs() << std::endl; //TOREMOVE
 
       bool assignedAtoB = assign_to_selected_node(jobA, best_stpA, temp, old_node_B);
-      std::cout << "   --- HO ASSEGNATO A a B?: " << assignedAtoB << std::endl; //TOREMOVE
+      //std::cout << "   --- HO ASSEGNATO A a B?: " << assignedAtoB << std::endl; //TOREMOVE
 
       if (assignedAtoB)
       {
@@ -354,16 +360,16 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
         unsigned node_A_remaining_GPU = nodes[old_node_A].get_remainingGPUs();
         unsigned GPU_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
         //std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
-        std::cout << "al momento sul nodo di A ci sono " << node_A_remaining_GPU << " GPU rimanenti e " << GPU_used_by_A  << " usate dal Job A" << std::endl;
+    //    std::cout << "al momento sul nodo di A ci sono " << node_A_remaining_GPU << " GPU rimanenti e " << GPU_used_by_A  << " usate dal Job A" << std::endl;
       
         unsigned old_node_A_new_numGPU = node_A_remaining_GPU + GPU_used_by_A;
-        std::cout << " su questo nodo voglio settare " << old_node_A_new_numGPU << std::endl;
+     //   std::cout << " su questo nodo voglio settare " << old_node_A_new_numGPU << std::endl;
 
         //nodes[old_node_A].set_remainingGPUs(old_node_A_new_numGPU);
 
         erase_job_from_node(old_A);
 
-        //std::cout << "HO RI-SETTATO LE GPU di A ? ora le rimanenti sono " << nodes[old_node_A].get_remainingGPUs() << std::endl;
+       // std::cout << "HO RI-SETTATO LE GPU di A ? ora le rimanenti sono " << nodes[old_node_A].get_remainingGPUs() << std::endl;
         const setup_time_t &tjvg_B = ttime.at(jobB.get_ID());
         Dstar dstarB(jobB, tjvg_B, current_time);
         if (!full_greedy)
@@ -418,7 +424,7 @@ LocalSearchbySwap::erase_job_from_node(Schedule & sch)
   if (node.get_usedGPUs() <= GPU_used_by_job)
     used = 0;
     
-  //std::cout << "used by job " << GPU_used_by_job << ", used to set" << used << ", max " << max << std::endl;
+ // std::cout << "used by job " << GPU_used_by_job << ", used to set" << used << ", max " << max << std::endl;
   //std::cout << "used " << std::to_string(used) << ", max " << std::to_string(max) << std::endl;
  
   row_t Row {node.get_VMtype(), node.get_GPUtype(), std::to_string(used), std::to_string(max), std::to_string(node.get_cost())}; 

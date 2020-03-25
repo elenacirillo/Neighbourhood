@@ -13,15 +13,17 @@ Configuration::set_configuration (const Setup& stp)
 void
 Configuration::update_n_GPUs (unsigned g)
 {
-  used_GPUs += g;
-  if (remaining_GPUs > g)
+  unsigned max_GPUs = used_GPUs + remaining_GPUs;
+  if (remaining_GPUs >= g)
   {
     remaining_GPUs -= g;
+    used_GPUs += g;
   }
   else
   {
-    //std::cout << "ERROR: trying to decrease an unsigned" << std::endl;
+    std::cout << "ERROR: trying to occupy to more than the num of remaining gpus." << std::endl;
     remaining_GPUs = 0;
+    used_GPUs = max_GPUs;
   }
 }
 
