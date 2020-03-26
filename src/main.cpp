@@ -10,7 +10,6 @@
 #include "LocalSearchGPU.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
-
 void print_help (void);
 
 int main (int argc, char *argv[])

@@ -28,6 +28,14 @@ Schedule::get_node_idx (void) const
 }
 
 void
+Schedule::set_tardiness (double t) 
+{
+  tardiness = t;
+  if (tardiness < 1e-7)
+    tardinessCost = 0.0;
+}
+
+void
 Schedule::compute_vmCost (unsigned g)
 {
   if (! empty_schedule)

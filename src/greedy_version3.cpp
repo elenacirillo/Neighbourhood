@@ -51,6 +51,24 @@ Greedy_version3::postprocessing (job_schedule_t& current_schedule)
           sch.change_setup(new_stp_it);
         }
       }
+    }
+  }
+
+  // loop over the current schedule
+  for (job_schedule_t::iterator schit = current_schedule.begin();
+       schit != current_schedule.end(); ++schit)
+  {
+    const Job& j = schit->first;
+    Schedule& sch = schit->second;
+    const setup_time_t& tjvg = ttime.at(j.get_ID());
+
+    // if the schedule is not empty
+    if (! sch.isEmpty())
+    {
+      unsigned node_idx = sch.get_node_idx();
+
+      Node& node = nodes[node_idx];
+      Setup node_stp(node.get_VMtype(), node.get_GPUtype());
 
       // if there are still idle GPUs in the current configuration, determine 
       // the job that would get the highest speed-up by getting the 
@@ -91,7 +109,10 @@ Greedy_version3::postprocessing (job_schedule_t& current_schedule)
       unsigned node_idx = sch.get_node_idx();
       Node& node = nodes[node_idx];
       const Setup& new_stp = new_stp_it->first;
-      node.set_remainingGPUs(new_stp.get_nGPUs());
+
+      unsigned previous_g = sch.get_setup().get_nGPUs();
+
+      node.set_remainingGPUs(new_stp.get_nGPUs() - previous_g);
       sch.change_setup(new_stp_it);
     }
   }
