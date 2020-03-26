@@ -57,14 +57,11 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   // Perform Local Search
 
   bool ls_updated = perform_local_search(best_schedule);
-
-  // Se migliora la schedule faccio l'update
-  if (ls_updated)
+  if (ls_updated) // Se migliora la schedule faccio l'update
   {
     best_schedule = local_best_schedule;
     std::cout << "    * Better configuration found via local search * " << std::endl;
   }
-
   std::cout << "\n\t### MINIMUM COST: " << minTotalCost << "; idx: " 
             << best_idx << std::endl;
 
