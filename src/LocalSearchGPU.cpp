@@ -1,5 +1,22 @@
 #include "LocalSearchGPU.hpp"
 
+void printer2(job_schedule_t& job_schedule)
+{
+    std::cout << "Job  |  " << "N  |  " << "VM  | \t " << "GPU_type  |  " << "nGPUs  |  " 
+              << "max_nGPUs  |  " << "cost | " << "tempo" << std::endl;
+    for (auto js: job_schedule)
+    {
+        const Job & j = js.first;
+        const Schedule & sch = js.second;
+        const Setup & stp = sch.get_setup();
+        std::cout << j.get_ID() << "  |  " << sch.get_node_idx() << "  |  " << stp.get_VMtype() << "  |  "
+                  << stp.get_GPUtype() << "  |  " <<  stp.get_nGPUs() << "  |  " << stp.get_maxnGPUs() << "  |  "
+                  << stp.get_cost() << "  |  " << sch.get_selectedTime() << std::endl;
+    }
+    std::cout << std::endl;
+    return;
+}
+
 //________________________________________________________________________________________________________________________________
 
 // constructor
@@ -102,44 +119,66 @@ LocalSearchGPU::visit_neighbor()
     unsigned node_idx = neighbor.first;
     Setup & new_stp = neighbor.second;
 
-    // candidate schedule, obtained by modifying the initial schedule accordingly to neighbor infos
-    job_schedule_t candidate_schedule = change_GPU(node_idx, new_stp);
+    // TODO: rimuovere
+    std::cout << std::endl << "Sto visitando il nodo: " << node_idx << std::endl;
+    Node & nn = nodes[node_idx];
+    std::cout << "old_stp: " << nn.get_VMtype() << "," << nn.get_GPUtype() << "," << nn.get_usedGPUs() << "," << nn.get_cost() << std::endl;
+    std::cout << "new_stp: "; new_stp.print(std::cout);
 
-
-    // evaluate the objective in this point of the neighborhood
-    double candidate_value = evaluate_objective(candidate_schedule);
-
-    // if this schedule improves the objective function
-    if(candidate_value < best_schedule_value_t)
+    // if the point of the neighbor doesn't coincide with the one where I am
+    if (new_stp.get_VMtype()  != nodes[node_idx].get_VMtype() &&
+        new_stp.get_GPUtype() != nodes[node_idx].get_GPUtype())
     {
-      // update the best schedule and the best value
-      local_best_schedule = candidate_schedule;
-      best_schedule_value_t = candidate_value;
-      changed = true;
+      // candidate schedule, obtained by modifying the initial schedule accordingly to neighbor infos
+      job_schedule_t candidate_schedule = change_GPU(node_idx, new_stp);
 
-      // --------------------------------------------------
-      // update the configuration of the node accordingly
+      std::cout << std::endl << "candidate_schedule:" << std::endl;
+      printer2(candidate_schedule);
 
-      // GPU used with the old configuration (deve rimanere invariato nel cambio di VM)
-      unsigned used_GPUs = nodes[node_idx].get_usedGPUs();
+      // evaluate the objective in this point of the neighborhood
+      double candidate_value = evaluate_objective(candidate_schedule);
 
-      // cambio la configuration del nodo a partire da quella del neighbor
-      nodes[node_idx].change_setup(new_stp);
+      std::cout << "Obj function candidate_value: " << candidate_value << std::endl;
 
-      // ora però devo aggiornare il numero di GPU in uso su questo nodo
-      nodes[node_idx].set_remainingGPUs(used_GPUs);
-
-      // --------------------------------------------------
-
-      // if I'm not performing a best improvement search
-      if(!best_fit)
+      // if this schedule improves the objective function
+      if(candidate_value < best_schedule_value_t)
       {
-        break;
+        // update the best schedule and the best value
+        local_best_schedule = candidate_schedule;
+        best_schedule_value_t = candidate_value;
+        changed = true;
+
+        //printer2(local_best_schedule);
+
+        // --------------------------------------------------
+        // update the configuration of the node accordingly
+
+        // GPU used with the old configuration (deve rimanere invariato nel cambio di VM)
+        unsigned used_GPUs = nodes[node_idx].get_usedGPUs();
+
+        // cambio la configuration del nodo a partire da quella del neighbor
+        nodes[node_idx].change_setup(new_stp);
+
+        // ora però devo aggiornare il numero di GPU in uso su questo nodo
+        nodes[node_idx].set_remainingGPUs(used_GPUs);
+
+        std::cout <<std::endl << "Ho aggiornato la config del nodo" << std::endl;
+        Node & nn = nodes[node_idx];
+        std::cout << "new_stp: " << nn.get_VMtype() << "," << nn.get_GPUtype() << "," << nn.get_usedGPUs() << "," << nn.get_cost() << std::endl;  
+
+        // --------------------------------------------------
+
+        // if I'm not performing a best improvement search
+        if(!best_fit)
+        {
+          break;
+        }
+
       }
 
-    }
+    }// end if
 
-  }
+  } // end for
 
   return changed;
 
@@ -154,24 +193,33 @@ job_schedule_t
 LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & temp_stp)
 {
   // new schedule to modify
-  job_schedule_t new_schedule = initial_schedule;
+  job_schedule_t new_schedule = local_best_schedule;
 
   // get the jobs in execution on the node "node_idx"
   std::unordered_set<Job> jobs_to_modify = node_jobs[node_idx];
 
+  /*
+  std::cout << "Jobs sul nodo" << std::endl;
+  for (auto j: jobs_to_modify)
+  {
+    std::cout << j.get_ID() << ", ";
+  }
+  std::cout << std::endl;
+  */
+  std::cout << std::endl << "Scorro i jobs sul nodo" << std::endl << std::endl;
+
   // cycle over these jobs
   for(Job j: jobs_to_modify)
   {
+    std::cout << j.get_ID() << std::endl;
+
     // schedule of job j
     Schedule & sch = new_schedule[j];
 
     // old setup
     const Setup & old_stp = sch.get_setup();
 
-    // if the new setup is the same as the current then return
-    // (if it happens, it happens in the first iteration)
-    if(temp_stp == old_stp)
-      break;
+    std::cout << "old_stp: "; old_stp.print(std::cout);
 
     // old number of GPU used
     unsigned nGPUs = old_stp.get_nGPUs(); // questa info è diversa per ogni job!
@@ -186,6 +234,8 @@ LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & temp_stp)
 
     // new setup
     Setup new_stp(build_stp);
+
+    std::cout << "new_stp: "; new_stp.print(std::cout);
 
     // get the setup infos related to job "j" and "new_stp"
     setup_time_t::const_iterator c_newsetup = ttime[j.get_ID()].find(new_stp);
@@ -213,7 +263,7 @@ LocalSearchGPU::generate_neighborhood(void)
   // If no nodes have jobs in tardiness
   if (tochange.empty())
   {
-    // I take the first neigh_size nodes
+    // I take the first neigh_size nodes // TODO: randomize this selection
     for(int i=0; i < std::min<unsigned long>(last_node_idx,neigh_size); ++i)
     {
       tochange.insert(i);
@@ -223,8 +273,6 @@ LocalSearchGPU::generate_neighborhood(void)
   // build the neighbourhood of each node
   for(unsigned n: tochange)
   {
-    std::cout << n << ", " << std::endl;
-
     // max num of GPU for the current node
     unsigned max_nGPUs = nodes[n].get_usedGPUs() + nodes[n].get_remainingGPUs(); // nodes[2] non è open
 
@@ -250,8 +298,8 @@ LocalSearchGPU::generate_neighborhood(void)
 std::set<unsigned> LocalSearchGPU::top_tardiness_nodes(unsigned top)
 {
   // DA RISCRIVERE, ORA LA STO RESTITUENDO VUOTA PER FAR GIRARE IL PROGRAMMA COMUNQUE
-
   /*
+  
   // TODO here I should add a comparator ot order by number of jobs in tardiness
   // map <node_idx, numero di job in tardiness>
   std::map<unsigned,unsigned> topnodes;
@@ -270,10 +318,13 @@ std::set<unsigned> LocalSearchGPU::top_tardiness_nodes(unsigned top)
   {
     result.insert(node_count.first);
   }
+  
   */
+
   std::set<unsigned> result;
 
   return result;
 }
 
 //________________________________________________________________________________________________________________________________
+

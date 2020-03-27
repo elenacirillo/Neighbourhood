@@ -1,11 +1,28 @@
 #include "LocalSearch.hpp"
 
+void printer(job_schedule_t& job_schedule)
+{
+    std::cout << "Job  |  " << "N  |  " << "VM  |  " << "GPU_type  |  " << "nGPUs  |  " 
+              << "max_nGPUs  |  " << "cost | " << "tempo" << std::endl;
+    for (auto js: job_schedule)
+    {
+        const Job & j = js.first;
+        const Schedule & sch = js.second;
+        const Setup & stp = sch.get_setup();
+        std::cout << j.get_ID() << "  |  " << sch.get_node_idx() << "  |  " << stp.get_VMtype() << "  |  "
+                  << stp.get_GPUtype() << "  |  " <<  stp.get_nGPUs() << "  |  " << stp.get_maxnGPUs() << "  |  "
+                  << stp.get_cost() << "  |  " << sch.get_selectedTime() << std::endl;
+    }
+    std::cout << std::endl;
+    return;
+}
+
+
 LocalSearch::LocalSearch(const std::string& args, const std::string& d,
                         const std::string& file_jobs, const std::string& file_times,
                         const std::string& file_nodes):
   Greedy_version4(args, d, file_jobs, file_times, file_nodes)
 {}
-
 
 //________________________________________________________________________________________________________________________________
 // é la funzione di Greedy, noi modifchiamo solo la fine, ci inseriamo e facciamo la Local Search
@@ -56,6 +73,7 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   std::swap(opened_nodes, nodes);
   last_node_idx = best_lni;
 
+/*
   // Perform Local Search
   bool ls_updated = perform_local_search(best_schedule);
 
@@ -64,6 +82,10 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   {
     best_schedule = local_best_schedule;
   }
+  */
+  //RIRMRM
+  //std::cout << "\nBEST SCHEDULE:" << std::endl; 
+  //printer(best_schedule);
 
   return best_schedule;
 }
@@ -144,13 +166,14 @@ LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
-
+  /*
   // perform local search only if there are enough jobs
   if(actual_schedule.size() < neigh_size)
   {
     std::cout<< "Ce ne stan troppo poghi"<< std::endl; 
     return false;
   }
+  */
   std::cout<< "SEI DENTRO perform_local_search"<< std::endl; 
   
   // initialize members
@@ -163,6 +186,20 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
   std::cout<< "HO CALCOLATO LA OBJ,  VALORE = " << best_schedule_value_t << std::endl; 
+
+  // STAMPO LA SUA SCHEDULEEE
+  std::cout << std::endl << "+++ Schedule di Federica +++" << std::endl;
+  printer(actual_schedule);
+  /*
+  for (auto js: actual_schedule)
+  {
+    std::cout << js.first.get_ID() << std::endl;
+    js.second.print(js.first, nodes, std::cout);
+    std::cout << std::endl;
+  }
+  std::cout << std::endl;
+  */
+
 
   // Iniziamo la local search
   unsigned iter = 0;
@@ -179,6 +216,19 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     std::cout<< "HO VISITATOOOO"<< std::endl; 
 
     std::cout<< "VALORE NUOVA OBJECTIVE = "<< best_schedule_value_t << std::endl; 
+
+    std::cout << "+++ Nuova schedule +++" << std::endl;
+    printer(local_best_schedule);
+
+    // TODO: rimuovere
+    std::cout << std::endl << "NODI: " << std::endl;
+    for (int i = 0; i < last_node_idx; ++i)
+    {
+      Node & nn = nodes[i];
+      std::cout << "Node_idx: " << i << ",   ";
+      std::cout << "old_stp: " << nn.get_VMtype() << "," << nn.get_GPUtype() << "," << nn.get_usedGPUs() << "," << nn.get_cost() << std::endl;
+    }
+    std::cout << std::endl;
 
     // se visit_neighbor è true, changed diventa true, altrimenti rimane quello che era prima
 

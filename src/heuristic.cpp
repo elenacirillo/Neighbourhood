@@ -141,8 +141,8 @@ Heuristic::update_scheduled_jobs (unsigned iter, double elapsed_time)
       cp = elapsed_time * 100 / sch.get_selectedTime();
       sch.set_cP_step(cp);
       //std::cout << "; execution_time: " << elapsed_time
-      //          << "; selected_time: " << sch.get_selectedTime()
-      //          << "; cp: " << cp << std::endl;
+      //         << "; selected_time: " << sch.get_selectedTime()
+      //         << "; cp: " << cp << std::endl;
 
       // get number of used GPUs on the current node
       unsigned node_idx = sch.get_node_idx();
@@ -183,7 +183,10 @@ Heuristic::update_scheduled_jobs (unsigned iter, double elapsed_time)
       sch.compute_tardinessCost(j.get_tardinessWeight());
     }
     else
+    {
+      sch.set_tardiness(0.0);
       all_completed = false;
+    }
   }
 
   return all_completed;
@@ -265,6 +268,34 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
 
       // determine the best schedule
       job_schedule_t best_schedule = perform_scheduling(max_random_iter);
+
+      //____________________________________________________________________________________________________
+
+      // Print the schedule
+      std::cout << "\nBEST SCHEDULE: " << std::endl;
+      std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs " << std::endl;
+      for (const auto & jsss: best_schedule)
+      {
+          const Job & jjj = jsss.first;
+          const Schedule & sss = jsss.second;
+          const Setup & stppp = sss.get_setup();
+          std::cout << jjj.get_ID() << ", " << sss.get_node_idx() << ", " << stppp.get_VMtype() << ", "
+                    << stppp.get_GPUtype() << ", " <<  stppp.get_nGPUs() << ", " << stppp.get_maxnGPUs() << std::endl;
+      }
+      std::cout << std::endl;
+
+      // Print the nodes configuration
+      std::cout << "\nCONFIGURAZIONE NODI: " << std::endl;
+      std::cout << "Node, " << "VM_type, "<< "GPU_type, " << "used_GPUs, " << "remaining GPUs" << std::endl;
+      for (unsigned idx = 0; idx < last_node_idx; ++idx)
+      {
+        Node & nn = nodes[idx];
+        std::cout << idx << ", " << nn.get_VMtype() << ", " << nn.get_GPUtype() << ", " << nn.get_usedGPUs() << ", "
+                  << nn.get_remainingGPUs() << std::endl;
+      }
+      std::cout << std::endl;
+      
+      //____________________________________________________________________________________________________
 
       // add the best schedule to scheduled_jobs
       scheduled_jobs.push_back(best_schedule);
