@@ -245,6 +245,10 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
     
     // check stopping cryterion
     stop = (next_submission_time == INF) && all_completed;
+    if (stop)
+    {
+      std::cout << " TIME: " << current_time << std::endl;
+    }
 
     if (!stop)
     {
