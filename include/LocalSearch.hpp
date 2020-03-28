@@ -13,9 +13,6 @@ protected:
 	// maximum number of local search iterations
 	unsigned long MAX_ITER = 10;
 
-	// tolerance
-	double TOL; //UNUDES BY SWAP
-
 	/*
     *  binary parameter to decide the type of search:
     *  		"true" if best improvement
@@ -27,10 +24,10 @@ protected:
     unsigned neigh_size = 4;
 
 	// tabu list (tabu search optimization)
-	std::vector<job_schedule_t> previous_best;
+	//std::vector<job_schedule_t> previous_best;
     
     // schedule after Federica's random iteration
-    job_schedule_t initial_schedule; // TODO: vedere se si può rimuovere
+    //job_schedule_t initial_schedule; // TODO: vedere se si può rimuovere
 
     // best schedule found by local search so far
     job_schedule_t local_best_schedule;

@@ -1,6 +1,6 @@
 #include "LocalSearch.hpp"
 
-// NICO
+// (NICO) TODO: RIMUOVERE
 void LocalSearch::printer(job_schedule_t& job_schedule)
 {
   std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS" << std::endl;
@@ -115,9 +115,6 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
   double fft = find_first_finish_time(job_schedule);
   double lft = find_last_finish_time(job_schedule);
 
-  //std::cout << " -* fft:" << fft << std::endl;
-  //std::cout << " -* lft:" << lft << std::endl;
-  
   return std::max(lft - fft, fft - lft) ;
 }
 
@@ -222,7 +219,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   // initialize members
   //previous_best.clear();
   local_best_schedule = actual_schedule;
-  initial_schedule = actual_schedule;
+  //initial_schedule = actual_schedule;
   //std::cout<< "- Initial Schedule size: "<< initial_schedule.size()<< std::endl;//TOREMOVE 
   //previous_best.push_back(actual_schedule);
 
@@ -232,11 +229,11 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   // Iniziamo la local search
   unsigned iter = 0;
-  bool changed = false;
+  bool changed = true;
   bool changed_at_least_once = false;
   bool stop = false;
 
-  while ((iter < MAX_ITER) and !(stop)) //for (unsigned iter = 0; iter < MAX_ITER && !stop; +iter ++)
+  while ((iter < MAX_ITER) and changed) //for (unsigned iter = 0; iter < MAX_ITER && !stop; +iter ++)
   {
     std::cout << std::endl;
     std::cout << "- iter " << iter << " of " << MAX_ITER << std::endl;
@@ -270,11 +267,6 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     changed_at_least_once = (changed == true) ? true : changed_at_least_once;
 
     //se ho visitato l'intorno ma non ho trovato una opzione miglore
-    if (!changed)
-    {
-      stop = true;
-      //break; //usciamo dal while
-    }
 
     /*
     for (const job_schedule_t & i : previous_best)

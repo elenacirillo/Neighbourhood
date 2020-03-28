@@ -128,9 +128,10 @@ LocalSearchbySwap::top_cost_jobs(void)
     temp.erase(j);
   }
   for (const auto &i: temp)
-  {if (! i.second.isEmpty() )
+  {
+    if (! i.second.isEmpty() )
 		{
-    Node N = nodes[i.second.get_node_idx()];
+    Node & N = nodes[i.second.get_node_idx()];
     double cost = N.get_cost() * i.second.get_setup().get_nGPUs() / (N.get_remainingGPUs() + N.get_usedGPUs());
     costs_ordered.insert(std::make_pair(cost, i.first));
   }}
@@ -178,11 +179,11 @@ bool
 LocalSearchbySwap::visit_neighbor()
 {
   // perform local search only if there are enough jobs
- /* if(local_best_schedule.size() < 2)
+  if(local_best_schedule.size() < 2)
   {
     std::cout<< "-- Ce ne stan troppo poghi"<< std::endl;//TOREMOVE 
     return false;
-  }*/
+  }
   //neigh_size = std::min(neigh_size, local_best_schedule.size());
   //if (local_best_schedule.size() < neigh_size)  neigh_size = local_best_schedule.size();
 
@@ -222,6 +223,7 @@ LocalSearchbySwap::visit_neighbor()
 
   for (auto v : possible_swap_indices)
   {
+    std::vector<Node> open = nodes;
     std::cout << "\n -- swap vector " << iter << " of " << possible_swap_indices.size() << " : ";
     for (auto el : v) std::cout << el << " ";
     std::cout << std::endl;
@@ -240,6 +242,9 @@ LocalSearchbySwap::visit_neighbor()
       if (!best_fit)
         return changed;
     }
+    else {
+      swap(open, nodes);
+    }
     iter ++;
   }
 
@@ -253,7 +258,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
   //std::cout << "   --- Inizio perform_swap, best_schedule_value = " << best_schedule_value_t << std::endl; //TOREMOVE
 
   // PRINTINO DEI TUTTE LE INFO SU A e B 
-  std::cout << "\n\n### PRINTO INFO SU A e B PER LO SWAP ###"<< std::endl;
+  /*std::cout << "\n\n### PRINTO INFO SU A e B PER LO SWAP ###"<< std::endl;
   for (auto el : swap_indices) std::cout << el << " ";
   std::cout << std::endl;
   for (auto el: A_job_ids)
@@ -277,7 +282,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
     std::cout<<std::endl;    
   }
   std::cout << "\n\n"<< std::endl;
-  //end PRINTINO
+  //end PRINTINO*/
 
   job_schedule_t new_schedule = local_best_schedule;
   std::vector<Node> open_nodes = nodes;
@@ -289,8 +294,8 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
    // std::cout << " " << A_job_ids[idx_A].get_ID() << std::endl;     //TOREMOVE
     int idx_B = swap_indices[idx_A];
     //std::cout << "index di B: " << idx_B << std::endl; //TOREMOVE
-    if (idx_B > -1 and idx_B < B_job_ids.size() and 
-        new_schedule.find(A_job_ids[idx_A])->first.get_ID() == new_schedule.find(B_job_ids[idx_B])->first.get_ID())
+    if (idx_B > -1 and idx_B < B_job_ids.size()) // and 
+       // new_schedule.find(A_job_ids[idx_A])->first.get_ID() == new_schedule.find(B_job_ids[idx_B])->first.get_ID())
     {
       //std::cout << " --- index di B " << idx_B << std::endl;
    //   std::cout << "   --- ciclo su indici di B" << std::endl; //TOREMOVE
