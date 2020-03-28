@@ -1,5 +1,7 @@
 #include "configuration.hpp"
 
+#include <cassert>
+
 void
 Configuration::set_configuration (const Setup& stp)
 {
@@ -13,6 +15,7 @@ Configuration::set_configuration (const Setup& stp)
 void
 Configuration::update_n_GPUs (unsigned g)
 {
+  assert(g <= remaining_GPUs);
   used_GPUs += g;
   remaining_GPUs -= g;
 }

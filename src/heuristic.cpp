@@ -270,17 +270,17 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
       job_schedule_t best_schedule = perform_scheduling(max_random_iter);
 
       //____________________________________________________________________________________________________
-
+      /*
       // Print the schedule
       std::cout << "\nBEST SCHEDULE: " << std::endl;
       std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs " << std::endl;
-      for (const auto & jsss: best_schedule)
+      for (const auto & js: best_schedule)
       {
-          const Job & jjj = jsss.first;
-          const Schedule & sss = jsss.second;
-          const Setup & stppp = sss.get_setup();
-          std::cout << jjj.get_ID() << ", " << sss.get_node_idx() << ", " << stppp.get_VMtype() << ", "
-                    << stppp.get_GPUtype() << ", " <<  stppp.get_nGPUs() << ", " << stppp.get_maxnGPUs() << std::endl;
+          const Job & j = js.first;
+          const Schedule & sch = js.second;
+          const Setup & stp = sch.get_setup();
+          std::cout << j.get_ID() << ", " << sch.get_node_idx() << ", " << stp.get_VMtype() << ", "
+                    << stp.get_GPUtype() << ", " <<  stp.get_nGPUs() << ", " << stp.get_maxnGPUs() << std::endl;
       }
       std::cout << std::endl;
 
@@ -294,7 +294,7 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
                   << nn.get_remainingGPUs() << std::endl;
       }
       std::cout << std::endl;
-      
+      */
       //____________________________________________________________________________________________________
 
       // add the best schedule to scheduled_jobs

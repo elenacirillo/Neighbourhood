@@ -51,7 +51,14 @@ Greedy_version4::assign_to_existing_node (const Job& j,
     assigned = true;
     node.set_remainingGPUs(best_stp.get_nGPUs());
 
-    Schedule sch(best_stp_it, best_idx);
+    const std::string& VMtype = node.get_VMtype();
+    const std::string& GPUtype = node.get_GPUtype();
+    unsigned nGPUs = best_stp.get_nGPUs();
+
+    setup_time_t::const_iterator selected_stp_it;
+    selected_stp_it = select_setup(j, VMtype, GPUtype, nGPUs);
+
+    Schedule sch(selected_stp_it, best_idx);
     new_schedule[j] = sch;
   }
 
