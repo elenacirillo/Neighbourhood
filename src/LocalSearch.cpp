@@ -290,10 +290,14 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
 bool
 LocalSearch::assign_to_selected_node (const Job& j,
-                          setup_time_t::const_iterator best_stp_it,
                           job_schedule_t& new_schedule,
                           unsigned node_index)
 {
+  const setup_time_t &tjvg = ttime.at(j.get_ID());
+  Dstar dstar(j, tjvg, current_time);
+  if (!full_greedy)
+    dstar.set_random_parameter(alpha);
+  setup_time_t::const_iterator best_stp_it = dstar.get_best_setup(generator);
   bool assigned = false;
   const Setup& best_stp = best_stp_it->first;
 

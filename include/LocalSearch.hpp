@@ -43,7 +43,6 @@ protected:
 	
 	//
 	virtual bool assign_to_selected_node (const Job&,
-                                        setup_time_t::const_iterator,
                                         job_schedule_t&, unsigned);
 
 	/* NUOVA VERSIONE ASSEGNAMENTO A NODO CHE FA ANCHE IL CONTROLLO SUL SUBOTTIMO
