@@ -290,7 +290,6 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
 bool
 LocalSearch::assign_to_selected_node (const Job& j,
-                          setup_time_t::const_iterator best_stp_it,
                           job_schedule_t& new_schedule,
                           unsigned node_index)
 {
