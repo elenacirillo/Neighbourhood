@@ -41,7 +41,7 @@ private:
     void update_node_jobs(void);
 
     // find the indexes of top nodes to change in the neighbourhood
-    std::set<unsigned> get_tardiness_nodes(unsigned);
+    std::unordered_set<unsigned> get_tardiness_nodes(unsigned);
 
 public:
 
