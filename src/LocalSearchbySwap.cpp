@@ -302,16 +302,16 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
       job_schedule_t temp = new_schedule;
 
       const auto &  elem_of_A = temp.find(A_job_ids[idx_A]);
-      Schedule & old_A = elem_of_A->second; //TOREMOVE: serve solo a stampare una info
+      Schedule & old_sch_A = elem_of_A->second;
       const unsigned old_node_A = elem_of_A->second.get_node_idx();
       const Job & jobA = elem_of_A->first;
       //Node & nodeA = nodes[old_node_A];
 
       const auto & elem_of_B = temp.find(B_job_ids[idx_B]);
-      Schedule & old_B = elem_of_B->second;
+      Schedule & old_sch_B = elem_of_B->second;
       const unsigned old_node_B = elem_of_B->second.get_node_idx();
       const Job & jobB = elem_of_B->first;
-      Node  & nodeB = nodes[old_node_B];
+      //Node  & nodeB = nodes[old_node_B];
 
 /*
       std::cout << "  -- elem_of_A contiene: " << elem_of_A->first.get_ID()<< std::endl;//TOREMOVE
@@ -321,36 +321,24 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
 */	
 
       // prima provo ad assegnare A dove c'era B
-      const setup_time_t &tjvg_A = ttime.at(jobA.get_ID());
-      Dstar dstarA(jobA, tjvg_A, current_time);
-      if (!full_greedy)
-        dstarA.set_random_parameter(alpha);
-      setup_time_t::const_iterator best_stpA = dstarA.get_best_setup(generator);
-
-      //temp.erase(elem_of_B);
-      //std::cout << "HO SCANCELLATO IL JOB IN IDX_B" << std::endl; //TOREMOVE
-
+      /*
       unsigned node_B_remaining_GPU = nodeB.get_remainingGPUs();
       unsigned GPU_used_by_B = elem_of_B->second.get_setup().get_nGPUs();
-      //std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
-      //std::cout << "al momento sul nodo di B ci sono " << node_B_remaining_GPU << " GPU rimanenti e " << GPU_used_by_B  << " usate dal Job B" << std::endl;
-      
+      std::cout << "STO PER SETTARE NUMERO DI GPU: " << tmp << std::endl; //TOREMOVE
+      std::cout << "al momento sul nodo di B ci sono " << node_B_remaining_GPU << " GPU rimanenti e " << GPU_used_by_B  << " usate dal Job B" << std::endl;
       unsigned old_node_B_new_numGPU = node_B_remaining_GPU + GPU_used_by_B;
-     // std::cout << " su questo nodo voglio settare " << old_node_B_new_numGPU << std::endl;
+      std::cout << " su questo nodo voglio settare " << old_node_B_new_numGPU << std::endl;
+      */
 
-      // l'errore è qua ! set_remaining funziona solo con unsigned e non setta ma decresce il numero delle rimanenti,
-      //mentre noi volevamo usarlo per aumentare il numero
-      //nodes[old_node_B].set_remainingGPUs(old_node_B_new_numGPU); 
-      
-      erase_job_from_node(old_B);
-     // std::cout << "HO RI-SETTATO LE GPU ? ora le rimanenti sono " << nodeB.get_remainingGPUs() << std::endl; //TOREMOVE
+      erase_job_from_node(old_sch_B);
+      // std::cout << "HO RI-SETTATO LE GPU ? ora le rimanenti sono " << nodeB.get_remainingGPUs() << std::endl; //TOREMOVE
 
-      bool assignedAtoB = assign_to_selected_node(jobA, best_stpA, temp, old_node_B);
+      bool assignedAtoB = assign_to_selected_node(jobA, temp, old_node_B);
       //std::cout << "   --- HO ASSEGNATO A a B?: " << assignedAtoB << std::endl; //TOREMOVE
 
       if (assignedAtoB)
       {
-
+/*
         //unsigned num_gpu_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
         //temp.erase(elem_of_A);
         //std::cout << "HO SCANCELLATO IL JOB IN IDX_A" << std::endl;                                       //TOREMOVE
@@ -359,13 +347,11 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
         //std::cout << "job A " << A_job_ids[idx_A].get_ID() << std::endl;                                  //TOREMOVE
         //std::cout << "nuova sch " << temp.find(A_job_ids[idx_A])->second.get_selectedTime() << std::endl; //TOREMOVE
 
-        //update_schedule(old_A, temp.find(A_job_ids[idx_A])->second);
-
         //std::cout << "STO PER SETTARE NUMERO DI GPU: " << std::endl;
         //auto tmpB = nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A;
         //std::cout << "Setto GPU al nuovo nodo di B: " << tmpB << std::endl;
 
-        //nodes[old_node_A].set_remainingGPUs(nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A);
+        //nodes[old_node_A].set_remainingGPUs(nodes[old_node_A].get_remainingGPUs() + num_gpu_used_by_A)
 
         unsigned node_A_remaining_GPU = nodes[old_node_A].get_remainingGPUs();
         unsigned GPU_used_by_A = elem_of_A->second.get_setup().get_nGPUs();
@@ -376,18 +362,11 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
      //   std::cout << " su questo nodo voglio settare " << old_node_A_new_numGPU << std::endl;
 
         //nodes[old_node_A].set_remainingGPUs(old_node_A_new_numGPU);
-
-        erase_job_from_node(old_A);
+*/ // TO REMOVE
+        erase_job_from_node(old_sch_A);
 
        // std::cout << "HO RI-SETTATO LE GPU di A ? ora le rimanenti sono " << nodes[old_node_A].get_remainingGPUs() << std::endl;
-        const setup_time_t &tjvg_B = ttime.at(jobB.get_ID());
-        Dstar dstarB(jobB, tjvg_B, current_time);
-        if (!full_greedy)
-          dstarB.set_random_parameter(alpha);
-        setup_time_t::const_iterator best_stpB = dstarB.get_best_setup(generator);
-        bool assignedBtoA = assign_to_selected_node(jobB, best_stpB, temp, old_node_A);
-        //std::cout << "sto per chiamare update_schedule su B" << std::endl;
-        //update_schedule(old_B, temp.find(B_job_ids[idx_B])->second);
+        bool assignedBtoA = assign_to_selected_node(jobB, temp, old_node_A);
 
       	std::cout << "   --- HO ASSEGNATO B a A? : " << assignedBtoA << std::endl;
 
