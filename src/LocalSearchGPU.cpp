@@ -242,7 +242,7 @@ LocalSearchGPU::change_GPU(unsigned node_idx, const Setup & new_stp)
 //________________________________________________________________________________________________________________________________
 
 // generate the neighborhood of local_best_schedule
-neighborhood_t
+LocalSearchGPU::neighborhood_t
 LocalSearchGPU::generate_neighborhood(void)
 {
   // neighbourhood
@@ -346,8 +346,8 @@ std::unordered_set<unsigned> LocalSearchGPU::get_tardiness_nodes(unsigned top)
   {
     std::cout <<u<<", ";
   }
-  return indices;
   */
+  return indices;
   
 }
 

@@ -1,6 +1,6 @@
 ################################################################################
 cd /media/sf_sharedfolder/Neighbourhood/build/output/LocalSearchGPU-1-5-15-45000-100-1000-0.5-1020-5; /media/sf_sharedfolder/Neighbourhood/script/sh/run_experiment.sh LocalSearchGPU 1 5 15 45000 100 1000 0.5 1020 5 
-start time 2020-03-30 09:59:10.083699
+start time 2020-03-30 10:05:02.183964
 ################################################################################
 ________________________________________________
 
@@ -40,7 +40,7 @@ iter, random iteration, vmCost, tardiCost, worstCaseTardiness
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
 JJ1, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 143833, 508208, 0, 0
 
         PERFORM LOCAL SEARCH
@@ -48,9 +48,7 @@ JJ1, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 143833, 508208, 0, 0
 - Ho valutato l'obj fun delta, valore = 0
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
+- uscito da visit_neighbor(). changed?: 0
 - best_schedule_value_t:  0
 
 	### MINIMUM COST: 4.39489; idx: 0
@@ -66,24 +64,22 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 134852, 508208, 8981, 0
-JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 81969.6, 151669, 8981, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 134751, 508208, 9082, 0
+JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 81969.6, 151770, 9082, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 52882.1
+- Ho valutato l'obj fun delta, valore = 52781.1
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  43714.9
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  43613.9
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 134852, 508208, 8981, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 91136.7, 151669, 8981, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 134751, 508208, 9082, 0
+JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 91136.7, 151770, 9082, 0
 
 
 Configurazione Nodi: 
@@ -92,15 +88,13 @@ Node_idx: 1,   old_stp: In-house server 1,Quadro P600,1,0.11
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  38077.4
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  38117.2
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 53059.3, 508208, 8981, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 91136.7, 151669, 8981, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 53019.6, 508208, 9082, 0
+JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 91136.7, 151770, 9082, 0
 
 
 Configurazione Nodi: 
@@ -109,15 +103,13 @@ Node_idx: 1,   old_stp: Standard_NC12,K80,1,1.13
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  28910.2
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  28950
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 53059.3, 508208, 8981, 0
-JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 81969.6, 151669, 8981, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 53019.6, 508208, 9082, 0
+JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 81969.6, 151770, 9082, 0
 
 
 Configurazione Nodi: 
@@ -126,10 +118,8 @@ Node_idx: 1,   old_stp: Standard_NC12,K80,1,1.13
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  28910.2
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  28950
     * Better configuration found via local search * 
 
 	### MINIMUM COST: 16.6216; idx: 0
@@ -145,26 +135,24 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81064.6, 151669, 18040, 0
-JJ3, 0, Standard_NV6, M60, 1, 1, 0.62, 56039, 162328, 18040, 0
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 111828, 508208, 18040, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81089.1, 151770, 18119, 0
+JJ3, 0, Standard_NV6, M60, 1, 1, 0.62, 56039, 162407, 18119, 0
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 111783, 508208, 18119, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 55788.9
+- Ho valutato l'obj fun delta, valore = 55743.9
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  49373.3
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  49328.2
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81064.6, 151669, 18040, 0
-JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162328, 18040, 0
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 111828, 508208, 18040, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81089.1, 151770, 18119, 0
+JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162407, 18119, 0
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 111783, 508208, 18119, 0
 
 
 Configurazione Nodi: 
@@ -174,16 +162,14 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  37064.3
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  37106.5
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81064.6, 151669, 18040, 0
-JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162328, 18040, 0
-JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 44000.3, 508208, 18040, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ2, 2, Standard_NC6, K80, 1, 1, 0.56, 81089.1, 151770, 18119, 0
+JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162407, 18119, 0
+JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 43982.6, 508208, 18119, 0
 
 
 Configurazione Nodi: 
@@ -193,16 +179,14 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  28910.2
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  28950
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 72910.6, 151669, 18040, 0
-JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162328, 18040, 0
-JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 44000.3, 508208, 18040, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 72932.6, 151770, 18119, 0
+JJ3, 0, Standard_NC6, K80, 1, 1, 0.56, 62454.7, 162407, 18119, 0
+JJ1, 1, Standard_NC12, K80, 1, 2, 1.13, 43982.6, 508208, 18119, 0
 
 
 Configurazione Nodi: 
@@ -212,10 +196,8 @@ Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-1, 2, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  28910.2
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  28950
     * Better configuration found via local search * 
 
 	### MINIMUM COST: 20.0807; idx: 3
@@ -231,28 +213,26 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702272, 27032, 0
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 88974.6, 508208, 27032, 0
-JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 63918.6, 151669, 27032, 0
-JJ3, 0, Standard_NV12, M60, 1, 2, 1.24, 47970.7, 162328, 27032, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702319, 27079, 0
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 89010.8, 508208, 27079, 0
+JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 63972.6, 151770, 27079, 0
+JJ3, 0, Standard_NV12, M60, 1, 2, 1.24, 47999.4, 162407, 27079, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 140740
+- Ho valutato l'obj fun delta, valore = 140712
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  135248
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  135216
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702272, 27032, 0
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 88974.6, 508208, 27032, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 71067, 151669, 27032, 0
-JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 53462.7, 162328, 27032, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702319, 27079, 0
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 89010.8, 508208, 27079, 0
+JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 71127, 151770, 27079, 0
+JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 53494.7, 162407, 27079, 0
 
 
 Configurazione Nodi: 
@@ -261,17 +241,15 @@ Node_idx: 1,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  99736.4
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  99700.2
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702272, 27032, 0
-JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 88974.6, 508208, 27032, 0
-JJ2, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 180241, 151669, 27032, 0
-JJ3, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 137338, 162328, 27032, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 188711, 702319, 27079, 0
+JJ1, 1, In-house server 1, Quadro P600, 1, 2, 0.11, 89010.8, 508208, 27079, 0
+JJ2, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 180393, 151770, 27079, 0
+JJ3, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 137420, 162407, 27079, 0
 
 
 Configurazione Nodi: 
@@ -280,13 +258,11 @@ Node_idx: 1,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  99736.4
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  99700.2
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 17.989; idx: 0
+	### MINIMUM COST: 17.9998; idx: 0
 
 -------- iter 4 --------
 
@@ -299,30 +275,28 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 179510, 702272, 36233, 0
-JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 450326, 964086, 36233, 0
-JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 49880.9, 162328, 36233, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 67439.1, 151669, 36233, 0
-JJ1, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 82863.1, 508208, 36233, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 179809, 702319, 35981, 0
+JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 450326, 963834, 35981, 0
+JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 50029.3, 162407, 35981, 0
+JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 67617.1, 151770, 35981, 0
+JJ1, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 83211.4, 508208, 35981, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 400445
+- Ho valutato l'obj fun delta, valore = 400297
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  42377.3
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  42256.5
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 63497.8, 702272, 36233, 0
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 71115, 964086, 36233, 0
-JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 49880.9, 162328, 36233, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 67439.1, 151669, 36233, 0
-JJ1, 1, Standard_NV24X, M60, 2, 8, 4.96, 28737.7, 508208, 36233, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 63603.6, 702319, 35981, 0
+JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 71115, 963834, 35981, 0
+JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 50029.3, 162407, 35981, 0
+JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 67617.1, 151770, 35981, 0
+JJ1, 1, Standard_NV24X, M60, 2, 8, 4.96, 28858.5, 508208, 35981, 0
 
 
 Configurazione Nodi: 
@@ -331,53 +305,11 @@ Node_idx: 1,   old_stp: Standard_NV24X,M60,4,4.96
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  42375.4
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 55623, 702272, 36233, 0
-JJ5, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 45374.5, 964086, 36233, 0
-JJ3, 0, Standard_NC12, K80, 1, 2, 1.13, 49880.9, 162328, 36233, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 67439.1, 151669, 36233, 0
-JJ1, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 25063.7, 508208, 36233, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,4,1.13
-
-
-- iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  35591.9
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 55623, 702272, 36233, 0
-JJ5, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 45374.5, 964086, 36233, 0
-JJ3, 0, Standard_NV12, M60, 1, 2, 1.24, 44756.9, 162328, 36233, 0
-JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 60655.6, 151669, 36233, 0
-JJ1, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 25063.7, 508208, 36233, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
-Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,4,1.13
-
-
-- iter 3 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  35591.9
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  42256.5
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 21.7536; idx: 2
+	### MINIMUM COST: 21.8183; idx: 2
 
 -------- iter 5 --------
 
@@ -390,89 +322,62 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 150626, 702272, 45183, 0
-JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 361500, 964086, 45183, 0
-JJ1, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 51287.2, 508208, 45183, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 57488.2, 151669, 45183, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 181529, 253290, 45183, 0
-JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 105399, 162328, 45183, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 54884, 508208, 45068, 0
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 392784, 963834, 45068, 0
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 154120, 702319, 45068, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 52642.7, 151770, 45068, 0
+JJ3, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 108135, 162407, 45068, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 181529, 253175, 45068, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 310213
+- Ho valutato l'obj fun delta, valore = 340141
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  44813.7
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  43541.4
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 53280.7, 702272, 45183, 0
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 57087.7, 964086, 45183, 0
-JJ1, 1, Standard_NV24X, M60, 1, 8, 4.96, 18142.9, 508208, 45183, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 57488.2, 151669, 45183, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 62956.6, 253290, 45183, 0
-JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 36069.3, 162328, 45183, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 0, Standard_NV24X, M60, 1, 8, 4.96, 19415.2, 508208, 45068, 0
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 62028, 963834, 45068, 0
+JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 54516.6, 702319, 45068, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 52642.7, 151770, 45068, 0
+JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 37005.7, 162407, 45068, 0
+JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 62956.6, 253175, 45068, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 0,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  41595.1
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  37900.4
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 46673, 702272, 45183, 0
-JJ5, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 36424.5, 964086, 45183, 0
-JJ1, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 15893, 508208, 45183, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 57488.2, 151669, 45183, 0
-JJ6, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 54908, 253290, 45183, 0
-JJ3, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 31363.3, 162328, 45183, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ1, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 17007.6, 508208, 45068, 0
+JJ5, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 39576.6, 963834, 45068, 0
+JJ4, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 47755.6, 702319, 45068, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 52642.7, 151770, 45068, 0
+JJ3, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 32177.5, 162407, 45068, 0
+JJ6, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 54908, 253175, 45068, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,7,1.13
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,7,1.13
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  39014.9
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 46673, 702272, 45183, 0
-JJ5, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 36424.5, 964086, 45183, 0
-JJ1, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 15893, 508208, 45183, 0
-JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 51705.6, 151669, 45183, 0
-JJ6, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 54908, 253290, 45183, 0
-JJ3, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 31363.3, 162328, 45183, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,7,1.13
-
-
-- iter 3 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  39014.9
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  37900.4
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 14.2465; idx: 4
+	### MINIMUM COST: 15.5003; idx: 1
 
 -------- iter 6 --------
 
@@ -485,57 +390,53 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 272079, 964086, 54193, 0
-JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 42695.6, 151669, 54193, 0
-JJ3, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 75119.7, 162328, 54193, 0
-JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 123077, 212829, 54193, 0
-JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 146084, 253290, 54193, 0
-JJ1, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 23072, 508208, 54193, 0
-JJ4, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 126257, 702272, 54193, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 123077, 212849, 54213, 0
+JJ3, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 77402.4, 162407, 54213, 0
+JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 43497.7, 151770, 54213, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 151295, 253175, 54213, 0
+JJ1, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 26355.6, 508208, 54213, 0
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 124606, 702319, 54213, 0
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 302023, 963834, 54213, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 249007
+- Ho valutato l'obj fun delta, valore = 275667
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  115075
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  113936
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 42966.4, 964086, 54193, 0
-JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 42695.6, 151669, 54193, 0
-JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 25707.3, 162328, 54193, 0
-JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 123077, 212829, 54193, 0
-JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 51677.7, 253290, 54193, 0
-JJ1, 0, Standard_NV24X, M60, 2, 8, 4.96, 8001.58, 508208, 54193, 0
-JJ4, 0, Standard_NV24X, M60, 2, 8, 4.96, 43784.4, 702272, 54193, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 123077, 212849, 54213, 0
+JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 26488.5, 162407, 54213, 0
+JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 43497.7, 151770, 54213, 0
+JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 52471.1, 253175, 54213, 0
+JJ1, 0, Standard_NV24X, M60, 2, 8, 4.96, 9140.35, 508208, 54213, 0
+JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 44076.9, 702319, 54213, 0
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 47695.1, 963834, 54213, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  100716
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  99577.1
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 42966.4, 964086, 54193, 0
-JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 42695.6, 151669, 54193, 0
-JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 25707.3, 162328, 54193, 0
-JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 108717, 212829, 54193, 0
-JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 51677.7, 253290, 54193, 0
-JJ1, 0, Standard_NV24X, M60, 2, 8, 4.96, 8001.58, 508208, 54193, 0
-JJ4, 0, Standard_NV24X, M60, 2, 8, 4.96, 43784.4, 702272, 54193, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 108717, 212849, 54213, 0
+JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 26488.5, 162407, 54213, 0
+JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 43497.7, 151770, 54213, 0
+JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 52471.1, 253175, 54213, 0
+JJ1, 0, Standard_NV24X, M60, 2, 8, 4.96, 9140.35, 508208, 54213, 0
+JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 44076.9, 702319, 54213, 0
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 47695.1, 963834, 54213, 0
 
 
 Configurazione Nodi: 
@@ -545,20 +446,18 @@ Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  99789.7
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  98519.1
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC24X, K80, 1, 8, 4.48, 57046.2, 964086, 54193, 0
-JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 42695.6, 151669, 54193, 0
-JJ3, 0, Standard_NC24X, K80, 2, 8, 4.48, 28743.9, 162328, 54193, 0
-JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 108717, 212829, 54193, 0
-JJ6, 0, Standard_NC24X, K80, 1, 8, 4.48, 57479.3, 253290, 54193, 0
-JJ1, 0, Standard_NC24X, K80, 2, 8, 4.48, 8927.71, 508208, 54193, 0
-JJ4, 0, Standard_NC24X, K80, 2, 8, 4.48, 48852.6, 702272, 54193, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 108717, 212849, 54213, 0
+JJ3, 0, Standard_NC24X, K80, 2, 8, 4.48, 29617.3, 162407, 54213, 0
+JJ2, 2, Standard_NV6, M60, 1, 1, 0.62, 43497.7, 151770, 54213, 0
+JJ6, 0, Standard_NC24X, K80, 2, 8, 4.48, 58544.2, 253175, 54213, 0
+JJ1, 0, Standard_NC24X, K80, 2, 8, 4.48, 10198.3, 508208, 54213, 0
+JJ4, 0, Standard_NC24X, K80, 1, 8, 4.48, 49025.7, 702319, 54213, 0
+JJ5, 0, Standard_NC24X, K80, 1, 8, 4.48, 63324.4, 963834, 54213, 0
 
 
 Configurazione Nodi: 
@@ -568,13 +467,11 @@ Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-0, 2, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  99789.7
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  98519.1
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 10.3824; idx: 3
+	### MINIMUM COST: 11.86; idx: 4
 
 -------- iter 7 --------
 
@@ -587,89 +484,92 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 229499, 964086, 63120.7, 0
-JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 99335.7, 702272, 63120.7, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 37544.4, 151669, 63120.7, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 112970, 212829, 63120.7, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 123394, 253290, 63120.7, 0
-JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 51787.9, 162328, 63120.7, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 259122, 963834, 63208, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 34502.7, 151770, 63208, 0
+JJ3, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 53894.7, 162407, 63208, 0
+JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112894, 212849, 63208, 0
+JJ1, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 2993.73, 508208, 63208, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 123276, 253175, 63208, 0
+JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 179910, 725295, 63208, 0
+JJ4, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 105686, 702319, 63208, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 191955
+- Ho valutato l'obj fun delta, valore = 256128
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  95247
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  111835
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 36242.2, 964086, 63120.7, 0
-JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 35137.9, 702272, 63120.7, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 37544.4, 151669, 63120.7, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 112970, 212829, 63120.7, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 43651.1, 253290, 63120.7, 0
-JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17722.8, 162328, 63120.7, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 40920.2, 963834, 63208, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 34502.7, 151770, 63208, 0
+JJ3, 0, Standard_NV24X, M60, 2, 8, 4.96, 18443.7, 162407, 63208, 0
+JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112894, 212849, 63208, 0
+JJ1, 0, Standard_NV24X, M60, 1, 8, 4.96, 1059.03, 508208, 63208, 0
+JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 43609, 253175, 63208, 0
+JJ8, 0, Standard_NV24X, M60, 1, 8, 4.96, 63829.1, 725295, 63208, 0
+JJ4, 0, Standard_NV24X, M60, 2, 8, 4.96, 36650.5, 702319, 63208, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NV24X,M60,5,4.96
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  93153.5
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  111716
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 1, Standard_NC24X, K80, 1, 8, 4.48, 48118.5, 964086, 63120.7, 0
-JJ4, 1, Standard_NC24X, K80, 1, 8, 4.48, 39083, 702272, 63120.7, 0
-JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 37544.4, 151669, 63120.7, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 112970, 212829, 63120.7, 0
-JJ6, 1, Standard_NC24X, K80, 1, 8, 4.48, 48551.6, 253290, 63120.7, 0
-JJ3, 1, Standard_NC24X, K80, 2, 8, 4.48, 19816.2, 162328, 63120.7, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, Standard_NC24X, K80, 1, 8, 4.48, 54329.4, 963834, 63208, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 34502.7, 151770, 63208, 0
+JJ3, 0, Standard_NC24X, K80, 2, 8, 4.48, 20622.3, 162407, 63208, 0
+JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112894, 212849, 63208, 0
+JJ1, 0, Standard_NC24X, K80, 1, 8, 4.48, 1177.93, 508208, 63208, 0
+JJ6, 0, Standard_NC24X, K80, 1, 8, 4.48, 48504.8, 253175, 63208, 0
+JJ8, 0, Standard_NC24X, K80, 1, 8, 4.48, 70962.7, 725295, 63208, 0
+JJ4, 0, Standard_NC24X, K80, 2, 8, 4.48, 40893, 702319, 63208, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NC24X,K80,5,4.48
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  79973.5
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  98544.5
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 1, Standard_NC24X, K80, 1, 8, 4.48, 48118.5, 964086, 63120.7, 0
-JJ4, 1, Standard_NC24X, K80, 1, 8, 4.48, 39083, 702272, 63120.7, 0
-JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 33767.9, 151669, 63120.7, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 99789.7, 212829, 63120.7, 0
-JJ6, 1, Standard_NC24X, K80, 1, 8, 4.48, 48551.6, 253290, 63120.7, 0
-JJ3, 1, Standard_NC24X, K80, 2, 8, 4.48, 19816.2, 162328, 63120.7, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, Standard_NC24X, K80, 1, 8, 4.48, 54329.4, 963834, 63208, 0
+JJ2, 1, Standard_NV6, M60, 1, 1, 0.62, 34502.7, 151770, 63208, 0
+JJ3, 0, Standard_NC24X, K80, 2, 8, 4.48, 20622.3, 162407, 63208, 0
+JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 99722.4, 212849, 63208, 0
+JJ1, 0, Standard_NC24X, K80, 1, 8, 4.48, 1177.93, 508208, 63208, 0
+JJ6, 0, Standard_NC24X, K80, 1, 8, 4.48, 48504.8, 253175, 63208, 0
+JJ8, 0, Standard_NC24X, K80, 1, 8, 4.48, 70962.7, 725295, 63208, 0
+JJ4, 0, Standard_NC24X, K80, 2, 8, 4.48, 40893, 702319, 63208, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
-Node_idx: 1,   old_stp: Standard_NC24X,K80,5,4.48
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  79973.5
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  98544.5
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 16.3735; idx: 1
+	### MINIMUM COST: 1.34718; idx: 4
 
 -------- iter 8 --------
 
@@ -682,147 +582,105 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, In-house server 1, Quadro P600, 2, 2, 0.11, 102790, 702272, 63270, 0
-JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 51397.8, 162328, 63270, 0
-JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112801, 212829, 63270, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 127779, 253290, 63270, 0
-JJ2, 0, Standard_NV6, M60, 1, 1, 0.62, 33618.6, 151669, 63270, 0
-JJ8, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 187331, 725357, 63270, 0
-JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 228787, 964086, 63270, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 176924, 725295, 64385.9, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 98544.5, 212849, 64385.9, 0
+JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 124940, 253175, 64385.9, 0
+JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 50816.3, 162407, 64385.9, 0
+JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 33324.8, 151770, 64385.9, 0
+JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 98813.5, 702319, 64385.9, 0
+JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 253504, 963834, 64385.9, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 195168
+- Ho valutato l'obj fun delta, valore = 220179
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 1, 2, 3, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  191409
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  216452
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, In-house server 1, Quadro P600, 2, 2, 0.11, 102790, 702272, 63270, 0
-JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 51397.8, 162328, 63270, 0
-JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112801, 212829, 63270, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 127779, 253290, 63270, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 37378.4, 151669, 63270, 0
-JJ8, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 187331, 725357, 63270, 0
-JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 228787, 964086, 63270, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 176924, 725295, 64385.9, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 111560, 212849, 64385.9, 0
+JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 124940, 253175, 64385.9, 0
+JJ3, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 50816.3, 162407, 64385.9, 0
+JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 37051.7, 151770, 64385.9, 0
+JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 98813.5, 702319, 64385.9, 0
+JJ5, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 253504, 963834, 64385.9, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
 Node_idx: 1,   old_stp: In-house server 3,Quadro P600,7,0.44
-Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 3,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 0, 1, 3, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  95211.5
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  94169.8
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, In-house server 1, Quadro P600, 2, 2, 0.11, 102790, 702272, 63270, 0
-JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17589.2, 162328, 63270, 0
-JJ7, 2, Standard_NC6, K80, 1, 1, 0.56, 112801, 212829, 63270, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 44315.3, 253290, 63270, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 37378.4, 151669, 63270, 0
-JJ8, 1, Standard_NV24X, M60, 2, 8, 4.96, 65163.9, 725357, 63270, 0
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 36129.7, 964086, 63270, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 62769.6, 725295, 64385.9, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 111560, 212849, 64385.9, 0
+JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 43330.7, 253175, 64385.9, 0
+JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17390.3, 162407, 64385.9, 0
+JJ2, 0, Standard_NC12, K80, 1, 2, 1.13, 37051.7, 151770, 64385.9, 0
+JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 34953.2, 702319, 64385.9, 0
+JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 40033, 963834, 64385.9, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
 Node_idx: 1,   old_stp: Standard_NV24X,M60,7,4.96
-Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 3,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, 3, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  85200.4
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  81154.2
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, In-house server 1, Quadro P600, 2, 2, 0.11, 102790, 702272, 63270, 0
-JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17589.2, 162328, 63270, 0
-JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 99640.4, 212829, 63270, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 44315.3, 253290, 63270, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 37378.4, 151669, 63270, 0
-JJ8, 1, Standard_NV24X, M60, 2, 8, 4.96, 65163.9, 725357, 63270, 0
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 36129.7, 964086, 63270, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 62769.6, 725295, 64385.9, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 98544.5, 212849, 64385.9, 0
+JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 43330.7, 253175, 64385.9, 0
+JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17390.3, 162407, 64385.9, 0
+JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 33324.8, 151770, 64385.9, 0
+JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 34953.2, 702319, 64385.9, 0
+JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 40033, 963834, 64385.9, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
 Node_idx: 1,   old_stp: Standard_NV24X,M60,7,4.96
-Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 3,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-2, 1, 0, 3, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  82051.2
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  79100.1
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, Standard_NC12, K80, 2, 2, 1.13, 39772.4, 702272, 63270, 0
-JJ3, 1, Standard_NV24X, M60, 2, 8, 4.96, 17589.2, 162328, 63270, 0
-JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 99640.4, 212829, 63270, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 44315.3, 253290, 63270, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 37378.4, 151669, 63270, 0
-JJ8, 1, Standard_NV24X, M60, 2, 8, 4.96, 65163.9, 725357, 63270, 0
-JJ5, 1, Standard_NV24X, M60, 1, 8, 4.96, 36129.7, 964086, 63270, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ8, 1, Standard_NC24X, K80, 1, 8, 4.48, 69784.8, 725295, 64385.9, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 98544.5, 212849, 64385.9, 0
+JJ6, 1, Standard_NC24X, K80, 2, 8, 4.48, 48345.9, 253175, 64385.9, 0
+JJ3, 1, Standard_NC24X, K80, 2, 8, 4.48, 19444.4, 162407, 64385.9, 0
+JJ2, 0, Standard_NV12, M60, 1, 2, 1.24, 33324.8, 151770, 64385.9, 0
+JJ4, 1, Standard_NC24X, K80, 1, 8, 4.48, 38877.6, 702319, 64385.9, 0
+JJ5, 1, Standard_NC24X, K80, 1, 8, 4.48, 53151.5, 963834, 64385.9, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NV24X,M60,7,4.96
-Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 3,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 1,   old_stp: Standard_NC24X,K80,7,4.48
 
 
 - iter 4 of 10
-
-Printing the indices of the node to change
-0, 3, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  79973.5
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 3, Standard_NC12, K80, 2, 2, 1.13, 39772.4, 702272, 63270, 0
-JJ3, 1, Standard_NC24X, K80, 2, 8, 4.48, 19666.9, 162328, 63270, 0
-JJ7, 2, Standard_NV6, M60, 1, 1, 0.62, 99640.4, 212829, 63270, 0
-JJ6, 1, Standard_NC24X, K80, 2, 8, 4.48, 49444.5, 253290, 63270, 0
-JJ2, 0, Standard_NC6, K80, 1, 1, 0.56, 37378.4, 151669, 63270, 0
-JJ8, 1, Standard_NC24X, K80, 2, 8, 4.48, 72671.5, 725357, 63270, 0
-JJ5, 1, Standard_NC24X, K80, 1, 8, 4.48, 47969.2, 964086, 63270, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NC24X,K80,7,4.48
-Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 3,   old_stp: Standard_NC12,K80,2,1.13
-
-
-- iter 5 of 10
-
-Printing the indices of the node to change
-2, 3, 0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  79973.5
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  79100.1
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 16.1556; idx: 4
+	### MINIMUM COST: 15.5516; idx: 2
 
 -------- iter 9 --------
 
@@ -835,74 +693,92 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 186096, 964086, 72221, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102667, 212829, 72221, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 412014, 498113, 72221, 0
-JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 104647, 253290, 72221, 0
-JJ3, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 27238.5, 162328, 72221, 0
-JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 72097.9, 151669, 72221, 0
-JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 157751, 725357, 72221, 0
-JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 76685.6, 702272, 72221, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 216216, 963834, 72204, 0
+JJ8, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 163583, 725295, 72204, 0
+JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 71925.1, 151770, 72204, 0
+JJ3, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 29552.7, 162407, 72204, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102709, 212849, 72204, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 104736, 253175, 72204, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 412014, 498096, 72204, 0
+JJ4, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 82000.8, 702319, 72204, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 384776
+- Ho valutato l'obj fun delta, valore = 382462
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  132921
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  153261
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 29388, 964086, 72221, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102667, 212829, 72221, 0
-JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 142435, 498113, 72221, 0
-JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 36292.9, 253290, 72221, 0
-JJ3, 0, Standard_NV24X, M60, 1, 8, 4.96, 9514.13, 162328, 72221, 0
-JJ2, 0, Standard_NV24X, M60, 1, 8, 4.96, 25568, 151669, 72221, 0
-JJ8, 0, Standard_NV24X, M60, 1, 8, 4.96, 55967.2, 725357, 72221, 0
-JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 27125.9, 702272, 72221, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 34144.5, 963834, 72204, 0
+JJ8, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 163583, 725295, 72204, 0
+JJ2, 0, Standard_NV24X, M60, 1, 8, 4.96, 25506.7, 151770, 72204, 0
+JJ3, 0, Standard_NV24X, M60, 1, 8, 4.96, 10322.5, 162407, 72204, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102709, 212849, 72204, 0
+JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 36323.7, 253175, 72204, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 142435, 498096, 72204, 0
+JJ4, 0, Standard_NV24X, M60, 2, 8, 4.96, 28436.9, 702319, 72204, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
 Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 1,Quadro P600,2,0.11
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  115826
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  132113
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 18750.8, 964086, 72221, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102667, 212829, 72221, 0
-JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 124137, 498113, 72221, 0
-JJ6, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 31653, 253290, 72221, 0
-JJ3, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 8311.02, 162328, 72221, 0
-JJ2, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22409.6, 151669, 72221, 0
-JJ8, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 49058.2, 725357, 72221, 0
-JJ4, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 23761.8, 702272, 72221, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, Standard_NV24X, M60, 1, 8, 4.96, 34144.5, 963834, 72204, 0
+JJ8, 2, Standard_NC12, K80, 2, 2, 1.13, 63458.9, 725295, 72204, 0
+JJ2, 0, Standard_NV24X, M60, 1, 8, 4.96, 25506.7, 151770, 72204, 0
+JJ3, 0, Standard_NV24X, M60, 1, 8, 4.96, 10322.5, 162407, 72204, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102709, 212849, 72204, 0
+JJ6, 0, Standard_NV24X, M60, 2, 8, 4.96, 36323.7, 253175, 72204, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 142435, 498096, 72204, 0
+JJ4, 0, Standard_NV24X, M60, 2, 8, 4.96, 28436.9, 702319, 72204, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  115120
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 21785.7, 963834, 72204, 0
+JJ8, 2, Standard_NC12, K80, 2, 2, 1.13, 63458.9, 725295, 72204, 0
+JJ2, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22355.8, 151770, 72204, 0
+JJ3, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 9017.13, 162407, 72204, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 102709, 212849, 72204, 0
+JJ6, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 31679.9, 253175, 72204, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 124137, 498096, 72204, 0
+JJ4, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 24801, 702319, 72204, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
 
 
-- iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  115826
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  115120
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 7.56625; idx: 1
+	### MINIMUM COST: 9.11209; idx: 4
 
 -------- iter 10 --------
 
@@ -915,34 +791,32 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 51795.4, 702272, 80532, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 47232.4, 151669, 80532, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 94356.5, 212829, 80532, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 74293, 253290, 80532, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 384430, 498113, 80532, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 131026, 725357, 80532, 0
-JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 16362.2, 964086, 80532, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 20012, 963834, 81221.1, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 93692.2, 212849, 81221.1, 0
+JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 44686.9, 151770, 81221.1, 0
+JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 134780, 725295, 81221.1, 0
+JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 74924.6, 253175, 81221.1, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 382086, 498096, 81221.1, 0
+JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 50240.8, 702319, 81221.1, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 368068
+- Ho valutato l'obj fun delta, valore = 362074
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  362706
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  355516
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 51795.4, 702272, 80532, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 47232.4, 151669, 80532, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 94356.5, 212829, 80532, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 74293, 253290, 80532, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 384430, 498113, 80532, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 131026, 725357, 80532, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21724, 964086, 80532, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26569.8, 963834, 81221.1, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 93692.2, 212849, 81221.1, 0
+JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 44686.9, 151770, 81221.1, 0
+JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 134780, 725295, 81221.1, 0
+JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 74924.6, 253175, 81221.1, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 382086, 498096, 81221.1, 0
+JJ4, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 50240.8, 702319, 81221.1, 0
 
 
 Configurazione Nodi: 
@@ -952,20 +826,18 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  116478
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  116553
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, Standard_NV24X, M60, 2, 8, 4.96, 17962, 702272, 80532, 0
-JJ2, 1, Standard_NV24X, M60, 2, 8, 4.96, 16421.5, 151669, 80532, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 94356.5, 212829, 80532, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 26281.3, 253290, 80532, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 132899, 498113, 80532, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 46485.7, 725357, 80532, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21724, 964086, 80532, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26569.8, 963834, 81221.1, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 93692.2, 212849, 81221.1, 0
+JJ2, 1, Standard_NV24X, M60, 2, 8, 4.96, 15536.5, 151770, 81221.1, 0
+JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 47817.4, 725295, 81221.1, 0
+JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 25984.8, 253175, 81221.1, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 132089, 498096, 81221.1, 0
+JJ4, 1, Standard_NV24X, M60, 1, 8, 4.96, 17771.6, 702319, 81221.1, 0
 
 
 Configurazione Nodi: 
@@ -975,20 +847,18 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  101496
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  101562
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 15665.4, 702272, 80532, 0
-JJ2, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 14330.1, 151669, 80532, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 94356.5, 212829, 80532, 0
-JJ6, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 23022.4, 253290, 80532, 0
-JJ9, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 115826, 498113, 80532, 0
-JJ8, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 40747.2, 725357, 80532, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21724, 964086, 80532, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26569.8, 963834, 81221.1, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 93692.2, 212849, 81221.1, 0
+JJ2, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 13557.8, 151770, 81221.1, 0
+JJ8, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 41914.5, 725295, 81221.1, 0
+JJ6, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 22662.8, 253175, 81221.1, 0
+JJ9, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 115120, 498096, 81221.1, 0
+JJ4, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 15567.6, 702319, 81221.1, 0
 
 
 Configurazione Nodi: 
@@ -998,13 +868,11 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-1, 0, 2, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  101496
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  101562
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 7.36299; idx: 4
+	### MINIMUM COST: 9.00542; idx: 4
 
 -------- iter 11 --------
 
@@ -1017,36 +885,34 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 47957.2, 702272, 81131, 0
-JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 15911, 964086, 81131, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93757.5, 212829, 81131, 0
-JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43463, 151669, 81131, 0
-JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 206855, 669354, 81131, 0
-JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 72360.1, 253290, 81131, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 382442, 498113, 81131, 0
-JJ8, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 134425, 725357, 81131, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 49957.2, 702319, 81309, 0
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 19945.9, 963834, 81309, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93604.4, 212849, 81309, 0
+JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 42636.3, 151770, 81309, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 206855, 669532, 81309, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 71851.5, 253175, 81309, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 381794, 498096, 81309, 0
+JJ8, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 140045, 725295, 81309, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 366531
+- Ho valutato l'obj fun delta, valore = 361849
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 2, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  361317
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  355313
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 47957.2, 702272, 81131, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21125, 964086, 81131, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93757.5, 212829, 81131, 0
-JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43463, 151669, 81131, 0
-JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 206855, 669354, 81131, 0
-JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 72360.1, 253290, 81131, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 382442, 498113, 81131, 0
-JJ8, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 134425, 725357, 81131, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 49957.2, 702319, 81309, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26482, 963834, 81309, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93604.4, 212849, 81309, 0
+JJ2, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 42636.3, 151770, 81309, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 206855, 669532, 81309, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 71851.5, 253175, 81309, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 381794, 498096, 81309, 0
+JJ8, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 140045, 725295, 81309, 0
 
 
 Configurazione Nodi: 
@@ -1056,21 +922,19 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  116799
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  116868
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 16963.8, 702272, 81131, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21125, 964086, 81131, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93757.5, 212829, 81131, 0
-JJ2, 0, Standard_NV24X, M60, 1, 8, 4.96, 15413.2, 151669, 81131, 0
-JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 88879.1, 669354, 81131, 0
-JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 25597.6, 253290, 81131, 0
-JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 132212, 498113, 81131, 0
-JJ8, 0, Standard_NV24X, M60, 2, 8, 4.96, 46760.2, 725357, 81131, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 17671.3, 702319, 81309, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26482, 963834, 81309, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93604.4, 212849, 81309, 0
+JJ2, 0, Standard_NV24X, M60, 1, 8, 4.96, 15120, 151770, 81309, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 88879.1, 669532, 81309, 0
+JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 25417.6, 253175, 81309, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 131988, 498096, 81309, 0
+JJ8, 0, Standard_NV24X, M60, 2, 8, 4.96, 48715.1, 725295, 81309, 0
 
 
 Configurazione Nodi: 
@@ -1080,21 +944,19 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  101717
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  101779
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 14860, 702272, 81131, 0
-JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 21125, 964086, 81131, 0
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93757.5, 212829, 81131, 0
-JJ2, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 13509.2, 151669, 81131, 0
-JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 80871, 669354, 81131, 0
-JJ6, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22423.4, 253290, 81131, 0
-JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 115227, 498113, 81131, 0
-JJ8, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 40809.6, 725357, 81131, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 15479.7, 702319, 81309, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 26482, 963834, 81309, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 93604.4, 212849, 81309, 0
+JJ2, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 13252.3, 151770, 81309, 0
+JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 80871, 669532, 81309, 0
+JJ6, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22265.8, 253175, 81309, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 115032, 498096, 81309, 0
+JJ8, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 42515.7, 725295, 81309, 0
 
 
 Configurazione Nodi: 
@@ -1104,13 +966,11 @@ Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-1, 0, 2, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  101717
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  101779
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 7.15997; idx: 3
+	### MINIMUM COST: 8.97564; idx: 3
 
 -------- iter 12 --------
 
@@ -1123,107 +983,73 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 19299.1, 702272, 90011, 0
-JJ5, 3, Standard_NV6, M60, 1, 1, 0.62, 9222.76, 964086, 90011, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 15508.7, 151669, 90011, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 84877.5, 212829, 90011, 0
-JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 105175, 725357, 90011, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 45776.3, 391927, 90011, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 43704.4, 253290, 90011, 0
-JJ9, 2, In-house server 3, Quadro P600, 3, 8, 0.44, 346704, 498113, 90011, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 184141, 669354, 90011, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 83808.7, 963834, 90219, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 22023.6, 702319, 90219, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 84694.4, 212849, 90219, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 110696, 725295, 90219, 0
+JJ11, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 301866, 392135, 90219, 0
+JJ2, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 14547.3, 151770, 90219, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43098.9, 253175, 90219, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 352222, 498096, 90219, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 184064, 669532, 90219, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 337481
+- Ho valutato l'obj fun delta, valore = 337675
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 1, 3, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  334459
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  184714
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 19299.1, 702272, 90011, 0
-JJ5, 3, Standard_NC6, K80, 1, 1, 0.56, 12245, 964086, 90011, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 15508.7, 151669, 90011, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 84877.5, 212829, 90011, 0
-JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 105175, 725357, 90011, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 45776.3, 391927, 90011, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 43704.4, 253290, 90011, 0
-JJ9, 2, In-house server 3, Quadro P600, 3, 8, 0.44, 346704, 498113, 90011, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 184141, 669354, 90011, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 83808.7, 963834, 90219, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 22023.6, 702319, 90219, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 84694.4, 212849, 90219, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 110696, 725295, 90219, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 189772, 392135, 90219, 0
+JJ2, 0, Standard_NV24X, M60, 2, 8, 4.96, 5057.72, 151770, 90219, 0
+JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 15246.4, 253175, 90219, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 121765, 498096, 90219, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 79086.8, 669532, 90219, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 3,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, 1, 3, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  116656
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  177749
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 2, Standard_NV24X, M60, 1, 8, 4.96, 6826.64, 702272, 90011, 0
-JJ5, 3, Standard_NC6, K80, 1, 1, 0.56, 12245, 964086, 90011, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 15508.7, 151669, 90011, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 84877.5, 212829, 90011, 0
-JJ8, 2, Standard_NV24X, M60, 2, 8, 4.96, 36585.4, 725357, 90011, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 45776.3, 391927, 90011, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 43704.4, 253290, 90011, 0
-JJ9, 2, Standard_NV24X, M60, 3, 8, 4.96, 123483, 498113, 90011, 0
-JJ10, 2, Standard_NV24X, M60, 2, 8, 4.96, 79119.8, 669354, 90011, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 83808.7, 963834, 90219, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 22023.6, 702319, 90219, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 84694.4, 212849, 90219, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 110696, 725295, 90219, 0
+JJ11, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 182163, 392135, 90219, 0
+JJ2, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 4413.57, 151770, 90219, 0
+JJ6, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 13355.8, 253175, 90219, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 106122, 498096, 90219, 0
+JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 71961, 669532, 90219, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 3,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-3, 0, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  102351
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ4, 2, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 5980.02, 702272, 90011, 0
-JJ5, 3, Standard_NC6, K80, 1, 1, 0.56, 12245, 964086, 90011, 0
-JJ2, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 15508.7, 151669, 90011, 0
-JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 84877.5, 212829, 90011, 0
-JJ8, 2, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 31929.6, 725357, 90011, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 45776.3, 391927, 90011, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 43704.4, 253290, 90011, 0
-JJ9, 2, In-house server 2, GTX 1080Ti, 3, 8, 1.13, 108331, 498113, 90011, 0
-JJ10, 2, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 71991, 669354, 90011, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
-Node_idx: 3,   old_stp: Standard_NC6,K80,1,0.56
-
-
-- iter 3 of 10
-
-Printing the indices of the node to change
-3, 2, 0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  102351
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  177749
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 5.27747; idx: 1
+	### MINIMUM COST: 5.81892; idx: 2
 
 -------- iter 13 --------
 
@@ -1236,143 +1062,92 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 4718.69, 964086, 95991, 0
-JJ2, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 9150.74, 151669, 95991, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 69692.6, 212829, 95991, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 333484, 498113, 95991, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 39185.4, 253290, 95991, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 243630, 669354, 95991, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 262432, 391927, 95991, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 82090.7, 725357, 95991, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 16953.3, 702319, 94632.6, 0
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 12538, 963834, 94632.6, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 80280.8, 212849, 94632.6, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 28856.4, 253175, 94632.6, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 337573, 498096, 94632.6, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 172775, 669532, 94632.6, 0
+JJ11, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 294552, 392135, 94632.6, 0
+JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 102072, 725295, 94632.6, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 328766
+- Ho valutato l'obj fun delta, valore = 325035
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  327219
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  320926
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 6264.97, 964086, 95991, 0
-JJ2, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 9150.74, 151669, 95991, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 78897.5, 212829, 95991, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 333484, 498113, 95991, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 39185.4, 253290, 95991, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 243630, 669354, 95991, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 262432, 391927, 95991, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 82090.7, 725357, 95991, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 16953.3, 702319, 94632.6, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 16646.6, 963834, 94632.6, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 80280.8, 212849, 94632.6, 0
+JJ6, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 28856.4, 253175, 94632.6, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 337573, 498096, 94632.6, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 172775, 669532, 94632.6, 0
+JJ11, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 294552, 392135, 94632.6, 0
+JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 102072, 725295, 94632.6, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  324333
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  179177
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 29880.5, 964086, 95991, 0
-JJ2, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 9150.74, 151669, 95991, 0
-JJ7, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 219478, 212829, 95991, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 333484, 498113, 95991, 0
-JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 39185.4, 253290, 95991, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 243630, 669354, 95991, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 262432, 391927, 95991, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 82090.7, 725357, 95991, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, Standard_NV24X, M60, 1, 8, 4.96, 5996.87, 702319, 94632.6, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 16646.6, 963834, 94632.6, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 80280.8, 212849, 94632.6, 0
+JJ6, 0, Standard_NV24X, M60, 1, 8, 4.96, 10208, 253175, 94632.6, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 116701, 498096, 94632.6, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 74236.2, 669532, 94632.6, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 185174, 392135, 94632.6, 0
+JJ8, 0, Standard_NV24X, M60, 1, 8, 4.96, 36213.3, 725295, 94632.6, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 1,Quadro P600,2,0.11
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  216233
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  172496
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 29880.5, 964086, 95991, 0
-JJ2, 1, Standard_NV24X, M60, 1, 8, 4.96, 3245.11, 151669, 95991, 0
-JJ7, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 219478, 212829, 95991, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 115287, 498113, 95991, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 13590, 253290, 95991, 0
-JJ10, 1, Standard_NV24X, M60, 1, 8, 4.96, 79606, 669354, 95991, 0
-JJ11, 1, Standard_NV24X, M60, 2, 8, 4.96, 164981, 391927, 95991, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 29124.3, 725357, 95991, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ4, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 5253.16, 702319, 94632.6, 0
+JJ5, 2, Standard_NC6, K80, 1, 1, 0.56, 16646.6, 963834, 94632.6, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 80280.8, 212849, 94632.6, 0
+JJ6, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 8942.18, 253175, 94632.6, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 101708, 498096, 94632.6, 0
+JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 67547.4, 669532, 94632.6, 0
+JJ11, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 177749, 392135, 94632.6, 0
+JJ8, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 31742.9, 725295, 94632.6, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 1,Quadro P600,2,0.11
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  161736
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 6264.97, 964086, 95991, 0
-JJ2, 1, Standard_NV24X, M60, 1, 8, 4.96, 3245.11, 151669, 95991, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 78897.5, 212829, 95991, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 115287, 498113, 95991, 0
-JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 13590, 253290, 95991, 0
-JJ10, 1, Standard_NV24X, M60, 1, 8, 4.96, 79606, 669354, 95991, 0
-JJ11, 1, Standard_NV24X, M60, 2, 8, 4.96, 164981, 391927, 95991, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 29124.3, 725357, 95991, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-
-
-- iter 4 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  155522
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 6264.97, 964086, 95991, 0
-JJ2, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 2844.25, 151669, 95991, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 78897.5, 212829, 95991, 0
-JJ9, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 100476, 498113, 95991, 0
-JJ6, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 11852.6, 253290, 95991, 0
-JJ10, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 68472.2, 669354, 95991, 0
-JJ11, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 158366, 391927, 95991, 0
-JJ8, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 25529, 725357, 95991, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
-
-
-- iter 5 of 10
-
-Printing the indices of the node to change
-0, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  155522
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  172496
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 2.20205; idx: 4
+	### MINIMUM COST: 5.64209; idx: 4
 
 -------- iter 14 --------
 
@@ -1385,119 +1160,75 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 2576.44, 964086, 98835.3, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 67180.2, 212829, 98835.3, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 28671.7, 253290, 98835.3, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 324044, 498113, 98835.3, 0
-JJ10, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 161831, 669354, 98835.3, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39081.6, 391927, 98835.3, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 72944.8, 725357, 98835.3, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 57057.8, 963834, 99316, 0
+JJ12, 3, In-house server 1, Quadro P600, 2, 2, 0.11, 603953, 878406, 99316, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 90600.9, 725295, 99316, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 43490.3, 392135, 99316, 0
+JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 66777.5, 212849, 99316, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 14275.2, 253175, 99316, 0
+JJ9, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 322492, 498096, 99316, 0
+JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 160796, 669532, 99316, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 1909.9, 702319, 99316, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 321468
+- Ho valutato l'obj fun delta, valore = 602044
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 2, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  320623
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  457649
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 3420.72, 964086, 98835.3, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 76053.2, 212829, 98835.3, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 28671.7, 253290, 98835.3, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 324044, 498113, 98835.3, 0
-JJ10, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 161831, 669354, 98835.3, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39081.6, 391927, 98835.3, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 72944.8, 725357, 98835.3, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 57057.8, 963834, 99316, 0
+JJ12, 3, Standard_NC12, K80, 2, 2, 1.13, 459559, 878406, 99316, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 90600.9, 725295, 99316, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 43490.3, 392135, 99316, 0
+JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 66777.5, 212849, 99316, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 14275.2, 253175, 99316, 0
+JJ9, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 322492, 498096, 99316, 0
+JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 160796, 669532, 99316, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 1909.9, 702319, 99316, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: In-house server 1,Quadro P600,2,0.11
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 3,   old_stp: Standard_NC12,K80,2,1.13
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  158411
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  448195
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 3420.72, 964086, 98835.3, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 76053.2, 212829, 98835.3, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 10142.7, 253290, 98835.3, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 112024, 498113, 98835.3, 0
-JJ10, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 161831, 669354, 98835.3, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 156012, 391927, 98835.3, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 25879.5, 725357, 98835.3, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 57057.8, 963834, 99316, 0
+JJ12, 3, Standard_NV12, M60, 2, 2, 1.24, 450105, 878406, 99316, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 90600.9, 725295, 99316, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 43490.3, 392135, 99316, 0
+JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 66777.5, 212849, 99316, 0
+JJ6, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 14275.2, 253175, 99316, 0
+JJ9, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 322492, 498096, 99316, 0
+JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 160796, 669532, 99316, 0
+JJ4, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 1909.9, 702319, 99316, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 2,   old_stp: In-house server 1,Quadro P600,2,0.11
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 3,   old_stp: Standard_NV12,M60,2,1.24
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  152591
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 3420.72, 964086, 98835.3, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 76053.2, 212829, 98835.3, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 10142.7, 253290, 98835.3, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 112024, 498113, 98835.3, 0
-JJ10, 2, Standard_NC12, K80, 2, 2, 1.13, 75206.1, 669354, 98835.3, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 156012, 391927, 98835.3, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 25879.5, 725357, 98835.3, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
-
-
-- iter 3 of 10
-
-Printing the indices of the node to change
-2, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  145405
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 3420.72, 964086, 98835.3, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 76053.2, 212829, 98835.3, 0
-JJ6, 1, Standard_NC24X, K80, 1, 8, 4.48, 11281.4, 253290, 98835.3, 0
-JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 125053, 498113, 98835.3, 0
-JJ10, 2, Standard_NC12, K80, 2, 2, 1.13, 75206.1, 669354, 98835.3, 0
-JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 148826, 391927, 98835.3, 0
-JJ8, 1, Standard_NC24X, K80, 1, 8, 4.48, 28771.9, 725357, 98835.3, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
-Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
-
-
-- iter 4 of 10
-
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  145405
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  448195
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 1.28106; idx: 0
+	### MINIMUM COST: 0.85415; idx: 1
 
 -------- iter 15 --------
 
@@ -1510,76 +1241,72 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 2516.39, 964086, 98915, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 67109.8, 212829, 98915, 0
-JJ6, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 29571.6, 253290, 98915, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 323837, 498113, 98915, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 161660, 669354, 98915, 0
-JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 72742.6, 725357, 98915, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39060.6, 391927, 98915, 0
-JJ12, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 370176, 878005, 98915, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 8708.89, 963834, 101226, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 73435.2, 212849, 101226, 0
+JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 229260, 669532, 101226, 0
+JJ6, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 12365.3, 253175, 101226, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 320121, 498096, 101226, 0
+JJ12, 3, In-house server 3, Quadro P600, 4, 8, 0.44, 43023.7, 878406, 101226, 0
+JJ11, 1, In-house server 3, Quadro P600, 3, 8, 0.44, 174930, 392135, 101226, 0
+JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 85177.6, 725295, 101226, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 367660
+- Ho valutato l'obj fun delta, valore = 311413
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  366835
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  168289
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 3340.99, 964086, 98915, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 75973.5, 212829, 98915, 0
-JJ6, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 29571.6, 253290, 98915, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 323837, 498113, 98915, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 161660, 669354, 98915, 0
-JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 72742.6, 725357, 98915, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39060.6, 391927, 98915, 0
-JJ12, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 370176, 878005, 98915, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 8708.89, 963834, 101226, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 73435.2, 212849, 101226, 0
+JJ10, 1, Standard_NV24X, M60, 1, 8, 4.96, 74910.4, 669532, 101226, 0
+JJ6, 1, Standard_NV24X, M60, 2, 8, 4.96, 4288.44, 253175, 101226, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 110668, 498096, 101226, 0
+JJ12, 3, In-house server 3, Quadro P600, 4, 8, 0.44, 43023.7, 878406, 101226, 0
+JJ11, 1, Standard_NV24X, M60, 3, 8, 4.96, 172578, 392135, 101226, 0
+JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 30219.5, 725295, 101226, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 3,   old_stp: In-house server 3,Quadro P600,4,0.44
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  354241
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  167938
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ5, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 15934.7, 964086, 98915, 0
-JJ7, 0, In-house server 1, Quadro P600, 1, 2, 0.11, 211344, 212829, 98915, 0
-JJ6, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 29571.6, 253290, 98915, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 323837, 498113, 98915, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 161660, 669354, 98915, 0
-JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 72742.6, 725357, 98915, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39060.6, 391927, 98915, 0
-JJ12, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 370176, 878005, 98915, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 2, Standard_NV6, M60, 1, 1, 0.62, 8708.89, 963834, 101226, 0
+JJ7, 0, Standard_NC6, K80, 1, 1, 0.56, 73435.2, 212849, 101226, 0
+JJ10, 1, Standard_NC24X, K80, 1, 8, 4.48, 84395.8, 669532, 101226, 0
+JJ6, 1, Standard_NC24X, K80, 2, 8, 4.48, 4784.79, 253175, 101226, 0
+JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 123539, 498096, 101226, 0
+JJ12, 3, In-house server 3, Quadro P600, 4, 8, 0.44, 43023.7, 878406, 101226, 0
+JJ11, 1, Standard_NC24X, K80, 3, 8, 4.48, 172722, 392135, 101226, 0
+JJ8, 1, Standard_NC24X, K80, 1, 8, 4.48, 33596.9, 725295, 101226, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 1,Quadro P600,2,0.11
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 2,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 3,   old_stp: In-house server 3,Quadro P600,4,0.44
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  354241
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  167938
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 1.48187; idx: 3
+	### MINIMUM COST: 4.98342; idx: 1
 
 -------- iter 16 --------
 
@@ -1592,81 +1319,69 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.8128e+07, 108093, 0
-JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 1067.01, 964086, 108093, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 64195.4, 212829, 108093, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 19633.3, 253290, 108093, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 314659, 498113, 108093, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 147452, 669354, 108093, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 63564.6, 725357, 108093, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 29882.6, 391927, 108093, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 42135.8, 878005, 108093, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 3, Standard_NV6, M60, 1, 1, 0.62, 3924.1, 963834, 106011, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 68650.4, 212849, 106011, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 307723, 498096, 106011, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 149878, 669532, 106011, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 40428.5, 392135, 106011, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 76059.8, 725295, 106011, 0
+JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 298940, 878406, 106011, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 313592
+- Ho valutato l'obj fun delta, valore = 303799
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 0, 1, 3, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  146385
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  302513
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.8128e+07, 108093, 0
-JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 1067.01, 964086, 108093, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 64195.4, 212829, 108093, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 6945.31, 253290, 108093, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 108779, 498113, 108093, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 147452, 669354, 108093, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 22551.6, 725357, 108093, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 119290, 391927, 108093, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 42135.8, 878005, 108093, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 3, Standard_NC6, K80, 1, 1, 0.56, 5210, 963834, 106011, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 68650.4, 212849, 106011, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 307723, 498096, 106011, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 149878, 669532, 106011, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 40428.5, 392135, 106011, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 76059.8, 725295, 106011, 0
+JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 298940, 878406, 106011, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+Node_idx: 3,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-3, 1, 0, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  146035
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  293730
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.8128e+07, 108093, 0
-JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 1416.66, 964086, 108093, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 72674.2, 212829, 108093, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 6945.31, 253290, 108093, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 108779, 498113, 108093, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 147452, 669354, 108093, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 22551.6, 725357, 108093, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 119290, 391927, 108093, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 42135.8, 878005, 108093, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ5, 3, Standard_NC6, K80, 1, 1, 0.56, 5210, 963834, 106011, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 68650.4, 212849, 106011, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 106381, 498096, 106011, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 64397.9, 669532, 106011, 0
+JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 161389, 392135, 106011, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 76059.8, 725295, 106011, 0
+JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 298940, 878406, 106011, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+Node_idx: 3,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 3, 1, 2, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  146035
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  293730
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 0.963271; idx: 2
+	### MINIMUM COST: 2.24546; idx: 2
 
 -------- iter 17 --------
 
@@ -1679,78 +1394,95 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 41787.7, 7.8128e+07, 109510, 0
-JJ7, 0, Standard_NV6, M60, 1, 1, 0.62, 62944, 212829, 109510, 0
-JJ6, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 15628.6, 253290, 109510, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 310562, 498113, 109510, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 146035, 669354, 109510, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 40719.2, 878005, 109510, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 29527.8, 391927, 109510, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 59571.6, 725357, 109510, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.81283e+07, 108397, 0
+JJ5, 0, Standard_NV12, M60, 1, 2, 1.24, 2126.76, 963834, 108397, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 58533.2, 212849, 108397, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 300820, 498096, 108397, 0
+JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 144324, 669532, 108397, 0
+JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39830.8, 392135, 108397, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 70755.1, 725295, 108397, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 37933.7, 878406, 108397, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 294933
+- Ho valutato l'obj fun delta, valore = 298693
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 3, 0, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  140506
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  297996
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 41787.7, 7.8128e+07, 109510, 0
-JJ7, 0, Standard_NV6, M60, 1, 1, 0.62, 62944, 212829, 109510, 0
-JJ6, 1, Standard_NV24X, M60, 1, 8, 4.96, 5528.65, 253290, 109510, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 107363, 498113, 109510, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 146035, 669354, 109510, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 40719.2, 878005, 109510, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 117873, 391927, 109510, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 21135, 725357, 109510, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.81283e+07, 108397, 0
+JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 2823.69, 963834, 108397, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 66264.1, 212849, 108397, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 300820, 498096, 108397, 0
+JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 144324, 669532, 108397, 0
+JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 39830.8, 392135, 108397, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 70755.1, 725295, 108397, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 37933.7, 878406, 108397, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-3, 0, 2, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  139886
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  156179
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 41787.7, 7.8128e+07, 109510, 0
-JJ7, 0, Standard_NV6, M60, 1, 1, 0.62, 62944, 212829, 109510, 0
-JJ6, 1, Standard_NC24X, K80, 1, 8, 4.48, 6149.33, 253290, 109510, 0
-JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 119850, 498113, 109510, 0
-JJ10, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 146035, 669354, 109510, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 40719.2, 878005, 109510, 0
-JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 112444, 391927, 109510, 0
-JJ8, 1, Standard_NC24X, K80, 1, 8, 4.48, 23497, 725357, 109510, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.81283e+07, 108397, 0
+JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 2823.69, 963834, 108397, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 66264.1, 212849, 108397, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 103995, 498096, 108397, 0
+JJ10, 1, Standard_NV24X, M60, 2, 8, 4.96, 62011.6, 669532, 108397, 0
+JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 159002, 392135, 108397, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 70755.1, 725295, 108397, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 37933.7, 878406, 108397, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  148855
 
-Printing the indices of the node to change
-3, 0, 2, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  139886
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 43204.4, 7.81283e+07, 108397, 0
+JJ5, 0, Standard_NC12, K80, 1, 2, 1.13, 2823.69, 963834, 108397, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 66264.1, 212849, 108397, 0
+JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 116091, 498096, 108397, 0
+JJ10, 1, Standard_NC24X, K80, 2, 8, 4.48, 67070, 669532, 108397, 0
+JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 151679, 392135, 108397, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 70755.1, 725295, 108397, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 37933.7, 878406, 108397, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
+Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  148855
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 11.4176; idx: 0
+	### MINIMUM COST: 1.91999; idx: 0
 
 -------- iter 18 --------
 
@@ -1763,75 +1495,69 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 35638.4, 7.8128e+07, 115659, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 294627, 498113, 115659, 0
-JJ10, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 208730, 669354, 115659, 0
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 56794.7, 212829, 115659, 0
-JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 27912.9, 391927, 115659, 0
-JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43981.3, 725357, 115659, 0
-JJ12, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 483221, 878005, 115659, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 40380.7, 7.81283e+07, 111221, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 63440.4, 212849, 111221, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 293503, 498096, 111221, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 138248, 669532, 111221, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 39089.3, 392135, 111221, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 35110, 878406, 111221, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 67931.4, 725295, 111221, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 455308
+- Ho valutato l'obj fun delta, valore = 258393
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 1, 3, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  339779
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  120932
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 35638.4, 7.8128e+07, 115659, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 294627, 498113, 115659, 0
-JJ10, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 208730, 669354, 115659, 0
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 56794.7, 212829, 115659, 0
-JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 27912.9, 391927, 115659, 0
-JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43981.3, 725357, 115659, 0
-JJ12, 2, Standard_NC12, K80, 2, 2, 1.13, 367692, 878005, 115659, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 40380.7, 7.81283e+07, 111221, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 63440.4, 212849, 111221, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 101466, 498096, 111221, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 59400.9, 669532, 111221, 0
+JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 156042, 392135, 111221, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 35110, 878406, 111221, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 67931.4, 725295, 111221, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-3, 0, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  332214
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  113745
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 35638.4, 7.8128e+07, 115659, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 294627, 498113, 115659, 0
-JJ10, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 208730, 669354, 115659, 0
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 56794.7, 212829, 115659, 0
-JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 27912.9, 391927, 115659, 0
-JJ8, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 43981.3, 725357, 115659, 0
-JJ12, 2, Standard_NV12, M60, 2, 2, 1.24, 360127, 878005, 115659, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 40380.7, 7.81283e+07, 111221, 0
+JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 63440.4, 212849, 111221, 0
+JJ9, 0, Standard_NC24X, K80, 1, 8, 4.48, 113267, 498096, 111221, 0
+JJ10, 0, Standard_NC24X, K80, 2, 8, 4.48, 64246.3, 669532, 111221, 0
+JJ11, 0, Standard_NC24X, K80, 5, 8, 4.48, 148855, 392135, 111221, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 35110, 878406, 111221, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 67931.4, 725295, 111221, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
-Node_idx: 2,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 2, 1, 3, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  332214
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  113745
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 17.8333; idx: 2
+	### MINIMUM COST: 25.0647; idx: 3
 
 -------- iter 19 --------
 
@@ -1844,78 +1570,72 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 33987.4, 7.8128e+07, 117310, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 62426.9, 212829, 117310, 0
-JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 118965, 256619, 117310, 0
-JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 293397, 498113, 117310, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 143514, 669354, 117310, 0
-JJ8, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 42330.3, 725357, 117310, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 26261.9, 391927, 117310, 0
-JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 269017, 878005, 117310, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 34045.4, 7.81283e+07, 117556, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 105085, 256865, 117556, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 50442.7, 212849, 117556, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 277087, 498096, 117556, 0
+JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 124615, 669532, 117556, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 28774.7, 878406, 117556, 0
+JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 37425.6, 392135, 117556, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 61596.1, 725295, 117556, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 267135
+- Ho valutato l'obj fun delta, valore = 248312
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, 3, 1, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  253999
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  120626
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 33987.4, 7.8128e+07, 117310, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 62426.9, 212829, 117310, 0
-JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 118965, 256619, 117310, 0
-JJ9, 1, Standard_NV24X, M60, 2, 8, 4.96, 106520, 498113, 117310, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 143514, 669354, 117310, 0
-JJ8, 1, Standard_NV24X, M60, 1, 8, 4.96, 15018.1, 725357, 117310, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 104836, 391927, 117310, 0
-JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 269017, 878005, 117310, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 34045.4, 7.81283e+07, 117556, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 105085, 256865, 117556, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 50442.7, 212849, 117556, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 95790.3, 498096, 117556, 0
+JJ10, 1, Standard_NV24X, M60, 2, 8, 4.96, 53543.4, 669532, 117556, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 28774.7, 878406, 117556, 0
+JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 149401, 392135, 117556, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 61596.1, 725295, 117556, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
 Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 3, 1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  252321
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  113745
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 33987.4, 7.8128e+07, 117310, 0
-JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 62426.9, 212829, 117310, 0
-JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 118965, 256619, 117310, 0
-JJ9, 1, Standard_NC24X, K80, 2, 8, 4.48, 118004, 498113, 117310, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 143514, 669354, 117310, 0
-JJ8, 1, Standard_NC24X, K80, 1, 8, 4.48, 16696.5, 725357, 117310, 0
-JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 100008, 391927, 117310, 0
-JJ12, 2, In-house server 3, Quadro P600, 6, 8, 0.44, 269017, 878005, 117310, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 34045.4, 7.81283e+07, 117556, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 105085, 256865, 117556, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 50442.7, 212849, 117556, 0
+JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 106932, 498096, 117556, 0
+JJ10, 1, Standard_NC24X, K80, 2, 8, 4.48, 57911, 669532, 117556, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 28774.7, 878406, 117556, 0
+JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 142520, 392135, 117556, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 61596.1, 725295, 117556, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
 Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,5,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, 1, 2, 3, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  252321
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  113745
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 22.9062; idx: 2
+	### MINIMUM COST: 25.9772; idx: 0
 
 -------- iter 20 --------
 
@@ -1928,81 +1648,75 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 24966.4, 7.8128e+07, 126331, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 47175.2, 212829, 126331, 0
-JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 97116.2, 256619, 126331, 0
-JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 270968, 498113, 126331, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 194062, 669354, 126331, 0
-JJ15, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 227365, 546299, 126331, 0
-JJ12, 2, In-house server 1, Quadro P600, 2, 2, 0.11, 464876, 878005, 126331, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 157559, 391927, 126331, 0
-JJ8, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 20262.2, 725357, 126331, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 25017.4, 7.81283e+07, 126584, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 54736.3, 725295, 126584, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 19746.7, 878406, 126584, 0
+JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 231165, 392135, 126584, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 46884.7, 212849, 126584, 0
+JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 254058, 498096, 126584, 0
+JJ15, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 227365, 546552, 126584, 0
+JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 105188, 669532, 126584, 0
+JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 108745, 256865, 126584, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 444614
+- Ho valutato l'obj fun delta, valore = 234311
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 3, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  333471
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  125578
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 24966.4, 7.8128e+07, 126331, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 47175.2, 212829, 126331, 0
-JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 97116.2, 256619, 126331, 0
-JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 270968, 498113, 126331, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 194062, 669354, 126331, 0
-JJ15, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 227365, 546299, 126331, 0
-JJ12, 2, Standard_NC12, K80, 2, 2, 1.13, 353733, 878005, 126331, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 157559, 391927, 126331, 0
-JJ8, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 20262.2, 725357, 126331, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 25017.4, 7.81283e+07, 126584, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 54736.3, 725295, 126584, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 19746.7, 878406, 126584, 0
+JJ11, 1, Standard_NV24X, M60, 2, 8, 4.96, 145324, 392135, 126584, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 46884.7, 212849, 126584, 0
+JJ9, 1, Standard_NV24X, M60, 2, 8, 4.96, 92237.6, 498096, 126584, 0
+JJ15, 1, Standard_NV24X, M60, 1, 8, 4.96, 80427.9, 546552, 126584, 0
+JJ10, 1, Standard_NV24X, M60, 2, 8, 4.96, 45196.2, 669532, 126584, 0
+JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 108745, 256865, 126584, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 1,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,6,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, 3, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  326193
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  119751
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 24966.4, 7.8128e+07, 126331, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 47175.2, 212829, 126331, 0
-JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 97116.2, 256619, 126331, 0
-JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 270968, 498113, 126331, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 194062, 669354, 126331, 0
-JJ15, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 227365, 546299, 126331, 0
-JJ12, 2, Standard_NV12, M60, 2, 2, 1.24, 346455, 878005, 126331, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 157559, 391927, 126331, 0
-JJ8, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 20262.2, 725357, 126331, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 25017.4, 7.81283e+07, 126584, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 54736.3, 725295, 126584, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 19746.7, 878406, 126584, 0
+JJ11, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 139498, 392135, 126584, 0
+JJ7, 0, Standard_NC12, K80, 1, 2, 1.13, 46884.7, 212849, 126584, 0
+JJ9, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 81253.4, 498096, 126584, 0
+JJ15, 1, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 70453.9, 546552, 126584, 0
+JJ10, 1, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 41124, 669532, 126584, 0
+JJ14, 0, Standard_NC12, K80, 1, 2, 1.13, 108745, 256865, 126584, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 2,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 0,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 1,   old_stp: In-house server 2,GTX 1080Ti,7,1.13
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,6,0.44
 Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, 2, 3, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  326193
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  119751
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 16.4349; idx: 3
+	### MINIMUM COST: 17.2235; idx: 2
 
 -------- iter 21 --------
 
@@ -2015,40 +1729,38 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16119.4, 7.8128e+07, 135178, 0
-JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88269.2, 256619, 135178, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 38328.2, 212829, 135178, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 32408.2, 878005, 135178, 0
-JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 10963, 725357, 135178, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 22551.4, 391927, 135178, 0
-JJ16, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 202454, 394768, 135178, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 261745, 498113, 135178, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 128361, 669354, 135178, 0
-JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 218518, 546299, 135178, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16046.4, 7.81283e+07, 135555, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88132.4, 256865, 135555, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 33490.4, 212849, 135555, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 10775.7, 878406, 135555, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 43952.4, 725295, 135555, 0
+JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 32800.5, 392135, 135555, 0
+JJ16, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 202454, 395145, 135555, 0
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 225683, 498096, 135555, 0
+JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 82242.1, 669532, 135555, 0
+JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 198414, 546552, 135555, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 250782
+- Ho valutato l'obj fun delta, valore = 214908
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 2, 3, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  207555
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  187638
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16119.4, 7.8128e+07, 135178, 0
-JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88269.2, 256619, 135178, 0
-JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 38328.2, 212829, 135178, 0
-JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 32408.2, 878005, 135178, 0
-JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 10963, 725357, 135178, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 90024.1, 391927, 135178, 0
-JJ16, 1, Standard_NV24X, M60, 2, 8, 4.96, 86987.5, 394768, 135178, 0
-JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 90486.5, 498113, 135178, 0
-JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 128361, 669354, 135178, 0
-JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 218518, 546299, 135178, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16046.4, 7.81283e+07, 135555, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88132.4, 256865, 135555, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 33490.4, 212849, 135555, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 10775.7, 878406, 135555, 0
+JJ8, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 43952.4, 725295, 135555, 0
+JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 130938, 392135, 135555, 0
+JJ16, 1, Standard_NV24X, M60, 2, 8, 4.96, 86987.5, 395145, 135555, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 78019.8, 498096, 135555, 0
+JJ10, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 82242.1, 669532, 135555, 0
+JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 198414, 546552, 135555, 0
 
 
 Configurazione Nodi: 
@@ -2059,13 +1771,86 @@ Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
 
 
 - iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  115344
 
-Printing the indices of the node to change
-2, 0, 3, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  207555
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16046.4, 7.81283e+07, 135555, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88132.4, 256865, 135555, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 33490.4, 212849, 135555, 0
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 106096, 878406, 135555, 0
+JJ8, 2, Standard_NV24X, M60, 1, 8, 4.96, 15593.6, 725295, 135555, 0
+JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 130938, 392135, 135555, 0
+JJ16, 1, Standard_NV24X, M60, 2, 8, 4.96, 86987.5, 395145, 135555, 0
+JJ9, 1, Standard_NV24X, M60, 1, 8, 4.96, 78019.8, 498096, 135555, 0
+JJ10, 2, Standard_NV24X, M60, 2, 8, 4.96, 35336.9, 669532, 135555, 0
+JJ15, 2, Standard_NV24X, M60, 1, 8, 4.96, 70186.9, 546552, 135555, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  109313
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16046.4, 7.81283e+07, 135555, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88132.4, 256865, 135555, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 33490.4, 212849, 135555, 0
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 106096, 878406, 135555, 0
+JJ8, 2, Standard_NV24X, M60, 1, 8, 4.96, 15593.6, 725295, 135555, 0
+JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 124907, 392135, 135555, 0
+JJ16, 1, Standard_NC24X, K80, 2, 8, 4.48, 94083.3, 395145, 135555, 0
+JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 87094.3, 498096, 135555, 0
+JJ10, 2, Standard_NV24X, M60, 2, 8, 4.96, 35336.9, 669532, 135555, 0
+JJ15, 2, Standard_NV24X, M60, 1, 8, 4.96, 70186.9, 546552, 135555, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  108861
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 16046.4, 7.81283e+07, 135555, 0
+JJ14, 0, Standard_NV12, M60, 1, 2, 1.24, 88132.4, 256865, 135555, 0
+JJ7, 0, Standard_NV12, M60, 1, 2, 1.24, 33490.4, 212849, 135555, 0
+JJ12, 2, Standard_NC24X, K80, 4, 8, 4.48, 100238, 878406, 135555, 0
+JJ8, 2, Standard_NC24X, K80, 1, 8, 4.48, 17336.3, 725295, 135555, 0
+JJ11, 1, Standard_NC24X, K80, 5, 8, 4.48, 124907, 392135, 135555, 0
+JJ16, 1, Standard_NC24X, K80, 2, 8, 4.48, 94083.3, 395145, 135555, 0
+JJ9, 1, Standard_NC24X, K80, 1, 8, 4.48, 87094.3, 498096, 135555, 0
+JJ10, 2, Standard_NC24X, K80, 2, 8, 4.48, 38219.4, 669532, 135555, 0
+JJ15, 2, Standard_NC24X, K80, 1, 8, 4.48, 78066.9, 546552, 135555, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV12,M60,2,1.24
+Node_idx: 1,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 2,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  108861
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 9.89714; idx: 0
+	### MINIMUM COST: 9.72807; idx: 0
 
 -------- iter 22 --------
 
@@ -2078,28 +1863,119 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ13, 3, In-house server 2, GTX 1080Ti, 8, 8, 1.13, 5156.38, 7.8128e+07, 146141, 0
-JJ16, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 176938, 394768, 146141, 0
-JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 230033, 498113, 146141, 0
-JJ10, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 169397, 669354, 146141, 0
-JJ15, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 215594, 546299, 146141, 0
-JJ7, 0, Standard_NV6, M60, 1, 1, 0.62, 27365.2, 212829, 146141, 0
-JJ12, 4, In-house server 1, Quadro P600, 2, 2, 0.11, 299763, 878005, 146141, 0
-JJ11, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 130602, 391927, 146141, 0
-JJ14, 2, Standard_NC6, K80, 1, 1, 0.56, 87517.6, 256619, 146141, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 242301, 395145, 151601, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 184103, 498096, 151601, 0
+JJ15, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 163736, 546552, 151601, 0
+JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 47712.8, 669532, 151601, 0
+JJ7, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 54935.2, 212849, 151601, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 3405.26, 725295, 151601, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 9050.7, 878406, 151601, 0
+JJ11, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 188512, 392135, 151601, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 81607.8, 256865, 151601, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 294607
+- Ho valutato l'obj fun delta, valore = 238896
 
 - iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  160331
 
-Printing the indices of the node to change
-3, 0, 2, 1, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  294607
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, Standard_NV24X, M60, 1, 8, 4.96, 79170.9, 395145, 151601, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 63645.4, 498096, 151601, 0
+JJ15, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 163736, 546552, 151601, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 20500.8, 669532, 151601, 0
+JJ7, 0, Standard_NV24X, M60, 1, 8, 4.96, 17444, 212849, 151601, 0
+JJ8, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 3405.26, 725295, 151601, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 9050.7, 878406, 151601, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 118510, 392135, 151601, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 81607.8, 256865, 151601, 0
 
-	### MINIMUM COST: 4.09646; idx: 1
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  117325
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, Standard_NV24X, M60, 1, 8, 4.96, 79170.9, 395145, 151601, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 63645.4, 498096, 151601, 0
+JJ15, 2, Standard_NV24X, M60, 2, 8, 4.96, 56783.6, 546552, 151601, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 20500.8, 669532, 151601, 0
+JJ7, 0, Standard_NV24X, M60, 1, 8, 4.96, 17444, 212849, 151601, 0
+JJ8, 2, Standard_NV24X, M60, 2, 8, 4.96, 1184.53, 725295, 151601, 0
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 89111.7, 878406, 151601, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 118510, 392135, 151601, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 81607.8, 256865, 151601, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  117189
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, Standard_NV24X, M60, 1, 8, 4.96, 79170.9, 395145, 151601, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 63645.4, 498096, 151601, 0
+JJ15, 2, Standard_NC24X, K80, 2, 8, 4.48, 63356.2, 546552, 151601, 0
+JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 20500.8, 669532, 151601, 0
+JJ7, 0, Standard_NV24X, M60, 1, 8, 4.96, 17444, 212849, 151601, 0
+JJ8, 2, Standard_NC24X, K80, 2, 8, 4.48, 1321.01, 725295, 151601, 0
+JJ12, 2, Standard_NC24X, K80, 4, 8, 4.48, 84191.7, 878406, 151601, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 118510, 392135, 151601, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 81607.8, 256865, 151601, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,7,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC24X,K80,8,4.48
+
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  112437
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 68097.8, 395145, 151601, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 55468.8, 498096, 151601, 0
+JJ15, 2, Standard_NC24X, K80, 2, 8, 4.48, 63356.2, 546552, 151601, 0
+JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 18653.6, 669532, 151601, 0
+JJ7, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 14899.1, 212849, 151601, 0
+JJ8, 2, Standard_NC24X, K80, 2, 8, 4.48, 1321.01, 725295, 151601, 0
+JJ12, 2, Standard_NC24X, K80, 4, 8, 4.48, 84191.7, 878406, 151601, 0
+JJ11, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 113758, 392135, 151601, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 81607.8, 256865, 151601, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,7,1.13
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NC24X,K80,8,4.48
+
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  112437
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.36211; idx: 3
 
 -------- iter 23 --------
 
@@ -2112,128 +1988,92 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 22208.8, 212829, 151297, 0
-JJ12, 3, In-house server 3, Quadro P600, 2, 8, 0.44, 294607, 878005, 151297, 0
-JJ11, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 19023.2, 391927, 151297, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 82361.2, 256619, 151297, 0
-JJ9, 2, In-house server 3, Quadro P600, 3, 8, 0.44, 220885, 498113, 151297, 0
-JJ16, 3, In-house server 3, Quadro P600, 2, 8, 0.44, 171782, 394768, 151297, 0
-JJ15, 3, In-house server 3, Quadro P600, 2, 8, 0.44, 210438, 546299, 151297, 0
-JJ10, 3, In-house server 3, Quadro P600, 2, 8, 0.44, 113825, 669354, 151297, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 80286.8, 256865, 152922, 0
+JJ7, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 50064.5, 212849, 152922, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 8908.69, 878406, 152922, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 28254.8, 392135, 152922, 0
+JJ9, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 179977, 498096, 152922, 0
+JJ16, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 164667, 395145, 152922, 0
+JJ10, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 63970.4, 669532, 152922, 0
+JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 154344, 546552, 152922, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 275584
+- Ho valutato l'obj fun delta, valore = 171068
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-2, 0, 3, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  201862
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  155758
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 22208.8, 212829, 151297, 0
-JJ12, 3, Standard_NV24X, M60, 2, 8, 4.96, 219560, 878005, 151297, 0
-JJ11, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 19023.2, 391927, 151297, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 82361.2, 256619, 151297, 0
-JJ9, 2, In-house server 3, Quadro P600, 3, 8, 0.44, 220885, 498113, 151297, 0
-JJ16, 3, Standard_NV24X, M60, 2, 8, 4.96, 73809, 394768, 151297, 0
-JJ15, 3, Standard_NV24X, M60, 2, 8, 4.96, 72979.5, 546299, 151297, 0
-JJ10, 3, Standard_NV24X, M60, 2, 8, 4.96, 48907, 669354, 151297, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 80286.8, 256865, 152922, 0
+JJ7, 0, Standard_NV24X, M60, 1, 8, 4.96, 15897.4, 212849, 152922, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 8908.69, 878406, 152922, 0
+JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 112792, 392135, 152922, 0
+JJ9, 0, Standard_NV24X, M60, 2, 8, 4.96, 65342.1, 498096, 152922, 0
+JJ16, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 164667, 395145, 152922, 0
+JJ10, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 63970.4, 669532, 152922, 0
+JJ15, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 154344, 546552, 152922, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
-Node_idx: 3,   old_stp: Standard_NV24X,M60,8,4.96
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-2, 3, 0, 1, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  197351
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  96894.2
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ7, 1, Standard_NV6, M60, 1, 1, 0.62, 22208.8, 212829, 151297, 0
-JJ12, 3, Standard_NV24X, M60, 2, 8, 4.96, 219560, 878005, 151297, 0
-JJ11, 2, Standard_NV24X, M60, 5, 8, 4.96, 75939.7, 391927, 151297, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 82361.2, 256619, 151297, 0
-JJ9, 2, Standard_NV24X, M60, 3, 8, 4.96, 78670.9, 498113, 151297, 0
-JJ16, 3, Standard_NV24X, M60, 2, 8, 4.96, 73809, 394768, 151297, 0
-JJ15, 3, Standard_NV24X, M60, 2, 8, 4.96, 72979.5, 546299, 151297, 0
-JJ10, 3, Standard_NV24X, M60, 2, 8, 4.96, 48907, 669354, 151297, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 80286.8, 256865, 152922, 0
+JJ7, 0, Standard_NV24X, M60, 1, 8, 4.96, 15897.4, 212849, 152922, 0
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 87713.5, 878406, 152922, 0
+JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 112792, 392135, 152922, 0
+JJ9, 0, Standard_NV24X, M60, 2, 8, 4.96, 65342.1, 498096, 152922, 0
+JJ16, 2, Standard_NV24X, M60, 2, 8, 4.96, 70751.7, 395145, 152922, 0
+JJ10, 2, Standard_NV24X, M60, 1, 8, 4.96, 20902.3, 669532, 152922, 0
+JJ15, 2, Standard_NV24X, M60, 1, 8, 4.96, 54597.6, 546552, 152922, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NV6,M60,1,0.62
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 3,   old_stp: Standard_NV24X,M60,8,4.96
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-1, 3, 2, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  194418
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  89599.5
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 25142.1, 212829, 151297, 0
-JJ12, 3, Standard_NV24X, M60, 2, 8, 4.96, 219560, 878005, 151297, 0
-JJ11, 2, Standard_NV24X, M60, 5, 8, 4.96, 75939.7, 391927, 151297, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 82361.2, 256619, 151297, 0
-JJ9, 2, Standard_NV24X, M60, 3, 8, 4.96, 78670.9, 498113, 151297, 0
-JJ16, 3, Standard_NV24X, M60, 2, 8, 4.96, 73809, 394768, 151297, 0
-JJ15, 3, Standard_NV24X, M60, 2, 8, 4.96, 72979.5, 546299, 151297, 0
-JJ10, 3, Standard_NV24X, M60, 2, 8, 4.96, 48907, 669354, 151297, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 80286.8, 256865, 152922, 0
+JJ7, 0, Standard_NC24X, K80, 1, 8, 4.48, 17997.1, 212849, 152922, 0
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 87713.5, 878406, 152922, 0
+JJ11, 0, Standard_NC24X, K80, 5, 8, 4.48, 107597, 392135, 152922, 0
+JJ9, 0, Standard_NC24X, K80, 2, 8, 4.48, 72386.8, 498096, 152922, 0
+JJ16, 2, Standard_NV24X, M60, 2, 8, 4.96, 70751.7, 395145, 152922, 0
+JJ10, 2, Standard_NV24X, M60, 1, 8, 4.96, 20902.3, 669532, 152922, 0
+JJ15, 2, Standard_NV24X, M60, 1, 8, 4.96, 54597.6, 546552, 152922, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
 Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 3,   old_stp: Standard_NV24X,M60,8,4.96
 
 
 - iter 3 of 10
-
-Printing the indices of the node to change
-1, 0, 2, 3, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  189324
-
-Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ7, 1, Standard_NC6, K80, 1, 1, 0.56, 25142.1, 212829, 151297, 0
-JJ12, 3, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 214466, 878005, 151297, 0
-JJ11, 2, Standard_NV24X, M60, 5, 8, 4.96, 75939.7, 391927, 151297, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 82361.2, 256619, 151297, 0
-JJ9, 2, Standard_NV24X, M60, 3, 8, 4.96, 78670.9, 498113, 151297, 0
-JJ16, 3, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 67158.7, 394768, 151297, 0
-JJ15, 3, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 63649, 546299, 151297, 0
-JJ10, 3, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 44500.5, 669354, 151297, 0
-
-
-Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 2,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 3,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
-
-
-- iter 4 of 10
-
-Printing the indices of the node to change
-1, 0, 3, 2, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  189324
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  89599.5
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 10.8855; idx: 3
+	### MINIMUM COST: 3.56348; idx: 4
 
 -------- iter 24 --------
 
@@ -2246,50 +2086,88 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ16, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 155074, 394768, 176439, 0
-JJ9, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 153229, 498113, 176439, 0
-JJ10, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 71447, 669354, 176439, 0
-JJ15, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 127313, 546299, 176439, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 57219.1, 256619, 176439, 0
-JJ12, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 159402, 878005, 176439, 0
-JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 12725, 391927, 176439, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NV12, M60, 1, 2, 1.24, 55021.9, 256865, 170919, 0
+JJ16, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 177162, 395145, 170919, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 135036, 498096, 170919, 0
+JJ10, 1, Standard_NV12, M60, 1, 2, 1.24, 2905.22, 669532, 170919, 0
+JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 103468, 546552, 170919, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 7080.81, 878406, 170919, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 23528.8, 392135, 170919, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 146677
+- Ho valutato l'obj fun delta, valore = 174257
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, 2, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  108733
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  173889
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ16, 1, Standard_NV24X, M60, 1, 8, 4.96, 50669.8, 394768, 176439, 0
-JJ9, 1, Standard_NV24X, M60, 2, 8, 4.96, 55631.1, 498113, 176439, 0
-JJ10, 2, In-house server 3, Quadro P600, 1, 8, 0.44, 71447, 669354, 176439, 0
-JJ15, 2, In-house server 3, Quadro P600, 2, 8, 0.44, 127313, 546299, 176439, 0
-JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 57219.1, 256619, 176439, 0
-JJ12, 2, In-house server 3, Quadro P600, 5, 8, 0.44, 159402, 878005, 176439, 0
-JJ11, 1, Standard_NV24X, M60, 5, 8, 4.96, 50797.6, 391927, 176439, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC12, K80, 1, 2, 1.13, 62289.8, 256865, 170919, 0
+JJ16, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 177162, 395145, 170919, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 135036, 498096, 170919, 0
+JJ10, 1, Standard_NC12, K80, 1, 2, 1.13, 3273.09, 669532, 170919, 0
+JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 103468, 546552, 170919, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 7080.81, 878406, 170919, 0
+JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 23528.8, 392135, 170919, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC6,K80,1,0.56
-Node_idx: 1,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 2,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,4,0.44
 
 
 - iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  90652.5
 
-Printing the indices of the node to change
-2, 1, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  108733
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC12, K80, 1, 2, 1.13, 62289.8, 256865, 170919, 0
+JJ16, 0, Standard_NV24X, M60, 1, 8, 4.96, 57887.1, 395145, 170919, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 46682.7, 498096, 170919, 0
+JJ10, 1, Standard_NC12, K80, 1, 2, 1.13, 3273.09, 669532, 170919, 0
+JJ15, 0, Standard_NV24X, M60, 1, 8, 4.96, 36600.5, 546552, 170919, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 7080.81, 878406, 170919, 0
+JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 93925.6, 392135, 170919, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,4,0.44
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  86326.4
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 1, Standard_NC12, K80, 1, 2, 1.13, 62289.8, 256865, 170919, 0
+JJ16, 0, Standard_NC24X, K80, 1, 8, 4.48, 65217, 395145, 170919, 0
+JJ9, 0, Standard_NC24X, K80, 1, 8, 4.48, 52112.4, 498096, 170919, 0
+JJ10, 1, Standard_NC12, K80, 1, 2, 1.13, 3273.09, 669532, 170919, 0
+JJ15, 0, Standard_NC24X, K80, 1, 8, 4.48, 40709.7, 546552, 170919, 0
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 7080.81, 878406, 170919, 0
+JJ11, 0, Standard_NC24X, K80, 5, 8, 4.48, 89599.5, 392135, 170919, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 1,   old_stp: Standard_NC12,K80,2,1.13
+Node_idx: 2,   old_stp: In-house server 3,Quadro P600,4,0.44
+
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  86326.4
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 5.09001; idx: 2
+	### MINIMUM COST: 1.71085; idx: 2
 
 -------- iter 25 --------
 
@@ -2302,68 +2180,104 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 1, In-house server 3, Quadro P600, 4, 8, 0.44, 12691.3, 878005, 227109, 0
-JJ14, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 18050.8, 256619, 227109, 0
-JJ11, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 32.0057, 391927, 227109, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 14399.4, 669354, 227109, 0
-JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 73784.7, 546299, 227109, 0
-JJ9, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 13665.2, 498113, 227109, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 2, In-house server 3, Quadro P600, 4, 8, 0.44, 3807.72, 878406, 174193, 0
+JJ11, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 56058.1, 392135, 174193, 0
+JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 95148.7, 546552, 174193, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 126555, 498096, 174193, 0
+JJ16, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 116618, 395145, 174193, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 59016.7, 256865, 174193, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 73752.7
+- Ho valutato l'obj fun delta, valore = 122747
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  25972.8
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  89064.8
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 1, In-house server 3, Quadro P600, 4, 8, 0.44, 12691.3, 878005, 227109, 0
-JJ14, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 18050.8, 256619, 227109, 0
-JJ11, 0, Standard_NV24X, M60, 5, 8, 4.96, 127.765, 391927, 227109, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 14399.4, 669354, 227109, 0
-JJ15, 0, Standard_NV24X, M60, 1, 8, 4.96, 26100.6, 546299, 227109, 0
-JJ9, 0, Standard_NV24X, M60, 2, 8, 4.96, 4961.24, 498113, 227109, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 2, Standard_NV24X, M60, 4, 8, 4.96, 37490.2, 878406, 174193, 0
+JJ11, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 56058.1, 392135, 174193, 0
+JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 95148.7, 546552, 174193, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 126555, 498096, 174193, 0
+JJ16, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 116618, 395145, 174193, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 59016.7, 256865, 174193, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: Standard_NV24X,M60,4,4.96
+
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  86778.5
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 2, In-house server 2, GTX 1080Ti, 4, 8, 1.13, 39776.5, 878406, 174193, 0
+JJ11, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 56058.1, 392135, 174193, 0
+JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 95148.7, 546552, 174193, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 126555, 498096, 174193, 0
+JJ16, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 116618, 395145, 174193, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 59016.7, 256865, 174193, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 2,GTX 1080Ti,4,1.13
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  58951.1
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 2, In-house server 2, GTX 1080Ti, 4, 8, 1.13, 39776.5, 878406, 174193, 0
+JJ11, 0, Standard_NV24X, M60, 4, 8, 4.96, 92608.9, 392135, 174193, 0
+JJ15, 0, Standard_NV24X, M60, 1, 8, 4.96, 33657.8, 546552, 174193, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 43750.7, 498096, 174193, 0
+JJ16, 0, Standard_NV24X, M60, 2, 8, 4.96, 50107, 395145, 174193, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 59016.7, 256865, 174193, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 2,GTX 1080Ti,4,1.13
 
 
-- iter 1 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  22729.5
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  52926.1
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 1, In-house server 3, Quadro P600, 4, 8, 0.44, 12691.3, 878005, 227109, 0
-JJ14, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 18050.8, 256619, 227109, 0
-JJ11, 0, In-house server 2, GTX 1080Ti, 5, 8, 1.13, 134.265, 391927, 227109, 0
-JJ10, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 14399.4, 669354, 227109, 0
-JJ15, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22863.8, 546299, 227109, 0
-JJ9, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 4370.43, 498113, 227109, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 2, In-house server 2, GTX 1080Ti, 4, 8, 1.13, 39776.5, 878406, 174193, 0
+JJ11, 0, Standard_NC24X, K80, 4, 8, 4.48, 90362.7, 392135, 174193, 0
+JJ15, 0, Standard_NC24X, K80, 1, 8, 4.48, 37436.7, 546552, 174193, 0
+JJ9, 0, Standard_NC24X, K80, 1, 8, 4.48, 48839.3, 498096, 174193, 0
+JJ16, 0, Standard_NC24X, K80, 2, 8, 4.48, 54194.4, 395145, 174193, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 59016.7, 256865, 174193, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
-Node_idx: 1,   old_stp: In-house server 3,Quadro P600,8,0.44
+Node_idx: 0,   old_stp: Standard_NC24X,K80,8,4.48
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
+Node_idx: 2,   old_stp: In-house server 2,GTX 1080Ti,4,1.13
 
 
-- iter 2 of 10
-
-Printing the indices of the node to change
-1, 0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  22729.5
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  52926.1
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 0.00782361; idx: 4
+	### MINIMUM COST: 1.52309; idx: 1
 
 -------- iter 26 --------
 
@@ -2376,63 +2290,59 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 175524, 878005, 227244, 0
-JJ14, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 17916.5, 256619, 227244, 0
-JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 14265.1, 669354, 227244, 0
-JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 13226.3, 498113, 227244, 0
-JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 73351.5, 546299, 227244, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 223.989, 878406, 211629, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 21580, 256865, 211629, 0
+JJ11, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 87557, 392135, 211629, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 29547.1, 498096, 211629, 0
+JJ16, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 52032, 395145, 211629, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 162297
+- Ho valutato l'obj fun delta, valore = 87333
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  126239
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  52838.4
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, Standard_NV24X, M60, 2, 8, 4.96, 130811, 878005, 227244, 0
-JJ14, 0, Standard_NV24X, M60, 2, 8, 4.96, 6061.5, 256619, 227244, 0
-JJ10, 0, Standard_NV24X, M60, 2, 8, 4.96, 6129.29, 669354, 227244, 0
-JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 4572.41, 498113, 227244, 0
-JJ15, 0, Standard_NV24X, M60, 1, 8, 4.96, 25947.3, 546299, 227244, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 0, Standard_NV24X, M60, 4, 8, 4.96, 2205.36, 878406, 211629, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 21580, 256865, 211629, 0
+JJ11, 0, Standard_NV24X, M60, 2, 8, 4.96, 55043.7, 392135, 211629, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 10214.6, 498096, 211629, 0
+JJ16, 0, Standard_NV24X, M60, 1, 8, 4.96, 17001.3, 395145, 211629, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 1 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  123791
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  50496.9
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 127776, 878005, 227244, 0
-JJ14, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 5256.79, 256619, 227244, 0
-JJ10, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 5577.03, 669354, 227244, 0
-JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 3984.99, 498113, 227244, 0
-JJ15, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 22729.5, 546299, 227244, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ12, 0, In-house server 2, GTX 1080Ti, 4, 8, 1.13, 2339.85, 878406, 211629, 0
+JJ14, 1, Standard_NC6, K80, 1, 1, 0.56, 21580, 256865, 211629, 0
+JJ11, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 52836.8, 392135, 211629, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 8902.32, 498096, 211629, 0
+JJ16, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 14623.4, 395145, 211629, 0
 
 
 Configurazione Nodi: 
 Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+Node_idx: 1,   old_stp: Standard_NC6,K80,1,0.56
 
 
 - iter 2 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  123791
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  50496.9
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 1.61655; idx: 2
+	### MINIMUM COST: 0.0622191; idx: 4
 
 -------- iter 27 --------
 
@@ -2445,23 +2355,21 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 12165.4, 878005, 231229, 0
-JJ14, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 4375.22, 256619, 231229, 0
-JJ10, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 4072.18, 669354, 231229, 0
-JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 60491.3, 546299, 231229, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ9, 1, In-house server 3, Quadro P600, 1, 8, 0.44, 21781.1, 498096, 213969, 0
+JJ16, 1, In-house server 3, Quadro P600, 2, 8, 0.44, 30290.3, 395145, 213969, 0
+JJ14, 0, Standard_NC6, K80, 1, 1, 0.56, 19240.2, 256865, 213969, 0
+JJ11, 1, In-house server 3, Quadro P600, 5, 8, 0.44, 12689.6, 392135, 213969, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 56419.1
+- Ho valutato l'obj fun delta, valore = 17600.8
 
 - iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  17600.8
 
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  56419.1
-
-	### MINIMUM COST: 0.497711; idx: 3
+	### MINIMUM COST: 3.52488; idx: 4
 
 -------- iter 28 --------
 
@@ -2474,22 +2382,51 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 8093.23, 878005, 235301, 0
-JJ14, 0, In-house server 3, Quadro P600, 3, 8, 0.44, 295.527, 256619, 235301, 0
-JJ15, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 56419.1, 546299, 235301, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 0, In-house server 3, Quadro P600, 5, 8, 0.44, 17138.7, 256865, 226659, 0
+JJ9, 0, In-house server 3, Quadro P600, 1, 8, 0.44, 9091.53, 498096, 226659, 0
+JJ16, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 17600.8, 395145, 226659, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 56123.6
+- Ho valutato l'obj fun delta, valore = 8509.25
 
 - iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4419.48
 
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  56123.6
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 0, Standard_NV24X, M60, 5, 8, 4.96, 5486.21, 256865, 226659, 0
+JJ9, 0, Standard_NV24X, M60, 1, 8, 4.96, 3142.99, 498096, 226659, 0
+JJ16, 0, Standard_NV24X, M60, 2, 8, 4.96, 7562.47, 395145, 226659, 0
 
-	### MINIMUM COST: 0.0361199; idx: 0
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
+
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4141.87
+
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ14, 0, In-house server 2, GTX 1080Ti, 5, 8, 1.13, 4695.26, 256865, 226659, 0
+JJ9, 0, In-house server 2, GTX 1080Ti, 1, 8, 1.13, 2739.21, 498096, 226659, 0
+JJ16, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 6881.08, 395145, 226659, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4141.87
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.11119; idx: 0
 
 -------- iter 29 --------
 
@@ -2502,38 +2439,48 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ15, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 58297.5, 546299, 235596, 0
-JJ12, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 7797.7, 878005, 235596, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, In-house server 3, Quadro P600, 2, 8, 0.44, 10594.3, 395145, 229398, 0
+JJ14, 0, In-house server 3, Quadro P600, 6, 8, 0.44, 7003.36, 256865, 229398, 0
 
         PERFORM LOCAL SEARCH
 
-- Ho valutato l'obj fun delta, valore = 50499.8
+- Ho valutato l'obj fun delta, valore = 3590.94
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 1
-- best_schedule_value_t:  49978.4
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2389.56
 
 Nuova schedule: 
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ15, 0, Standard_NC24X, K80, 2, 8, 4.48, 22557.6, 546299, 235596, 0
-JJ12, 0, Standard_NC24X, K80, 4, 8, 4.48, 72536, 878005, 235596, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, Standard_NV24X, M60, 2, 8, 4.96, 4552.01, 395145, 229398, 0
+JJ14, 0, Standard_NV24X, M60, 6, 8, 4.96, 2162.46, 256865, 229398, 0
 
 
 Configurazione Nodi: 
-Node_idx: 0,   old_stp: Standard_NC24X,K80,6,4.48
+Node_idx: 0,   old_stp: Standard_NV24X,M60,8,4.96
 
 
 - iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2308.01
 
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
-- best_schedule_value_t:  49978.4
+Nuova schedule: 
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, In-house server 2, GTX 1080Ti, 2, 8, 1.13, 4141.87, 395145, 229398, 0
+JJ14, 0, In-house server 2, GTX 1080Ti, 6, 8, 1.13, 1833.86, 256865, 229398, 0
+
+
+Configurazione Nodi: 
+Node_idx: 0,   old_stp: In-house server 2,GTX 1080Ti,8,1.13
+
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2308.01
     * Better configuration found via local search * 
 
-	### MINIMUM COST: 0.953053; idx: 1
+	### MINIMUM COST: 0.855967; idx: 0
 
 -------- iter 30 --------
 
@@ -2546,25 +2493,23 @@ Printing the indices of the node to change
 	RANDOM ITERATION 4
 
 Schedule di Federica:
-Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS
-JJ12, 0, In-house server 3, Quadro P600, 4, 8, 0.44, 5372.73, 878005, 258154, 0
+Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness
+JJ16, 0, In-house server 1, Quadro P600, 2, 2, 0.11, 5903.55, 395145, 231232, 0
 
         PERFORM LOCAL SEARCH
 
 - Ho valutato l'obj fun delta, valore = 0
 
 - iter 0 of 10
-
-Printing the indices of the node to change
-0, - uscito da visit_neighbor(). changed?: 0
+- uscito da visit_neighbor(). changed?: 0
 - best_schedule_value_t:  0
 
-	### MINIMUM COST: 0.656667; idx: 0
+	### MINIMUM COST: 0.180386; idx: 0
 
 -------- iter 31 --------
- TIME: 258154
-total cost: 307.836; tardiness: 0
+ TIME: 231232
+total cost: 315.225; tardiness: 0
 
 ################################################################################
-finish time 2020-03-30 09:59:10.235486
+finish time 2020-03-30 10:05:02.328596
 ################################################################################

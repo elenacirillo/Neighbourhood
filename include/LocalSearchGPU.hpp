@@ -3,19 +3,18 @@
 
 #include "LocalSearch.hpp"
 
-// TODO: inserirle dentro la classe e adattare i return type
-
-// map a max_nGPU in the set of setup with that max_nGPU
-typedef std::unordered_map<unsigned, std::unordered_set<Setup>> GPUs_setups_t;
-
-// neighboorhood type: maps the index of a node into a possible setup
-typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
-
-// associates to every node the set of jobs in execution on that specific node
-typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
-
 class LocalSearchGPU : public LocalSearch
 {
+
+public:  
+    // map a max_nGPU in the set of setup with that max_nGPU
+    typedef std::unordered_map<unsigned, std::unordered_set<Setup>> GPUs_setups_t;
+
+    // neighboorhood type: maps the index of a node into a possible setup
+    typedef std::unordered_multimap<unsigned, Setup> neighborhood_t;
+
+    // associates to every node the set of jobs in execution on that specific node
+    typedef std::unordered_map<unsigned, std::unordered_set<Job>> node_jobs_t;
 
 private:
 
