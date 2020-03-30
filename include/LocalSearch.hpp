@@ -49,10 +49,6 @@ protected:
 	bool assign_to_selected_node (const Job&, job_schedule_t&, unsigned);
 	*/
 
-    // first_finish_time looking at completion percentage
-	double true_first_finish_time(job_schedule_t& job_schedule) const;
-	// last_finish_time looking at completion percentage
-	double true_last_finish_time(job_schedule_t& job_schedule) const;
 	//  last_finish_time come Federica fa il first
 	double find_last_finish_time (const job_schedule_t&) const;
 

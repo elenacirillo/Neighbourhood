@@ -340,12 +340,15 @@ std::unordered_set<unsigned> LocalSearchGPU::get_tardiness_nodes(unsigned top)
       indices.insert(idx);
   }
 
+  /*
   std::cout << "\nPrinting the indices of the node to change" << std::endl;
   for(auto u: indices)
   {
     std::cout <<u<<", ";
   }
   return indices;
+  */
+  
 }
 
 //________________________________________________________________________________________________________________________________

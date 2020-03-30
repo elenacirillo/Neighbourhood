@@ -3,7 +3,7 @@
 // (NICO) TODO: RIMUOVERE
 void LocalSearch::printer(job_schedule_t& job_schedule)
 {
-  std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, TARDINESS" << std::endl;
+  std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs, cost, time, deadline, current_time, tardiness" << std::endl;
   for (const auto & js: job_schedule)
   {
     const Job & j = js.first;
@@ -97,6 +97,7 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
 }
 
 //________________________________________________________________________________________________________________________________
+
 double
 LocalSearch::find_last_finish_time (const job_schedule_t& last_schedule) const
 {
@@ -118,48 +119,6 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule) const
   return std::max(lft - fft, fft - lft) ;
 }
 
-// get the time of the first job to finish
-double
-LocalSearch::true_first_finish_time(job_schedule_t& job_schedule) const
-{
-  double fft = INF;
-
-  // cycle over the schedule
-  job_schedule_t::const_iterator cit;
-  for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
-  {
-    const Schedule & sch = cit->second;
-    double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
-    double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
-    double time_remaining = (1-completion_percent) * time_needed;
-
-    fft = std::min(fft, time_remaining);
-  }
-
-  return fft;
-}
-
-// get the time of the last job to finish
-double
-LocalSearch::true_last_finish_time(job_schedule_t& job_schedule) const
-{
-  double lft = 0;
-
-  job_schedule_t::const_iterator cit;
-  for (cit = job_schedule.cbegin(); cit != job_schedule.cend(); ++cit)
-  {
-    const Schedule & sch = cit->second;
-    double time_needed = sch.get_selectedTime(); // overall time needed to execute the job
-    double completion_percent = sch.get_completionPercent(); // speriamo sia decimale
-    double time_remaining = (1-completion_percent) * time_needed;
-
-    lft = std::max(lft, time_remaining);
-  }
-
-  return lft;
-}
-
-
 
 /*
 double
@@ -168,45 +127,6 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule)
   double fft = find_first_finish_time(job_schedule);
   double lft = find_last_finish_time(job_schedule);
   return (objective_function(job_schedule, fft) + fft - lft) ;
-}
-*/
-
-
-// TODO: forse la cancelliamo
-/*
-bool
-LocalSearch::update_best_schedule (job_schedule_t& new_schedule,
-                              double& minTotalCost, 
-                              job_schedule_t& best_schedule,
-                              std::vector<Node>& opened_nodes)
-{
-  bool updated = false;
-
-  // find execution time of first ending job
-  double first_finish_time = find_first_finish_time(new_schedule);
-
-  // compute cost of current schedule
-  double current_cost = objective_function(new_schedule, first_finish_time);
-
-  // determine best schedule
-  std::swap(nodes, opened_nodes);
-  if (current_cost < minTotalCost)
-  {
-    updated = true;
-    minTotalCost = current_cost;
-    std::swap(new_schedule, best_schedule);
-  }
-  updated = search_better_schedule(best_schedule)? true:updated;
-  if(updated)
-  {
-    std::swap(best_schedule, local_best_schedule);
-    minTotalCost = objective_function(best_schedule,find_first_finish_time(best_schedule));//TODO: non performare questo calcolo se non ho updatato
-  }
-  else
-  {
-  std::swap(nodes, opened_nodes);
-  }
-  return updated;
 }
 */
 
