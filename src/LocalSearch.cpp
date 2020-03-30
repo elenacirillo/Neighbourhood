@@ -151,7 +151,7 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
   unsigned iter = 0;
   bool changed = true;
   bool changed_at_least_once = false;
-  bool stop = false;
+  //bool stop = false;
 
   while ((iter < MAX_ITER) and changed) //for (unsigned iter = 0; iter < MAX_ITER && !stop; +iter ++)
   {
