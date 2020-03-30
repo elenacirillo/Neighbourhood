@@ -86,7 +86,7 @@ LocalSearchbySwap::get_top(const map_value_j &map)
   row_j N;
   if (map.size() == 0)
   {
-    std::cout << "ERROR: get_top mappa vuota" << std::endl;
+    //std::cout << "ERROR: get_top mappa vuota" << std::endl;
     return N;
   }
 
@@ -100,7 +100,7 @@ LocalSearchbySwap::get_top(const map_value_j &map)
     }
     else
     {
-      std::cout << "ERROR " << it->second.get_ID() << " has empty schedule" << std::endl;
+      //std::cout << "ERROR " << it->second.get_ID() << " has empty schedule" << std::endl;
     }
   }
 
@@ -198,7 +198,7 @@ LocalSearchbySwap::visit_neighbor()
 
   if (A_job_ids.size() == 0 || B_job_ids.size() == 0 || !(A_job_ids.size()==B_job_ids.size() and A_job_ids.size()==neigh_size))
   {
-    std::cout << " -- Non ci sono abbastanza jobs schedulati per riempire A e B" << std::endl; //TOREMOVE
+    //std::cout << " -- Non ci sono abbastanza jobs schedulati per riempire A e B" << std::endl; //TOREMOVE
     return false;
   }
   /* start //TOREMOVE*/
@@ -224,15 +224,15 @@ LocalSearchbySwap::visit_neighbor()
   for (auto v : possible_swap_indices)
   {
     std::vector<Node> open = nodes;
-    std::cout << "\n -- swap vector " << iter << " of " << possible_swap_indices.size() << " : ";
+    /*std::cout << "\n -- swap vector " << iter << " of " << possible_swap_indices.size() << " : ";
     for (auto el : v) std::cout << el << " ";
     std::cout << std::endl;
-    std::cout << "  -- sto per entrare in perform_swap" << std::endl;
+    std::cout << "  -- sto per entrare in perform_swap" << std::endl;*/
     job_schedule_t candidate_schedule = perform_swap(v);
 
     double candidate_value = evaluate_objective(candidate_schedule);
-    std::cout << "  -- candidate value: " << candidate_value << std::endl;
-    std::cout << "  -- best value : " << best_schedule_value_t << std::endl;
+    //std::cout << "  -- candidate value: " << candidate_value << std::endl;
+    //std::cout << "  -- best value : " << best_schedule_value_t << std::endl;
 
     if (candidate_value < best_schedule_value_t)
     {
