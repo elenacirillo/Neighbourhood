@@ -368,16 +368,16 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
        // std::cout << "HO RI-SETTATO LE GPU di A ? ora le rimanenti sono " << nodes[old_node_A].get_remainingGPUs() << std::endl;
         bool assignedBtoA = assign_to_selected_node(jobB, temp, old_node_A);
 
-      	std::cout << "   --- HO ASSEGNATO B a A? : " << assignedBtoA << std::endl;
+      	//std::cout << "   --- HO ASSEGNATO B a A? : " << assignedBtoA << std::endl;
 
         if (assignedBtoA)
         {
-	      	std::cout << "   --- swap " << idx_A << " RIUSCITO !" << std::endl;
+	      	//std::cout << "   --- swap " << idx_A << " RIUSCITO !" << std::endl;
           swap(new_schedule,temp);
         }
         else
         {
-        	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;	
+        	//std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;	
           //std::cout << "B NON ASSEGNATO AD A" << std::endl;
 	        swap(nodes, open_nodes);
           //nodes[old_node_A].set_remainingGPUs(node_A_remaining_GPU);
@@ -387,7 +387,7 @@ LocalSearchbySwap::perform_swap(const std::vector<int> &swap_indices)
       }
       else
       {
-      	std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;
+      	//std::cout << "   --- swap " << idx_A << " non riuscito" << std::endl;
       	//std::cout << "A NON ASSEGNATO A B" << std::endl;
 	      swap(nodes, open_nodes);
 	      //nodes[old_node_B].set_remainingGPUs(node_B_remaining_GPU);
