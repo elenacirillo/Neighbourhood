@@ -248,9 +248,11 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
     
     // check stopping cryterion
     stop = (next_submission_time == INF) && all_completed;
+
+    // TODO: rimuovere, lo abbiamo messo per confrontare i tempi di esecuzione
     if (stop)
     {
-      std::cout << " TIME: " << current_time << std::endl;
+      std::cout << "TIME: " << current_time << std::endl;
     }
 
     if (!stop)
@@ -272,34 +274,6 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
 
       // determine the best schedule
       job_schedule_t best_schedule = perform_scheduling(max_random_iter);
-
-      //____________________________________________________________________________________________________
-      /*
-      // Print the schedule
-      std::cout << "\nBEST SCHEDULE: " << std::endl;
-      std::cout << "Job, Node, VM, GPU, nGPUs, max_nGPUs " << std::endl;
-      for (const auto & js: best_schedule)
-      {
-          const Job & j = js.first;
-          const Schedule & sch = js.second;
-          const Setup & stp = sch.get_setup();
-          std::cout << j.get_ID() << ", " << sch.get_node_idx() << ", " << stp.get_VMtype() << ", "
-                    << stp.get_GPUtype() << ", " <<  stp.get_nGPUs() << ", " << stp.get_maxnGPUs() << std::endl;
-      }
-      std::cout << std::endl;
-
-      // Print the nodes configuration
-      std::cout << "\nCONFIGURAZIONE NODI: " << std::endl;
-      std::cout << "Node, " << "VM_type, "<< "GPU_type, " << "used_GPUs, " << "remaining GPUs" << std::endl;
-      for (unsigned idx = 0; idx < last_node_idx; ++idx)
-      {
-        Node & nn = nodes[idx];
-        std::cout << idx << ", " << nn.get_VMtype() << ", " << nn.get_GPUtype() << ", " << nn.get_usedGPUs() << ", "
-                  << nn.get_remainingGPUs() << std::endl;
-      }
-      std::cout << std::endl;
-      */
-      //____________________________________________________________________________________________________
 
       // add the best schedule to scheduled_jobs
       scheduled_jobs.push_back(best_schedule);

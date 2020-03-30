@@ -16,7 +16,6 @@ void LocalSearch::printer(job_schedule_t& job_schedule)
               << (j.get_deadline() < current_time)
               << std::endl;
   }
-  std::cout << std::endl;
   return;
 }
 
@@ -73,8 +72,8 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   last_node_idx = best_lni;
 
   // STAMPO LA SUA SCHEDULEEE
-  std::cout << std::endl << "Schedule di Federica:" << std::endl;
-  printer(best_schedule);
+  //std::cout << std::endl << "Schedule di Federica:" << std::endl;
+  //printer(best_schedule);
 
   // Perform Local Search
 
@@ -84,6 +83,7 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   {
     best_schedule = local_best_schedule;
     std::cout << "    * Better configuration found via local search * " << std::endl;
+    ++LS_count;
   }
   
   //NICO
@@ -165,8 +165,11 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
     std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
     
+    std::cout << "- LocalSearch succes counter: " << LS_count << std::endl;
+    
     //_______________________________________________________________
     // TODO: rimuovere
+    /*
     if(changed)
     {
       std::cout << "\nNuova schedule: " << std::endl;
@@ -179,8 +182,8 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
         std::cout << "Node_idx: " << i << ",   ";
         std::cout << "old_stp: " << nn.get_VMtype() << "," << nn.get_GPUtype() << "," << nn.get_usedGPUs() << "," << nn.get_cost() << std::endl;
       }
-      std::cout << std::endl;
     }   
+    */
     //_______________________________________________________________
  
 

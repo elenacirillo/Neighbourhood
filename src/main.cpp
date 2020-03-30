@@ -92,7 +92,7 @@ int main (int argc, char *argv[])
 
       // algorithm
       G->algorithm(cpp_seed, n_random_iter);
-
+      
       // print resulting schedule
       G->print_schedule(result_filename);
 
