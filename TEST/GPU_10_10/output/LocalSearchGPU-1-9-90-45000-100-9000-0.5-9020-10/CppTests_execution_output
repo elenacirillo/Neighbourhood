@@ -1,0 +1,6692 @@
+################################################################################
+cd /media/sf_sharedfolder/Neighbourhood/build/output/LocalSearchGPU-1-9-90-45000-100-9000-0.5-9020-10; /media/sf_sharedfolder/Neighbourhood/script/sh/run_experiment.sh LocalSearchGPU 1 9 90 45000 100 9000 0.5 9020 10 
+start time 2020-03-30 11:48:26.867287
+################################################################################
+________________________________________________
+
+PRINTING THE STARTING MAP: <max_nGPU-setups>
+max_nGPU: 4, setups: 
+Standard_NV24,M60,4,2.48
+Standard_NC24,K80,4,2.25
+
+max_nGPU: 1, setups: 
+Standard_NC6,K80,1,0.56
+Standard_NV6,M60,1,0.62
+
+max_nGPU: 8, setups: 
+In-house server 3,Quadro P600,8,0.44
+Standard_NV24X,M60,8,4.96
+In-house server 2,GTX 1080Ti,8,1.13
+Standard_NC24X,K80,8,4.48
+
+max_nGPU: 2, setups: 
+In-house server 1,Quadro P600,2,0.11
+Standard_NV12,M60,2,1.24
+Standard_NC12,K80,2,1.13
+
+________________________________________________
+##################### algorithm #####################
+myseed: 9020; max_random_iter: 10
+iter, random iteration, vmCost, tardiCost, worstCaseTardiness
+
+-------- iter 0 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 0
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  0
+- LocalSearch succes counter: 0
+
+	### MINIMUM COST: 6.01873; idx: 0
+
+-------- iter 1 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 134573
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  17798
+- LocalSearch succes counter: 0
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  10151.9
+- LocalSearch succes counter: 0
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4936.4
+- LocalSearch succes counter: 0
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2709.74
+- LocalSearch succes counter: 0
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2709.74
+- LocalSearch succes counter: 0
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 19.7791; idx: 0
+
+-------- iter 2 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 125729
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  98972.1
+- LocalSearch succes counter: 1
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  26540.9
+- LocalSearch succes counter: 1
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  26540.9
+- LocalSearch succes counter: 1
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 23.3078; idx: 0
+
+-------- iter 3 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 117263
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  72218.6
+- LocalSearch succes counter: 2
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  68098.5
+- LocalSearch succes counter: 2
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  68098.5
+- LocalSearch succes counter: 2
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 21.4329; idx: 4
+
+-------- iter 4 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 106379
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  84882.9
+- LocalSearch succes counter: 3
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  81077
+- LocalSearch succes counter: 3
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  68098.5
+- LocalSearch succes counter: 3
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  68098.5
+- LocalSearch succes counter: 3
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 27.9183; idx: 7
+
+-------- iter 5 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 134542
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  90775.4
+- LocalSearch succes counter: 4
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  88358.8
+- LocalSearch succes counter: 4
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  88358.8
+- LocalSearch succes counter: 4
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 39.1205; idx: 1
+
+-------- iter 6 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 436873
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  90683.7
+- LocalSearch succes counter: 5
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  88358.8
+- LocalSearch succes counter: 5
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  88358.8
+- LocalSearch succes counter: 5
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 34.599; idx: 5
+
+-------- iter 7 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 389488
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  155855
+- LocalSearch succes counter: 6
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  152434
+- LocalSearch succes counter: 6
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  152434
+- LocalSearch succes counter: 6
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 29.911; idx: 1
+
+-------- iter 8 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 343951
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  179920
+- LocalSearch succes counter: 7
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  155763
+- LocalSearch succes counter: 7
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  155763
+- LocalSearch succes counter: 7
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 31.0948; idx: 4
+
+-------- iter 9 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 566923
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  204682
+- LocalSearch succes counter: 8
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  204682
+- LocalSearch succes counter: 8
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 21.8925; idx: 5
+
+-------- iter 10 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 559946
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  214417
+- LocalSearch succes counter: 9
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  214417
+- LocalSearch succes counter: 9
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 18.5714; idx: 7
+
+-------- iter 11 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 551616
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  333765
+- LocalSearch succes counter: 10
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  333765
+- LocalSearch succes counter: 10
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 15.4343; idx: 6
+
+-------- iter 12 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 544339
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  538229
+- LocalSearch succes counter: 11
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  214195
+- LocalSearch succes counter: 11
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  193191
+- LocalSearch succes counter: 11
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  177494
+- LocalSearch succes counter: 11
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  168701
+- LocalSearch succes counter: 11
+
+- iter 5 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  168701
+- LocalSearch succes counter: 11
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.92501; idx: 8
+
+-------- iter 13 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 533031
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  496056
+- LocalSearch succes counter: 12
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  287188
+- LocalSearch succes counter: 12
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  287188
+- LocalSearch succes counter: 12
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 2.96892; idx: 2
+
+-------- iter 14 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 520609
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  319109
+- LocalSearch succes counter: 13
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  207643
+- LocalSearch succes counter: 13
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  164515
+- LocalSearch succes counter: 13
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  164515
+- LocalSearch succes counter: 13
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.31709; idx: 1
+
+-------- iter 15 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 487887
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  487887
+- LocalSearch succes counter: 14
+
+	### MINIMUM COST: 20.6647; idx: 9
+
+-------- iter 16 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 476986
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  476692
+- LocalSearch succes counter: 14
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  476692
+- LocalSearch succes counter: 14
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 20.4531; idx: 4
+
+-------- iter 17 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 569154
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  569154
+- LocalSearch succes counter: 15
+
+	### MINIMUM COST: 19.8367; idx: 1
+
+-------- iter 18 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 478357
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  478357
+- LocalSearch succes counter: 15
+
+	### MINIMUM COST: 17.5468; idx: 8
+
+-------- iter 19 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 478019
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  407795
+- LocalSearch succes counter: 15
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  407795
+- LocalSearch succes counter: 15
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 13.1891; idx: 7
+
+-------- iter 20 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 470716
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  470716
+- LocalSearch succes counter: 16
+
+	### MINIMUM COST: 7.99988; idx: 4
+
+-------- iter 21 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.18572e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.05016e+06
+- LocalSearch succes counter: 16
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  871823
+- LocalSearch succes counter: 16
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  855855
+- LocalSearch succes counter: 16
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  855855
+- LocalSearch succes counter: 16
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.20267; idx: 5
+
+-------- iter 22 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 609100
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  609100
+- LocalSearch succes counter: 17
+
+	### MINIMUM COST: 20.7506; idx: 9
+
+-------- iter 23 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 458316
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  452835
+- LocalSearch succes counter: 17
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  269947
+- LocalSearch succes counter: 17
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  250990
+- LocalSearch succes counter: 17
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  250990
+- LocalSearch succes counter: 17
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 13.1507; idx: 8
+
+-------- iter 24 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.13257e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.00274e+06
+- LocalSearch succes counter: 18
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  827929
+- LocalSearch succes counter: 18
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  827929
+- LocalSearch succes counter: 18
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.45108; idx: 6
+
+-------- iter 25 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 447240
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  444138
+- LocalSearch succes counter: 19
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  361080
+- LocalSearch succes counter: 19
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  360653
+- LocalSearch succes counter: 19
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  360653
+- LocalSearch succes counter: 19
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.77371; idx: 4
+
+-------- iter 26 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 500232
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  497817
+- LocalSearch succes counter: 20
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  360985
+- LocalSearch succes counter: 20
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  360985
+- LocalSearch succes counter: 20
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.16132; idx: 6
+
+-------- iter 27 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 514317
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  514317
+- LocalSearch succes counter: 21
+
+	### MINIMUM COST: 0.642686; idx: 8
+
+-------- iter 28 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 483645
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  473957
+- LocalSearch succes counter: 21
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  465139
+- LocalSearch succes counter: 21
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  464039
+- LocalSearch succes counter: 21
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  464039
+- LocalSearch succes counter: 21
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 13.425; idx: 1
+
+-------- iter 29 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.09061e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.07213e+06
+- LocalSearch succes counter: 22
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.07213e+06
+- LocalSearch succes counter: 22
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 14.8118; idx: 5
+
+-------- iter 30 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 477218
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  280357
+- LocalSearch succes counter: 23
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  244547
+- LocalSearch succes counter: 23
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  244547
+- LocalSearch succes counter: 23
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 14.6429; idx: 6
+
+-------- iter 31 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 469368
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  242396
+- LocalSearch succes counter: 24
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  179201
+- LocalSearch succes counter: 24
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  179201
+- LocalSearch succes counter: 24
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 8.42494; idx: 7
+
+-------- iter 32 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 457782
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  402437
+- LocalSearch succes counter: 25
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  231175
+- LocalSearch succes counter: 25
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  229000
+- LocalSearch succes counter: 25
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  219422
+- LocalSearch succes counter: 25
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  219422
+- LocalSearch succes counter: 25
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 10.7966; idx: 9
+
+-------- iter 33 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 454928
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  295602
+- LocalSearch succes counter: 26
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  293905
+- LocalSearch succes counter: 26
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  178242
+- LocalSearch succes counter: 26
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  178242
+- LocalSearch succes counter: 26
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 10.649; idx: 3
+
+-------- iter 34 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 446398
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  319779
+- LocalSearch succes counter: 27
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  319309
+- LocalSearch succes counter: 27
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  319309
+- LocalSearch succes counter: 27
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.21116; idx: 6
+
+-------- iter 35 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 437519
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  248199
+- LocalSearch succes counter: 28
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  165806
+- LocalSearch succes counter: 28
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  161232
+- LocalSearch succes counter: 28
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  161232
+- LocalSearch succes counter: 28
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 11.6409; idx: 0
+
+-------- iter 36 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 938542
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  938542
+- LocalSearch succes counter: 29
+
+	### MINIMUM COST: 7.68365; idx: 8
+
+-------- iter 37 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 933700
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  933700
+- LocalSearch succes counter: 29
+
+	### MINIMUM COST: 8.35274; idx: 9
+
+-------- iter 38 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 426341
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  371003
+- LocalSearch succes counter: 29
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  273920
+- LocalSearch succes counter: 29
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  272860
+- LocalSearch succes counter: 29
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  177407
+- LocalSearch succes counter: 29
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  177407
+- LocalSearch succes counter: 29
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 5.74141; idx: 4
+
+-------- iter 39 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.09354e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.09343e+06
+- LocalSearch succes counter: 30
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  968452
+- LocalSearch succes counter: 30
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  968452
+- LocalSearch succes counter: 30
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.424685; idx: 4
+
+-------- iter 40 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 412088
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  265550
+- LocalSearch succes counter: 31
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  265550
+- LocalSearch succes counter: 31
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 8.31996; idx: 6
+
+-------- iter 41 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.08199e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.08199e+06
+- LocalSearch succes counter: 32
+
+	### MINIMUM COST: 6.1556; idx: 1
+
+-------- iter 42 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 892700
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  790655
+- LocalSearch succes counter: 32
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  565706
+- LocalSearch succes counter: 32
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  565706
+- LocalSearch succes counter: 32
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.636838; idx: 6
+
+-------- iter 43 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 891430
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  891430
+- LocalSearch succes counter: 33
+
+	### MINIMUM COST: 1.53992; idx: 9
+
+-------- iter 44 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 880616
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  869072
+- LocalSearch succes counter: 33
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  767227
+- LocalSearch succes counter: 33
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  767227
+- LocalSearch succes counter: 33
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 12.0758; idx: 5
+
+-------- iter 45 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.03174e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.02215e+06
+- LocalSearch succes counter: 34
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  903229
+- LocalSearch succes counter: 34
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  903229
+- LocalSearch succes counter: 34
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 11.7245; idx: 3
+
+-------- iter 46 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.02849e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  910205
+- LocalSearch succes counter: 35
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  903229
+- LocalSearch succes counter: 35
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  903229
+- LocalSearch succes counter: 35
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 9.9322; idx: 6
+
+-------- iter 47 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.02521e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  907559
+- LocalSearch succes counter: 36
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  907559
+- LocalSearch succes counter: 36
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 8.34539; idx: 5
+
+-------- iter 48 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 785417
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  785417
+- LocalSearch succes counter: 37
+
+	### MINIMUM COST: 6.09061; idx: 8
+
+-------- iter 49 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 570982
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  326910
+- LocalSearch succes counter: 37
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  242249
+- LocalSearch succes counter: 37
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  242249
+- LocalSearch succes counter: 37
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.44897; idx: 9
+
+-------- iter 50 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 763713
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  675767
+- LocalSearch succes counter: 38
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  668969
+- LocalSearch succes counter: 38
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  414784
+- LocalSearch succes counter: 38
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  260960
+- LocalSearch succes counter: 38
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  260960
+- LocalSearch succes counter: 38
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 9.90409; idx: 7
+
+-------- iter 51 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 549358
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  543253
+- LocalSearch succes counter: 39
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  543253
+- LocalSearch succes counter: 39
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 9.49979; idx: 1
+
+-------- iter 52 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 938316
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  934837
+- LocalSearch succes counter: 40
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  934357
+- LocalSearch succes counter: 40
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  934357
+- LocalSearch succes counter: 40
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 5.3543; idx: 4
+
+-------- iter 53 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 935582
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  934506
+- LocalSearch succes counter: 41
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  934357
+- LocalSearch succes counter: 41
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  934357
+- LocalSearch succes counter: 41
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.65565; idx: 3
+
+-------- iter 54 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 542006
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  540068
+- LocalSearch succes counter: 42
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  540068
+- LocalSearch succes counter: 42
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 10.6802; idx: 2
+
+-------- iter 55 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 541303
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  540068
+- LocalSearch succes counter: 43
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  537334
+- LocalSearch succes counter: 43
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  528534
+- LocalSearch succes counter: 43
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  528534
+- LocalSearch succes counter: 43
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.69067; idx: 8
+
+-------- iter 56 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 875352
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  874387
+- LocalSearch succes counter: 44
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  874387
+- LocalSearch succes counter: 44
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 5.08158; idx: 7
+
+-------- iter 57 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 873000
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  773095
+- LocalSearch succes counter: 45
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  773095
+- LocalSearch succes counter: 45
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 2.3934; idx: 7
+
+-------- iter 58 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 872840
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  773095
+- LocalSearch succes counter: 46
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  773095
+- LocalSearch succes counter: 46
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.256951; idx: 7
+
+-------- iter 59 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 860060
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  760335
+- LocalSearch succes counter: 47
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  760335
+- LocalSearch succes counter: 47
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 19.3173; idx: 9
+
+-------- iter 60 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 859418
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  852275
+- LocalSearch succes counter: 48
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  852275
+- LocalSearch succes counter: 48
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 13.2619; idx: 0
+
+-------- iter 61 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.18126e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.18126e+06
+- LocalSearch succes counter: 49
+
+	### MINIMUM COST: 8.97534; idx: 1
+
+-------- iter 62 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.93661e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.93661e+06
+- LocalSearch succes counter: 49
+
+	### MINIMUM COST: 0.411571; idx: 6
+
+-------- iter 63 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.17733e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.17733e+06
+- LocalSearch succes counter: 49
+
+	### MINIMUM COST: 12.5626; idx: 9
+
+-------- iter 64 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.13726e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.13726e+06
+- LocalSearch succes counter: 49
+
+	### MINIMUM COST: 6.0825; idx: 6
+
+-------- iter 65 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16127e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.15191e+06
+- LocalSearch succes counter: 49
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.15191e+06
+- LocalSearch succes counter: 49
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 7.18992; idx: 1
+
+-------- iter 66 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16052e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.15243e+06
+- LocalSearch succes counter: 50
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.01932e+06
+- LocalSearch succes counter: 50
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.01932e+06
+- LocalSearch succes counter: 50
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.17427; idx: 7
+
+-------- iter 67 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.15551e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.15148e+06
+- LocalSearch succes counter: 51
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.15148e+06
+- LocalSearch succes counter: 51
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.98144; idx: 8
+
+-------- iter 68 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.1516e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.01969e+06
+- LocalSearch succes counter: 52
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  486701
+- LocalSearch succes counter: 52
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  407702
+- LocalSearch succes counter: 52
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  407702
+- LocalSearch succes counter: 52
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 4.14536; idx: 6
+
+-------- iter 69 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.11689e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.11244e+06
+- LocalSearch succes counter: 53
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.11207e+06
+- LocalSearch succes counter: 53
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  984392
+- LocalSearch succes counter: 53
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  541431
+- LocalSearch succes counter: 53
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  541431
+- LocalSearch succes counter: 53
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.16528; idx: 9
+
+-------- iter 70 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.14193e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.13876e+06
+- LocalSearch succes counter: 54
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.13798e+06
+- LocalSearch succes counter: 54
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.00747e+06
+- LocalSearch succes counter: 54
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.00747e+06
+- LocalSearch succes counter: 54
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.506513; idx: 3
+
+-------- iter 71 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.1371e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.1371e+06
+- LocalSearch succes counter: 55
+
+	### MINIMUM COST: 0.550275; idx: 6
+
+-------- iter 72 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.12448e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  994564
+- LocalSearch succes counter: 55
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  509655
+- LocalSearch succes counter: 55
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  391860
+- LocalSearch succes counter: 55
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  391860
+- LocalSearch succes counter: 55
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 17.3593; idx: 2
+
+-------- iter 73 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.12414e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  994365
+- LocalSearch succes counter: 56
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  994365
+- LocalSearch succes counter: 56
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 16.1311; idx: 2
+
+-------- iter 74 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 3.18906e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  3.18906e+06
+- LocalSearch succes counter: 57
+
+	### MINIMUM COST: 9.73764; idx: 3
+
+-------- iter 75 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.728e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  6.728e+06
+- LocalSearch succes counter: 57
+
+	### MINIMUM COST: 2.36539; idx: 6
+
+-------- iter 76 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.71966e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  6.71966e+06
+- LocalSearch succes counter: 57
+
+	### MINIMUM COST: 9.87192; idx: 2
+
+-------- iter 77 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 3.18335e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2.95217e+06
+- LocalSearch succes counter: 57
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.95217e+06
+- LocalSearch succes counter: 57
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 7.15697; idx: 6
+
+-------- iter 78 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.71343e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  3.71265e+06
+- LocalSearch succes counter: 58
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  3.29914e+06
+- LocalSearch succes counter: 58
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  3.29914e+06
+- LocalSearch succes counter: 58
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.482894; idx: 4
+
+-------- iter 79 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.01936e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.01865e+07
+- LocalSearch succes counter: 59
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.45957e+06
+- LocalSearch succes counter: 59
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.45957e+06
+- LocalSearch succes counter: 59
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 9.63271; idx: 9
+
+-------- iter 80 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 3.37156e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2.65594e+07
+- LocalSearch succes counter: 60
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.65594e+07
+- LocalSearch succes counter: 60
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 8.53017; idx: 9
+
+-------- iter 81 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.17549e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.17545e+07
+- LocalSearch succes counter: 61
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.72133e+06
+- LocalSearch succes counter: 61
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.72133e+06
+- LocalSearch succes counter: 61
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.954287; idx: 0
+
+-------- iter 82 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.64437e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.64437e+07
+- LocalSearch succes counter: 62
+
+	### MINIMUM COST: 23.5412; idx: 8
+
+-------- iter 83 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.64396e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.64396e+07
+- LocalSearch succes counter: 62
+
+	### MINIMUM COST: 23.1599; idx: 1
+
+-------- iter 84 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.64396e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.64396e+07
+- LocalSearch succes counter: 62
+
+	### MINIMUM COST: 16.0907; idx: 6
+
+-------- iter 85 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.17374e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.70898e+06
+- LocalSearch succes counter: 62
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.70898e+06
+- LocalSearch succes counter: 62
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 17.1329; idx: 8
+
+-------- iter 86 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.67036e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  6.67036e+06
+- LocalSearch succes counter: 63
+
+	### MINIMUM COST: 15.4049; idx: 1
+
+-------- iter 87 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 9.57784e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  9.56306e+06
+- LocalSearch succes counter: 63
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  9.56306e+06
+- LocalSearch succes counter: 63
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 24.4804; idx: 8
+
+-------- iter 88 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.01373e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.01341e+07
+- LocalSearch succes counter: 64
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.01293e+07
+- LocalSearch succes counter: 64
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  9.56306e+06
+- LocalSearch succes counter: 64
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  9.56306e+06
+- LocalSearch succes counter: 64
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 14.9562; idx: 8
+
+-------- iter 89 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63521e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2.63433e+07
+- LocalSearch succes counter: 65
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.63433e+07
+- LocalSearch succes counter: 65
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 14.2542; idx: 6
+
+-------- iter 90 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63474e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.63474e+07
+- LocalSearch succes counter: 66
+
+	### MINIMUM COST: 15.453; idx: 6
+
+-------- iter 91 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63429e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.63429e+07
+- LocalSearch succes counter: 66
+
+	### MINIMUM COST: 13.073; idx: 7
+
+-------- iter 92 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63431e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.58173e+07
+- LocalSearch succes counter: 66
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.58173e+07
+- LocalSearch succes counter: 66
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.47245; idx: 2
+
+-------- iter 93 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63418e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.58161e+07
+- LocalSearch succes counter: 67
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.58161e+07
+- LocalSearch succes counter: 67
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 2.9382; idx: 2
+
+-------- iter 94 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.70486e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.24325e+06
+- LocalSearch succes counter: 68
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.23975e+06
+- LocalSearch succes counter: 68
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  8.23975e+06
+- LocalSearch succes counter: 68
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 5.24948; idx: 3
+
+-------- iter 95 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.70449e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.70428e+07
+- LocalSearch succes counter: 69
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.70425e+07
+- LocalSearch succes counter: 69
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.23946e+06
+- LocalSearch succes counter: 69
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  8.23946e+06
+- LocalSearch succes counter: 69
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.21334; idx: 3
+
+-------- iter 96 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16889e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.6775e+06
+- LocalSearch succes counter: 70
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.6775e+06
+- LocalSearch succes counter: 70
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.02819; idx: 9
+
+-------- iter 97 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63152e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.63152e+07
+- LocalSearch succes counter: 71
+
+	### MINIMUM COST: 3.85909; idx: 2
+
+-------- iter 98 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.63152e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.63152e+07
+- LocalSearch succes counter: 71
+
+	### MINIMUM COST: 2.18346; idx: 9
+
+-------- iter 99 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.36212e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.0079e+07
+- LocalSearch succes counter: 71
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.0079e+07
+- LocalSearch succes counter: 71
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 11.9236; idx: 7
+
+-------- iter 100 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62924e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57866e+07
+- LocalSearch succes counter: 72
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57845e+07
+- LocalSearch succes counter: 72
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57842e+07
+- LocalSearch succes counter: 72
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.57842e+07
+- LocalSearch succes counter: 72
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.95362; idx: 4
+
+-------- iter 101 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62845e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.62845e+07
+- LocalSearch succes counter: 73
+
+	### MINIMUM COST: 6.189; idx: 5
+
+-------- iter 102 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16717e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.66774e+06
+- LocalSearch succes counter: 73
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.66774e+06
+- LocalSearch succes counter: 73
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.67877; idx: 8
+
+-------- iter 103 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62649e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57692e+07
+- LocalSearch succes counter: 74
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.57692e+07
+- LocalSearch succes counter: 74
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 7.81267; idx: 3
+
+-------- iter 104 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.35985e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.00595e+07
+- LocalSearch succes counter: 75
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.00587e+07
+- LocalSearch succes counter: 75
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.00586e+07
+- LocalSearch succes counter: 75
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.6636e+06
+- LocalSearch succes counter: 75
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.6636e+06
+- LocalSearch succes counter: 75
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.785209; idx: 5
+
+-------- iter 105 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62587e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57663e+07
+- LocalSearch succes counter: 76
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.57663e+07
+- LocalSearch succes counter: 76
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 2.80276; idx: 4
+
+-------- iter 106 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62464e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.62464e+07
+- LocalSearch succes counter: 77
+
+	### MINIMUM COST: 23.8898; idx: 0
+
+-------- iter 107 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.35906e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.35906e+07
+- LocalSearch succes counter: 77
+
+	### MINIMUM COST: 9.88086; idx: 1
+
+-------- iter 108 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62303e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2.62232e+07
+- LocalSearch succes counter: 77
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.62232e+07
+- LocalSearch succes counter: 77
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 34.3768; idx: 3
+
+-------- iter 109 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62232e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  1.57398e+07
+- LocalSearch succes counter: 78
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.57398e+07
+- LocalSearch succes counter: 78
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 61.695; idx: 0
+
+-------- iter 110 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16341e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.16341e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 44.6517; idx: 8
+
+-------- iter 111 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.35672e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.35672e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 31.9589; idx: 9
+
+-------- iter 112 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.6209e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.6209e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 19.2049; idx: 6
+
+-------- iter 113 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.16376e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.16376e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 5.99239; idx: 3
+
+-------- iter 114 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.62057e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.62057e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 0.161852; idx: 6
+
+-------- iter 115 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.88224e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.88224e+07
+- LocalSearch succes counter: 79
+
+	### MINIMUM COST: 1.51585; idx: 4
+
+-------- iter 116 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.35646e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.65196e+06
+- LocalSearch succes counter: 79
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.65196e+06
+- LocalSearch succes counter: 79
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 9.09523; idx: 3
+
+-------- iter 117 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.69552e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.69552e+07
+- LocalSearch succes counter: 80
+
+	### MINIMUM COST: 2.5534; idx: 7
+
+-------- iter 118 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61809e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  2.61756e+07
+- LocalSearch succes counter: 80
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61756e+07
+- LocalSearch succes counter: 80
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 32.5977; idx: 5
+
+-------- iter 119 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61756e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61756e+07
+- LocalSearch succes counter: 81
+
+	### MINIMUM COST: 34.288; idx: 1
+
+-------- iter 120 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61756e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61756e+07
+- LocalSearch succes counter: 81
+
+	### MINIMUM COST: 16.0371; idx: 1
+
+-------- iter 121 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61756e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61756e+07
+- LocalSearch succes counter: 81
+
+	### MINIMUM COST: 7.74374; idx: 9
+
+-------- iter 122 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.35529e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  4.64867e+06
+- LocalSearch succes counter: 81
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.64867e+06
+- LocalSearch succes counter: 81
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.49854; idx: 5
+
+-------- iter 123 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 82
+
+	### MINIMUM COST: 1.02976e+08; idx: 8
+
+-------- iter 124 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 82
+
+	### MINIMUM COST: 1.10313e+08; idx: 8
+
+-------- iter 125 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 82
+
+	### MINIMUM COST: 7.01925e+07; idx: 3
+
+-------- iter 126 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 82
+
+	### MINIMUM COST: 8.76645e+07; idx: 6
+
+-------- iter 127 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 82
+
+	### MINIMUM COST: 1.0697e+08; idx: 8
+
+-------- iter 128 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.69312e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.18187e+06
+- LocalSearch succes counter: 82
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  8.18187e+06
+- LocalSearch succes counter: 82
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 27.9765; idx: 2
+
+-------- iter 129 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 8.36063e+07; idx: 1
+
+-------- iter 130 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 1.15718e+08; idx: 2
+
+-------- iter 131 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61558e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61558e+07
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 23.8576; idx: 8
+
+-------- iter 132 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 6.93125e+07; idx: 1
+
+-------- iter 133 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 1.06015e+08; idx: 1
+
+-------- iter 134 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 1.15514e+08; idx: 7
+
+-------- iter 135 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 1.02844e+08; idx: 0
+
+-------- iter 136 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 6.99957e+07; idx: 4
+
+-------- iter 137 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 1.02819e+08; idx: 0
+
+-------- iter 138 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 8.35739e+07; idx: 0
+
+-------- iter 139 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = inf
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  inf
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 6.61414e+07; idx: 0
+
+-------- iter 140 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.87062e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.87062e+07
+- LocalSearch succes counter: 83
+
+	### MINIMUM COST: 2.99236; idx: 0
+
+-------- iter 141 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.69312e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.18529e+06
+- LocalSearch succes counter: 83
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.18127e+06
+- LocalSearch succes counter: 83
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  8.18127e+06
+- LocalSearch succes counter: 83
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 10.282; idx: 0
+
+-------- iter 142 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.61335e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.61335e+07
+- LocalSearch succes counter: 84
+
+	### MINIMUM COST: 3.91407; idx: 0
+
+-------- iter 143 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.68991e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  8.1632e+06
+- LocalSearch succes counter: 84
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  8.1632e+06
+- LocalSearch succes counter: 84
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 40.382; idx: 1
+
+-------- iter 144 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.60704e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.60704e+07
+- LocalSearch succes counter: 85
+
+	### MINIMUM COST: 10.9193; idx: 2
+
+-------- iter 145 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.81847e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.81847e+07
+- LocalSearch succes counter: 85
+
+	### MINIMUM COST: 6.7277; idx: 7
+
+-------- iter 146 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.85683e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.85683e+07
+- LocalSearch succes counter: 85
+
+	### MINIMUM COST: 10.1755; idx: 0
+
+-------- iter 147 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.85658e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.85658e+07
+- LocalSearch succes counter: 85
+
+	### MINIMUM COST: 3.23348; idx: 3
+
+-------- iter 148 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 9.80637e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  9.44944e+06
+- LocalSearch succes counter: 85
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  9.44944e+06
+- LocalSearch succes counter: 85
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 21.9925; idx: 2
+
+-------- iter 149 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.18472e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  6.18472e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 4.02679; idx: 6
+
+-------- iter 150 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.59745e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.59745e+07
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 9.86627; idx: 8
+
+-------- iter 151 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 9.76181e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  9.76181e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 12.5467; idx: 3
+
+-------- iter 152 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 4.27185e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.27185e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 1.25182; idx: 1
+
+-------- iter 153 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 2.59338e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  2.59338e+07
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 8.8269; idx: 7
+
+-------- iter 154 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 4.2696e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  4.2696e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 2.19997; idx: 3
+
+-------- iter 155 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 9.42195e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  9.42195e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 6.13; idx: 4
+
+-------- iter 156 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 6.1614e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  6.1614e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 14.4131; idx: 1
+
+-------- iter 157 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.80487e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.80487e+07
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 15.8519; idx: 6
+
+-------- iter 158 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.80413e+07
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.80413e+07
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 13.6964; idx: 5
+
+-------- iter 159 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 1.08134e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  1.08134e+06
+- LocalSearch succes counter: 86
+
+	### MINIMUM COST: 9.32897; idx: 2
+
+-------- iter 160 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 395133
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  260472
+- LocalSearch succes counter: 86
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  241318
+- LocalSearch succes counter: 86
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  142033
+- LocalSearch succes counter: 86
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  142033
+- LocalSearch succes counter: 86
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.0887972; idx: 3
+
+-------- iter 161 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 5.27277e+06
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  5.2519e+06
+- LocalSearch succes counter: 87
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  5.2519e+06
+- LocalSearch succes counter: 87
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 5.14384; idx: 4
+
+-------- iter 162 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 416093
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  411071
+- LocalSearch succes counter: 88
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  405850
+- LocalSearch succes counter: 88
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  405850
+- LocalSearch succes counter: 88
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.833448; idx: 2
+
+-------- iter 163 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 356344
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  355358
+- LocalSearch succes counter: 89
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  271933
+- LocalSearch succes counter: 89
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  223944
+- LocalSearch succes counter: 89
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  204876
+- LocalSearch succes counter: 89
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  164500
+- LocalSearch succes counter: 89
+
+- iter 5 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  109222
+- LocalSearch succes counter: 89
+
+- iter 6 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  109222
+- LocalSearch succes counter: 89
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.51271; idx: 4
+
+-------- iter 164 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 354473
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  223431
+- LocalSearch succes counter: 90
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  204561
+- LocalSearch succes counter: 90
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  134090
+- LocalSearch succes counter: 90
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  130639
+- LocalSearch succes counter: 90
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  100270
+- LocalSearch succes counter: 90
+
+- iter 5 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  100270
+- LocalSearch succes counter: 90
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.572629; idx: 7
+
+-------- iter 165 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 331301
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  331301
+- LocalSearch succes counter: 91
+
+	### MINIMUM COST: 15.241; idx: 9
+
+-------- iter 166 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 321118
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  193480
+- LocalSearch succes counter: 91
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  193480
+- LocalSearch succes counter: 91
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 8.43248; idx: 1
+
+-------- iter 167 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 292999
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  188715
+- LocalSearch succes counter: 92
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  110582
+- LocalSearch succes counter: 92
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  85444.4
+- LocalSearch succes counter: 92
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  85444.4
+- LocalSearch succes counter: 92
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 6.84599; idx: 7
+
+-------- iter 168 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 293661
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  130500
+- LocalSearch succes counter: 93
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  102127
+- LocalSearch succes counter: 93
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  76915.8
+- LocalSearch succes counter: 93
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  76915.8
+- LocalSearch succes counter: 93
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 3.77032; idx: 8
+
+-------- iter 169 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 279868
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  279868
+- LocalSearch succes counter: 94
+
+	### MINIMUM COST: 1.15121; idx: 6
+
+-------- iter 170 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 262235
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  162800
+- LocalSearch succes counter: 94
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  97175.3
+- LocalSearch succes counter: 94
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  73716.4
+- LocalSearch succes counter: 94
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  73716.4
+- LocalSearch succes counter: 94
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 4.7076; idx: 3
+
+-------- iter 171 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 267513
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  158682
+- LocalSearch succes counter: 95
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  96159.7
+- LocalSearch succes counter: 95
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  84940
+- LocalSearch succes counter: 95
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  84940
+- LocalSearch succes counter: 95
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.4161; idx: 6
+
+-------- iter 172 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 263223
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  133491
+- LocalSearch succes counter: 96
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  130526
+- LocalSearch succes counter: 96
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  88905.3
+- LocalSearch succes counter: 96
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  66767.7
+- LocalSearch succes counter: 96
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  66767.7
+- LocalSearch succes counter: 96
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 2.3953; idx: 8
+
+-------- iter 173 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 242828
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  227410
+- LocalSearch succes counter: 97
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  80920
+- LocalSearch succes counter: 97
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  60733.6
+- LocalSearch succes counter: 97
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  60733.6
+- LocalSearch succes counter: 97
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.47098; idx: 5
+
+-------- iter 174 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 215986
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  80083
+- LocalSearch succes counter: 98
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  61355.5
+- LocalSearch succes counter: 98
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  57722.5
+- LocalSearch succes counter: 98
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  56804.1
+- LocalSearch succes counter: 98
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  56804.1
+- LocalSearch succes counter: 98
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 1.81156; idx: 4
+
+-------- iter 175 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 195873
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  90641.4
+- LocalSearch succes counter: 99
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  84746.4
+- LocalSearch succes counter: 99
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  57995.2
+- LocalSearch succes counter: 99
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  57995.2
+- LocalSearch succes counter: 99
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.822061; idx: 8
+
+-------- iter 176 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 98942.8
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  98691.2
+- LocalSearch succes counter: 100
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  34151.9
+- LocalSearch succes counter: 100
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  31540.7
+- LocalSearch succes counter: 100
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  29957
+- LocalSearch succes counter: 100
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  20314
+- LocalSearch succes counter: 100
+
+- iter 5 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  20314
+- LocalSearch succes counter: 100
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.405007; idx: 0
+
+-------- iter 177 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 48680.7
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  17398.5
+- LocalSearch succes counter: 101
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  17147.1
+- LocalSearch succes counter: 101
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  15098.8
+- LocalSearch succes counter: 101
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  14521.2
+- LocalSearch succes counter: 101
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  12937.8
+- LocalSearch succes counter: 101
+
+- iter 5 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  12937.8
+- LocalSearch succes counter: 101
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.102949; idx: 3
+
+-------- iter 178 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 40641.9
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  14541.9
+- LocalSearch succes counter: 102
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  12833
+- LocalSearch succes counter: 102
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  12277.2
+- LocalSearch succes counter: 102
+
+- iter 3 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  12222.5
+- LocalSearch succes counter: 102
+
+- iter 4 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  12222.5
+- LocalSearch succes counter: 102
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.0361097; idx: 3
+
+-------- iter 179 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 37743.7
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  13172.4
+- LocalSearch succes counter: 103
+
+- iter 1 of 10
+- uscito da visit_neighbor(). changed?: 1
+- best_schedule_value_t:  11746.9
+- LocalSearch succes counter: 103
+
+- iter 2 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  11746.9
+- LocalSearch succes counter: 103
+    * Better configuration found via local search * 
+
+	### MINIMUM COST: 0.0229271; idx: 2
+
+-------- iter 180 --------
+
+	RANDOM ITERATION 1
+
+	RANDOM ITERATION 2
+
+	RANDOM ITERATION 3
+
+	RANDOM ITERATION 4
+
+	RANDOM ITERATION 5
+
+	RANDOM ITERATION 6
+
+	RANDOM ITERATION 7
+
+	RANDOM ITERATION 8
+
+	RANDOM ITERATION 9
+        PERFORM LOCAL SEARCH
+
+- Ho valutato l'obj fun delta, valore = 0
+
+- iter 0 of 10
+- uscito da visit_neighbor(). changed?: 0
+- best_schedule_value_t:  0
+- LocalSearch succes counter: 104
+
+	### MINIMUM COST: 1.11995; idx: 0
+
+-------- iter 181 --------
+TIME: 736483
+total cost: 1494.01; tardiness: 0
+
+################################################################################
+finish time 2020-03-30 11:48:29.581113
+################################################################################

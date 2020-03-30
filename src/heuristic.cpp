@@ -252,6 +252,7 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
     // TODO: rimuovere, lo abbiamo messo per confrontare i tempi di esecuzione
     if (stop)
     {
+
       std::cout << "TIME: " << current_time << std::endl;
     }
 
