@@ -166,6 +166,8 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     std::cout<< "- best_schedule_value_t:  "<< best_schedule_value_t << std::endl; //TOREMOVE 
     
     std::cout << "- LocalSearch succes counter: " << LS_count << std::endl;
+
+    
     
     //_______________________________________________________________
     // TODO: rimuovere
@@ -207,6 +209,8 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
     std::cout << "    * Better configuration found via local search *" << std::endl;
   }
 */
+
+ 
   return changed_at_least_once;
 }
 

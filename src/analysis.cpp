@@ -51,8 +51,17 @@ Analysis::perform_analysis (const std::string& filename)
       sumCost += cost;
       sumTardi += tardi;
     }
+
+
+  
     std::cout << "total cost: " << sumCost << "; tardiness: " 
             << sumTardi << std::endl;
+    ///////TODO: TOGLIERE QUESTA MODIFICA FATTA PER IL TESTING 
+    std::ofstream ofs;
+    ofs.open("../TEST_OUTPUTS.csv",std::ios_base::app);  
+    ofs<<","<< sumCost<< ","<< sumTardi<<std::endl;
+    ofs.close();
+    /////// --fine del cambiamento
   }
   else
     std::cerr << "ERROR in Analysis::perform_analysis - file "

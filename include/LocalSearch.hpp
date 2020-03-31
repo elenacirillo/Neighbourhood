@@ -12,7 +12,7 @@ protected:
 
 	// TODO: rimuovere
 	// tiene traccia di quante volte la Local Search ha successo
-	unsigned LS_count = 0;
+	//unsigned LS_count = 0;
 
 	// maximum number of local search iterations
 	unsigned long MAX_ITER = 10;
@@ -22,7 +22,7 @@ protected:
     *  		"true" if best improvement
     *  		"false" if 1st improvement
 	*/
-	bool best_fit = false;
+	bool best_fit = true;
 
 	// size of the neighborhood
     unsigned neigh_size = 4;
