@@ -10,6 +10,9 @@
 #include "LocalSearchGPU.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
+
+#include <fstream> //TODO: TOGLIMI FINITI I TEST
+
 void print_help (void);
 
 int main (int argc, char *argv[])
@@ -60,6 +63,7 @@ int main (int argc, char *argv[])
     std::string times_filename = "SelectJobs_times.csv";
     std::string nodes_filename = "tNodes.csv";
 
+   
     // initialization of greedy
     factory_t::const_iterator where = factory.find(method);
     if (where != factory.end())

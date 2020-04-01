@@ -12,7 +12,7 @@ protected:
 
 	// TODO: rimuovere
 	// tiene traccia di quante volte la Local Search ha successo
-	unsigned LS_count = 0;
+	//unsigned LS_count = 0;
 
 	// maximum number of local search iterations
 	unsigned long MAX_ITER = 10;

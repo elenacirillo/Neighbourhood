@@ -1,0 +1,11 @@
+﻿- modificare config
+- far runnare 
+- viene generato il file TESTS_OUTPUT.csv nella cartella 'data/output':
+    questo file manca di header e della prima colonna. L'header da inserire a mano è: 
+    Method, Iter, Time, LsCounter, Cost, Tardiness
+
+-   per generare la colonna 'Method' si può fare abbastanza velcemente andando da terminale nella cartella 'data/results' e stampando su un file i nomi di tutte le cartelle. 
+    Per fare questo su linux basta usare il comando `ls -lrt >> topolino.txt`. Viene generato il file `topolino.txt` contenente il nome di tutte le sotto-cartelle. Poi bisogna pulire il file dalle schifezze a mano (si fa quasi istantaneamente usando le MACRO in sublime text: `ctrl+q` per iniziare a registrare una macro, poi si cancella le cose inutili delle prima riga e ci si sposta all'inizio della seconda, `ctrl+q` per smettere di registrare l'operazione, dopodichè con `ctrl+shift+q` si replica automaticamente l'operazione su tutte le righe sotto pulendo il file eheh)
+-   copiare e incollare la colonna nel posto giusto del file TESTS_OUTPUT.csv
+-   spostare tutto nella cartella TESTS zippando i risultati
+-   Gioire del risultato

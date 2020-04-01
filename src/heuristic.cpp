@@ -252,8 +252,10 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
     // TODO: rimuovere, lo abbiamo messo per confrontare i tempi di esecuzione
     if (stop)
     {
-
-      std::cout << "TIME: " << current_time << std::endl;
+      std::ofstream ofs;
+      ofs.open("../TEST_OUTPUTS.csv",std::ios_base::app);
+      ofs<<","<<iter<< ","<<current_time<<","<< LS_count;
+      ofs.close();
     }
 
     if (!stop)
