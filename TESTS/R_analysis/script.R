@@ -3,6 +3,8 @@ library(ggplot2)
 library(dplyr)
 library(reshape2)
 library(gridExtra)
+library(waffle)
+library(viridis)
 
 
 # clear workspace
@@ -140,3 +142,27 @@ cost =
 grid.arrange(time, cost, ncol=2)
 
 
+#-------------------------------------------------------------------------------
+
+# WAFFLE  CHART
+
+gpu.count <- df.gpu$LsCounter
+gpu.iter <- df.gpu$Iter
+gpu.perc <- mean(gpu.count/gpu.iter)*100
+
+swap.count <- df.swap$LsCounter
+swap.iter <- df.swap$Iter
+swap.perc <- mean(swap.count/swap.iter)*100
+
+cols <- c("firebrick3","deepskyblue4")
+
+gpu.parts <- c('Success' = gpu.perc, 'Fail' = 100-gpu.perc)
+gpu.waffle <- waffle(gpu.parts, rows = 6, colors = cols, title = "Local Search GPU")
+
+swap.parts <- c('Success' = swap.perc, 'Fail' = 100-swap.perc)
+swap.waffle <- waffle(swap.parts, rows = 6, colors = cols, title = "Local Search Swap")
+
+iron(gpu.waffle,swap.waffle)
+
+
+#-------------------------------------------------------------------------------
