@@ -254,7 +254,7 @@ Heuristic::algorithm (unsigned myseed, unsigned max_random_iter)
     {
       std::ofstream ofs;
       ofs.open("../TEST_OUTPUTS.csv",std::ios_base::app);
-      ofs<<","<<iter<< ","<<current_time<<","<< LS_count;
+      ofs/*<<","*/<<iter<< ","<<current_time<<","<< LS_count;
       ofs.close();
     }
 
