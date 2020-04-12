@@ -25,7 +25,7 @@ protected:
 	bool best_fit = true;
 
 	// size of the neighborhood
-    unsigned neigh_size = 5;
+    unsigned neigh_size = 4;
 
 	// tabu list (tabu search optimization)
 	//std::vector<job_schedule_t> previous_best;
