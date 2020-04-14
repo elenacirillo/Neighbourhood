@@ -12,7 +12,7 @@ protected:
 
 	// TODO: rimuovere
 	// tiene traccia di quante volte la Local Search ha successo
-	unsigned LS_count = 0;
+	//unsigned LS_count = 0;
 
 	// maximum number of local search iterations
 	unsigned long MAX_ITER = 10;
@@ -39,7 +39,7 @@ protected:
     // obj function value of the best schedule found by local search so far
     double best_schedule_value_t = INF;
 
-	virtual double evaluate_objective(job_schedule_t&);
+	double evaluate_objective(job_schedule_t&);
     //double evaluate_objective(job_schedule_t&) const;
     //double evaluate_objective(job_schedule_t& job_schedule); // NON CONST perchè chiama objective_function che non lo è
     
@@ -47,7 +47,7 @@ protected:
     virtual bool visit_neighbor() = 0;
 
 	//
-	virtual bool assign_to_selected_node (const Job&,
+	bool assign_to_selected_node (const Job&,
                                         job_schedule_t&, unsigned);
 
 	/* NUOVA VERSIONE ASSEGNAMENTO A NODO CHE FA ANCHE IL CONTROLLO SUL SUBOTTIMO

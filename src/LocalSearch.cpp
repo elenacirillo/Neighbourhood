@@ -120,17 +120,6 @@ LocalSearch::evaluate_objective(job_schedule_t& job_schedule)
 }
 
 
-/*
-double
-LocalSearch::evaluate_objective(job_schedule_t& job_schedule)
-{
-  double fft = find_first_finish_time(job_schedule);
-  double lft = find_last_finish_time(job_schedule);
-  return (objective_function(job_schedule, fft) + fft - lft) ;
-}
-*/
-
-
 bool
 LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 {
@@ -145,8 +134,9 @@ LocalSearch::perform_local_search(job_schedule_t& actual_schedule)
 
   // evaluate objective function in the actual_schedule
   best_schedule_value_t = evaluate_objective(actual_schedule);
+  double ft=find_first_finish_time(actual_schedule);
   std::cout<< "- Ho valutato l'obj fun delta, valore = " << best_schedule_value_t << std::endl; 
-
+  std::cout<< "- Ho valutato l'obj fun, valore = " << objective_function(actual_schedule,ft) << std::endl; 
   // Iniziamo la local search
   unsigned iter = 0;
   bool changed = true;
