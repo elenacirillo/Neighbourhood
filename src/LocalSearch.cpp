@@ -71,19 +71,29 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   std::swap(opened_nodes, nodes);
   last_node_idx = best_lni;
 
-  // STAMPO LA SUA SCHEDULEEE
-  //std::cout << std::endl << "Schedule di Federica:" << std::endl;
-  //printer(best_schedule);
-
+  double temp = objective_function(best_schedule, find_first_finish_time(best_schedule));
   // Perform Local Search
-
   bool ls_updated = perform_local_search(best_schedule);
 
   if (ls_updated) // Se migliora la schedule faccio l'update
   {
+
     best_schedule = local_best_schedule;
     std::cout << "    * Better configuration found via local search * " << std::endl;
     ++LS_count;
+
+      std::ofstream ofs;
+      ofs.open("../TEST_OUTPUTS_2.csv",std::ios_base::app);
+      ofs << "\n" << temp << ", " << objective_function(best_schedule, find_first_finish_time(best_schedule));
+      ofs.close();
+
+  }
+  else 
+  {
+      std::ofstream ofs;
+      ofs.open("../TEST_OUTPUTS_2.csv",std::ios_base::app);
+      ofs << "\n 0.0";
+      ofs.close();
   }
   
   //NICO
