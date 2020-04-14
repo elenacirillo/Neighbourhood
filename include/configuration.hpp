@@ -2,7 +2,6 @@
 #define CONFIGURATION_HH
 
 #include "setup.hpp"
-#include <iostream>
 
 class Configuration {
 

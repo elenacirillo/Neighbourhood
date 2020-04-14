@@ -138,5 +138,4 @@ print_container (const ExtT<IntT,Ts...>& cont, const std::string& filename)
               << " cannot be opened" << std::endl;
 }
 
-
 #endif /* FILEIO_HH */

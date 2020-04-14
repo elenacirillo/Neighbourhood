@@ -6,12 +6,8 @@
 #include "greedy_version2.hpp"
 #include "greedy_version3.hpp"
 #include "greedy_version4.hpp"
-#include "LocalSearchbySwap.hpp"
-#include "LocalSearchGPU.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
-
-#include <fstream> //TODO: TOGLIMI FINITI I TEST
 
 void print_help (void);
 
@@ -39,8 +35,6 @@ int main (int argc, char *argv[])
     factory["FedeCpp2_R"] = GreedyBuilder(new Builder<Greedy_version2, Heuristic>);
     factory["FedeCpp3_R"] = GreedyBuilder(new Builder<Greedy_version3, Heuristic>);
     factory["FedeCpp4_R"] = GreedyBuilder(new Builder<Greedy_version4, Heuristic>);
-    factory["LocalSearchbySwap"] = GreedyBuilder(new Builder<LocalSearchbySwap, Heuristic>);
-    factory["LocalSearchGPU"] = GreedyBuilder(new Builder<LocalSearchGPU, Heuristic>);
 
     // method
     std::string method = argv[1];
@@ -63,24 +57,22 @@ int main (int argc, char *argv[])
     std::string times_filename = "SelectJobs_times.csv";
     std::string nodes_filename = "tNodes.csv";
 
-   
     // initialization of greedy
     factory_t::const_iterator where = factory.find(method);
     if (where != factory.end())
     {
-      std::unique_ptr<Heuristic> G = where->second->create(ARGS, delta,
-                                                        jobs_list_filename,
-                                                        times_filename,
+      std::unique_ptr<Heuristic> G = where->second->create(ARGS, delta, 
+                                                        jobs_list_filename, 
+                                                        times_filename, 
                                                         nodes_filename);
 
-      // parameter for randomization and number of random iterations
+      // parameter for randomization and number of random iterations    
       unsigned cpp_seed = 0;
       unsigned n_random_iter = 0;
       std::string result_filename = method + "_schedule.csv";
-      if (method == "FedeCpp_R"  || method == "FedeCpp1_R" ||
+      if (method == "FedeCpp_R"  || method == "FedeCpp1_R" || 
           method == "FedeCpp2_R" || method == "FedeCpp3_R" ||
-          method == "FedeCpp4_R" || method == "LocalSearchbySwap" ||
-          method == "LocalSearchGPU")
+          method == "FedeCpp4_R")
       {
         if (argc < 10)
           std::cerr << "\nERROR: additional arguments are required "
@@ -89,14 +81,14 @@ int main (int argc, char *argv[])
         {
           cpp_seed = std::stoi(argv[9]);
           n_random_iter = std::stoi(argv[10]);
-          result_filename = method + "_schedule_" + std::to_string(cpp_seed) +
+          result_filename = method + "_schedule_" + std::to_string(cpp_seed) + 
                             ".csv";
         }
       }
 
       // algorithm
       G->algorithm(cpp_seed, n_random_iter);
-      
+
       // print resulting schedule
       G->print_schedule(result_filename);
 

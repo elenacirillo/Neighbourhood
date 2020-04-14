@@ -47,7 +47,7 @@ def GetChildren(parent_pid):
     return ret
 
 
-#Kill a process than kill its children
+#Kill a process then kill its children
 def kill_proc_tree(pid):
     children = GetChildren(pid)
     os.kill(pid, signal.SIGKILL)

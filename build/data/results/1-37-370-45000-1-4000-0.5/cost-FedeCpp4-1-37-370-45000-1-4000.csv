@@ -1,0 +1,742 @@
+slot_number,sim_time,VM_type,NodeID,cost/node
+1,1257,"In-house server 1,","n1,",0.0384083
+2,2460,"In-house server 1,In-house server 2,","n1,n2,",0.414366
+3,3643,"In-house server 1,In-house server 2,","n2,n3,n1,",0.778809
+4,4873,"In-house server 1,In-house server 2,","n2,n3,n1,",0.847333
+5,6060,"In-house server 3,In-house server 2,","n1,n3,n2,",0.817711
+6,7281,"In-house server 2,In-house server 3,Standard_NV6,","n4,n3,n2,n1,",1.0582
+7,8507,"In-house server 2,In-house server 3,Standard_NV6,","n5,n1,n4,n3,n2,",1.21238
+8,9689,"Standard_NV6,In-house server 3,In-house server 2,","n5,n1,n4,n2,n3,",1.1623
+9,10885,"Standard_NV6,In-house server 1,In-house server 3,In-house server 2,","n1,n6,n4,n5,n3,n2,",1.24583
+10,12187,"Standard_NV6,In-house server 1,In-house server 3,In-house server 2,","n1,n2,n6,n5,n7,n4,n3,",1.76493
+11,13364,"Standard_NV12,In-house server 1,In-house server 3,In-house server 2,","n2,n6,n5,n4,n7,n1,n3,",1.7982
+12,14487,"In-house server 1,Standard_NV12,In-house server 2,In-house server 3,","n2,n3,n6,n8,n1,n7,n4,n5,",2.06819
+13,15707,"In-house server 1,Standard_NV12,In-house server 2,In-house server 3,","n7,n5,n4,n2,n1,n9,n3,n8,n6,",2.62978
+14,16927,"Standard_NV12,In-house server 2,In-house server 3,","n2,n3,n6,n8,n1,n9,n5,n7,n4,",2.7145
+15,18099,"Standard_NV24,In-house server 2,In-house server 3,","n2,n1,n5,n4,n7,n9,n3,n8,n6,",2.87683
+16,19287,"Standard_NV24,In-house server 2,In-house server 3,","n2,n1,n3,n4,n7,n5,n9,n8,n6,",2.91434
+17,20505,"Standard_NV24,In-house server 2,In-house server 3,","n1,n3,n2,n4,n7,n5,n9,n8,n6,",3.00792
+18,21691,"Standard_NV24X,In-house server 2,In-house server 3,","n3,n1,n6,n8,n4,n7,n5,n9,n2,",3.11988
+19,22920,"Standard_NV24X,In-house server 2,In-house server 3,","n3,n1,n2,n9,n10,n6,n8,n4,n7,n5,",3.61876
+20,24209,"Standard_NV24X,In-house server 2,In-house server 3,","n2,n3,n1,n9,n10,n6,n8,n4,n7,n5,",3.83645
+21,25389,"Standard_NV24X,In-house server 2,In-house server 3,","n2,n3,n1,n11,n6,n8,n4,n5,n7,n10,n9,",3.88242
+22,26571,"Standard_NV24X,In-house server 2,In-house server 3,","n2,n3,n1,n11,n6,n8,n4,n5,n7,n10,n9,",3.83333
+23,27764,"Standard_NV24,In-house server 2,In-house server 3,","n4,n10,n8,n12,n6,n9,n1,n11,n5,n7,n3,n2,",3.8894
+24,29022,"Standard_NV24,In-house server 2,In-house server 3,","n12,n2,n3,n13,n10,n8,n11,n5,n7,n4,n1,n6,n9,",4.49619
+25,30245,"Standard_NV24,In-house server 2,In-house server 3,","n10,n8,n12,n2,n3,n13,n1,n11,n5,n7,n4,n6,n9,",4.39525
+26,31482,"In-house server 1,Standard_NV24,In-house server 2,In-house server 3,","n4,n11,n5,n7,n12,n10,n8,n14,n3,n13,n2,n6,n9,n1,",4.48337
+27,32692,"Standard_NV24,In-house server 2,In-house server 3,","n10,n8,n7,n11,n5,n4,n12,n14,n13,n3,n2,n6,n9,n1,",4.46262
+28,33855,"Standard_NV24,In-house server 2,In-house server 3,","n9,n6,n4,n7,n5,n11,n15,n14,n8,n10,n12,n13,n3,n2,n1,",4.31697
+29,35071,"In-house server 1,Standard_NV24,In-house server 2,In-house server 3,","n7,n10,n8,n5,n11,n15,n14,n12,n9,n6,n13,n16,n3,n4,n2,n1,",4.63994
+30,36342,"In-house server 1,Standard_NV24,In-house server 2,In-house server 3,","n7,n1,n14,n4,n12,n9,n6,n5,n11,n15,n16,n3,n13,n8,n10,n2,",4.72473
+31,37532,"Standard_NV24,In-house server 2,In-house server 3,","n7,n1,n14,n12,n9,n6,n5,n11,n15,n16,n3,n13,n8,n10,n4,n2,",4.59164
+32,38758,"Standard_NV24,In-house server 2,In-house server 3,","n1,n7,n14,n12,n9,n6,n5,n11,n15,n16,n3,n13,n8,n10,n4,n2,",4.62412
+33,39953,"Standard_NV24,In-house server 2,In-house server 3,","n1,n14,n8,n10,n12,n9,n6,n5,n11,n15,n16,n3,n13,n4,n7,n2,",4.47455
+34,41194,"Standard_NV24,In-house server 3,In-house server 2,In-house server 1,","n7,n1,n14,n8,n10,n12,n9,n6,n16,n3,n13,n4,n11,n15,n5,n2,",4.32172
+35,42449,"Standard_NV24,In-house server 3,In-house server 2,In-house server 1,","n7,n1,n8,n10,n14,n12,n9,n6,n4,n15,n11,n5,n17,n16,n3,n13,n2,",4.52386
+36,43648,"Standard_NV24,In-house server 3,In-house server 2,In-house server 1,","n7,n1,n6,n9,n14,n12,n8,n10,n17,n16,n3,n13,n4,n15,n11,n5,n2,",4.28425
+37,44944,"Standard_NV24,In-house server 2,In-house server 3,","n7,n1,n6,n9,n14,n12,n8,n10,n17,n16,n3,n13,n4,n15,n11,n5,n2,",4.71445
+38,45660.5,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n6,n9,n14,n2,n12,n8,n10,n17,n16,n3,n13,n7,n4,n15,n11,n5,",2.66126
+39,46135,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n6,n9,n14,n12,n8,n10,n13,n16,n3,n7,n4,n15,n11,n5,n2,",1.61345
+40,47314,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n2,n10,n8,n12,n5,n15,n11,n6,n9,n14,n7,n4,n16,n13,n17,n3,",4.13535
+41,48545,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n2,n10,n8,n12,n6,n9,n14,n7,n4,n15,n11,n5,n16,n13,n17,n3,",4.30654
+42,49744,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n1,n2,n10,n8,n12,n6,n9,n14,n15,n11,n5,n4,n16,n13,n17,n3,",4.1836
+43,50488.5,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n4,n2,n14,n18,n10,n8,n12,n6,n9,n11,n15,n5,n17,n16,n13,n3,n1,",2.71746
+44,50978,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n4,n2,n14,n10,n8,n12,n6,n9,n11,n15,n5,n16,n13,n17,n3,n1,",1.72704
+45,52194,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n4,n2,n12,n8,n10,n14,n6,n9,n11,n15,n5,n16,n13,n17,n3,n1,",4.26157
+46,52903.4,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n4,n2,n12,n8,n10,n14,n6,n9,n11,n15,n5,n16,n13,n17,n3,n1,",2.47967
+47,53438,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n4,n2,n12,n8,n10,n14,n6,n9,n11,n15,n5,n16,n13,n17,n3,n1,",1.92735
+48,54633,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n12,n2,n7,n8,n10,n14,n18,n11,n15,n5,n6,n9,n17,n13,n3,n16,n1,",4.45436
+49,55916,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n12,n2,n7,n5,n11,n15,n14,n18,n9,n6,n10,n8,n17,n13,n3,n16,n1,",4.61259
+50,57103,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n12,n2,n7,n5,n11,n15,n14,n18,n9,n6,n10,n8,n17,n13,n3,n16,n1,",4.29321
+51,58323,"Standard_NV24X,In-house server 2,In-house server 3,","n12,n1,n7,n4,n14,n18,n6,n9,n11,n15,n5,n10,n8,n17,n13,n3,n16,n2,",4.33123
+52,59468,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n7,n14,n4,n12,n8,n10,n13,n17,n16,n3,n6,n9,n11,n15,n5,n18,n19,n2,",4.20491
+53,60746,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n1,n7,n14,n12,n8,n10,n13,n17,n16,n3,n6,n9,n11,n15,n5,n18,n19,n2,",4.68545
+54,61964,"In-house server 2,In-house server 3,Standard_NV24X,","n10,n8,n20,n1,n9,n6,n12,n4,n7,n2,n17,n16,n13,n3,n14,n11,n5,n15,n18,n19,",4.61435
+55,63116,"In-house server 2,In-house server 3,Standard_NV24X,","n10,n8,n20,n1,n4,n7,n18,n19,n2,n17,n16,n13,n3,n9,n6,n12,n14,n11,n5,n15,",4.34828
+56,64337,"Standard_NV24X,In-house server 3,In-house server 2,","n10,n8,n2,n12,n9,n6,n19,n18,n14,n17,n16,n13,n3,n4,n11,n15,n5,n7,n20,n1,",4.59695
+57,65546,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n12,n10,n8,n14,n21,n7,n17,n13,n16,n3,n19,n18,n2,n4,n11,n15,n5,n6,n9,n20,n1,",4.61055
+58,66827,"Standard_NV24X,In-house server 3,In-house server 2,","n12,n14,n21,n9,n6,n10,n8,n13,n16,n17,n3,n1,n20,n19,n18,n2,n4,n15,n11,n5,n7,",4.94649
+59,67413.4,"Standard_NV24X,In-house server 3,In-house server 2,","n12,n14,n21,n9,n6,n10,n8,n7,n13,n17,n16,n3,n1,n20,n18,n19,n2,n4,n15,n11,n5,",2.26336
+60,68057,"Standard_NV24X,In-house server 3,In-house server 2,","n14,n12,n9,n6,n10,n8,n7,n13,n17,n16,n3,n1,n20,n18,n19,n2,n4,n15,n11,n5,",2.28238
+61,69257,"Standard_NV24X,In-house server 3,In-house server 2,","n14,n12,n9,n6,n10,n8,n7,n13,n17,n16,n3,n1,n20,n18,n19,n2,n4,n15,n11,n5,",4.24682
+62,70509,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n10,n8,n9,n6,n7,n13,n16,n17,n3,n14,n21,n18,n19,n1,n20,n5,n15,n11,n2,n4,",4.64648
+63,71769,"Standard_NV6,Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,","n10,n8,n9,n6,n7,n4,n13,n17,n16,n3,n11,n5,n15,n18,n19,n22,n1,n20,n12,n14,n21,n2,",4.72963
+64,72237.9,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n10,n8,n2,n7,n13,n3,n17,n16,n11,n5,n15,n18,n19,n22,n1,n20,n12,n9,n6,n14,n21,n4,",1.82509
+65,72939,"Standard_NV6,Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,","n10,n8,n2,n7,n13,n3,n17,n16,n11,n5,n15,n18,n19,n22,n1,n20,n9,n6,n12,n14,n21,n4,",2.68131
+66,74142,"Standard_NV6,Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,","n10,n8,n7,n2,n9,n6,n13,n3,n17,n16,n18,n19,n22,n1,n20,n12,n14,n21,n11,n15,n5,n4,",4.51534
+67,75355,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n10,n8,n7,n2,n9,n6,n13,n3,n17,n16,n18,n19,n22,n1,n20,n12,n14,n21,n11,n15,n5,n4,",4.62783
+68,76571,"Standard_NV12,Standard_NV24X,In-house server 3,In-house server 2,","n12,n10,n8,n2,n7,n4,n3,n17,n16,n13,n18,n19,n22,n1,n20,n9,n6,n14,n21,n11,n15,n5,",4.84869
+69,77758,"Standard_NV12,Standard_NV24X,In-house server 3,In-house server 2,","n12,n22,n10,n8,n2,n7,n4,n18,n19,n3,n13,n17,n16,n23,n11,n15,n5,n1,n20,n9,n6,n14,n21,",4.87814
+70,79020,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n17,n3,n21,n18,n19,n6,n9,n24,n20,n1,n13,n11,n4,n14,n22,n5,n10,n15,n16,n23,n7,n8,n2,n12,",5.58248
+71,79370.7,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n12,n21,n16,n23,n15,n18,n19,n17,n3,n11,n13,n6,n9,n14,n5,n10,n22,n20,n1,n4,n25,n7,n24,n8,n2,",1.59438
+72,80235,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n21,n11,n13,n15,n23,n16,n17,n3,n18,n19,n20,n1,n6,n9,n4,n12,n24,n25,n7,n8,n2,n14,n10,n22,n5,",3.95516
+73,81387,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n12,n21,n16,n23,n15,n18,n19,n17,n3,n11,n13,n6,n9,n14,n5,n10,n22,n20,n1,n4,n24,n25,n7,n8,n2,",5.2367
+74,82663,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n17,n3,n16,n23,n15,n13,n11,n18,n19,n6,n9,n20,n1,n21,n5,n10,n22,n14,n4,n24,n8,n2,n25,n7,",6.23988
+75,83853,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n11,n13,n17,n3,n16,n23,n15,n18,n19,n20,n1,n26,n21,n5,n10,n22,n14,n6,n9,n4,n24,n8,n2,n25,n7,",6.19285
+76,84402.6,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n11,n13,n17,n3,n16,n23,n15,n18,n19,n20,n1,n26,n21,n5,n10,n22,n14,n6,n9,n4,n24,n8,n2,n25,n7,",2.91992
+77,85096,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n17,n3,n16,n23,n15,n13,n11,n18,n19,n21,n6,n9,n20,n1,n5,n14,n22,n10,n4,n24,n8,n2,n25,n7,",3.59872
+78,86256,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n13,n11,n16,n15,n23,n18,n19,n21,n6,n9,n20,n1,n17,n3,n5,n14,n22,n10,n4,n24,n8,n2,n25,n7,n12,",6.02068
+79,86821.2,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n13,n11,n16,n15,n23,n18,n19,n21,n6,n9,n20,n1,n17,n3,n5,n14,n22,n10,n4,n24,n8,n2,n25,n7,n26,",3.11077
+80,87415,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n4,n16,n23,n15,n13,n11,n18,n19,n21,n6,n9,n20,n1,n17,n3,n5,n14,n22,n10,n24,n8,n2,n25,n7,n26,",3.26851
+81,88631,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n13,n11,n17,n3,n16,n23,n15,n18,n19,n26,n21,n6,n9,n24,n27,n20,n1,n4,n5,n14,n22,n10,n8,n2,n25,n7,",6.84164
+82,89314.9,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n13,n11,n9,n18,n19,n27,n24,n16,n15,n23,n17,n3,n20,n1,n21,n5,n10,n22,n14,n6,n4,n26,n8,n2,n25,n7,n28,",3.93153
+83,89861,"Standard_NV24X,In-house server 1,Standard_NV24,In-house server 3,In-house server 2,","n12,n13,n11,n9,n18,n19,n27,n24,n16,n15,n23,n17,n3,n20,n1,n21,n5,n10,n22,n14,n6,n4,n26,n8,n2,n25,n7,n28,",3.03658
+84,91110,"Standard_NV24X,In-house server 1,Standard_NV24,In-house server 3,In-house server 2,","n12,n13,n11,n9,n17,n3,n18,n19,n28,n25,n7,n20,n1,n24,n27,n26,n29,n21,n16,n23,n15,n10,n22,n14,n5,n6,n4,n8,n2,",7.09788
+85,91619.2,"Standard_NV24X,In-house server 1,Standard_NV24,In-house server 3,In-house server 2,","n12,n13,n11,n9,n30,n18,n19,n17,n3,n21,n29,n27,n24,n20,n1,n26,n16,n23,n15,n14,n10,n22,n5,n6,n4,n28,n25,n7,n8,n2,",2.95577
+86,92033,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n11,n13,n9,n30,n18,n19,n21,n29,n27,n24,n16,n15,n23,n20,n1,n26,n17,n3,n4,n6,n28,n25,n7,n8,n2,n14,n10,n22,n5,",2.22475
+87,92275,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n17,n11,n13,n3,n28,n18,n19,n15,n16,n23,n20,n1,n24,n27,n26,n7,n25,n21,n29,n4,n6,n9,n8,n2,n14,n10,n22,n5,",1.26589
+88,93007.9,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n11,n13,n28,n18,n19,n7,n25,n21,n29,n27,n24,n16,n15,n23,n20,n1,n26,n17,n3,n6,n30,n9,n4,n14,n10,n22,n5,n8,n2,",3.95673
+89,93499,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n27,n17,n11,n13,n3,n28,n18,n19,n15,n16,n23,n20,n1,n24,n26,n7,n25,n21,n29,n4,n9,n6,n8,n2,n14,n22,n10,n5,",2.58005
+90,94698,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n28,n18,n19,n17,n11,n13,n3,n7,n25,n21,n29,n27,n24,n15,n16,n23,n20,n1,n26,n4,n30,n9,n6,n8,n2,n14,n10,n22,n5,",6.67577
+91,95385.2,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n28,n18,n19,n17,n11,n13,n3,n7,n25,n21,n29,n27,n24,n15,n16,n23,n20,n1,n26,n4,n30,n9,n6,n8,n2,n14,n10,n22,n5,",3.82628
+92,95881,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n12,n28,n13,n11,n18,n19,n17,n3,n7,n25,n21,n29,n27,n24,n20,n1,n16,n23,n15,n14,n10,n22,n5,n26,n4,n30,n9,n6,n8,n2,",2.76106
+93,96745.9,"Standard_NV12,Standard_NV24X,In-house server 3,In-house server 2,","n12,n28,n18,n19,n17,n11,n13,n3,n7,n25,n21,n29,n27,n24,n20,n1,n16,n23,n15,n14,n10,n22,n5,n26,n4,n30,n9,n6,n8,n2,",4.96543
+94,97139,"Standard_NV12,Standard_NV24X,In-house server 3,In-house server 2,","n13,n11,n12,n27,n28,n17,n3,n18,n19,n20,n1,n24,n26,n16,n23,n15,n10,n22,n14,n5,n7,n25,n21,n29,n4,n9,n6,n8,n2,",2.20912
+95,98294,"Standard_NV12,Standard_NV24X,In-house server 3,In-house server 2,","n9,n12,n28,n17,n11,n13,n3,n18,n19,n20,n1,n24,n27,n26,n29,n21,n16,n23,n15,n7,n25,n14,n22,n5,n10,n4,n6,n8,n2,",6.46573
+96,99511,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n9,n27,n28,n17,n11,n13,n3,n18,n19,n20,n1,n24,n26,n29,n21,n16,n23,n15,n7,n25,n14,n22,n5,n10,n12,n4,n6,n8,n2,",7.23199
+97,100736,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n28,n17,n11,n13,n3,n18,n19,n20,n1,n24,n27,n26,n29,n21,n16,n23,n15,n14,n10,n22,n5,n7,n25,n4,n6,n9,n8,n2,",7.41074
+98,101528,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n12,n28,n18,n19,n17,n11,n13,n3,n21,n29,n27,n24,n20,n1,n26,n16,n23,n15,n14,n10,n22,n5,n25,n7,n4,n8,n2,n6,n30,n9,",4.81735
+99,101900,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n27,n17,n11,n13,n3,n18,n19,n29,n21,n26,n28,n20,n1,n24,n7,n25,n16,n23,n15,n14,n22,n10,n5,n4,n8,n2,n6,n9,",2.21547
+100,103021,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n27,n17,n11,n13,n3,n18,n19,n29,n21,n26,n28,n20,n1,n24,n7,n25,n16,n23,n15,n14,n22,n10,n5,n4,n8,n2,n6,n9,",6.67977
+101,103946,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n12,n27,n17,n3,n11,n13,n18,n19,n29,n21,n26,n15,n16,n23,n28,n20,n1,n24,n7,n25,n4,n14,n22,n10,n5,n8,n2,n6,n9,",5.50304
+102,104247,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n12,n26,n18,n19,n17,n3,n11,n13,n27,n24,n15,n16,n23,n20,n1,n21,n5,n10,n22,n14,n25,n7,n4,n8,n2,n6,n9,",1.75229
+103,105465,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n12,n26,n18,n19,n17,n11,n13,n3,n27,n24,n15,n16,n23,n20,n1,n21,n10,n5,n22,n14,n4,n8,n2,n25,n7,n6,n9,",7.18888
+104,106691,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n9,n18,n19,n17,n11,n13,n3,n27,n24,n15,n16,n23,n20,n1,n21,n10,n5,n22,n14,n4,n8,n2,n25,n7,n6,n12,n26,",7.23461
+105,107933,"Standard_NV24X,In-house server 2,In-house server 3,","n11,n13,n9,n17,n3,n18,n19,n29,n21,n26,n28,n20,n1,n24,n27,n7,n25,n16,n23,n15,n10,n14,n22,n5,n4,n8,n2,n6,n12,",7.59612
+106,109118,"Standard_NV24X,In-house server 2,In-house server 3,","n9,n27,n17,n11,n13,n3,n18,n19,n29,n21,n26,n28,n20,n1,n24,n16,n23,n15,n10,n14,n22,n5,n7,n25,n4,n6,n8,n2,n12,",7.08663
+107,110349,"Standard_NV24X,In-house server 2,In-house server 3,","n9,n30,n28,n12,n18,n19,n27,n24,n21,n29,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n4,n6,n8,n2,n25,n7,",7.51219
+108,111322,"Standard_NV24X,In-house server 2,In-house server 3,","n30,n9,n28,n12,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n4,n6,n8,n2,",5.90919
+109,111502,"Standard_NV24X,In-house server 2,In-house server 3,","n9,n30,n28,n12,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n4,n6,n8,n2,",1.09276
+110,112672,"Standard_NV24X,In-house server 2,In-house server 3,","n30,n9,n28,n12,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n4,n6,n8,n2,",7.09967
+111,113858,"Standard_NV24X,In-house server 2,In-house server 3,","n30,n9,n28,n12,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n4,n6,n8,n2,",7.19346
+112,115072,"Standard_NV24X,In-house server 2,In-house server 3,","n30,n9,n28,n3,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n12,n4,n6,n8,n2,",7.37408
+113,115132,"Standard_NV24X,In-house server 2,In-house server 3,","n3,n31,n18,n19,n9,n30,n28,n29,n21,n26,n20,n1,n10,n5,n14,n22,n24,n27,n7,n25,n17,n11,n13,n23,n16,n15,n12,n4,n6,n8,n2,",0.372002
+114,116275,"Standard_NV24X,In-house server 2,In-house server 3,","n12,n3,n31,n18,n19,n9,n30,n28,n29,n21,n26,n20,n1,n24,n27,n7,n25,n17,n11,n13,n23,n16,n15,n10,n14,n22,n5,n4,n6,n8,n2,",7.0982
+115,117285,"Standard_NV24X,In-house server 2,In-house server 3,","n12,n3,n31,n18,n19,n9,n30,n28,n29,n21,n26,n20,n1,n24,n27,n7,n25,n17,n11,n13,n23,n16,n15,n10,n14,n22,n5,n4,n6,n8,n2,",6.25679
+116,117353,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n6,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n12,n4,n8,n2,n30,n9,",0.409725
+117,117487,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n6,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n12,n4,n8,n2,n30,n9,",0.816092
+118,118711,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n6,n18,n19,n27,n24,n21,n29,n7,n25,n17,n11,n13,n3,n20,n1,n16,n23,n15,n10,n14,n22,n5,n26,n12,n4,n8,n2,n30,n9,",7.43003
+119,119773,"Standard_NV24X,In-house server 2,In-house server 3,","n28,n6,n31,n18,n19,n9,n30,n21,n29,n7,n25,n27,n24,n20,n1,n17,n11,n13,n3,n23,n16,n15,n10,n14,n22,n5,n26,n12,n8,n2,n4,",6.57594
+120,119910,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n30,n9,n18,n19,n28,n21,n29,n7,n25,n27,n24,n20,n1,n17,n11,n13,n3,n23,n16,n15,n10,n14,n22,n5,n26,n12,n8,n2,n4,",0.83212
+121,121118,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n25,n7,n31,n18,n19,n9,n30,n28,n29,n21,n26,n20,n1,n24,n27,n17,n11,n13,n3,n23,n16,n15,n10,n14,n22,n5,n12,n8,n2,n4,",7.71208
+122,122343,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n25,n7,n3,n19,n9,n30,n20,n1,n24,n27,n18,n31,n32,n28,n29,n21,n26,n17,n11,n13,n23,n16,n15,n10,n22,n14,n5,n12,n8,n2,n4,",8.20513
+123,122349,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n26,n6,n3,n20,n1,n10,n5,n14,n22,n24,n27,n7,n25,n21,n29,n9,n30,n19,n18,n31,n17,n11,n13,n23,n16,n15,n32,n28,n12,n8,n2,n4,",0.0399732
+124,123479,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n25,n7,n19,n9,n30,n20,n1,n24,n27,n18,n31,n32,n28,n29,n21,n10,n5,n22,n14,n26,n17,n3,n23,n16,n15,n13,n11,n12,n8,n2,n4,",7.78746
+125,124704,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n6,n25,n7,n19,n9,n30,n18,n31,n21,n29,n32,n28,n20,n1,n10,n5,n14,n22,n24,n27,n17,n3,n23,n16,n15,n13,n11,n12,n8,n2,n4,",8.40665
+126,125867,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n4,n26,n3,n6,n1,n19,n9,n30,n20,n24,n27,n18,n31,n21,n29,n17,n11,n13,n23,n16,n15,n10,n14,n22,n5,n32,n28,n25,n7,n12,n8,n2,",8.34885
+127,125902,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n26,n3,n6,n19,n9,n30,n18,n31,n21,n29,n17,n11,n13,n20,n1,n24,n27,n23,n16,n15,n10,n14,n22,n5,n32,n28,n25,n7,n12,n8,n2,",0.237085
+128,125949,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n17,n31,n18,n19,n9,n30,n21,n29,n28,n25,n7,n20,n1,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n12,n8,n2,n26,",0.319074
+129,127130,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n17,n31,n18,n19,n9,n30,n21,n29,n28,n25,n7,n20,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n12,n8,n2,n26,",7.9915
+130,128218,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n25,n7,n17,n19,n9,n30,n18,n31,n32,n28,n20,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n21,n29,n12,n8,n2,n26,",7.49489
+131,128288,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n17,n11,n13,n19,n9,n30,n18,n31,n32,n28,n25,n7,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n21,n29,n12,n8,n2,n26,",0.49174
+132,129460,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n25,n7,n17,n11,n13,n19,n18,n31,n32,n28,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n21,n29,n12,n30,n9,n8,n2,n26,",8.06211
+133,129523,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n25,n7,n17,n11,n13,n19,n18,n31,n28,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n21,n29,n12,n30,n9,n8,n2,n26,",0.410775
+134,130624,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n26,n3,n6,n1,n27,n19,n18,n31,n21,n29,n7,n25,n20,n24,n17,n11,n13,n23,n16,n15,n10,n14,n22,n5,n32,n28,n12,n30,n9,n8,n2,",7.56374
+135,130666,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n26,n3,n6,n1,n19,n18,n31,n17,n11,n13,n7,n25,n21,n29,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n28,n12,n30,n9,n8,n2,",0.285949
+136,131896,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n27,n3,n6,n1,n19,n28,n32,n18,n31,n26,n20,n24,n17,n11,n13,n7,n25,n21,n29,n23,n16,n15,n10,n14,n22,n5,n12,n30,n9,n8,n2,",8.45273
+137,131994,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n27,n3,n6,n1,n19,n28,n32,n18,n31,n26,n20,n24,n17,n11,n13,n7,n25,n21,n29,n23,n16,n15,n10,n14,n22,n5,n12,n30,n9,n8,n2,",0.673691
+138,133071,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n26,n3,n6,n1,n19,n18,n31,n17,n11,n13,n7,n25,n21,n29,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n28,n12,n30,n9,n8,n2,",7.23587
+139,133190,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n26,n3,n6,n1,n19,n18,n31,n17,n11,n13,n7,n25,n21,n29,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n28,n12,n30,n9,n8,n2,",0.798146
+140,134222,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n17,n11,n13,n18,n19,n21,n29,n20,n24,n27,n16,n23,n15,n10,n14,n22,n5,n28,n25,n7,n12,n30,n9,n8,n2,n26,",6.81502
+141,134231,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n17,n11,n13,n18,n19,n21,n29,n16,n15,n23,n20,n24,n27,n10,n5,n14,n22,n28,n25,n7,n12,n30,n9,n8,n2,n26,",0.0591408
+142,134317,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n3,n6,n1,n17,n11,n13,n18,n19,n21,n29,n16,n15,n23,n20,n24,n27,n10,n5,n14,n22,n30,n9,n28,n25,n7,n12,n8,n2,n26,",0.572342
+143,135407,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n24,n3,n6,n17,n11,n13,n18,n19,n28,n20,n1,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n9,n27,n26,n12,n8,n2,",7.07484
+144,135420,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n7,n25,n6,n1,n17,n11,n13,n3,n18,n19,n29,n21,n16,n15,n23,n20,n10,n5,n14,n22,n30,n9,n28,n27,n24,n12,n8,n2,n26,",0.0872432
+145,135979,"Standard_NV24X,In-house server 2,In-house server 3,","n4,n24,n6,n17,n11,n13,n3,n18,n19,n28,n20,n1,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n9,n27,n26,n12,n8,n2,",3.51698
+146,136594,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n4,n24,n9,n1,n17,n3,n13,n11,n18,n19,n28,n20,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n12,n27,n26,n8,n2,n6,",3.83702
+147,137526,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n4,n24,n1,n18,n19,n17,n11,n13,n3,n28,n12,n20,n7,n25,n29,n21,n27,n26,n16,n23,n15,n10,n22,n14,n5,n9,n6,n8,n2,",5.82267
+148,137863,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n4,n24,n9,n1,n17,n3,n13,n11,n18,n19,n28,n20,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n12,n27,n26,n6,n8,n2,",2.10226
+149,137912,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n9,n4,n24,n1,n17,n3,n13,n11,n18,n19,n28,n20,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n12,n27,n26,n6,n8,n2,",0.307846
+150,138244,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n9,n4,n1,n17,n3,n23,n16,n15,n13,n11,n18,n19,n27,n24,n28,n12,n20,n21,n10,n5,n22,n14,n26,n7,n25,n6,n8,n2,",2.02411
+151,139080,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n9,n4,n1,n17,n3,n23,n16,n15,n13,n11,n18,n19,n27,n24,n28,n12,n20,n21,n10,n5,n22,n14,n26,n7,n25,n6,n8,n2,",5.10807
+152,139444,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n9,n4,n24,n1,n17,n3,n18,n19,n13,n11,n28,n20,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n12,n27,n26,n6,n8,n2,",2.27091
+153,140302,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n9,n4,n24,n1,n17,n3,n18,n19,n13,n11,n28,n20,n7,n25,n16,n15,n23,n29,n21,n10,n5,n22,n14,n27,n26,n12,n6,n8,n2,",5.0476
+154,141424,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n4,n1,n3,n17,n18,n19,n9,n30,n21,n29,n20,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n28,n25,n7,n12,n6,n8,n2,n26,",6.76364
+155,142682,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n4,n1,n3,n17,n18,n19,n9,n30,n21,n29,n20,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n28,n25,n7,n12,n6,n8,n2,n26,",7.54932
+156,143523,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n30,n9,n4,n1,n3,n17,n19,n21,n29,n18,n31,n20,n24,n27,n16,n23,n15,n13,n11,n10,n14,n22,n5,n28,n25,n7,n12,n6,n8,n2,n26,",5.31145
+157,143880,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n4,n24,n1,n17,n3,n13,n11,n18,n19,n9,n30,n28,n20,n29,n21,n10,n5,n22,n14,n16,n15,n23,n27,n26,n12,n6,n8,n2,n7,n25,",2.13407
+158,145129,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n4,n24,n1,n3,n17,n13,n11,n18,n19,n9,n30,n28,n20,n29,n21,n16,n15,n23,n27,n26,n12,n5,n22,n14,n10,n7,n25,n6,n8,n2,",7.44931
+159,146328,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n4,n24,n1,n3,n18,n19,n9,n30,n17,n11,n13,n28,n20,n29,n21,n15,n16,n23,n27,n26,n12,n5,n22,n14,n10,n7,n25,n6,n8,n2,",7.2641
+160,146634,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n4,n24,n1,n3,n29,n21,n18,n19,n9,n30,n17,n28,n20,n27,n26,n16,n23,n15,n13,n11,n12,n14,n22,n5,n10,n7,n25,n6,n8,n2,",1.95924
+161,147428,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n9,n6,n4,n17,n3,n18,n19,n13,n11,n27,n7,n25,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n8,n2,n16,n15,n23,",4.90663
+162,147587,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n9,n28,n24,n6,n4,n17,n3,n13,n11,n18,n19,n27,n7,n25,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n8,n2,n16,n15,n23,",0.981909
+163,148805,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n6,n4,n17,n3,n18,n19,n13,n11,n27,n7,n25,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n8,n2,n9,n16,n15,n23,",7.53033
+164,149924,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n6,n23,n15,n16,n17,n11,n13,n3,n18,n19,n27,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n4,n8,n2,n25,n7,n9,",6.71143
+165,151160,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n6,n9,n17,n3,n23,n16,n15,n13,n11,n18,n19,n27,n7,n25,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n4,n8,n2,",7.36591
+166,152358,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n6,n9,n17,n3,n18,n19,n23,n16,n15,n13,n11,n27,n7,n25,n20,n1,n29,n21,n5,n10,n22,n14,n26,n12,n4,n8,n2,",7.26624
+167,152410,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n6,n17,n3,n23,n16,n15,n13,n11,n21,n18,n19,n28,n26,n12,n20,n1,n7,n25,n22,n5,n14,n10,n24,n4,n8,n2,n9,",0.304706
+168,152481,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n6,n23,n15,n16,n17,n11,n13,n3,n21,n18,n19,n28,n26,n20,n1,n7,n25,n22,n5,n14,n10,n24,n12,n9,n4,n8,n2,",0.417938
+169,153657,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n6,n17,n11,n13,n3,n7,n25,n27,n24,n20,n1,n19,n18,n22,n5,n10,n14,n21,n15,n16,n23,n12,n9,n4,n8,n2,",6.73335
+170,153990,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n6,n21,n17,n11,n13,n3,n7,n25,n24,n20,n1,n28,n19,n18,n22,n5,n10,n14,n15,n16,n23,n12,n9,n4,n26,n8,n2,",1.94534
+171,154839,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n21,n6,n24,n27,n23,n15,n16,n17,n11,n13,n3,n19,n18,n12,n5,n22,n14,n10,n7,n25,n9,n4,n8,n2,n1,n20,",4.70274
+172,155599,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n6,n21,n23,n15,n16,n17,n11,n13,n3,n7,n25,n24,n20,n1,n28,n19,n18,n12,n22,n5,n10,n14,n4,n26,n8,n2,n9,",4.29467
+173,156134,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n21,n6,n24,n27,n23,n15,n16,n17,n11,n13,n3,n19,n18,n12,n5,n22,n14,n10,n7,n25,n9,n4,n8,n2,n1,n20,",2.95797
+174,156211,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n21,n6,n24,n27,n23,n15,n16,n17,n11,n13,n3,n19,n18,n12,n5,n22,n14,n10,n7,n25,n9,n4,n8,n2,n1,n20,",0.43011
+175,156432,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n21,n6,n24,n27,n23,n15,n16,n17,n11,n13,n3,n19,n18,n12,n5,n22,n14,n10,n7,n25,n8,n2,n4,n1,n20,n9,",1.22509
+176,157283,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n25,n7,n6,n21,n26,n15,n23,n16,n17,n11,n13,n3,n19,n18,n12,n22,n5,n14,n10,n8,n2,n4,n24,n1,n20,n9,",4.43926
+177,158285,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n6,n21,n17,n3,n27,n24,n12,n20,n1,n19,n18,n23,n16,n15,n13,n11,n22,n5,n14,n10,n7,n25,n8,n2,n4,n9,",5.48113
+178,158518,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n6,n21,n17,n3,n27,n24,n12,n20,n1,n19,n18,n23,n16,n15,n13,n11,n22,n5,n14,n10,n7,n25,n8,n2,n4,n9,",1.28241
+179,159706,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n6,n21,n17,n3,n27,n24,n12,n20,n1,n19,n18,n23,n16,n15,n13,n11,n22,n5,n14,n10,n7,n25,n8,n2,n4,n9,",6.52517
+180,160858,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n6,n9,n21,n18,n19,n17,n3,n7,n25,n24,n12,n20,n1,n28,n13,n11,n23,n16,n15,n22,n14,n10,n5,n8,n2,n4,n26,",6.34406
+181,161913,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n20,n6,n9,n7,n25,n17,n3,n29,n21,n18,n19,n24,n27,n12,n26,n13,n11,n23,n16,n15,n10,n14,n22,n5,n8,n2,n4,n1,",5.93837
+182,162094,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n20,n9,n7,n25,n17,n3,n24,n28,n21,n23,n16,n15,n13,n11,n10,n22,n14,n5,n18,n19,n12,n8,n2,n4,n26,n1,n6,",0.989694
+183,163346,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n9,n6,n26,n7,n25,n21,n29,n17,n3,n19,n18,n16,n23,n15,n13,n11,n10,n22,n5,n14,n12,n8,n2,n20,n1,n4,n27,",6.99581
+184,164322,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n24,n9,n6,n26,n7,n25,n21,n29,n17,n3,n19,n18,n16,n23,n15,n13,n11,n10,n22,n5,n14,n12,n8,n2,n20,n1,n4,n27,",5.44696
+185,164574,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n21,n24,n9,n26,n17,n3,n7,n25,n19,n18,n23,n16,n15,n13,n11,n22,n10,n5,n14,n12,n8,n2,n20,n1,n4,n27,n6,",1.32484
+186,164825,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n29,n21,n24,n9,n6,n26,n7,n25,n17,n3,n27,n19,n18,n16,n23,n15,n13,n11,n10,n22,n5,n14,n12,n8,n2,n20,n1,n4,n28,",1.35017
+187,165748,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n21,n24,n9,n17,n3,n7,n25,n26,n19,n18,n16,n23,n15,n13,n11,n10,n22,n5,n14,n12,n8,n2,n20,n1,n4,n27,n6,",4.68451
+188,166068,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n7,n25,n9,n6,n17,n3,n26,n13,n11,n29,n21,n18,n19,n16,n15,n23,n27,n24,n20,n1,n12,n22,n5,n14,n10,n8,n2,n4,n28,",1.7037
+189,166925,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n17,n3,n26,n29,n21,n13,n11,n18,n19,n16,n15,n23,n27,n24,n20,n1,n12,n22,n14,n5,n10,n7,n25,n8,n2,n4,n9,n6,",4.55348
+190,168126,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n7,n25,n28,n17,n3,n26,n29,n21,n13,n11,n18,n19,n16,n15,n23,n27,n24,n20,n1,n12,n8,n2,n4,n6,n9,n22,n14,n5,n10,",6.23088
+191,169354,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n7,n25,n28,n17,n3,n26,n29,n21,n13,n11,n18,n19,n16,n15,n23,n27,n24,n20,n1,n12,n8,n2,n9,n6,n4,n22,n14,n5,n10,",6.33483
+192,170335,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n7,n25,n28,n17,n3,n26,n29,n21,n13,n11,n18,n19,n16,n15,n23,n27,n24,n20,n1,n12,n8,n2,n9,n6,n4,n22,n14,n5,n10,",5.03106
+193,170558,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n7,n25,n17,n3,n21,n13,n11,n18,n19,n26,n16,n15,n23,n24,n27,n20,n1,n12,n8,n2,n9,n6,n4,n22,n14,n5,n10,",1.11517
+194,171755,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n9,n7,n25,n17,n3,n21,n13,n11,n18,n19,n26,n16,n15,n23,n24,n27,n20,n1,n12,n4,n6,n22,n14,n5,n10,n2,n8,",5.99053
+195,172310,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n7,n25,n17,n3,n21,n13,n11,n18,n19,n26,n16,n15,n23,n24,n27,n20,n1,n12,n8,n2,n4,n6,n9,n22,n14,n5,n10,",2.77618
+196,172907,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n9,n7,n25,n17,n3,n21,n13,n11,n18,n19,n26,n16,n15,n23,n24,n27,n20,n1,n12,n4,n6,n22,n14,n5,n10,n2,n8,",2.98914
+197,174085,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n7,n25,n17,n3,n21,n13,n11,n18,n19,n26,n16,n15,n23,n24,n27,n20,n1,n12,n8,n2,n9,n6,n4,n22,n14,n5,n10,",5.89365
+198,174432,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n26,n28,n18,n19,n17,n3,n23,n16,n15,n13,n11,n7,n25,n27,n24,n20,n1,n29,n21,n12,n9,n6,n5,n10,n14,n22,n4,n8,n2,",1.7836
+199,175337,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n28,n26,n3,n17,n23,n16,n15,n13,n11,n19,n18,n7,n25,n27,n24,n20,n1,n29,n21,n12,n9,n6,n5,n10,n14,n22,n4,n8,n2,",4.3462
+200,176346,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n28,n26,n18,n19,n3,n23,n15,n16,n17,n11,n13,n7,n25,n27,n24,n20,n1,n29,n21,n12,n9,n6,n5,n10,n14,n22,n4,n8,n2,",4.81
+201,176584,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n9,n28,n3,n17,n23,n16,n15,n13,n11,n19,n18,n7,n25,n27,n24,n20,n1,n29,n21,n12,n4,n5,n10,n14,n22,n8,n2,n6,n26,",1.14234
+202,177412,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n9,n28,n18,n19,n17,n3,n23,n16,n15,n13,n11,n7,n25,n27,n24,n20,n1,n29,n21,n12,n4,n5,n10,n14,n22,n8,n2,n6,n26,",4.24904
+203,177435,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n6,n28,n18,n19,n29,n21,n17,n23,n15,n16,n11,n13,n3,n7,n25,n27,n24,n20,n1,n12,n8,n2,n14,n5,n10,n22,n4,n9,n26,",0.117958
+204,177807,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n28,n6,n17,n3,n18,n19,n21,n13,n11,n26,n16,n15,n23,n24,n27,n20,n1,n12,n8,n2,n4,n9,n22,n14,n5,n10,n7,n25,",1.87105
+205,178999,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n9,n28,n19,n18,n29,n21,n23,n15,n16,n17,n11,n13,n3,n7,n25,n27,n24,n20,n1,n8,n2,n12,n6,n14,n5,n10,n22,n4,n26,",6.36182
+206,180182,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n30,n9,n2,n8,n24,n19,n18,n28,n20,n1,n17,n3,n11,n13,n7,n25,n26,n29,n21,n10,n5,n22,n14,n12,n15,n16,n23,n4,n6,n27,",6.68512
+207,181350,"Standard_NV24X,Standard_NV24,In-house server 3,In-house server 2,","n30,n9,n2,n8,n24,n19,n18,n28,n20,n1,n17,n3,n11,n13,n7,n25,n26,n29,n21,n10,n5,n22,n14,n12,n15,n16,n23,n4,n6,n27,",6.60143
+208,181391,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n30,n9,n2,n8,n24,n18,n19,n28,n20,n1,n3,n17,n11,n13,n7,n25,n26,n29,n21,n10,n5,n22,n14,n12,n15,n16,n23,n4,n6,n27,",0.2192
+209,182110,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n2,n8,n28,n20,n1,n3,n17,n11,n13,n31,n18,n19,n27,n24,n26,n29,n21,n16,n23,n15,n10,n14,n5,n22,n25,n7,n30,n9,n6,n4,n12,",3.88225
+210,182409,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n2,n8,n24,n27,n18,n19,n28,n20,n1,n3,n17,n7,n25,n26,n29,n21,n13,n11,n10,n22,n14,n5,n12,n30,n9,n6,n16,n15,n23,n4,",1.61766
+211,182617,"Standard_NV24X,Standard_NV12,In-house server 3,In-house server 2,","n2,n8,n28,n18,n19,n3,n23,n15,n16,n17,n11,n13,n27,n24,n20,n1,n29,n21,n12,n25,n7,n9,n6,n10,n5,n14,n22,n4,n26,",1.10122
+212,182640,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n2,n8,n28,n29,n21,n18,n19,n27,n24,n20,n1,n23,n15,n16,n17,n3,n11,n13,n12,n25,n7,n9,n6,n10,n14,n5,n22,n4,n26,",0.118086
+213,183894,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n2,n8,n27,n18,n19,n20,n1,n24,n28,n23,n15,n16,n17,n3,n11,n13,n7,n25,n26,n29,n21,n12,n30,n9,n6,n10,n5,n14,n22,n4,",6.80974
+214,185158,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n2,n8,n24,n28,n1,n31,n18,n19,n27,n17,n3,n11,n13,n29,n21,n26,n10,n5,n14,n22,n20,n12,n25,n7,n30,n9,n6,n15,n16,n23,n4,",7.01854
+215,185886,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n2,n8,n24,n9,n30,n28,n1,n31,n18,n19,n27,n17,n3,n11,n13,n29,n21,n26,n5,n10,n14,n22,n20,n12,n25,n7,n15,n16,n23,n4,n6,",3.9465
+216,186393,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n2,n8,n24,n9,n30,n28,n1,n18,n19,n27,n17,n3,n11,n13,n29,n21,n26,n5,n10,n14,n22,n20,n12,n25,n7,n15,n16,n23,n4,n6,",2.58607
+217,187390,"Standard_NV6,Standard_NV24X,In-house server 3,In-house server 2,","n1,n31,n18,n19,n9,n30,n17,n3,n28,n25,n7,n27,n24,n26,n16,n23,n15,n13,n11,n29,n21,n10,n5,n22,n14,n20,n12,n2,n8,n4,n6,",5.40096
+218,187592,"Standard_NV24X,In-house server 3,In-house server 2,","n24,n9,n30,n28,n1,n18,n19,n27,n2,n8,n17,n3,n29,n21,n26,n13,n11,n10,n14,n22,n5,n20,n12,n16,n15,n23,n4,n25,n7,n6,",1.06075
+219,188765,"Standard_NV24X,In-house server 3,In-house server 2,","n1,n19,n31,n18,n9,n30,n17,n3,n28,n25,n7,n27,n24,n29,n21,n26,n16,n23,n15,n13,n11,n20,n10,n5,n14,n22,n2,n8,n4,n12,n6,",6.28507
+220,189956,"Standard_NV24X,In-house server 3,In-house server 2,","n30,n9,n26,n1,n19,n17,n3,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n13,n11,n20,n10,n5,n14,n22,n4,n12,n6,",6.52708
+221,191192,"Standard_NV24X,In-house server 3,In-house server 2,","n30,n9,n26,n1,n19,n17,n3,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n13,n11,n20,n10,n5,n14,n22,n12,n4,n6,",6.75516
+222,191994,"Standard_NV24X,In-house server 3,In-house server 2,","n26,n1,n12,n19,n17,n3,n11,n13,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n15,n16,n23,n20,n10,n5,n14,n22,n4,n6,n30,n9,",4.35224
+223,192457,"Standard_NV24X,In-house server 3,In-house server 2,","n24,n1,n31,n18,n19,n17,n3,n11,n13,n28,n25,n7,n27,n29,n21,n26,n20,n12,n2,n8,n5,n22,n14,n10,n16,n15,n23,n4,n6,n30,n9,",2.52425
+224,193007,"Standard_NV24X,In-house server 3,In-house server 2,","n26,n1,n30,n9,n19,n17,n3,n11,n13,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n20,n5,n14,n10,n22,n12,n4,n6,",2.98201
+225,193683,"Standard_NV24X,In-house server 3,In-house server 2,","n30,n9,n26,n6,n19,n17,n3,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n13,n11,n20,n1,n5,n10,n14,n22,n4,n12,",3.73416
+226,194467,"Standard_NV24X,In-house server 3,In-house server 2,","n30,n9,n26,n6,n19,n17,n3,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n13,n11,n29,n21,n5,n10,n22,n14,n20,n1,n4,n12,",4.33069
+227,194844,"Standard_NV24X,In-house server 3,In-house server 2,","n4,n30,n9,n1,n26,n19,n17,n3,n11,n13,n21,n29,n2,n8,n27,n24,n18,n31,n32,n28,n25,n7,n16,n23,n15,n20,n14,n10,n5,n22,n12,n6,",2.07486
+228,196113,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n33,n4,n1,n27,n6,n31,n18,n19,n9,n30,n17,n3,n11,n13,n2,n8,n32,n28,n25,n7,n20,n24,n16,n23,n15,n29,n21,n10,n22,n5,n14,n12,",7.1998
+229,196136,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n34,n4,n1,n27,n6,n19,n9,n30,n17,n3,n11,n13,n18,n31,n33,n32,n28,n20,n24,n29,n21,n16,n15,n23,n12,n2,n8,n7,n25,n22,n5,n14,n10,",0.140542
+230,196862,"Standard_NV24X,In-house server 3,In-house server 2,","n33,n4,n1,n26,n31,n18,n19,n9,n30,n17,n3,n11,n13,n28,n32,n21,n29,n2,n8,n27,n24,n16,n23,n15,n20,n14,n10,n5,n22,n12,n25,n7,n6,",4.22029
+231,197374,"Standard_NV24X,In-house server 3,In-house server 2,","n4,n1,n26,n31,n18,n19,n9,n30,n17,n3,n11,n13,n28,n32,n21,n29,n2,n8,n27,n24,n16,n23,n15,n20,n14,n10,n5,n22,n12,n25,n7,n6,",2.91371
+232,197681,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n4,n1,n27,n6,n17,n3,n11,n13,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n29,n21,n16,n15,n23,n12,n2,n8,n7,n25,n22,n5,n14,n10,",1.80225
+233,198607,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n4,n1,n6,n17,n3,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n27,n13,n11,n10,n5,n22,n14,n29,n21,n16,n15,n23,n12,n2,n8,n7,n25,",5.42825
+234,199824,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n1,n4,n34,n6,n17,n3,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n27,n13,n11,n10,n5,n22,n14,n29,n21,n16,n15,n23,n12,n2,n8,n7,n25,",7.51824
+235,200620,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n1,n4,n34,n6,n17,n3,n11,n13,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n27,n29,n21,n10,n22,n5,n14,n16,n15,n23,n12,n2,n8,n7,n25,",4.90091
+236,201029,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n1,n4,n34,n6,n17,n3,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n27,n13,n11,n10,n5,n22,n14,n29,n21,n16,n15,n23,n12,n2,n8,n7,n25,",2.52865
+237,201690,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n26,n1,n4,n34,n6,n17,n3,n11,n13,n19,n9,n30,n18,n31,n33,n32,n28,n20,n24,n27,n29,n21,n10,n22,n5,n14,n16,n15,n23,n12,n2,n8,n7,n25,",4.06684
+238,201729,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n4,n1,n33,n6,n8,n2,n3,n17,n31,n18,n19,n9,n30,n28,n32,n27,n24,n16,n23,n15,n13,n11,n10,n22,n5,n14,n29,n21,n20,n12,n25,n7,n26,",0.230442
+239,202257,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n4,n1,n33,n6,n8,n2,n3,n17,n31,n18,n19,n9,n30,n28,n32,n27,n24,n16,n23,n15,n13,n11,n10,n22,n5,n14,n29,n21,n12,n25,n7,n26,n20,",3.18114
+240,203512,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n4,n1,n33,n6,n8,n2,n31,n18,n19,n9,n30,n17,n3,n11,n13,n28,n32,n15,n16,n23,n27,n24,n10,n22,n5,n14,n29,n21,n12,n25,n7,n26,n20,",7.58154
+241,204135,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n1,n4,n34,n8,n2,n6,n17,n3,n19,n9,n30,n13,n11,n18,n31,n33,n32,n28,n20,n24,n27,n16,n15,n23,n10,n5,n22,n14,n29,n21,n12,n26,n7,n25,",3.83456
+242,204773,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n4,n1,n33,n8,n2,n6,n19,n31,n18,n9,n30,n17,n3,n11,n13,n28,n32,n15,n16,n23,n27,n24,n20,n29,n21,n10,n5,n14,n22,n12,n25,n7,n26,",3.85398
+243,205300,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n4,n1,n33,n8,n2,n6,n31,n18,n19,n9,n30,n17,n3,n11,n13,n28,n32,n15,n16,n23,n27,n24,n20,n29,n21,n10,n5,n14,n22,n12,n25,n7,n26,",3.16755
+244,205973,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n27,n9,n30,n4,n1,n8,n2,n17,n3,n13,n11,n19,n18,n31,n32,n28,n25,n7,n26,n20,n24,n16,n15,n23,n29,n21,n10,n5,n14,n22,n12,n6,",3.95702
+245,207073,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n27,n9,n30,n33,n4,n1,n8,n2,n6,n19,n17,n3,n11,n13,n15,n16,n23,n32,n28,n25,n7,n26,n20,n24,n18,n31,n29,n21,n10,n5,n14,n22,n12,",6.63608
+246,207776,"Standard_NV6,In-house server 3,In-house server 2,Standard_NV24X,","n27,n20,n26,n30,n9,n6,n17,n3,n28,n32,n2,n8,n25,n7,n4,n13,n11,n22,n14,n10,n5,n23,n16,n15,n1,n31,n18,n19,n12,n24,n29,n21,",3.98726
+247,208279,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV6,","n26,n1,n31,n18,n9,n30,n19,n27,n24,n17,n3,n11,n13,n2,n8,n20,n28,n25,n7,n15,n16,n23,n5,n10,n22,n14,n29,n21,n12,n6,n4,",2.79368
+248,209488,"Standard_NV6,In-house server 3,In-house server 2,Standard_NV24X,","n26,n24,n20,n27,n6,n17,n3,n28,n32,n2,n8,n25,n7,n4,n9,n30,n31,n18,n19,n13,n11,n22,n14,n10,n5,n23,n16,n15,n1,n12,n29,n21,",6.85947
+249,210605,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n19,n29,n21,n1,n20,n6,n27,n25,n7,n4,n3,n17,n28,n32,n8,n2,n9,n30,n31,n18,n22,n14,n10,n5,n13,n11,n23,n16,n15,n12,",6.53232
+250,210679,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n18,n31,n1,n20,n27,n6,n3,n17,n28,n32,n25,n7,n4,n8,n2,n9,n30,n19,n22,n14,n10,n5,n13,n11,n23,n16,n15,n12,n29,n21,",0.430636
+251,211646,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n29,n21,n1,n20,n6,n27,n18,n31,n25,n7,n4,n3,n23,n15,n16,n17,n28,n32,n8,n2,n9,n30,n19,n22,n10,n14,n5,n13,n11,n12,",5.66265
+252,211841,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n28,n27,n3,n17,n1,n20,n26,n21,n29,n23,n16,n15,n13,n11,n18,n31,n25,n7,n4,n30,n9,n6,n8,n2,n19,n12,n22,n10,n5,n14,n24,",1.11812
+253,213050,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n28,n27,n20,n1,n26,n21,n29,n6,n9,n30,n19,n18,n31,n25,n7,n4,n3,n17,n8,n2,n13,n11,n23,n16,n15,n12,n22,n10,n5,n14,n24,",6.94521
+254,214269,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n28,n27,n19,n26,n21,n29,n6,n3,n23,n15,n16,n17,n11,n13,n9,n30,n4,n18,n31,n1,n20,n25,n7,n8,n2,n22,n5,n10,n14,n12,n24,",6.98936
+255,215435,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n20,n26,n21,n29,n6,n23,n15,n16,n3,n17,n11,n13,n4,n9,n30,n19,n18,n31,n28,n25,n7,n1,n8,n2,n22,n5,n10,n14,n12,n24,",7.08709
+256,216191,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n24,n13,n11,n21,n29,n6,n23,n15,n16,n3,n17,n4,n9,n30,n19,n18,n31,n27,n28,n25,n7,n26,n1,n8,n2,n22,n5,n10,n14,n12,",4.59609
+257,216516,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n20,n24,n26,n21,n29,n6,n17,n3,n23,n15,n16,n11,n13,n4,n9,n30,n19,n18,n31,n28,n25,n7,n1,n8,n2,n22,n5,n10,n14,n12,",1.96599
+258,216692,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n28,n27,n20,n24,n26,n21,n29,n6,n3,n17,n23,n15,n16,n11,n13,n9,n30,n19,n4,n18,n31,n1,n25,n7,n8,n2,n22,n5,n10,n14,n12,",1.06686
+259,217912,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n19,n1,n20,n13,n11,n21,n29,n6,n3,n23,n15,n16,n17,n28,n32,n9,n30,n27,n18,n31,n4,n25,n7,n8,n2,n22,n5,n10,n14,n12,",7.53264
+260,219099,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n19,n13,n11,n21,n29,n6,n3,n23,n15,n16,n17,n28,n32,n9,n30,n27,n33,n18,n31,n1,n20,n4,n25,n7,n8,n2,n22,n5,n10,n14,n12,",7.70409
+261,219110,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n20,n24,n25,n7,n1,n26,n21,n29,n3,n17,n28,n32,n19,n30,n9,n6,n18,n31,n23,n16,n15,n13,n11,n4,n8,n2,n22,n10,n5,n14,n12,",0.0653457
+262,219861,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n20,n24,n25,n7,n26,n21,n29,n6,n3,n17,n23,n15,n16,n28,n32,n9,n30,n19,n18,n31,n1,n4,n13,n11,n8,n2,n22,n10,n5,n14,n12,",4.60979
+263,219872,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n20,n19,n17,n1,n28,n3,n7,n25,n21,n29,n30,n9,n6,n18,n31,n4,n22,n10,n14,n5,n13,n11,n23,n16,n15,n8,n2,n12,n27,",0.0634917
+264,220359,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n20,n19,n17,n1,n28,n3,n7,n25,n21,n29,n30,n9,n6,n18,n31,n4,n22,n10,n14,n5,n13,n11,n23,n16,n15,n8,n2,n12,n27,",2.94728
+265,221555,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n20,n19,n17,n1,n28,n3,n7,n25,n21,n29,n30,n9,n6,n18,n31,n12,n22,n10,n14,n5,n13,n11,n23,n16,n15,n4,n8,n2,n27,",7.25413
+266,222595,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n24,n20,n19,n17,n27,n1,n7,n25,n21,n29,n3,n28,n32,n30,n9,n6,n18,n31,n12,n22,n10,n14,n5,n13,n11,n23,n16,n15,n4,n8,n2,",6.63222
+267,222819,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n19,n20,n17,n1,n7,n25,n21,n29,n3,n28,n32,n30,n9,n6,n23,n16,n15,n13,n11,n4,n18,n31,n12,n22,n10,n5,n14,n8,n2,n27,",1.35352
+268,222820,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n19,n20,n1,n7,n25,n21,n29,n3,n17,n28,n32,n30,n9,n6,n23,n16,n15,n13,n11,n4,n18,n31,n12,n22,n10,n5,n14,n8,n2,n27,",0.00616297
+269,224085,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n19,n20,n3,n17,n25,n7,n1,n26,n21,n29,n18,n31,n33,n30,n9,n6,n23,n16,n15,n13,n11,n4,n28,n32,n12,n22,n10,n5,n14,n8,n2,",7.81319
+270,225053,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n19,n20,n3,n17,n25,n7,n1,n26,n21,n29,n18,n31,n33,n30,n9,n6,n23,n16,n15,n13,n11,n4,n28,n32,n12,n22,n10,n5,n14,n8,n2,",5.96096
+271,225276,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n19,n20,n3,n17,n21,n29,n25,n7,n23,n16,n15,n13,n11,n18,n31,n33,n30,n9,n6,n26,n1,n28,n32,n12,n22,n10,n5,n14,n8,n2,n4,",1.37506
+272,226441,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n19,n20,n21,n29,n6,n25,n7,n26,n1,n18,n31,n33,n9,n30,n3,n11,n13,n17,n23,n15,n16,n28,n32,n12,n8,n2,n4,n22,n10,n5,n14,",7.17249
+273,227158,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n20,n24,n17,n21,n29,n6,n25,n7,n13,n11,n1,n28,n32,n9,n30,n19,n18,n31,n27,n3,n23,n15,n16,n33,n12,n22,n10,n5,n14,n8,n2,n34,n4,",4.46502
+274,227249,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n20,n17,n21,n29,n6,n25,n7,n26,n1,n18,n31,n33,n9,n30,n19,n3,n23,n15,n16,n11,n13,n28,n32,n12,n22,n10,n5,n14,n8,n2,n4,",0.554863
+275,227610,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n20,n19,n17,n27,n21,n29,n6,n25,n7,n9,n30,n3,n23,n15,n16,n11,n13,n28,n32,n1,n18,n31,n12,n22,n10,n5,n14,n8,n2,n4,",2.14319
+276,228655,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n20,n17,n3,n1,n26,n21,n29,n25,n7,n6,n18,n31,n33,n9,n30,n19,n4,n8,n2,n28,n32,n12,n22,n10,n14,n5,n13,n11,n23,n16,n15,",6.37996
+277,228761,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n20,n17,n3,n25,n7,n26,n21,n29,n18,n31,n33,n8,n2,n19,n30,n9,n6,n23,n16,n15,n13,n11,n1,n4,n28,n32,n12,n22,n10,n5,n14,",0.650917
+278,229103,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n19,n3,n17,n4,n21,n29,n26,n13,n11,n22,n14,n10,n5,n23,n16,n15,n6,n18,n31,n33,n9,n30,n25,n7,n1,n20,n8,n2,n28,n32,n12,",2.09855
+279,229968,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n20,n19,n27,n4,n7,n25,n21,n29,n22,n14,n10,n5,n3,n23,n15,n16,n11,n13,n17,n28,n32,n30,n9,n6,n1,n8,n2,n18,n31,n12,",5.21949
+280,231182,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n20,n19,n27,n12,n4,n21,n29,n3,n17,n13,n11,n22,n14,n10,n5,n23,n16,n15,n6,n33,n9,n30,n31,n18,n25,n7,n1,n8,n2,n28,n32,",7.70685
+281,231727,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n20,n19,n27,n12,n4,n21,n29,n22,n14,n10,n5,n6,n33,n9,n30,n31,n18,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",3.54748
+282,231967,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n20,n19,n26,n12,n4,n21,n29,n24,n27,n22,n14,n10,n5,n6,n9,n30,n3,n17,n11,n13,n23,n15,n16,n32,n28,n25,n7,n8,n2,n1,n18,n31,",1.4826
+283,232400,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n3,n17,n21,n29,n25,n7,n28,n4,n13,n11,n22,n14,n10,n5,n16,n23,n15,n18,n31,n6,n27,n8,n2,n1,n9,n30,n26,n12,",2.62944
+284,233562,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n19,n26,n20,n4,n6,n24,n27,n21,n29,n22,n14,n5,n10,n9,n30,n3,n17,n11,n13,n23,n15,n16,n32,n28,n25,n7,n8,n2,n1,n18,n31,n12,",7.29226
+285,234752,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n19,n26,n12,n20,n4,n6,n24,n27,n22,n14,n5,n10,n21,n29,n9,n30,n32,n28,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n18,n31,",7.36471
+286,235968,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n24,n20,n19,n12,n4,n6,n9,n30,n22,n14,n5,n10,n21,n29,n27,n18,n31,n33,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",7.69553
+287,236633,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n20,n19,n24,n12,n6,n22,n14,n5,n10,n21,n29,n25,n7,n28,n32,n4,n34,n9,n30,n27,n18,n31,n26,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n33,",4.28736
+288,236894,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n20,n19,n24,n12,n4,n6,n9,n30,n22,n14,n5,n10,n21,n29,n27,n18,n31,n33,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",1.6014
+289,237113,"Standard_NV6,In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n20,n27,n24,n12,n21,n29,n4,n22,n14,n10,n5,n6,n9,n30,n18,n31,n33,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",1.32648
+290,237256,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n20,n24,n19,n12,n4,n6,n9,n30,n22,n14,n5,n10,n21,n29,n27,n18,n31,n33,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",0.887606
+291,237361,"Standard_NV6,In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n20,n27,n24,n12,n21,n29,n4,n22,n14,n10,n5,n6,n9,n30,n18,n31,n33,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n28,n32,",0.636036
+292,237708,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n19,n20,n26,n12,n21,n29,n24,n27,n4,n22,n14,n10,n5,n6,n9,n30,n32,n28,n25,n7,n3,n17,n11,n13,n23,n15,n16,n8,n2,n1,n18,n31,",2.03489
+293,238340,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n17,n3,n21,n29,n4,n13,n11,n14,n22,n10,n5,n16,n23,n15,n18,n31,n28,n25,n7,n30,n9,n6,n27,n8,n2,n1,n26,n12,",3.68444
+294,239576,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n1,n3,n17,n13,n11,n16,n15,n23,n4,n12,n14,n22,n5,n10,n21,n29,n27,n18,n31,n30,n9,n6,n25,n7,n28,n8,n2,n26,",7.20278
+295,240229,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n13,n11,n16,n15,n23,n4,n12,n6,n9,n30,n21,n29,n27,n18,n31,n26,n3,n17,n28,n25,n7,n8,n2,n22,n5,n10,n14,n1,",3.78453
+296,240833,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n3,n17,n13,n11,n16,n15,n23,n4,n12,n28,n18,n30,n9,n6,n26,n7,n25,n21,n29,n27,n8,n2,n22,n5,n10,n14,n1,",3.31363
+297,241811,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n24,n20,n19,n12,n1,n6,n17,n3,n13,n11,n23,n16,n15,n21,n29,n18,n31,n28,n25,n7,n26,n8,n2,n27,n4,n9,n30,n22,n5,n10,n14,",5.39933
+298,241987,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n24,n18,n20,n19,n12,n6,n17,n3,n13,n11,n23,n16,n15,n28,n2,n8,n21,n29,n7,n25,n26,n27,n4,n9,n30,n22,n5,n10,n14,n1,",0.914147
+299,242870,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n24,n18,n20,n19,n12,n6,n21,n29,n28,n25,n7,n17,n3,n11,n13,n22,n5,n10,n14,n26,n15,n16,n23,n8,n2,n27,n4,n9,n30,n1,",4.59805
+300,243153,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n24,n18,n20,n19,n12,n6,n17,n3,n13,n11,n23,n16,n15,n28,n21,n29,n7,n25,n22,n5,n10,n14,n26,n8,n2,n27,n9,n30,n4,n1,",1.47595
+301,244387,"Standard_NV24X,In-house server 3,In-house server 2,","n24,n20,n19,n12,n1,n6,n21,n29,n28,n25,n7,n3,n23,n15,n16,n17,n11,n13,n22,n5,n10,n14,n26,n8,n2,n18,n9,n30,n27,n4,",6.5167
+302,244409,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n24,n18,n20,n19,n12,n6,n3,n17,n13,n11,n23,n16,n15,n28,n2,n8,n21,n29,n7,n25,n22,n5,n10,n14,n26,n27,n9,n30,n4,n1,",0.117324
+303,245671,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n19,n20,n12,n6,n3,n17,n15,n23,n16,n13,n11,n24,n27,n21,n29,n22,n5,n10,n14,n9,n30,n26,n8,n2,n25,n7,n28,n18,n31,n4,n1,",6.74097
+304,246865,"In-house server 1,Standard_NV24X,In-house server 3,In-house server 2,","n20,n6,n24,n1,n3,n17,n21,n29,n23,n16,n15,n13,n11,n12,n9,n30,n19,n25,n7,n18,n31,n27,n26,n8,n2,n28,n32,n22,n10,n5,n14,n4,",6.52368
+305,248086,"Standard_NV24X,In-house server 3,In-house server 2,","n6,n24,n19,n12,n23,n16,n15,n13,n11,n2,n8,n21,n29,n9,n30,n25,n7,n18,n31,n27,n26,n3,n17,n1,n20,n4,n28,n32,n22,n5,n10,n14,",6.75647
+306,249175,"Standard_NV24X,In-house server 3,In-house server 2,","n6,n24,n17,n23,n16,n15,n13,n11,n12,n3,n2,n8,n21,n29,n9,n30,n19,n25,n7,n18,n31,n27,n26,n1,n20,n4,n28,n32,n22,n5,n10,n14,",6.00474
+307,249288,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n24,n2,n8,n21,n29,n23,n16,n15,n13,n11,n12,n28,n25,n7,n9,n30,n19,n27,n3,n17,n26,n1,n20,n4,n18,n31,n22,n10,n5,n14,",0.612437
+308,249320,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n20,n6,n24,n21,n29,n23,n16,n15,n13,n11,n12,n28,n25,n7,n9,n30,n19,n27,n3,n17,n26,n1,n4,n18,n31,n22,n10,n5,n14,n8,n2,",0.16917
+309,250556,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n20,n6,n24,n21,n29,n23,n16,n15,n13,n11,n12,n28,n25,n7,n9,n30,n19,n27,n3,n17,n26,n1,n4,n18,n31,n22,n10,n5,n14,n8,n2,",6.59007
+310,251608,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n20,n6,n13,n11,n12,n24,n27,n28,n9,n30,n19,n3,n23,n15,n16,n7,n25,n21,n29,n2,n8,n26,n1,n4,n18,n31,n22,n5,n10,n14,",5.66587
+311,251759,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n20,n6,n21,n29,n13,n11,n27,n24,n3,n23,n15,n16,n26,n12,n25,n7,n28,n1,n18,n9,n30,n19,n4,n22,n10,n5,n14,n8,n2,",0.796609
+312,253023,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n20,n3,n17,n12,n24,n27,n28,n9,n30,n19,n7,n25,n21,n29,n2,n8,n26,n1,n13,n11,n22,n14,n10,n5,n23,n16,n15,n4,n18,n31,",7.05187
+313,254205,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n20,n17,n3,n12,n24,n27,n28,n9,n30,n19,n7,n25,n21,n29,n2,n8,n26,n1,n13,n11,n22,n14,n10,n5,n16,n23,n15,n4,n18,n31,",6.56963
+314,255410,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n20,n17,n3,n15,n16,n23,n12,n24,n27,n28,n9,n30,n19,n7,n25,n21,n29,n2,n8,n26,n1,n13,n11,n14,n22,n10,n5,n4,n18,n31,",6.68894
+315,256094,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n20,n17,n12,n3,n13,n11,n15,n16,n23,n24,n27,n14,n5,n22,n10,n18,n31,n32,n28,n25,n7,n26,n1,n9,n30,n19,n4,n29,n21,n8,n2,",3.88525
+316,256627,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n6,n20,n3,n13,n11,n16,n15,n23,n12,n24,n27,n21,n29,n2,n8,n14,n22,n5,n10,n18,n31,n32,n28,n25,n7,n26,n1,n9,n30,n19,n4,",3.02974
+317,256635,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n17,n6,n1,n20,n3,n13,n11,n23,n16,n15,n12,n24,n27,n21,n29,n14,n22,n5,n10,n25,n7,n26,n8,n2,n9,n30,n31,n18,n19,n4,n28,n32,",0.0473015
+318,257839,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n1,n20,n19,n3,n17,n13,n11,n16,n15,n23,n12,n24,n27,n21,n29,n22,n14,n5,n10,n18,n31,n32,n28,n25,n7,n26,n8,n2,n9,n30,n4,",6.86699
+319,259083,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n17,n20,n26,n19,n13,n11,n21,n29,n12,n33,n24,n27,n9,n30,n32,n28,n25,n7,n1,n8,n2,n18,n31,n6,n3,n15,n23,n16,n4,n5,n10,n22,n14,",7.52362
+320,260263,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n17,n26,n19,n20,n13,n11,n29,n21,n16,n15,n23,n5,n10,n14,n22,n33,n24,n27,n9,n30,n32,n28,n25,n7,n12,n1,n8,n2,n18,n31,n6,n3,n4,",7.11732
+321,261314,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n17,n27,n19,n20,n29,n21,n5,n14,n10,n22,n33,n24,n18,n31,n9,n30,n32,n28,n25,n7,n13,n11,n16,n23,n15,n12,n1,n8,n2,n6,n3,n4,n34,",6.46573
+322,261448,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n20,n26,n12,n19,n17,n6,n16,n15,n23,n33,n24,n27,n9,n30,n21,n29,n5,n14,n22,n10,n32,n28,n25,n7,n1,n8,n2,n18,n31,n3,n11,n13,n4,",0.784427
+323,262646,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n12,n19,n17,n6,n16,n15,n23,n20,n1,n33,n24,n27,n9,n30,n21,n29,n5,n14,n22,n10,n32,n28,n25,n7,n13,n11,n8,n2,n18,n31,n3,n4,",6.99453
+324,262991,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n12,n19,n17,n6,n20,n1,n33,n24,n27,n9,n30,n21,n29,n14,n5,n22,n10,n32,n28,n25,n7,n13,n11,n16,n23,n15,n8,n2,n18,n31,n3,n4,",2.00587
+325,263929,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n12,n19,n17,n6,n16,n15,n23,n21,n29,n27,n24,n18,n31,n32,n28,n25,n7,n20,n1,n14,n5,n10,n22,n8,n2,n9,n30,n3,n11,n13,n4,",5.15362
+326,264609,"Standard_NV24X,In-house server 1,Standard_NV12,In-house server 2,In-house server 3,","n26,n27,n12,n19,n17,n6,n20,n1,n33,n24,n9,n30,n21,n29,n14,n5,n22,n10,n32,n28,n25,n7,n13,n11,n16,n23,n15,n8,n2,n18,n31,n3,n4,",3.76768
+327,264759,"Standard_NV24X,In-house server 1,Standard_NV12,In-house server 2,In-house server 3,","n26,n12,n19,n17,n6,n16,n15,n23,n21,n29,n27,n24,n18,n31,n32,n28,n25,n7,n20,n1,n14,n5,n10,n22,n8,n2,n9,n30,n3,n11,n13,n4,",0.785329
+328,265137,"Standard_NV24X,In-house server 1,Standard_NV12,In-house server 2,In-house server 3,","n26,n12,n19,n6,n16,n15,n23,n21,n29,n27,n24,n18,n31,n28,n25,n7,n20,n1,n14,n5,n10,n22,n8,n2,n9,n30,n3,n11,n13,n17,n4,",1.855
+329,265959,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n19,n17,n6,n29,n21,n27,n24,n18,n31,n28,n25,n7,n20,n1,n5,n14,n10,n22,n13,n11,n16,n23,n15,n12,n8,n2,n9,n30,n3,n4,",4.17993
+330,266378,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n17,n13,n11,n6,n21,n29,n16,n15,n23,n27,n24,n18,n31,n28,n25,n7,n20,n1,n12,n8,n2,n9,n30,n3,n4,n5,n10,n22,n14,",2.06077
+331,267611,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n17,n6,n19,n9,n30,n21,n29,n27,n24,n18,n31,n28,n25,n7,n20,n1,n5,n14,n10,n22,n13,n11,n16,n23,n15,n12,n8,n2,n3,n4,",5.91336
+332,268860,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n17,n6,n19,n9,n30,n26,n20,n1,n24,n21,n29,n5,n14,n22,n10,n32,n28,n25,n7,n13,n11,n23,n16,n15,n12,n8,n2,n18,n31,n3,n4,",6.14275
+333,270066,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n17,n6,n19,n9,n30,n20,n1,n33,n24,n27,n18,n31,n21,n29,n5,n14,n22,n10,n13,n11,n23,n16,n15,n12,n25,n7,n8,n2,n28,n32,n3,n4,",6.30982
+334,271294,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n4,n26,n20,n1,n33,n24,n27,n18,n31,n21,n29,n5,n14,n22,n10,n30,n9,n6,n13,n11,n23,n16,n15,n12,n25,n7,n8,n2,n28,n32,n3,",6.63642
+335,271389,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n4,n3,n28,n32,n20,n1,n33,n24,n27,n18,n31,n21,n29,n5,n14,n22,n10,n26,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,",0.515777
+336,272126,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n17,n4,n19,n28,n32,n20,n1,n33,n24,n27,n18,n31,n21,n29,n5,n14,n22,n10,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n3,",3.8525
+337,272506,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n3,n17,n21,n29,n12,n20,n1,n33,n24,n27,n31,n18,n23,n16,n15,n13,n11,n30,n9,n6,n25,n7,n8,n2,n28,n32,n4,n5,n10,n22,n14,",1.98953
+338,272843,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n3,n17,n21,n29,n12,n20,n1,n33,n24,n27,n31,n18,n23,n16,n15,n13,n11,n30,n9,n6,n25,n7,n8,n2,n28,n32,n34,n4,n5,n10,n22,n14,",1.8044
+339,273754,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n26,n19,n3,n23,n16,n15,n13,n11,n21,n29,n12,n20,n1,n33,n24,n31,n18,n30,n9,n6,n25,n7,n8,n2,n28,n32,n34,n4,n5,n10,n22,n14,n17,",4.89043
+340,275000,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n26,n21,n29,n19,n3,n35,n23,n16,n15,n13,n11,n12,n20,n1,n33,n24,n18,n31,n28,n32,n30,n9,n6,n25,n7,n8,n2,n34,n4,n5,n10,n22,n14,n17,",7.07972
+341,276249,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n17,n20,n3,n36,n12,n25,n7,n28,n32,n33,n18,n31,n35,n26,n29,n21,n22,n5,n10,n14,n16,n23,n15,n13,n11,n30,n9,n6,n8,n2,n1,n34,n4,n19,",7.48881
+342,276775,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n17,n20,n3,n36,n12,n25,n7,n28,n32,n33,n18,n31,n35,n26,n29,n21,n22,n5,n10,n14,n16,n23,n15,n13,n11,n30,n9,n6,n8,n2,n1,n34,n4,n19,",3.14145
+343,277484,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n17,n21,n29,n3,n35,n28,n32,n20,n1,n5,n14,n10,n22,n33,n24,n27,n19,n18,n31,n12,n16,n23,n15,n13,n11,n30,n9,n6,n25,n7,n8,n2,n34,n4,",4.15494
+344,278689,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n17,n19,n35,n3,n28,n32,n26,n29,n21,n33,n24,n27,n4,n34,n18,n31,n5,n14,n22,n10,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n1,n20,",7.26438
+345,279297,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n35,n3,n28,n32,n26,n29,n21,n33,n24,n27,n4,n34,n18,n31,n5,n14,n22,n10,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n1,n20,",3.8757
+346,279421,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n17,n19,n4,n34,n6,n28,n32,n26,n29,n21,n18,n31,n33,n5,n14,n10,n22,n9,n30,n24,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n1,n20,n3,",0.780417
+347,279926,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n17,n19,n3,n28,n32,n26,n29,n21,n18,n31,n33,n5,n14,n10,n22,n24,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n1,n20,n34,n4,",3.15919
+348,281170,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n24,n17,n35,n20,n3,n26,n29,n21,n5,n14,n10,n22,n33,n28,n32,n19,n27,n18,n31,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n8,n2,n1,n34,n4,",7.95875
+349,281595,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n24,n17,n19,n35,n6,n26,n29,n21,n5,n10,n14,n22,n33,n28,n32,n9,n30,n27,n18,n31,n13,n11,n12,n15,n23,n16,n3,n25,n7,n8,n2,n34,n4,n1,n20,",2.71702
+350,281898,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n24,n17,n33,n35,n20,n3,n26,n29,n21,n5,n10,n14,n22,n28,n32,n19,n27,n18,n31,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n1,n34,n4,n8,n2,",1.94244
+351,282368,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n17,n28,n32,n20,n3,n26,n29,n21,n18,n31,n33,n5,n10,n14,n22,n19,n24,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n1,n34,n4,n8,n2,",2.94472
+352,282990,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n17,n28,n32,n20,n3,n26,n29,n21,n18,n31,n33,n5,n10,n14,n22,n19,n24,n30,n9,n6,n13,n11,n16,n23,n15,n12,n25,n7,n1,n34,n4,n8,n2,",3.89926
+353,283589,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n12,n17,n28,n32,n3,n26,n29,n21,n18,n31,n33,n5,n10,n14,n22,n19,n24,n13,n11,n16,n23,n15,n30,n9,n6,n25,n7,n1,n20,n8,n2,n4,n34,",3.74817
+354,284774,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n17,n33,n3,n35,n7,n25,n26,n24,n27,n5,n14,n10,n22,n28,n32,n4,n34,n18,n31,n30,n9,n6,n12,n23,n15,n16,n11,n13,n1,n20,n8,n2,n29,n21,",7.78082
+355,285384,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n19,n6,n31,n18,n8,n2,n35,n13,n11,n28,n32,n24,n27,n4,n34,n36,n7,n25,n21,n29,n33,n5,n10,n22,n14,n17,n3,n15,n23,n16,n30,n9,n1,n20,n12,n37,",4.15923
+356,285620,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n6,n31,n18,n8,n2,n35,n28,n32,n24,n27,n4,n34,n36,n7,n25,n33,n22,n5,n10,n14,n29,n21,n17,n3,n15,n23,n16,n13,n11,n30,n9,n1,n20,n12,n37,",1.52684
+357,286002,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n24,n6,n31,n18,n8,n2,n35,n33,n28,n32,n4,n34,n36,n7,n25,n27,n5,n22,n10,n14,n29,n21,n17,n3,n15,n23,n16,n13,n11,n30,n9,n1,n20,n12,n37,",2.40995
+358,286065,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n6,n31,n18,n8,n2,n35,n28,n32,n24,n27,n4,n34,n36,n7,n25,n33,n22,n5,n10,n14,n29,n21,n17,n3,n15,n23,n16,n13,n11,n30,n9,n1,n20,n12,n37,",0.406687
+359,287257,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n19,n6,n8,n2,n36,n20,n13,n11,n28,n32,n24,n27,n33,n18,n31,n7,n25,n35,n26,n22,n5,n10,n14,n29,n21,n17,n3,n15,n23,n16,n12,n30,n9,n1,n34,n4,",7.57251
+360,287772,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n26,n19,n6,n31,n18,n8,n2,n35,n13,n11,n15,n16,n23,n28,n32,n24,n27,n36,n7,n25,n33,n22,n5,n10,n14,n29,n21,n17,n3,n37,n12,n30,n9,n1,n20,n34,n4,",3.3401
+361,288474,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n6,n8,n2,n36,n19,n25,n7,n15,n16,n23,n28,n32,n33,n24,n27,n26,n35,n21,n29,n18,n31,n13,n11,n22,n10,n5,n14,n17,n3,n12,n30,n9,n1,n20,n34,n4,",4.46039
+362,288973,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n6,n19,n8,n2,n36,n3,n25,n7,n15,n16,n23,n28,n32,n24,n27,n26,n35,n33,n21,n29,n18,n31,n22,n14,n10,n5,n17,n11,n13,n12,n30,n9,n1,n20,n34,n4,",3.15607
+363,289692,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n24,n29,n21,n35,n33,n17,n26,n20,n1,n7,n25,n14,n5,n22,n10,n2,n8,n19,n27,n18,n31,n32,n28,n30,n9,n6,n15,n23,n16,n3,n13,n11,n12,n34,n4,",4.46343
+364,290839,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n24,n29,n21,n36,n17,n26,n35,n20,n1,n33,n7,n25,n14,n5,n22,n10,n2,n8,n27,n18,n31,n19,n32,n28,n30,n9,n6,n15,n23,n16,n3,n13,n11,n12,n34,n4,",7.25813
+365,292000,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n24,n29,n21,n36,n3,n26,n35,n20,n1,n33,n7,n25,n14,n5,n22,n10,n2,n8,n27,n18,n31,n19,n32,n28,n30,n9,n6,n15,n23,n16,n17,n13,n11,n12,n34,n4,",7.34598
+366,293224,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n36,n3,n17,n26,n35,n24,n27,n33,n7,n25,n14,n5,n22,n10,n2,n8,n18,n31,n19,n32,n28,n30,n9,n6,n15,n23,n16,n13,n11,n12,n1,n20,n34,n4,",7.70804
+367,294443,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n36,n3,n34,n4,n6,n26,n35,n24,n27,n33,n7,n25,n2,n8,n18,n31,n19,n32,n28,n30,n9,n17,n13,n11,n16,n23,n15,n14,n22,n10,n5,n12,n20,n1,",7.68069
+368,294628,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n17,n19,n35,n33,n3,n6,n28,n32,n24,n27,n26,n4,n34,n36,n7,n25,n2,n8,n30,n9,n22,n10,n5,n14,n29,n21,n31,n18,n37,n12,n11,n13,n15,n23,n16,n20,n1,",1.22274
+369,295676,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n17,n19,n8,n2,n35,n33,n3,n6,n24,n27,n26,n4,n34,n36,n7,n25,n28,n32,n37,n12,n30,n9,n29,n21,n31,n18,n15,n23,n16,n13,n11,n10,n22,n14,n5,n20,n1,",6.73317
+370,295900,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n17,n19,n8,n2,n35,n33,n3,n6,n24,n27,n32,n28,n26,n4,n34,n36,n7,n25,n29,n21,n37,n12,n30,n9,n31,n18,n15,n23,n16,n13,n11,n22,n10,n14,n5,n20,n1,",1.47739
+371,296883,"Standard_NV12,Standard_NV24X,In-house server 2,In-house server 3,","n17,n19,n8,n2,n35,n33,n3,n24,n27,n32,n28,n26,n4,n34,n36,n7,n25,n30,n9,n6,n22,n10,n5,n14,n29,n21,n31,n18,n37,n12,n11,n13,n15,n23,n16,n20,n1,",6.50281
+372,298159,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n8,n2,n35,n33,n3,n24,n27,n32,n28,n26,n4,n34,n36,n7,n25,n21,n29,n30,n9,n6,n10,n5,n22,n14,n31,n18,n37,n12,n11,n13,n15,n23,n16,n20,n1,",8.88042
+373,298610,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n8,n2,n35,n33,n3,n24,n27,n32,n28,n26,n4,n34,n36,n7,n25,n29,n21,n22,n10,n5,n14,n30,n9,n6,n31,n18,n37,n12,n11,n13,n15,n23,n16,n20,n1,",3.13584
+374,299258,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n8,n2,n36,n3,n34,n4,n24,n27,n32,n28,n26,n35,n7,n25,n33,n31,n18,n29,n21,n22,n10,n5,n14,n30,n9,n6,n12,n11,n13,n15,n23,n16,n20,n1,",4.42599
+375,299370,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n8,n2,n36,n3,n24,n27,n32,n28,n26,n35,n7,n25,n21,n29,n33,n31,n18,n13,n11,n30,n9,n6,n10,n5,n22,n14,n12,n15,n23,n16,n20,n1,n34,n4,",0.763144
+376,300591,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n20,n8,n2,n3,n34,n4,n6,n1,n24,n27,n32,n28,n26,n35,n7,n25,n33,n31,n18,n13,n11,n30,n9,n10,n22,n5,n14,n29,n21,n12,n15,n23,n16,n36,",8.35409
+377,301782,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n19,n20,n8,n2,n3,n34,n4,n6,n1,n24,n27,n32,n28,n26,n35,n7,n25,n33,n31,n18,n13,n11,n30,n9,n10,n22,n5,n14,n29,n21,n37,n12,n15,n23,n16,n36,",8.51714
+378,303002,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n17,n19,n20,n8,n2,n35,n33,n3,n6,n1,n24,n27,n36,n4,n34,n18,n31,n32,n28,n25,n7,n13,n11,n30,n9,n10,n22,n5,n14,n29,n21,n15,n23,n16,n12,n37,",8.52796
+379,303081,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n17,n19,n20,n8,n2,n35,n33,n3,n6,n1,n24,n27,n36,n4,n34,n18,n31,n32,n28,n25,n7,n13,n11,n30,n9,n10,n22,n5,n14,n29,n21,n15,n23,n16,n12,n37,",0.549615
+380,303593,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n17,n19,n20,n8,n2,n3,n34,n4,n6,n1,n33,n24,n27,n35,n32,n28,n25,n7,n31,n18,n13,n11,n30,n9,n22,n10,n5,n14,n29,n21,n37,n12,n15,n23,n16,n36,",3.48283
+381,303626,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n18,n31,n33,n3,n19,n6,n1,n2,n8,n24,n27,n26,n35,n32,n28,n4,n34,n36,n7,n25,n14,n10,n22,n5,n37,n12,n30,n9,n11,n13,n17,n15,n23,n16,n29,n21,",0.232218
+382,304228,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n3,n19,n6,n1,n26,n35,n33,n24,n27,n7,n25,n2,n8,n36,n4,n34,n18,n31,n32,n28,n14,n22,n10,n5,n12,n30,n9,n11,n13,n17,n15,n23,n16,n29,n21,",4.12873
+383,305197,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n3,n19,n6,n1,n26,n35,n33,n24,n27,n7,n25,n2,n8,n36,n4,n34,n18,n31,n32,n28,n14,n22,n10,n5,n12,n30,n9,n11,n13,n17,n15,n23,n16,n29,n21,",6.72326
+384,305451,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n6,n1,n2,n8,n26,n35,n33,n24,n27,n7,n25,n21,n29,n36,n4,n34,n18,n31,n32,n28,n14,n22,n10,n5,n12,n30,n9,n11,n13,n17,n15,n23,n16,n3,n20,",1.74484
+385,306720,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n17,n33,n19,n6,n1,n2,n8,n24,n27,n32,n28,n4,n34,n36,n7,n25,n21,n29,n31,n18,n13,n11,n37,n12,n30,n9,n22,n10,n5,n14,n15,n23,n16,n3,n20,n35,",8.83575
+386,307929,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n33,n19,n17,n6,n1,n24,n27,n32,n28,n4,n34,n36,n7,n25,n21,n29,n5,n22,n14,n10,n2,n8,n31,n18,n13,n11,n30,n9,n37,n12,n15,n23,n16,n3,n20,n35,",8.41361
+387,309141,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n19,n17,n28,n32,n34,n4,n6,n13,n11,n24,n27,n7,n25,n21,n29,n5,n22,n14,n10,n2,n8,n35,n33,n31,n18,n30,n9,n37,n12,n15,n23,n16,n3,n20,n1,n36,",8.20217
+388,310009,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n17,n28,n32,n34,n4,n6,n1,n26,n35,n24,n27,n7,n25,n21,n29,n5,n22,n14,n10,n2,n8,n33,n31,n18,n13,n11,n30,n9,n37,n12,n15,n23,n16,n3,n20,n36,",5.87121
+389,310326,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n26,n17,n1,n19,n28,n32,n6,n34,n4,n24,n27,n7,n25,n21,n29,n5,n22,n14,n10,n2,n8,n35,n33,n31,n18,n13,n11,n30,n9,n12,n37,n15,n23,n16,n3,n20,n36,",2.14699
+390,310825,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n1,n35,n19,n33,n6,n2,n8,n28,n32,n24,n27,n36,n4,n34,n21,n29,n7,n25,n5,n22,n14,n10,n13,n11,n31,n18,n30,n9,n26,n15,n23,n16,n3,n20,n12,n37,",3.45775
+391,311564,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n1,n19,n27,n6,n2,n8,n34,n4,n24,n32,n28,n7,n25,n35,n26,n29,n21,n5,n22,n10,n14,n33,n31,n18,n13,n11,n30,n9,n12,n37,n15,n23,n16,n3,n20,n36,",5.14241
+392,312777,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n1,n35,n19,n33,n6,n2,n8,n28,n32,n26,n36,n4,n34,n21,n29,n7,n25,n5,n22,n14,n10,n27,n24,n13,n11,n31,n18,n30,n9,n15,n23,n16,n3,n20,n12,n37,",8.41414
+393,314009,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n8,n2,n35,n20,n33,n3,n6,n17,n24,n27,n1,n26,n36,n18,n31,n14,n5,n22,n10,n7,n25,n28,n32,n19,n16,n23,n15,n13,n11,n12,n37,n34,n4,n29,n21,n30,n9,",8.54593
+394,314066,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n35,n20,n33,n3,n6,n28,n32,n1,n26,n36,n27,n24,n18,n31,n21,n29,n7,n25,n14,n5,n22,n10,n2,n8,n17,n9,n30,n19,n16,n23,n15,n13,n11,n12,n37,n34,n4,",0.39727
+395,314505,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n35,n20,n3,n33,n6,n24,n2,n8,n28,n32,n1,n26,n36,n27,n18,n31,n7,n25,n14,n22,n10,n5,n16,n23,n15,n11,n13,n17,n9,n30,n19,n12,n37,n34,n4,n29,n21,",3.03904
+396,315216,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n35,n20,n3,n33,n6,n24,n2,n8,n28,n32,n1,n26,n36,n27,n18,n31,n7,n25,n14,n22,n10,n5,n16,n23,n15,n11,n13,n17,n9,n30,n19,n12,n37,n34,n4,n29,n21,",4.91214
+397,315707,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n35,n33,n6,n3,n24,n27,n1,n26,n36,n4,n34,n18,n31,n7,n25,n2,n8,n28,n32,n17,n9,n30,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n12,n37,n29,n21,",3.38783
+398,316436,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n35,n33,n6,n3,n24,n27,n1,n26,n36,n4,n34,n18,n31,n7,n25,n2,n8,n28,n32,n17,n9,n30,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n12,n37,n29,n21,",5.05809
+399,317629,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n35,n33,n6,n3,n17,n25,n7,n24,n27,n1,n26,n36,n4,n34,n2,n8,n28,n32,n9,n30,n19,n31,n18,n16,n23,n15,n13,n11,n12,n37,n22,n10,n5,n14,n29,n21,",8.44315
+400,318841,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n1,n36,n4,n34,n6,n3,n17,n33,n24,n27,n26,n35,n9,n30,n19,n25,n7,n28,n32,n18,n31,n37,n12,n2,n8,n16,n23,n15,n13,n11,n22,n10,n5,n14,n29,n21,",8.6636
+401,319108,"Standard_NV24X,In-house server 2,In-house server 3,","n3,n20,n36,n1,n4,n34,n6,n17,n25,n7,n33,n24,n27,n26,n35,n9,n30,n19,n32,n28,n18,n31,n37,n12,n2,n8,n16,n23,n15,n13,n11,n22,n10,n5,n14,n29,n21,",1.93068
+402,320057,"Standard_NV24X,In-house server 2,In-house server 3,","n3,n20,n35,n1,n33,n6,n19,n15,n16,n23,n28,n32,n24,n27,n26,n36,n4,n34,n2,n8,n29,n21,n9,n30,n31,n18,n12,n37,n13,n11,n22,n10,n14,n5,n17,n25,n7,",6.66833
+403,321288,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n36,n1,n4,n34,n6,n19,n33,n24,n27,n9,n30,n32,n28,n7,n25,n2,n8,n35,n29,n21,n37,n12,n18,n31,n13,n11,n22,n10,n14,n5,n17,n15,n23,n16,",8.61436
+404,321714,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n36,n1,n4,n34,n6,n19,n33,n24,n27,n9,n30,n32,n28,n7,n25,n2,n8,n35,n29,n21,n37,n12,n18,n31,n13,n11,n22,n10,n14,n5,n17,n15,n23,n16,",2.97397
+405,322436,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n19,n36,n1,n4,n34,n6,n15,n16,n23,n33,n24,n27,n9,n30,n32,n28,n7,n25,n2,n8,n35,n29,n21,n37,n12,n18,n31,n22,n10,n14,n5,n11,n13,n17,n20,",5.05452
+406,323335,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n36,n1,n17,n4,n34,n6,n15,n16,n23,n19,n9,n30,n24,n27,n32,n28,n33,n7,n25,n2,n8,n35,n37,n12,n18,n31,n22,n10,n5,n14,n29,n21,n11,n13,",6.28657
+407,323611,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n19,n36,n1,n17,n4,n34,n6,n15,n16,n23,n33,n24,n27,n9,n30,n32,n28,n7,n25,n2,n8,n35,n29,n21,n37,n12,n18,n31,n22,n10,n14,n5,n11,n13,n20,",1.92867
+408,324786,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n19,n9,n30,n1,n17,n35,n6,n28,n32,n21,n29,n2,n8,n33,n24,n27,n36,n4,n34,n37,n12,n14,n10,n22,n5,n31,n18,n11,n13,n15,n23,n16,n20,n25,n7,",8.20795
+409,325969,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n9,n30,n1,n17,n35,n6,n28,n32,n2,n8,n33,n24,n27,n36,n4,n34,n19,n31,n18,n37,n12,n10,n22,n5,n14,n29,n21,n11,n13,n15,n23,n16,n25,n7,",8.25245
+410,327207,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n9,n30,n1,n17,n35,n6,n28,n32,n33,n24,n27,n21,n29,n2,n8,n36,n4,n34,n19,n31,n18,n37,n12,n22,n10,n5,n14,n11,n13,n15,n23,n16,n20,n25,n7,",8.62498
+411,328221,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n29,n21,n1,n36,n6,n17,n15,n16,n23,n26,n35,n32,n28,n20,n24,n4,n34,n9,n30,n31,n18,n19,n12,n37,n33,n7,n25,n2,n8,n22,n5,n10,n14,n11,n13,",6.83652
+412,328445,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n29,n21,n1,n36,n6,n17,n15,n16,n23,n26,n35,n32,n28,n20,n24,n4,n34,n9,n30,n31,n18,n19,n12,n37,n33,n7,n25,n2,n8,n22,n5,n10,n14,n11,n13,",1.51565
+413,328852,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n29,n21,n1,n36,n6,n17,n15,n16,n23,n26,n35,n32,n28,n20,n24,n4,n34,n9,n30,n31,n18,n19,n12,n37,n33,n7,n25,n2,n8,n22,n5,n10,n14,n11,n13,",2.74953
+414,328954,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n29,n21,n1,n36,n6,n17,n15,n16,n23,n26,n35,n32,n28,n20,n24,n4,n34,n9,n30,n31,n18,n19,n12,n37,n33,n7,n25,n2,n8,n22,n5,n10,n14,n11,n13,",0.689221
+415,329624,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n1,n36,n6,n17,n15,n16,n23,n26,n35,n32,n28,n33,n24,n4,n34,n9,n30,n31,n18,n19,n12,n37,n7,n25,n2,n8,n22,n5,n10,n14,n29,n21,n11,n13,",4.53496
+416,329633,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n1,n35,n6,n33,n15,n16,n23,n26,n32,n28,n37,n12,n24,n4,n34,n36,n9,n30,n31,n18,n19,n7,n25,n2,n8,n22,n5,n10,n14,n29,n21,n11,n13,n17,",0.0615925
+417,330400,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n18,n31,n1,n35,n6,n33,n16,n15,n23,n24,n26,n32,n28,n4,n34,n36,n7,n25,n9,n30,n19,n22,n10,n5,n14,n29,n21,n11,n13,n17,n37,n12,n8,n2,",5.18121
+418,330559,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n18,n31,n36,n1,n4,n34,n6,n33,n16,n15,n23,n24,n26,n35,n32,n28,n9,n30,n19,n7,n25,n5,n22,n10,n14,n29,n21,n11,n13,n17,n37,n12,n8,n2,",1.07917
+419,330848,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n36,n1,n4,n34,n6,n33,n24,n26,n35,n32,n28,n25,n7,n9,n30,n31,n18,n19,n2,n8,n5,n22,n10,n14,n29,n21,n11,n13,n17,n15,n23,n16,n37,n12,",1.9598
+420,331560,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n3,n20,n36,n1,n4,n34,n6,n33,n24,n15,n16,n23,n26,n35,n32,n28,n9,n30,n31,n18,n19,n7,n25,n2,n8,n22,n10,n5,n14,n29,n21,n11,n13,n17,n37,n12,",4.82514
+421,332084,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n19,n1,n17,n33,n6,n28,n32,n24,n27,n21,n29,n2,n8,n35,n12,n37,n4,n34,n36,n14,n22,n10,n5,n30,n9,n11,n13,n15,n23,n16,n31,n18,n20,n25,n7,",3.46324
+422,332897,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n17,n33,n6,n1,n28,n32,n19,n24,n27,n2,n8,n35,n12,n37,n4,n34,n36,n18,n31,n14,n22,n10,n5,n30,n9,n11,n13,n15,n23,n16,n29,n21,n25,n7,",5.35932
+423,333358,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n17,n12,n1,n6,n28,n32,n19,n33,n24,n27,n2,n8,n4,n34,n36,n18,n31,n14,n22,n10,n5,n30,n9,n11,n13,n15,n23,n16,n35,n29,n21,n25,n7,",2.98055
+424,334552,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n3,n20,n12,n1,n6,n15,n16,n23,n28,n32,n17,n33,n24,n27,n7,n25,n2,n8,n36,n18,n31,n34,n4,n19,n13,n11,n30,n9,n22,n10,n5,n14,n29,n21,n35,",7.71152
+425,334575,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n27,n3,n29,n21,n1,n6,n33,n31,n18,n19,n24,n26,n35,n12,n37,n32,n28,n25,n7,n4,n34,n36,n30,n9,n11,n13,n15,n23,n16,n14,n22,n5,n10,n2,n8,n20,",0.151031
+426,334844,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n27,n3,n29,n21,n1,n6,n31,n18,n19,n33,n24,n26,n35,n12,n37,n32,n28,n25,n7,n4,n34,n36,n30,n9,n11,n13,n15,n23,n16,n14,n22,n5,n10,n2,n8,n20,",1.76396
+427,335003,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n17,n21,n29,n3,n20,n1,n6,n31,n18,n19,n33,n24,n26,n35,n12,n37,n32,n28,n25,n7,n36,n14,n22,n5,n10,n2,n8,n30,n9,n11,n13,n15,n23,n16,n34,n4,",1.04524
+428,335765,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n26,n17,n20,n6,n3,n28,n32,n19,n33,n24,n27,n7,n25,n2,n8,n4,n34,n36,n18,n31,n14,n22,n10,n5,n30,n9,n11,n13,n15,n23,n16,n35,n12,n29,n21,",4.92875
+429,336977,"Standard_NV24X,In-house server 2,In-house server 3,","n1,n26,n17,n20,n6,n28,n32,n19,n33,n24,n27,n4,n34,n36,n21,n29,n14,n5,n22,n10,n2,n8,n18,n31,n30,n9,n11,n13,n15,n23,n16,n3,n35,n12,n25,n7,",7.84227
+430,338154,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n17,n29,n21,n20,n6,n25,n7,n28,n32,n31,n18,n19,n33,n24,n27,n1,n4,n34,n36,n35,n14,n22,n5,n10,n2,n8,n30,n9,n11,n13,n15,n23,n16,n3,n37,n12,",7.98526
+431,339366,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n17,n27,n29,n21,n6,n25,n7,n3,n19,n24,n26,n35,n1,n36,n4,n34,n18,n31,n33,n32,n28,n14,n22,n5,n10,n2,n8,n30,n9,n11,n13,n15,n23,n16,n37,n12,",7.98194
+432,340541,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n17,n27,n29,n21,n6,n25,n7,n3,n19,n24,n26,n35,n1,n36,n4,n34,n18,n31,n33,n32,n28,n14,n22,n5,n10,n2,n8,n30,n9,n11,n13,n15,n23,n16,n37,n12,",7.73827
+433,341181,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n20,n29,n21,n17,n6,n3,n24,n19,n26,n35,n1,n7,n25,n2,n8,n36,n4,n34,n18,n31,n33,n32,n28,n13,n11,n30,n9,n10,n22,n5,n14,n12,n37,n15,n23,n16,",4.21471
+434,341722,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n27,n20,n17,n6,n3,n24,n26,n35,n1,n7,n25,n2,n8,n36,n4,n34,n18,n31,n33,n32,n28,n13,n11,n30,n9,n10,n22,n5,n14,n29,n21,n12,n37,n15,n23,n16,",3.57611
+435,342903,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n20,n29,n21,n6,n3,n24,n26,n35,n1,n17,n2,n8,n36,n4,n34,n19,n18,n31,n33,n32,n28,n25,n7,n15,n16,n23,n13,n11,n30,n9,n10,n22,n5,n14,n12,n37,",7.78328
+436,343359,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n29,n21,n19,n6,n3,n24,n26,n35,n1,n20,n17,n2,n8,n36,n4,n34,n18,n31,n33,n32,n28,n25,n7,n15,n16,n23,n13,n11,n30,n9,n10,n22,n5,n14,n12,n37,",2.99307
+437,344155,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n20,n29,n21,n6,n3,n24,n26,n35,n1,n17,n2,n8,n36,n4,n34,n19,n18,n31,n33,n32,n28,n25,n7,n15,n16,n23,n13,n11,n30,n9,n10,n22,n5,n14,n12,n37,",5.24029
+438,344996,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n29,n21,n19,n6,n3,n24,n26,n35,n1,n20,n17,n2,n8,n36,n4,n34,n18,n31,n33,n32,n28,n25,n7,n15,n16,n23,n13,n11,n30,n9,n10,n22,n5,n14,n12,n37,",5.51683
+439,345386,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n29,n21,n18,n31,n19,n6,n3,n15,n16,n23,n28,n32,n24,n27,n1,n20,n12,n37,n36,n17,n2,n8,n35,n13,n11,n33,n30,n9,n10,n5,n22,n14,n25,n7,n34,n4,",2.63254
+440,345439,"In-house server 3,In-house server 2,Standard_NV24X,","n26,n29,n21,n18,n31,n19,n3,n6,n15,n16,n23,n28,n32,n24,n27,n1,n20,n12,n37,n36,n2,n8,n17,n35,n13,n11,n33,n30,n9,n10,n5,n22,n14,n25,n7,n34,n4,",0.354696
+441,346566,"In-house server 3,In-house server 2,Standard_NV24X,","n26,n20,n18,n31,n21,n29,n6,n28,n32,n24,n27,n1,n19,n4,n34,n36,n7,n25,n2,n8,n17,n15,n23,n16,n3,n35,n13,n11,n33,n30,n9,n5,n10,n22,n14,n37,n12,",7.62992
+442,346682,"In-house server 3,In-house server 2,Standard_NV24X,","n27,n19,n6,n29,n21,n3,n17,n24,n26,n35,n7,n25,n22,n14,n5,n10,n8,n2,n36,n18,n31,n33,n32,n28,n12,n37,n20,n1,n11,n13,n16,n15,n23,n30,n9,n34,n4,",0.787795
+443,346909,"In-house server 3,In-house server 2,Standard_NV24X,","n27,n19,n6,n29,n21,n3,n17,n24,n26,n35,n7,n25,n22,n14,n5,n10,n8,n2,n36,n18,n31,n33,n32,n28,n12,n37,n20,n1,n11,n13,n16,n15,n23,n30,n9,n34,n4,",1.55557
+444,347792,"In-house server 3,In-house server 2,Standard_NV24X,","n26,n27,n19,n6,n29,n21,n2,n8,n24,n7,n25,n3,n17,n35,n36,n4,n34,n18,n31,n33,n32,n28,n13,n11,n22,n14,n10,n5,n12,n37,n20,n1,n16,n15,n23,n30,n9,",5.97719
+445,348921,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n6,n33,n2,n8,n17,n24,n27,n26,n35,n7,n25,n21,n29,n28,n32,n3,n36,n4,n34,n18,n31,n37,n12,n13,n11,n16,n23,n15,n22,n14,n10,n5,n20,n1,n30,n9,",7.60524
+446,348994,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n27,n6,n21,n29,n17,n2,n8,n24,n26,n35,n7,n25,n3,n36,n4,n34,n18,n31,n33,n32,n28,n15,n16,n23,n13,n11,n22,n10,n5,n14,n12,n37,n20,n1,n30,n9,",0.505477
+447,350258,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n6,n17,n33,n7,n25,n28,n32,n24,n27,n26,n35,n3,n15,n23,n16,n36,n4,n34,n18,n31,n21,n29,n2,n8,n37,n12,n13,n11,n22,n10,n5,n14,n20,n1,n30,n9,",8.66005
+448,350333,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n6,n17,n33,n2,n8,n24,n27,n26,n35,n7,n25,n21,n29,n28,n32,n3,n15,n23,n16,n36,n4,n34,n18,n31,n37,n12,n13,n11,n22,n10,n5,n14,n20,n1,n30,n9,",0.503321
+449,351135,"In-house server 3,In-house server 2,Standard_NV24X,","n6,n1,n33,n19,n3,n24,n27,n26,n35,n21,n29,n28,n32,n15,n16,n23,n17,n8,n2,n36,n4,n34,n18,n31,n37,n12,n13,n11,n22,n10,n5,n14,n20,n30,n9,n25,n7,",5.40032
+450,351480,"In-house server 3,In-house server 2,Standard_NV24X,","n27,n6,n1,n19,n3,n24,n26,n35,n36,n4,n34,n21,n29,n2,n8,n28,n32,n15,n16,n23,n17,n18,n31,n33,n13,n11,n22,n10,n5,n14,n12,n37,n20,n30,n9,n25,n7,",2.32744
+451,352690,"In-house server 3,In-house server 2,Standard_NV24X,","n27,n6,n1,n19,n3,n24,n26,n35,n36,n4,n34,n21,n29,n2,n8,n28,n32,n15,n16,n23,n17,n18,n31,n33,n13,n11,n22,n10,n5,n14,n12,n37,n20,n30,n9,n25,n7,",8.16453
+452,353883,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n6,n1,n3,n26,n35,n21,n29,n27,n24,n33,n18,n31,n8,n2,n36,n4,n34,n28,n32,n15,n16,n23,n17,n13,n11,n22,n10,n5,n14,n12,n37,n20,n30,n9,n25,n7,",8.02296
+453,355065,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n6,n1,n3,n24,n26,n35,n21,n29,n7,n25,n27,n33,n18,n31,n8,n2,n36,n28,n32,n16,n23,n15,n13,n11,n14,n22,n10,n5,n12,n37,n20,n34,n4,n30,n9,n17,",7.96022
+454,355189,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n27,n21,n29,n15,n23,n16,n6,n18,n31,n26,n35,n1,n12,n37,n19,n4,n34,n36,n7,n25,n2,n8,n17,n3,n28,n32,n24,n33,n13,n11,n30,n9,n5,n10,n22,n14,",0.847431
+455,356190,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n15,n23,n16,n6,n24,n27,n26,n35,n1,n21,n29,n2,n8,n33,n18,n31,n36,n4,n34,n28,n32,n17,n3,n13,n11,n30,n9,n5,n10,n22,n14,n12,n37,n19,n25,n7,",6.81592
+456,356383,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n20,n6,n15,n16,n23,n28,n32,n26,n35,n1,n24,n27,n2,n8,n33,n36,n4,n34,n29,n21,n5,n22,n10,n14,n13,n11,n30,n9,n12,n37,n31,n18,n3,n25,n7,",1.32138
+457,356388,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n20,n6,n15,n16,n23,n28,n32,n26,n35,n1,n24,n27,n2,n8,n33,n36,n4,n34,n29,n21,n5,n22,n10,n14,n13,n11,n30,n9,n12,n37,n31,n18,n3,n25,n7,",0.0312037
+458,357231,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n20,n6,n15,n16,n23,n28,n32,n26,n35,n1,n24,n27,n36,n4,n34,n2,n8,n33,n29,n21,n5,n22,n10,n14,n13,n11,n30,n9,n12,n37,n31,n18,n3,n25,n7,",5.7671
+459,357595,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n27,n20,n6,n15,n16,n23,n26,n35,n1,n24,n32,n28,n4,n34,n36,n31,n18,n12,n37,n29,n21,n13,n11,n33,n30,n9,n5,n22,n14,n10,n2,n8,n7,n25,n3,",2.50092
+460,358852,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n27,n19,n20,n29,n21,n6,n26,n35,n1,n24,n4,n34,n36,n7,n25,n2,n8,n28,n32,n15,n16,n23,n31,n18,n12,n37,n33,n13,n11,n30,n9,n5,n10,n22,n14,n3,",8.61729
+461,360081,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n17,n24,n27,n26,n35,n1,n36,n4,n34,n21,n29,n5,n14,n22,n10,n2,n8,n28,n32,n33,n18,n31,n13,n11,n16,n23,n15,n30,n9,n6,n12,n37,n19,n3,n25,n7,",8.6609
+462,361311,"In-house server 3,In-house server 2,Standard_NV24X,","n20,n6,n1,n19,n15,n16,n23,n28,n32,n26,n35,n24,n27,n21,n29,n33,n36,n4,n34,n11,n13,n3,n17,n12,n37,n31,n18,n30,n9,n25,n7,n22,n14,n10,n5,n8,n2,",8.48566
+463,362517,"In-house server 3,In-house server 2,Standard_NV24X,","n20,n6,n1,n19,n26,n35,n24,n27,n21,n29,n33,n28,n32,n15,n16,n23,n36,n4,n34,n12,n37,n11,n13,n3,n17,n31,n18,n30,n9,n25,n7,n22,n14,n10,n5,n8,n2,",8.53961
+464,363718,"Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n20,n31,n18,n6,n1,n17,n33,n27,n24,n4,n34,n36,n7,n25,n28,n32,n15,n16,n23,n26,n35,n19,n12,n37,n30,n9,n22,n5,n10,n14,n3,n11,n13,n8,n2,",8.28978
+465,364405,"Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n20,n31,n18,n6,n1,n17,n33,n27,n24,n4,n34,n36,n7,n25,n28,n32,n15,n16,n23,n26,n35,n19,n12,n37,n30,n9,n22,n5,n10,n14,n3,n11,n13,n8,n2,",4.73704
+466,364914,"Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n20,n18,n31,n6,n17,n24,n27,n33,n4,n34,n36,n7,n25,n28,n32,n16,n15,n23,n26,n35,n19,n12,n37,n1,n30,n9,n22,n5,n10,n14,n13,n11,n3,n8,n2,",3.511
+467,366134,"Standard_NV24X,In-house server 2,In-house server 3,","n29,n21,n20,n18,n31,n6,n17,n24,n27,n33,n4,n34,n36,n7,n25,n28,n32,n16,n15,n23,n26,n35,n19,n12,n37,n1,n30,n9,n22,n5,n10,n14,n13,n11,n3,n8,n2,",8.40662
+468,367070,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n13,n11,n6,n24,n27,n32,n28,n26,n35,n7,n25,n21,n29,n18,n31,n33,n4,n34,n36,n1,n20,n30,n9,n16,n23,n15,n37,n12,n3,n8,n2,n22,n5,n10,n14,",6.56106
+469,367345,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n13,n11,n6,n24,n27,n32,n28,n26,n35,n7,n25,n21,n29,n18,n31,n33,n4,n34,n36,n1,n20,n30,n9,n16,n23,n15,n37,n12,n3,n8,n2,n22,n5,n10,n14,",1.93169
+470,367679,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n13,n11,n6,n24,n27,n32,n28,n26,n35,n7,n25,n21,n29,n18,n31,n33,n4,n34,n36,n1,n20,n30,n9,n16,n23,n15,n37,n12,n3,n8,n2,n22,n5,n10,n14,",2.32734
+471,368546,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n17,n16,n23,n15,n13,n11,n6,n32,n28,n26,n35,n7,n25,n21,n29,n27,n24,n18,n31,n33,n4,n34,n36,n19,n1,n30,n9,n22,n5,n10,n14,n37,n12,n3,n8,n2,",6.08391
+472,369692,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n6,n12,n37,n7,n25,n21,n29,n35,n26,n27,n24,n18,n31,n33,n4,n34,n36,n32,n28,n1,n20,n13,n11,n16,n23,n15,n30,n9,n3,n8,n2,n22,n5,n10,n14,",8.00348
+473,369795,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n17,n6,n12,n37,n7,n25,n21,n29,n22,n5,n14,n10,n35,n26,n27,n24,n18,n31,n33,n4,n34,n36,n32,n28,n1,n20,n13,n11,n16,n23,n15,n30,n9,n3,n8,n2,",0.711952
+474,370880,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n17,n6,n26,n35,n12,n37,n27,n24,n18,n31,n33,n21,n29,n7,n25,n22,n5,n14,n10,n4,n34,n36,n32,n28,n1,n20,n13,n11,n16,n23,n15,n30,n9,n8,n2,n3,",7.56148
+475,371002,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n17,n6,n26,n35,n12,n37,n27,n24,n18,n31,n33,n21,n29,n7,n25,n22,n5,n14,n10,n4,n34,n36,n32,n28,n1,n20,n13,n11,n16,n23,n15,n30,n9,n8,n2,n3,",0.846181
+476,372221,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n33,n17,n6,n1,n20,n26,n35,n4,n34,n36,n28,n32,n27,n24,n18,n31,n21,n29,n7,n25,n13,n11,n16,n23,n15,n12,n37,n30,n9,n8,n2,n3,n22,n5,n10,n14,",8.42526
+477,372243,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n33,n17,n6,n26,n35,n28,n32,n4,n34,n36,n27,n24,n18,n31,n21,n29,n7,n25,n2,n8,n13,n11,n16,n23,n15,n12,n37,n30,n9,n20,n1,n3,n22,n5,n10,n14,",0.153388
+478,372370,"Standard_NV24X,In-house server 2,In-house server 3,","n19,n33,n17,n6,n3,n26,n35,n7,n25,n21,n29,n28,n32,n4,n34,n36,n27,n24,n18,n31,n8,n2,n12,n37,n30,n9,n16,n23,n15,n13,n11,n20,n1,n22,n5,n10,n14,",0.884316
+479,373439,"Standard_NV24X,In-house server 3,In-house server 2,","n19,n33,n17,n6,n3,n26,n35,n21,n29,n32,n28,n25,n7,n4,n34,n36,n12,n37,n27,n24,n18,n31,n8,n2,n30,n9,n16,n23,n15,n13,n11,n20,n1,n22,n5,n10,n14,",7.4299
+480,373531,"Standard_NV24X,In-house server 3,In-house server 2,","n19,n33,n17,n6,n3,n26,n35,n21,n29,n32,n28,n25,n7,n4,n34,n36,n12,n37,n27,n24,n18,n31,n8,n2,n30,n9,n16,n23,n15,n13,n11,n20,n1,n22,n5,n10,n14,",0.635959
+481,373780,"Standard_NV24X,In-house server 3,In-house server 2,","n19,n17,n3,n6,n21,n29,n26,n35,n4,n34,n36,n32,n28,n25,n7,n12,n37,n27,n24,n18,n31,n33,n1,n20,n30,n9,n22,n5,n10,n14,n8,n2,n13,n11,n16,n15,n23,",1.79768
+482,374061,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n13,n11,n7,n25,n21,n29,n26,n35,n36,n4,n34,n19,n32,n28,n18,n31,n33,n27,n24,n1,n22,n5,n10,n14,n8,n2,n30,n9,n6,n37,n12,n16,n15,n23,",2.03047
+483,374232,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n13,n11,n7,n25,n21,n29,n26,n35,n36,n4,n34,n19,n18,n31,n27,n24,n33,n32,n28,n1,n22,n5,n10,n14,n8,n2,n30,n9,n6,n37,n12,n16,n15,n23,",1.23508
+484,374587,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n13,n11,n26,n35,n32,n28,n36,n4,n34,n19,n7,n25,n21,n29,n18,n31,n27,n24,n33,n1,n22,n5,n10,n14,n8,n2,n30,n9,n6,n37,n12,n16,n15,n23,",2.57135
+485,375343,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n13,n11,n26,n35,n32,n28,n4,n34,n36,n7,n25,n21,n29,n33,n18,n31,n27,n24,n19,n1,n22,n5,n10,n14,n8,n2,n30,n9,n6,n37,n12,n16,n15,n23,",5.47634
+486,375751,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n13,n11,n26,n35,n32,n28,n4,n34,n36,n7,n25,n21,n29,n33,n18,n31,n27,n24,n19,n1,n22,n5,n10,n14,n8,n2,n30,n9,n6,n37,n12,n16,n15,n23,",2.95392
+487,375782,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n18,n31,n20,n3,n13,n11,n26,n35,n7,n25,n16,n15,n23,n32,n28,n27,n24,n33,n19,n12,n37,n36,n4,n34,n1,n8,n2,n30,n9,n6,n22,n5,n10,n14,n29,n21,",0.233022
+488,376224,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n20,n3,n26,n35,n32,n28,n4,n34,n36,n7,n25,n21,n29,n19,n12,n37,n33,n27,n24,n18,n31,n1,n8,n2,n30,n9,n6,n22,n5,n10,n14,n16,n15,n23,n13,n11,",3.20501
+489,376979,"Standard_NV24X,In-house server 3,In-house server 2,","n17,n18,n31,n20,n3,n13,n11,n26,n35,n7,n25,n15,n16,n23,n32,n28,n27,n24,n33,n19,n12,n37,n36,n4,n34,n1,n8,n2,n22,n5,n10,n14,n29,n21,n30,n9,n6,",5.60397
+490,377456,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n20,n19,n3,n24,n27,n26,n35,n21,n29,n7,n25,n33,n5,n14,n10,n22,n28,n32,n15,n16,n23,n31,n18,n12,n37,n36,n4,n34,n1,n8,n2,n11,n13,n30,n9,n6,",3.44487
+491,377827,"Standard_NV24X,In-house server 2,In-house server 3,","n17,n20,n19,n3,n24,n27,n26,n35,n21,n29,n7,n25,n33,n5,n14,n10,n22,n28,n32,n15,n16,n23,n36,n4,n34,n31,n18,n12,n37,n1,n8,n2,n11,n13,n30,n9,n6,",2.69799
+492,378231,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n20,n3,n4,n34,n11,n13,n16,n15,n23,n1,n26,n35,n36,n7,n25,n33,n14,n5,n10,n22,n18,n31,n27,n24,n32,n28,n8,n2,n12,n37,n17,n30,n9,n6,n29,n21,",2.81032
+493,379444,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n20,n19,n3,n4,n34,n11,n13,n15,n16,n23,n24,n27,n26,n35,n36,n7,n25,n33,n14,n5,n10,n22,n18,n31,n32,n28,n1,n8,n2,n12,n37,n30,n9,n6,n29,n21,",8.45807
+494,379534,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n20,n19,n3,n35,n11,n13,n4,n34,n36,n24,n27,n26,n7,n25,n28,n32,n15,n16,n23,n18,n31,n1,n8,n2,n14,n5,n10,n22,n33,n37,n12,n30,n9,n6,n29,n21,",0.646465
+495,380722,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n20,n19,n3,n35,n11,n13,n4,n34,n36,n15,n16,n23,n26,n32,n28,n7,n25,n27,n24,n18,n31,n1,n8,n2,n14,n5,n10,n22,n33,n37,n12,n30,n9,n6,n29,n21,",8.51266
+496,381365,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n17,n20,n19,n3,n35,n11,n13,n4,n34,n36,n24,n27,n26,n7,n25,n28,n32,n15,n16,n23,n18,n31,n1,n8,n2,n14,n5,n10,n22,n33,n37,n12,n30,n9,n6,n29,n21,",4.59849
+497,381958,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n20,n3,n35,n11,n13,n6,n4,n34,n36,n24,n27,n26,n7,n25,n28,n32,n16,n15,n23,n19,n18,n31,n1,n14,n5,n10,n22,n33,n8,n2,n29,n21,n37,n12,n17,n30,n9,",4.25484
+498,382316,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n19,n20,n3,n35,n11,n13,n4,n34,n36,n15,n16,n23,n26,n32,n28,n7,n25,n27,n24,n18,n31,n1,n14,n5,n10,n22,n33,n8,n2,n30,n9,n6,n37,n12,n17,n29,n21,",2.55111
+499,382331,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n20,n3,n4,n34,n11,n13,n15,n16,n23,n28,n32,n1,n26,n35,n33,n7,n25,n14,n5,n22,n10,n27,n24,n18,n31,n36,n8,n2,n30,n9,n6,n12,n37,n17,n29,n21,",0.109116
+500,383203,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n3,n4,n34,n11,n13,n6,n15,n16,n23,n28,n32,n24,n27,n26,n35,n33,n7,n25,n14,n5,n22,n10,n18,n31,n36,n19,n1,n8,n2,n29,n21,n12,n37,n17,n30,n9,",6.24987
+501,383399,"In-house server 3,In-house server 2,Standard_NV24X,","n20,n3,n4,n34,n11,n13,n6,n15,n16,n23,n28,n32,n26,n35,n24,n27,n33,n7,n25,n14,n5,n22,n10,n18,n31,n36,n19,n1,n29,n21,n8,n2,n12,n37,n17,n30,n9,",1.41734
+502,383499,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n3,n4,n34,n11,n13,n6,n15,n16,n23,n28,n32,n24,n27,n26,n35,n33,n7,n25,n14,n5,n22,n10,n18,n31,n36,n19,n8,n2,n1,n29,n21,n12,n37,n17,n30,n9,",0.721104
+503,384391,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n27,n3,n33,n6,n19,n15,n16,n23,n24,n7,n25,n35,n26,n32,n28,n4,n34,n36,n8,n2,n29,n21,n13,n11,n1,n14,n5,n10,n22,n18,n31,n37,n12,n17,n30,n9,",6.38871
+504,384415,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n27,n3,n6,n33,n16,n15,n23,n24,n7,n25,n21,n29,n35,n26,n32,n28,n4,n34,n36,n14,n5,n10,n22,n8,n2,n18,n31,n30,n9,n37,n12,n17,n13,n11,n1,n20,",0.174842
+505,385674,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n27,n3,n6,n33,n16,n15,n23,n24,n7,n25,n21,n29,n35,n26,n32,n28,n4,n34,n36,n14,n5,n10,n22,n8,n2,n18,n31,n30,n9,n37,n12,n17,n13,n11,n1,n20,",9.07727
+506,386131,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n3,n6,n4,n34,n19,n16,n15,n23,n28,n32,n24,n27,n26,n35,n33,n7,n25,n14,n5,n22,n10,n18,n31,n36,n8,n2,n29,n21,n17,n30,n9,n12,n37,n13,n11,n1,",3.28302
+507,386264,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n27,n17,n3,n6,n33,n20,n24,n7,n25,n21,n29,n35,n26,n32,n28,n4,n34,n36,n8,n2,n14,n5,n10,n22,n18,n31,n30,n9,n37,n12,n15,n23,n16,n13,n11,n1,",0.964335
+508,386881,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n33,n27,n17,n3,n6,n20,n24,n7,n25,n21,n29,n35,n26,n32,n28,n36,n4,n34,n8,n2,n14,n5,n10,n22,n18,n31,n30,n9,n37,n12,n15,n23,n16,n13,n11,n1,",4.49933
+509,387035,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n17,n3,n6,n4,n34,n20,n28,n32,n24,n27,n26,n35,n21,n29,n7,n25,n36,n31,n18,n33,n14,n5,n10,n22,n8,n2,n30,n9,n37,n12,n15,n23,n16,n13,n11,n1,",1.10628
+510,388073,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n19,n17,n3,n6,n33,n20,n28,n32,n24,n27,n26,n35,n7,n25,n21,n29,n4,n34,n36,n8,n2,n14,n5,n10,n22,n18,n31,n30,n9,n37,n12,n15,n23,n16,n13,n11,n1,",7.47232
+511,389315,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n3,n6,n33,n19,n24,n27,n26,n35,n28,n32,n16,n15,n23,n7,n25,n4,n34,n36,n8,n2,n29,n21,n17,n14,n5,n10,n22,n18,n31,n30,n9,n37,n12,n13,n11,n1,",8.88552
+512,390535,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n26,n35,n1,n7,n25,n21,n29,n27,n24,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n28,n32,n16,n15,n23,n3,n13,n11,n18,n31,n8,n2,n30,n9,",8.73897
+513,391475,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n26,n35,n1,n28,n32,n16,n15,n23,n27,n24,n21,n29,n7,n25,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n3,n13,n11,n18,n31,n8,n2,n30,n9,",6.73739
+514,391592,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n26,n35,n1,n28,n32,n16,n15,n23,n27,n24,n21,n29,n7,n25,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n3,n13,n11,n18,n31,n8,n2,n30,n9,",0.834155
+515,391742,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n26,n35,n1,n28,n32,n16,n15,n23,n27,n24,n21,n29,n7,n25,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n3,n13,n11,n18,n31,n8,n2,n30,n9,",1.07543
+516,392264,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n26,n35,n1,n28,n32,n16,n15,n23,n27,n24,n21,n29,n7,n25,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n3,n13,n11,n18,n31,n8,n2,n30,n9,",3.73969
+517,392837,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n20,n1,n26,n35,n7,n25,n21,n29,n27,n24,n33,n14,n5,n10,n22,n4,n34,n36,n12,n37,n28,n32,n16,n15,n23,n3,n13,n11,n18,n31,n8,n2,n30,n9,",4.10156
+518,392857,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n20,n17,n19,n6,n8,n2,n1,n26,n35,n7,n25,n21,n29,n27,n24,n33,n14,n5,n10,n22,n4,n34,n36,n28,n32,n16,n15,n23,n3,n13,n11,n18,n31,n30,n9,n37,n12,",0.13954
+519,392904,"In-house server 3,In-house server 2,Standard_NV24X,Standard_NV12,","n20,n17,n19,n6,n8,n2,n1,n26,n35,n7,n25,n21,n29,n27,n24,n33,n14,n5,n10,n22,n4,n34,n36,n28,n32,n16,n15,n23,n3,n13,n11,n18,n31,n30,n9,n37,n12,",0.322855
+520,393690,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n20,n6,n26,n35,n1,n7,n25,n21,n29,n27,n24,n33,n5,n14,n10,n22,n4,n34,n36,n12,n37,n28,n32,n16,n15,n23,n3,n13,n11,n18,n31,n30,n9,n8,n2,",5.6249
+521,394069,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n20,n27,n6,n26,n35,n1,n7,n25,n4,n34,n36,n32,n28,n12,n37,n33,n5,n14,n10,n22,n24,n3,n16,n15,n23,n13,n11,n31,n18,n30,n9,n8,n2,n29,n21,",2.79368
+522,395269,"Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n6,n3,n20,n1,n26,n35,n7,n25,n21,n29,n27,n24,n33,n4,n34,n36,n12,n37,n28,n32,n16,n15,n23,n14,n10,n22,n5,n18,n31,n11,n13,n8,n2,n30,n9,",8.50698
+523,396321,"Standard_NV24X,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n3,n26,n35,n7,n25,n21,n29,n27,n24,n33,n5,n14,n10,n22,n4,n34,n36,n8,n2,n12,n37,n9,n30,n28,n32,n15,n16,n23,n6,n20,n1,n18,n31,n11,n13,",7.5054
+524,396508,"Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n20,n3,n26,n35,n7,n25,n21,n29,n27,n24,n33,n5,n14,n10,n22,n4,n34,n36,n8,n2,n9,n30,n28,n32,n16,n15,n23,n6,n18,n31,n11,n13,n37,n12,n1,",1.325
+525,397720,"Standard_NV24X,In-house server 1,In-house server 3,In-house server 2,Standard_NV24,","n17,n19,n20,n3,n26,n35,n7,n25,n21,n29,n27,n24,n33,n5,n14,n10,n22,n4,n34,n36,n8,n2,n9,n30,n28,n32,n16,n15,n23,n6,n18,n31,n11,n13,n37,n12,n1,",8.58639
+526,397947,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n17,n19,n20,n3,n26,n35,n7,n25,n21,n29,n27,n24,n33,n5,n14,n10,n22,n4,n34,n36,n8,n2,n9,n30,n28,n32,n16,n15,n23,n6,n18,n31,n11,n13,n37,n12,n1,",1.62512
+527,398256,"In-house server 3,In-house server 2,Standard_NV24X,","n17,n19,n20,n27,n3,n6,n8,n2,n26,n35,n1,n7,n25,n4,n34,n36,n32,n28,n33,n24,n14,n10,n22,n5,n15,n16,n23,n31,n18,n37,n12,n29,n21,n30,n9,n11,n13,",2.30605
+528,398947,"In-house server 3,In-house server 2,Standard_NV24X,","n20,n27,n3,n6,n8,n2,n17,n26,n35,n1,n7,n25,n4,n34,n36,n32,n28,n18,n31,n33,n24,n14,n10,n22,n5,n19,n15,n16,n23,n37,n12,n29,n21,n30,n9,n11,n13,",5.14696
+529,400167,"In-house server 3,In-house server 2,Standard_NV24X,","n17,n19,n26,n3,n6,n27,n36,n1,n20,n24,n33,n31,n18,n7,n25,n14,n5,n22,n10,n2,n8,n35,n28,n32,n15,n16,n23,n34,n4,n29,n21,n13,n11,n30,n9,n37,n12,",8.93775
+530,401157,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n17,n19,n27,n3,n6,n35,n26,n7,n25,n2,n8,n1,n20,n24,n36,n32,n28,n12,n37,n33,n14,n5,n10,n22,n34,n4,n15,n16,n23,n29,n21,n31,n18,n13,n11,n30,n9,",7.09081
+531,401410,"In-house server 3,In-house server 2,Standard_NV24X,","n17,n19,n26,n3,n6,n27,n36,n15,n16,n23,n1,n20,n24,n33,n32,n28,n7,n25,n14,n5,n22,n10,n2,n8,n35,n31,n18,n34,n4,n29,n21,n13,n11,n30,n9,n37,n12,",1.84511
+532,401537,"In-house server 3,In-house server 2,Standard_NV24X,","n17,n19,n26,n3,n6,n15,n16,n23,n1,n20,n24,n27,n36,n32,n28,n33,n12,n37,n7,n25,n14,n5,n22,n10,n2,n8,n35,n31,n18,n34,n4,n29,n21,n13,n11,n30,n9,",0.942041
+533,401824,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n17,n19,n26,n3,n6,n15,n16,n23,n1,n20,n24,n27,n36,n32,n28,n33,n12,n37,n7,n25,n14,n5,n22,n10,n2,n8,n35,n31,n18,n34,n4,n29,n21,n13,n11,n30,n9,",2.1245
+534,402170,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n17,n19,n26,n1,n3,n6,n36,n15,n16,n23,n24,n27,n33,n7,n25,n14,n5,n22,n10,n2,n8,n35,n34,n4,n29,n21,n31,n18,n13,n11,n20,n30,n9,n32,n28,n37,n12,",2.55603
+535,402586,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n17,n19,n26,n1,n3,n6,n24,n27,n7,n25,n2,n8,n35,n36,n33,n14,n5,n10,n22,n34,n4,n29,n21,n31,n18,n13,n11,n20,n30,n9,n32,n28,n37,n12,n15,n23,n16,",3.02621
+536,403409,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n20,n3,n17,n19,n26,n1,n6,n13,n11,n24,n27,n7,n25,n35,n36,n33,n34,n4,n29,n21,n31,n18,n30,n9,n32,n28,n37,n12,n15,n23,n16,n8,n2,n14,n10,n22,n5,",5.97237
+537,403820,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n20,n3,n17,n19,n26,n1,n6,n13,n11,n24,n27,n16,n15,n23,n35,n36,n33,n34,n4,n31,n18,n29,n21,n30,n9,n32,n28,n25,n7,n37,n12,n8,n2,n14,n10,n22,n5,",2.98223
+538,405008,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n20,n3,n17,n19,n26,n1,n6,n13,n11,n16,n15,n23,n24,n27,n35,n36,n33,n34,n4,n31,n18,n29,n21,n30,n9,n32,n28,n25,n7,n37,n12,n8,n2,n14,n10,n22,n5,",8.61196
+539,405265,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n20,n17,n19,n26,n3,n6,n13,n11,n36,n16,n15,n23,n24,n27,n7,n25,n2,n8,n35,n33,n34,n4,n29,n21,n30,n9,n32,n28,n37,n12,n1,n14,n10,n22,n5,n18,n31,",1.89381
+540,406215,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n1,n3,n6,n37,n12,n33,n24,n27,n16,n15,n23,n28,n32,n35,n26,n36,n34,n4,n29,n21,n7,n25,n31,n18,n30,n9,n20,n13,n11,n14,n22,n10,n5,n8,n2,",7.12995
+541,406263,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n1,n3,n6,n36,n16,n15,n23,n24,n27,n12,n37,n7,n25,n35,n26,n33,n14,n5,n10,n22,n34,n4,n31,n18,n30,n9,n29,n21,n20,n32,n28,n13,n11,n8,n2,",0.355296
+542,407440,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n18,n31,n36,n24,n27,n12,n37,n7,n25,n35,n26,n33,n14,n5,n10,n22,n34,n4,n29,n21,n15,n23,n16,n30,n9,n20,n32,n28,n13,n11,n8,n2,",8.65092
+543,407656,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n36,n16,n15,n23,n28,n32,n24,n27,n12,n37,n7,n25,n35,n26,n33,n34,n4,n31,n18,n30,n9,n29,n21,n20,n13,n11,n14,n10,n22,n5,n8,n2,",1.58651
+544,408411,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n18,n31,n36,n24,n27,n28,n32,n12,n37,n7,n25,n35,n26,n33,n34,n4,n29,n21,n15,n23,n16,n30,n9,n20,n13,n11,n14,n10,n22,n5,n8,n2,",5.55092
+545,408679,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n37,n12,n24,n27,n28,n32,n7,n25,n35,n26,n36,n33,n18,n31,n34,n4,n29,n21,n15,n23,n16,n30,n9,n20,n13,n11,n14,n10,n22,n5,n8,n2,",1.97239
+546,408814,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n18,n31,n36,n24,n27,n26,n35,n33,n12,n37,n32,n28,n34,n4,n29,n21,n15,n23,n16,n30,n9,n20,n13,n11,n14,n22,n10,n5,n8,n2,",0.969239
+547,409541,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n33,n24,n27,n28,n32,n35,n26,n36,n18,n31,n34,n4,n29,n21,n15,n23,n16,n30,n9,n20,n13,n11,n14,n22,n10,n5,n8,n2,n37,n12,",5.40073
+548,409869,"In-house server 3,In-house server 2,Standard_NV24X,","n24,n12,n37,n17,n6,n1,n3,n33,n28,n32,n7,n25,n35,n26,n36,n18,n31,n27,n34,n4,n30,n9,n29,n21,n15,n23,n16,n20,n19,n13,n11,n14,n22,n10,n5,n8,n2,",2.44003
+549,411079,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n36,n16,n15,n23,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n30,n9,n29,n21,n20,n13,n11,n14,n22,n10,n5,n8,n2,n37,n12,",8.68555
+550,411910,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n36,n16,n15,n23,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n30,n9,n29,n21,n20,n13,n11,n14,n22,n10,n5,n8,n2,n37,n12,",5.9522
+551,412349,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n36,n16,n15,n23,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n30,n9,n29,n21,n20,n13,n11,n14,n22,n10,n5,n8,n2,n37,n12,",3.1545
+552,413558,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n6,n1,n3,n25,n7,n36,n16,n15,n23,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n30,n9,n29,n21,n20,n13,n11,n14,n22,n10,n5,n8,n2,n37,n12,",8.76526
+553,414847,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n6,n3,n25,n7,n37,n12,n36,n16,n15,n23,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n1,n20,n30,n9,n29,n21,n13,n11,n14,n22,n10,n5,n8,n2,",9.34526
+554,416082,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n3,n25,n7,n16,n15,n23,n36,n26,n35,n33,n31,n18,n32,n28,n24,n27,n34,n4,n6,n30,n9,n14,n5,n22,n10,n1,n20,n29,n21,n13,n11,n37,n12,n8,n2,",8.93135
+555,416501,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n3,n25,n7,n16,n15,n23,n36,n26,n35,n33,n31,n18,n32,n28,n24,n27,n34,n4,n6,n30,n9,n14,n5,n22,n10,n1,n20,n29,n21,n13,n11,n37,n12,n8,n2,",3.02392
+556,417291,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n3,n25,n7,n16,n15,n23,n36,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n6,n30,n9,n14,n5,n22,n10,n1,n20,n29,n21,n13,n11,n37,n12,n8,n2,",5.71169
+557,417894,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n27,n17,n1,n3,n25,n7,n35,n26,n16,n15,n23,n33,n24,n36,n14,n5,n22,n10,n34,n4,n6,n30,n9,n31,n18,n32,n28,n29,n21,n13,n11,n20,n37,n12,n8,n2,",4.21112
+558,418134,"In-house server 3,In-house server 2,Standard_NV24X,","n19,n17,n3,n25,n7,n16,n15,n23,n36,n26,n35,n33,n24,n27,n31,n18,n32,n28,n34,n4,n6,n30,n9,n14,n5,n22,n10,n2,n8,n1,n20,n29,n21,n13,n11,n37,n12,",1.72929
+559,418398,"In-house server 3,In-house server 2,Standard_NV24X,","n24,n36,n17,n1,n3,n33,n16,n15,n23,n28,n32,n7,n25,n21,n29,n14,n5,n22,n10,n2,n8,n35,n26,n27,n34,n4,n6,n30,n9,n31,n18,n19,n20,n13,n11,n37,n12,",1.91453
+560,418520,"In-house server 3,In-house server 2,Standard_NV24X,","n24,n36,n1,n3,n2,n8,n33,n16,n15,n23,n28,n32,n4,n34,n14,n5,n22,n10,n35,n26,n27,n29,n21,n6,n30,n9,n12,n37,n31,n18,n19,n20,n17,n13,n11,n25,n7,",0.881855
+561,419779,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n3,n37,n12,n2,n8,n36,n33,n16,n15,n23,n31,n18,n19,n27,n7,n25,n14,n5,n22,n10,n35,n26,n32,n28,n34,n4,n29,n21,n6,n30,n9,n1,n20,n17,n13,n11,",8.88645
+562,420971,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n37,n12,n3,n2,n8,n36,n33,n15,n16,n23,n31,n18,n19,n27,n7,n25,n14,n5,n22,n10,n35,n26,n32,n28,n29,n21,n34,n4,n6,n30,n9,n1,n20,n17,n13,n11,",8.39141
+563,420999,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n37,n12,n3,n2,n8,n36,n33,n15,n16,n23,n31,n18,n19,n27,n7,n25,n14,n5,n22,n10,n35,n26,n32,n28,n29,n21,n34,n4,n6,n30,n9,n1,n20,n17,n13,n11,",0.197696
+564,421668,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n36,n1,n3,n2,n8,n29,n21,n31,n18,n19,n33,n15,n16,n23,n14,n5,n22,n10,n35,n26,n32,n28,n25,n7,n27,n34,n4,n6,n30,n9,n12,n37,n20,n17,n13,n11,",4.70425
+565,422187,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n36,n1,n3,n2,n8,n29,n21,n31,n18,n19,n33,n15,n16,n23,n14,n5,n22,n10,n35,n26,n32,n28,n25,n7,n27,n6,n30,n9,n12,n37,n20,n17,n13,n11,n34,n4,",3.6517
+566,422510,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n36,n1,n3,n2,n8,n33,n31,n18,n19,n29,n21,n15,n16,n23,n14,n5,n22,n10,n35,n26,n32,n28,n25,n7,n27,n20,n6,n30,n9,n12,n37,n17,n13,n11,n34,n4,",2.269
+567,422988,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n36,n18,n31,n1,n3,n2,n8,n29,n21,n19,n33,n14,n5,n22,n10,n35,n26,n32,n28,n25,n7,n27,n6,n30,n9,n12,n37,n17,n15,n23,n16,n20,n13,n11,n34,n4,",3.37414
+568,423221,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n36,n18,n31,n1,n3,n19,n33,n29,n21,n26,n35,n32,n28,n25,n7,n27,n6,n30,n9,n12,n37,n17,n15,n23,n16,n14,n5,n22,n10,n2,n8,n13,n11,n34,n4,n20,",1.64755
+569,423424,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n17,n37,n12,n1,n20,n31,n18,n19,n24,n27,n33,n26,n35,n32,n28,n25,n7,n6,n30,n9,n14,n5,n22,n10,n21,n29,n2,n8,n23,n15,n16,n3,n13,n11,n34,n4,",1.42933
+570,424302,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n8,n2,n3,n1,n31,n18,n19,n24,n27,n33,n29,n21,n26,n35,n32,n28,n25,n7,n6,n30,n9,n12,n37,n20,n17,n23,n15,n16,n14,n5,n22,n10,n13,n11,n34,n4,",6.1811
+571,424632,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n35,n17,n12,n37,n8,n2,n24,n27,n33,n28,n32,n14,n5,n22,n10,n29,n21,n26,n20,n1,n6,n30,n9,n31,n18,n19,n23,n15,n16,n3,n13,n11,n34,n4,n25,n7,",2.40291
+572,425239,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n8,n2,n3,n1,n31,n18,n19,n24,n27,n33,n29,n21,n26,n35,n32,n28,n25,n7,n20,n6,n30,n9,n12,n37,n17,n23,n15,n16,n14,n5,n22,n10,n13,n11,n34,n4,",4.27174
+573,425379,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n12,n37,n8,n2,n3,n31,n18,n19,n20,n1,n24,n27,n33,n29,n21,n26,n36,n32,n28,n25,n7,n6,n30,n9,n17,n23,n15,n16,n14,n5,n22,n10,n13,n11,n34,n4,",1.01315
+574,425850,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n13,n11,n1,n20,n24,n27,n33,n14,n5,n22,n10,n29,n21,n26,n6,n30,n9,n31,n18,n19,n23,n15,n16,n3,n32,n28,n25,n7,n34,n4,n8,n2,",3.37025
+575,426216,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n35,n17,n12,n37,n1,n3,n31,n18,n19,n20,n24,n27,n33,n26,n32,n28,n25,n7,n6,n30,n9,n14,n5,n22,n10,n21,n29,n23,n15,n16,n13,n11,n34,n4,n8,n2,",2.65003
+576,427067,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n1,n31,n18,n19,n6,n30,n9,n20,n24,n27,n33,n32,n28,n25,n7,n26,n14,n5,n22,n10,n21,n29,n23,n15,n16,n3,n13,n11,n34,n4,n8,n2,",5.90211
+577,428353,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n1,n31,n18,n19,n6,n30,n9,n20,n24,n27,n33,n32,n28,n25,n7,n26,n14,n5,n22,n10,n21,n29,n23,n15,n16,n3,n13,n11,n34,n4,n8,n2,",8.92603
+578,429490,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n35,n17,n12,n37,n3,n31,n18,n19,n20,n1,n24,n27,n33,n26,n32,n28,n25,n7,n6,n30,n9,n14,n5,n22,n10,n21,n29,n23,n15,n16,n13,n11,n34,n4,n8,n2,",8.11124
+579,429564,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n31,n18,n19,n6,n30,n9,n20,n1,n24,n27,n33,n32,n28,n25,n7,n26,n14,n5,n22,n10,n21,n29,n23,n15,n16,n3,n13,n11,n34,n4,n8,n2,",0.504904
+580,430764,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n31,n18,n19,n6,n30,n9,n20,n1,n24,n27,n33,n32,n28,n25,n7,n26,n14,n5,n22,n10,n21,n29,n23,n15,n16,n3,n13,n11,n34,n4,n8,n2,",8.17522
+581,431288,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n31,n18,n19,n6,n30,n9,n20,n1,n24,n27,n33,n32,n28,n25,n7,n26,n14,n5,n22,n10,n21,n29,n23,n15,n16,n3,n13,n11,n34,n4,n8,n2,",3.56764
+582,432014,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n17,n12,n35,n6,n30,n9,n20,n1,n24,n27,n14,n5,n22,n10,n29,n21,n26,n31,n18,n19,n23,n15,n16,n3,n32,n28,n25,n7,n13,n11,n34,n4,n8,n2,",4.87442
+583,432998,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n12,n36,n3,n31,n18,n19,n20,n1,n24,n27,n33,n14,n5,n22,n10,n32,n28,n25,n7,n29,n21,n26,n35,n6,n30,n9,n17,n23,n15,n16,n13,n11,n34,n4,n8,n2,",6.78062
+584,433224,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n17,n12,n35,n6,n30,n9,n20,n1,n24,n27,n14,n5,n22,n10,n28,n32,n29,n21,n26,n19,n23,n15,n16,n3,n13,n11,n34,n4,n25,n7,n8,n2,n18,n31,",1.51644
+585,434454,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n28,n32,n20,n1,n24,n27,n33,n14,n5,n22,n10,n29,n21,n26,n6,n30,n9,n31,n18,n19,n23,n15,n16,n3,n13,n11,n34,n4,n25,n7,n8,n2,",8.41686
+586,434833,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n36,n35,n17,n12,n37,n33,n3,n31,n18,n19,n24,n27,n14,n5,n22,n10,n29,n21,n26,n1,n20,n32,n28,n25,n7,n6,n30,n9,n23,n15,n16,n13,n11,n34,n4,n8,n2,",2.6582
+587,434892,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n17,n12,n36,n28,n32,n20,n1,n24,n27,n33,n14,n5,n22,n10,n29,n21,n26,n6,n30,n9,n31,n18,n19,n23,n15,n16,n3,n13,n11,n34,n4,n25,n7,n8,n2,",0.41027
+588,435649,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n24,n17,n12,n36,n6,n30,n9,n20,n1,n28,n32,n22,n14,n5,n10,n33,n27,n29,n21,n26,n31,n18,n19,n15,n23,n16,n3,n13,n11,n34,n4,n25,n7,n8,n2,",5.17983
+589,436629,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n24,n35,n17,n12,n37,n6,n30,n9,n20,n1,n28,n32,n22,n14,n5,n10,n27,n29,n21,n26,n31,n18,n19,n15,n23,n16,n3,n13,n11,n34,n4,n25,n7,n8,n2,n33,",7.01639
+590,436931,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n24,n35,n12,n37,n17,n33,n6,n30,n9,n20,n1,n22,n14,n5,n10,n27,n29,n21,n26,n31,n18,n19,n16,n23,n15,n13,n11,n32,n28,n25,n7,n34,n4,n8,n2,n3,",2.15694
+591,438139,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n24,n35,n12,n37,n17,n33,n6,n30,n9,n20,n1,n22,n5,n14,n10,n27,n29,n21,n26,n31,n18,n19,n16,n23,n15,n13,n11,n32,n28,n25,n7,n34,n4,n8,n2,n3,",8.635
+592,438930,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n24,n33,n37,n12,n11,n13,n35,n3,n20,n1,n15,n16,n23,n2,n8,n21,n29,n26,n19,n4,n34,n36,n32,n28,n25,n7,n18,n31,n27,n30,n9,n6,n17,n22,n10,n5,n14,",5.6363
+593,439390,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n37,n12,n11,n13,n23,n15,n16,n4,n34,n3,n19,n31,n18,n33,n20,n1,n24,n27,n21,n29,n35,n26,n30,n9,n6,n17,n22,n10,n5,n14,n32,n28,n25,n7,n8,n2,",3.28951
+594,440580,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n33,n37,n12,n11,n13,n23,n15,n16,n35,n3,n20,n1,n24,n27,n21,n29,n19,n4,n34,n36,n32,n28,n25,n7,n18,n31,n30,n9,n6,n17,n22,n10,n5,n14,n8,n2,",8.42192
+595,441012,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n33,n34,n4,n24,n11,n13,n36,n20,n1,n19,n15,n16,n23,n26,n35,n12,n37,n32,n28,n7,n25,n21,n29,n18,n31,n30,n9,n6,n17,n3,n22,n10,n5,n14,n8,n2,",2.98281
+596,441757,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n24,n33,n34,n4,n11,n13,n36,n20,n1,n19,n15,n16,n23,n26,n35,n12,n37,n32,n28,n7,n25,n21,n29,n18,n31,n30,n9,n6,n17,n3,n22,n10,n5,n14,n8,n2,",5.17017
+597,442554,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n27,n24,n33,n34,n4,n17,n36,n20,n1,n30,n9,n6,n26,n35,n12,n37,n32,n28,n7,n25,n21,n29,n14,n22,n10,n5,n16,n23,n15,n13,n11,n31,n18,n19,n8,n2,n3,",5.66895
+598,442991,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n26,n33,n37,n12,n21,n29,n3,n17,n35,n13,n11,n6,n20,n1,n24,n27,n36,n32,n28,n25,n7,n9,n30,n31,n18,n19,n34,n4,n16,n23,n15,n14,n22,n10,n5,n8,n2,",3.19097
+599,443033,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n27,n24,n33,n3,n17,n36,n20,n1,n30,n9,n6,n26,n35,n12,n37,n32,n28,n7,n25,n21,n29,n34,n4,n31,n18,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n8,n2,",0.299507
+600,443627,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n27,n24,n33,n37,n12,n3,n17,n35,n20,n1,n30,n9,n6,n26,n36,n7,n25,n21,n29,n32,n28,n34,n4,n31,n18,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n8,n2,",4.21887
+601,444155,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n24,n33,n37,n12,n3,n17,n35,n20,n1,n30,n9,n6,n26,n36,n7,n25,n21,n29,n32,n28,n34,n4,n31,n18,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n8,n2,",3.65972
+602,444611,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n33,n37,n12,n3,n17,n35,n30,n9,n6,n24,n26,n36,n7,n25,n21,n29,n14,n5,n22,n10,n32,n28,n20,n1,n34,n4,n31,n18,n19,n16,n23,n15,n13,n11,n8,n2,",3.15743
+603,444998,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n27,n33,n36,n37,n12,n3,n17,n35,n30,n9,n6,n20,n1,n24,n7,n25,n21,n29,n32,n28,n26,n34,n4,n31,n18,n19,n16,n23,n15,n13,n11,n14,n22,n10,n5,n8,n2,",2.68517
+604,445331,"Standard_NV24X,Standard_NV6,In-house server 3,In-house server 2,","n27,n33,n36,n37,n12,n3,n35,n20,n1,n2,n8,n21,n29,n14,n5,n22,n10,n24,n32,n28,n25,n7,n26,n34,n4,n30,n9,n6,n17,n11,n13,n16,n23,n15,n31,n18,n19,",2.32454
+605,445607,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n33,n37,n12,n3,n35,n6,n2,n8,n21,n29,n14,n5,n22,n10,n24,n26,n36,n32,n28,n25,n7,n20,n1,n34,n4,n30,n9,n17,n11,n13,n16,n23,n15,n31,n18,n19,",1.91275
+606,445752,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n33,n12,n37,n3,n35,n11,n13,n2,n8,n21,n29,n14,n5,n22,n10,n24,n26,n36,n32,n28,n25,n7,n20,n1,n18,n31,n19,n34,n4,n30,n9,n6,n17,n16,n23,n15,",1.01694
+607,446466,"Standard_NV24X,Standard_NV6,In-house server 2,In-house server 3,","n27,n37,n12,n33,n3,n35,n11,n13,n2,n8,n21,n29,n14,n5,n22,n10,n24,n26,n36,n32,n28,n25,n7,n20,n1,n18,n31,n19,n34,n4,n30,n9,n6,n17,n16,n23,n15,",4.99635
+608,447654,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n26,n11,n13,n3,n19,n20,n1,n33,n24,n27,n17,n15,n23,n16,n2,n8,n21,n29,n35,n32,n28,n25,n7,n31,n18,n34,n4,n10,n5,n22,n14,n30,n9,n6,n37,n12,",8.28979
+609,447709,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n26,n13,n11,n3,n19,n33,n20,n1,n24,n27,n17,n15,n23,n16,n2,n8,n21,n29,n35,n32,n28,n25,n7,n34,n4,n10,n22,n5,n14,n30,n9,n6,n31,n18,n37,n12,",0.387425
+610,448954,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n26,n11,n13,n3,n37,n12,n19,n20,n1,n24,n27,n15,n16,n23,n2,n8,n21,n29,n22,n5,n14,n10,n35,n33,n18,n31,n32,n28,n25,n7,n34,n4,n17,n30,n9,n6,",8.67879
+611,450553,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n27,n37,n12,n17,n4,n34,n19,n33,n24,n26,n35,n21,n29,n7,n25,n8,n2,n32,n28,n18,n31,n14,n10,n22,n5,n23,n16,n15,n1,n20,n30,n9,n6,n11,n13,n3,",11.3372
+612,451956,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n27,n37,n12,n17,n4,n34,n20,n1,n33,n24,n26,n35,n21,n29,n7,n25,n8,n2,n32,n28,n14,n10,n22,n5,n23,n16,n15,n30,n9,n6,n31,n18,n19,n11,n13,n3,",9.97192
+613,452017,"Standard_NV24X,In-house server 2,In-house server 3,","n36,n27,n17,n37,n12,n4,n34,n13,n11,n3,n33,n24,n26,n35,n21,n29,n8,n2,n32,n28,n25,n7,n20,n1,n10,n22,n14,n5,n30,n9,n6,n31,n18,n19,n15,n23,n16,",0.439794
+614,452538,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n26,n36,n12,n17,n33,n29,n21,n20,n1,n24,n27,n4,n34,n8,n2,n32,n28,n25,n7,n14,n10,n22,n5,n16,n23,n15,n30,n9,n6,n31,n18,n19,n11,n13,n3,",3.65198
+615,453394,"Standard_NV24X,In-house server 2,In-house server 3,","n35,n26,n36,n3,n12,n6,n17,n20,n1,n33,n24,n27,n29,n21,n32,n28,n25,n7,n14,n10,n22,n5,n16,n23,n15,n34,n4,n30,n9,n31,n18,n19,n11,n13,n8,n2,",6.02012
+616,455563,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n35,n3,n12,n6,n17,n20,n1,n33,n24,n27,n29,n21,n32,n28,n25,n7,n14,n10,n22,n5,n16,n23,n15,n34,n4,n30,n9,n31,n18,n19,n11,n13,n8,n2,",14.5669
+617,458277,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n35,n3,n12,n6,n17,n20,n1,n33,n24,n27,n29,n21,n32,n28,n25,n7,n14,n10,n22,n5,n16,n23,n15,n34,n4,n30,n9,n31,n18,n19,n11,n13,n8,n2,",18.2248
+618,461011,"Standard_NV24X,In-house server 2,In-house server 3,","n26,n12,n17,n1,n3,n29,n21,n20,n33,n24,n27,n7,n25,n8,n2,n32,n28,n10,n14,n22,n5,n16,n23,n15,n34,n4,n19,n31,n18,n30,n9,n6,n11,n13,n35,",18.2903
+619,461836,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n12,n34,n4,n28,n32,n20,n1,n14,n10,n5,n22,n24,n27,n19,n29,n21,n26,n3,n17,n2,n8,n18,n31,n13,n11,n16,n23,n15,n25,n7,n30,n9,n6,",5.45026
+620,461849,"Standard_NV24X,In-house server 2,In-house server 3,","n33,n12,n34,n4,n28,n32,n20,n1,n14,n10,n5,n22,n24,n27,n19,n29,n21,n26,n3,n17,n2,n8,n18,n31,n13,n11,n16,n23,n15,n25,n7,n30,n9,n6,",0.0862908
+621,464208,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n32,n28,n12,n33,n20,n1,n4,n3,n17,n2,n8,n29,n21,n26,n31,n18,n19,n13,n11,n16,n23,n15,n14,n10,n22,n5,n25,n7,n30,n9,n6,",15.3442
+622,464257,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n24,n32,n28,n12,n33,n20,n1,n4,n3,n17,n2,n8,n29,n21,n26,n31,n18,n19,n13,n11,n16,n23,n15,n14,n10,n22,n5,n25,n7,n30,n9,n6,",0.315228
+623,466686,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n24,n32,n28,n12,n33,n20,n1,n4,n3,n17,n2,n8,n29,n21,n26,n31,n18,n19,n13,n11,n16,n23,n15,n14,n10,n22,n5,n25,n7,n30,n9,n6,",15.6133
+624,466695,"Standard_NV24X,In-house server 2,In-house server 3,","n27,n13,n11,n1,n3,n17,n19,n9,n30,n31,n18,n32,n28,n25,n7,n26,n20,n24,n21,n29,n2,n8,n6,n12,n22,n14,n10,n5,n16,n23,n15,n4,",0.0505151
+625,466920,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n13,n11,n1,n3,n17,n19,n9,n30,n31,n18,n32,n28,n25,n7,n26,n20,n24,n21,n29,n2,n8,n6,n12,n22,n14,n10,n5,n16,n23,n15,n4,",1.34783
+626,467506,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n13,n11,n4,n1,n3,n17,n19,n31,n18,n25,n7,n8,n2,n29,n21,n22,n5,n10,n14,n26,n20,n24,n28,n32,n6,n30,n9,n16,n23,n15,n12,",3.51284
+627,469578,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n13,n11,n27,n4,n31,n18,n3,n17,n19,n25,n7,n1,n20,n29,n21,n22,n5,n10,n14,n26,n24,n28,n32,n30,n9,n6,n16,n23,n15,n8,n2,n12,",12.4164
+628,470152,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n11,n13,n4,n31,n18,n12,n3,n17,n19,n25,n7,n8,n2,n29,n21,n26,n20,n1,n24,n28,n32,n30,n9,n6,n16,n23,n15,n22,n10,n14,n5,",3.43801
+629,470720,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n11,n13,n4,n12,n3,n17,n19,n28,n25,n7,n8,n2,n29,n21,n26,n20,n1,n24,n30,n9,n6,n18,n31,n16,n23,n15,n22,n10,n14,n5,",3.22611
+630,471500,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n11,n13,n4,n18,n3,n17,n19,n28,n25,n7,n8,n2,n29,n21,n26,n20,n1,n24,n30,n9,n6,n16,n23,n15,n22,n10,n14,n5,n12,",4.1835
+631,471734,"Standard_NV24X,Standard_NV24,In-house server 2,In-house server 3,","n27,n11,n13,n19,n12,n3,n17,n28,n25,n7,n8,n2,n18,n29,n21,n26,n20,n1,n24,n30,n9,n6,n16,n23,n15,n22,n10,n14,n5,n4,",1.25064
+632,472602,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n27,n11,n13,n19,n12,n3,n17,n28,n25,n7,n8,n2,n18,n29,n21,n26,n20,n1,n24,n30,n9,n6,n16,n23,n15,n22,n10,n14,n5,n4,",4.35257
+633,472705,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n24,n12,n18,n4,n1,n20,n9,n6,n19,n27,n21,n29,n3,n17,n11,n13,n25,n7,n28,n16,n23,n15,n10,n22,n14,n5,n26,n8,n2,",0.510174
+634,472771,"Standard_NV24X,Standard_NV12,In-house server 2,In-house server 3,","n24,n12,n18,n4,n21,n29,n9,n6,n19,n27,n3,n17,n11,n13,n25,n7,n28,n20,n1,n16,n23,n15,n10,n22,n14,n5,n26,n8,n2,",0.324589
+635,473620,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n20,n24,n12,n18,n1,n21,n29,n9,n6,n19,n27,n3,n17,n11,n13,n25,n7,n28,n16,n23,n15,n10,n22,n14,n5,n26,n8,n2,n4,",4.08359
+636,476429,"Standard_NV6,Standard_NV24X,In-house server 2,In-house server 3,","n20,n24,n18,n12,n1,n19,n21,n29,n9,n6,n27,n3,n17,n25,n7,n28,n13,n11,n16,n23,n15,n5,n10,n22,n14,n8,n2,n4,n26,",13.4441
+637,482194,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n12,n18,n19,n3,n17,n7,n25,n27,n24,n6,n9,n1,n21,n23,n16,n15,n13,n11,n10,n22,n14,n5,n26,n8,n2,n4,",26.01
+638,482698,"Standard_NV24X,In-house server 2,In-house server 3,","n20,n12,n18,n19,n3,n17,n2,n8,n7,n25,n27,n24,n6,n9,n21,n23,n16,n15,n13,n11,n10,n22,n14,n5,n26,n1,n4,",2.32346
+639,482905,"Standard_NV24X,In-house server 2,In-house server 3,","n12,n18,n6,n9,n19,n3,n17,n26,n21,n16,n23,n15,n13,n11,n22,n14,n5,n10,n7,n25,n2,n8,n1,n20,n4,n24,",0.929186
+640,482933,"Standard_NV24X,In-house server 2,In-house server 3,","n21,n18,n6,n9,n25,n7,n1,n20,n26,n3,n17,n13,n11,n23,n16,n15,n19,n4,n8,n2,n22,n10,n5,n14,n12,n24,",0.123222
+641,484234,"Standard_NV24X,In-house server 2,In-house server 3,","n21,n12,n6,n9,n18,n19,n1,n20,n26,n17,n3,n13,n11,n25,n7,n16,n15,n23,n4,n8,n2,n22,n10,n5,n14,n24,",5.68787
+642,485996,"Standard_NV24X,In-house server 2,In-house server 3,","n21,n6,n9,n1,n20,n26,n3,n23,n15,n16,n11,n13,n17,n7,n25,n18,n19,n4,n8,n2,n22,n5,n10,n14,n24,n12,",7.91987
+643,486269,"Standard_NV24X,In-house server 2,In-house server 3,","n6,n9,n1,n20,n3,n23,n15,n16,n17,n11,n13,n25,n7,n4,n18,n19,n8,n2,n24,n12,n22,n5,n10,n14,n21,",1.1645
+644,487362,"Standard_NV24X,In-house server 2,In-house server 3,","n24,n6,n9,n1,n20,n3,n23,n15,n16,n17,n11,n13,n25,n7,n4,n18,n19,n8,n2,n12,n21,n5,n10,n14,n22,",4.66604
+645,487407,"In-house server 3,In-house server 2,Standard_NV24X,","n3,n18,n19,n17,n11,n13,n15,n16,n23,n24,n20,n1,n21,n5,n10,n22,n14,n12,n6,n9,n4,n8,n2,n25,n7,",0.195215
+646,487614,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n3,n18,n19,n17,n11,n13,n15,n16,n23,n24,n20,n1,n21,n5,n10,n22,n14,n12,n6,n9,n4,n8,n2,n25,n7,",0.872084
+647,488183,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n18,n3,n21,n17,n11,n13,n15,n16,n23,n24,n14,n5,n10,n22,n20,n1,n12,n6,n9,n19,n4,n8,n2,n25,n7,",2.40181
+648,488535,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n18,n21,n17,n11,n13,n3,n15,n16,n23,n12,n24,n20,n1,n6,n9,n19,n14,n5,n22,n10,n4,n8,n2,n7,",1.41944
+649,488858,"In-house server 3,In-house server 2,In-house server 1,Standard_NV24X,","n7,n2,n4,n8,n10,n18,n19,n9,n6,n1,n20,n22,n12,n23,n3,n13,n17,n16,n21,n14,n5,n15,n11,",1.19981
+650,491294,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n7,n2,n4,n8,n10,n18,n19,n9,n6,n22,n12,n20,n1,n3,n13,n17,n16,n23,n21,n14,n5,n15,n11,",9.07753
+651,492341,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n2,n4,n8,n10,n9,n6,n3,n13,n17,n16,n18,n19,n22,n12,n20,n1,n21,n14,n5,n15,n11,",3.89026
+652,493225,"Standard_NV24X,In-house server 2,In-house server 3,","n7,n2,n4,n8,n10,n12,n9,n6,n18,n19,n22,n20,n1,n21,n14,n3,n17,n16,n13,n5,n15,n11,",3.29326
+653,499866,"In-house server 1,Standard_NV24X,In-house server 2,In-house server 3,","n7,n2,n4,n10,n8,n12,n18,n19,n22,n9,n6,n20,n1,n21,n14,n17,n3,n16,n13,n5,n15,n11,",24.1321
+654,500697,"In-house server 1,Standard_NV24,In-house server 2,In-house server 3,","n7,n2,n4,n10,n8,n12,n1,n20,n22,n9,n6,n21,n14,n17,n3,n16,n13,n19,n18,n5,n15,n11,",2.95718
+655,503219,"Standard_NV24,In-house server 2,In-house server 3,","n7,n2,n4,n19,n18,n5,n11,n15,n8,n10,n14,n21,n3,n17,n13,n16,n1,n20,n12,n9,n6,",8.92022
+656,503729,"Standard_NV24,In-house server 2,In-house server 3,","n7,n2,n4,n10,n8,n9,n6,n19,n18,n14,n21,n3,n13,n16,n17,n1,n20,n12,n11,n15,n5,",1.79301
+657,504775,"Standard_NV24,In-house server 2,In-house server 3,","n7,n2,n9,n6,n8,n10,n19,n18,n14,n21,n17,n3,n13,n16,n1,n20,n12,n4,n11,n15,n5,",3.68316
+658,505569,"Standard_NV12,In-house server 2,In-house server 3,","n7,n2,n9,n6,n19,n18,n11,n5,n15,n8,n10,n14,n21,n17,n3,n13,n16,n1,n20,n12,n4,",2.51878
+659,506656,"Standard_NV6,In-house server 2,In-house server 3,","n7,n2,n9,n6,n19,n18,n5,n11,n15,n8,n10,n14,n21,n17,n3,n13,n16,n1,n20,n12,n4,",3.26285
+660,507223,"Standard_NV6,In-house server 2,In-house server 3,","n7,n2,n9,n6,n19,n18,n5,n11,n15,n8,n10,n14,n21,n17,n3,n13,n16,n1,n20,n12,n4,",1.71236
+661,508371,"Standard_NV6,In-house server 2,In-house server 3,","n2,n7,n10,n8,n19,n18,n11,n5,n15,n14,n21,n17,n3,n13,n16,n1,n20,n12,n9,n6,n4,",3.47569
+662,509021,"Standard_NV6,In-house server 3,In-house server 2,In-house server 1,","n2,n7,n10,n8,n19,n18,n11,n5,n15,n14,n21,n17,n3,n13,n16,n1,n20,n12,n9,n6,n4,",1.92349
+663,509159,"In-house server 1,Standard_NV6,In-house server 2,In-house server 3,","n2,n7,n19,n18,n11,n5,n15,n16,n17,n3,n13,n14,n21,n1,n20,n12,n9,n6,n10,n8,n4,",0.408525
+664,512882,"Standard_NV6,In-house server 2,In-house server 3,","n2,n7,n11,n5,n15,n14,n16,n3,n17,n13,n8,n10,n1,n20,n12,n9,n6,n18,n19,n4,",10.9164
+665,513226,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n7,n11,n5,n15,n14,n16,n3,n13,n17,n18,n19,n12,n9,n6,n10,n8,n4,",0.899195
+666,514136,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n7,n11,n5,n15,n14,n16,n3,n13,n17,n18,n19,n12,n9,n6,n10,n8,n4,",2.38614
+667,520667,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n7,n3,n16,n17,n13,n14,n18,n12,n9,n6,n10,n8,n5,n15,n11,n4,",15.0819
+668,522578,"Standard_NV6,In-house server 2,In-house server 3,","n7,n1,n2,n9,n6,n3,n16,n17,n13,n14,n18,n12,n10,n8,n5,n15,n11,n4,",4.43454
+669,531614,"Standard_NV6,In-house server 2,In-house server 3,","n7,n1,n2,n12,n9,n6,n14,n8,n10,n3,n13,n17,n16,n5,n15,n11,n4,",18.1332
+670,534062,"Standard_NV6,In-house server 2,In-house server 3,","n7,n1,n2,n14,n3,n13,n17,n16,n12,n9,n6,n10,n8,n5,n15,n11,n4,",4.95634
+671,536797,"Standard_NV6,In-house server 1,In-house server 2,In-house server 3,","n14,n7,n1,n2,n12,n9,n6,n8,n10,n13,n17,n16,n3,n5,n15,n11,n4,",5.36037
+672,537521,"Standard_NV6,In-house server 2,In-house server 3,","n7,n4,n2,n1,n12,n9,n6,n14,n8,n10,n13,n16,n3,n15,n11,n5,",1.3926
+673,539034,"Standard_NV6,In-house server 2,In-house server 3,","n7,n9,n6,n2,n12,n14,n8,n10,n13,n16,n3,n5,n15,n11,n4,n1,",2.91125
+674,539051,"Standard_NV6,In-house server 2,In-house server 3,","n7,n9,n6,n2,n12,n14,n8,n10,n13,n16,n3,n5,n15,n11,n4,n1,",0.032891
+675,543825,"Standard_NV6,In-house server 2,In-house server 3,","n7,n9,n6,n2,n12,n14,n8,n10,n13,n16,n3,n5,n15,n11,n4,n1,",9.26921
+676,548079,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n12,n9,n6,n14,n8,n10,n13,n16,n3,n5,n15,n11,n7,n4,",8.31791
+677,548260,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n5,n11,n15,n14,n12,n9,n6,n10,n8,n7,n4,n13,n3,",0.296466
+678,548941,"Standard_NV6,In-house server 1,In-house server 2,In-house server 3,","n2,n1,n5,n11,n15,n14,n12,n10,n8,n7,n4,n13,n3,n6,n9,",1.08321
+679,552335,"Standard_NV6,In-house server 2,In-house server 3,","n2,n1,n14,n5,n11,n12,n10,n8,n7,n4,n6,n9,n13,n3,",5.2434
+680,558157,"Standard_NV6,In-house server 2,In-house server 3,","n4,n8,n10,n12,n14,n11,n5,n7,n13,n3,n6,n9,n1,n2,",9.00342
+681,560478,"Standard_NV6,In-house server 2,In-house server 3,","n4,n2,n8,n10,n14,n12,n11,n5,n7,n13,n3,n6,n9,n1,",3.57875
+682,562502,"In-house server 3,In-house server 2,","n7,n2,n12,n9,n6,n10,n8,n11,n5,n4,n13,n3,n1,",2.78146
+683,562865,"In-house server 3,In-house server 2,","n7,n2,n12,n9,n6,n10,n8,n11,n5,n4,n13,n3,n1,",0.507882
+684,565319,"In-house server 1,In-house server 2,In-house server 3,","n7,n4,n11,n5,n12,n10,n8,n9,n6,n13,n3,n1,n2,",3.30589
+685,568924,"In-house server 3,In-house server 2,","n4,n7,n6,n9,n12,n10,n8,n5,n11,n3,n1,n2,",4.71574
+686,569748,"In-house server 3,In-house server 2,","n4,n7,n6,n9,n12,n10,n8,n5,n11,n3,n1,n2,",1.07495
+687,570137,"In-house server 3,In-house server 2,","n6,n9,n12,n10,n8,n4,n7,n5,n11,n3,n1,n2,",0.508706
+688,571520,"In-house server 3,In-house server 2,In-house server 1,","n6,n9,n12,n10,n8,n4,n7,n5,n11,n3,n1,n2,",1.76659
+689,572205,"In-house server 1,In-house server 2,In-house server 3,","n3,n6,n9,n12,n4,n7,n5,n11,n1,n2,n8,n10,",0.875177
+690,577114,"In-house server 3,In-house server 2,","n2,n1,n6,n8,n3,n10,n11,n9,n5,n7,n4,",6.07867
+691,577915,"In-house server 3,In-house server 2,","n8,n6,n3,n1,n2,n10,n11,n9,n5,n7,n4,",0.997368
+692,578440,"In-house server 3,In-house server 2,","n8,n6,n3,n1,n9,n2,n10,n5,n7,n4,",0.488222
+693,580405,"In-house server 3,In-house server 2,","n8,n6,n3,n1,n9,n2,n10,n5,n7,n4,",1.85846
+694,581392,"In-house server 3,","n8,n6,n3,n1,n9,n2,n5,n7,n4,",0.618704
+695,584769,"In-house server 1,In-house server 3,","n9,n1,n2,n4,n7,n5,n8,n6,n3,",1.91154
+696,584818,"In-house server 3,In-house server 1,","n1,n2,n3,n4,n7,n5,n9,n8,n6,",0.0280028
+697,594630,"In-house server 3,","n1,n2,n4,n7,n5,n8,n6,n3,",5.3454
+698,596588,"In-house server 3,","n1,n3,n2,n8,n6,n7,n5,n4,",1.0695
+699,600378,"In-house server 3,","n1,n3,n2,n8,n6,n7,n5,n4,",2.0874
+700,602622,"In-house server 3,","n1,n3,n4,n7,n5,n8,n6,n2,",1.28204
+701,603094,"In-house server 3,In-house server 1,","n3,n1,n4,n7,n5,n8,n6,n2,",0.230085
+702,604417,"In-house server 3,","n3,n6,n4,n7,n5,n1,n2,",0.6218
+703,605646,"In-house server 3,","n3,n6,n4,n7,n5,n1,n2,",0.590196
+704,607054,"In-house server 3,","n3,n6,n4,n7,n5,n1,n2,",0.683838
+705,614654,"In-house server 3,","n3,n4,n7,n5,n1,n6,n2,",3.76896
+706,615206,"In-house server 1,In-house server 3,","n2,n4,n7,n5,n1,n6,n3,",0.243073
+707,615874,"In-house server 3,","n1,n6,n5,n4,n3,n2,",0.267324
+708,620608,"In-house server 3,","n3,n1,n6,n5,n4,n2,",1.89864
+709,624054,"In-house server 3,","n3,n1,n6,n5,n4,n2,",1.40096
+710,626541,"In-house server 3,","n3,n6,n4,n5,n1,n2,",1.03624
+711,641222,"In-house server 3,","n3,n1,n6,n5,n4,n2,",6.26772
+712,647375,"In-house server 3,In-house server 1,","n3,n1,n6,n5,n4,n2,",2.25063
+713,657130,"In-house server 3,","n3,n2,n1,n5,n4,",3.32179
+714,658409,"In-house server 3,","n3,n2,n1,n5,n4,",0.43045
+715,658711,"In-house server 3,","n3,n2,n4,n1,n5,",0.106394
+716,665259,"In-house server 1,In-house server 3,","n5,n1,n4,n3,n2,",1.93771
+717,665354,"In-house server 3,","n1,n4,n3,n2,",0.0252902
+718,671474,"In-house server 3,","n1,n4,n3,n2,",1.63314
+719,673438,"In-house server 3,","n1,n4,n2,n3,",0.524242
+720,673499,"In-house server 3,","n1,n4,n2,n3,",0.0158807
+721,675569,"In-house server 3,","n1,n4,n2,n3,",0.562076
+722,686269,"In-house server 3,","n1,n4,n2,n3,",2.97674
+723,690564,"In-house server 1,In-house server 3,","n1,n2,n3,n4,",1.01377
+724,699973,"In-house server 3,","n1,n3,n2,",1.92768
+725,701831,"In-house server 3,","n1,n3,n2,",0.378509
+726,704014,"In-house server 3,","n1,n3,n2,",0.450418
+727,713797,"In-house server 3,","n1,n3,n2,",2.12733
+728,715653,"In-house server 3,","n1,n3,n2,",0.415551
+729,721692,"In-house server 1,In-house server 3,","n3,n2,n1,",1.00869
+730,732119,"In-house server 3,","n1,n2,",1.42311
+731,759254,"In-house server 3,","n1,n2,",3.8098
+732,784698,"In-house server 3,","n2,n1,",3.63745
+733,797583,"In-house server 1,In-house server 3,","n2,n1,",1.23363
+734,813934,"In-house server 3,In-house server 1,","n1,n2,",1.57572
+735,842509,"In-house server 3,","n1,",1.86266
+736,844153,"In-house server 3,","n1,",0.108226
+737,862784,"In-house server 3,","n1,",1.24204
+738,933166,"In-house server 3,","n1,",4.30113
+739,946307,"In-house server 3,","n1,",0.963661
+740,957843,"In-house server 1,","n1,",0.70496
+741,1.01185e+06,"In-house server 1,","n1,",1.65022

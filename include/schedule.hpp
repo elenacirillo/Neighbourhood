@@ -62,7 +62,7 @@ public:
   void set_completionPercent (double cp) {completion_percent = cp;}
   void set_cP_step (double cp) {completion_percent_step = cp;}
   void set_finishTime (double ft) {finish_time = ft;}
-  void set_tardiness (double t);
+  void set_tardiness (double t) {tardiness = t;}
   void set_startTime (double st) {start_time = st;}
   void compute_vmCost (unsigned);
   void compute_tardinessCost (double);

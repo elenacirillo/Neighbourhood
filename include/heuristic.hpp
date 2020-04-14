@@ -5,12 +5,9 @@
 #include "schedule.hpp"
 
 #include <random>
-#include <fstream>
 
 class Heuristic {
 
-public:
-  	unsigned LS_count = 0; //TODO: SERVO SOLO PER IL TEST, ELIMINAMI!!!!
 protected:
 
   // ARGS = "nInitialJ-nN-nJ-lambdaa-mu-myseed"; delta = "-delta"

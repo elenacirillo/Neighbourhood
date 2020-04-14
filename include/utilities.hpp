@@ -82,7 +82,6 @@ random_select (CONT<KEY,VAL,Ts...>& D, std::default_random_engine& generator,
   D.erase(next_it);
 
   return cit;
-};
-
+}
 
 #endif /* UTILITIES_HH */
