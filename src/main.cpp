@@ -8,6 +8,14 @@
 #include "greedy_version4.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
+#include "LocalSearch.hpp"
+#include "LocalSearchbySwap.hpp"
+#include "LocalSearchbySwap1.hpp"
+#include "LocalSearchbySwap2.hpp"
+#include "LocalSearchbySwap3.hpp"
+#include "LocalSearchGPU.hpp"
+#include "LocalSearchGPU1.hpp"
+#include "LocalSearchGPU2.hpp"
 
 void print_help (void);
 
@@ -35,6 +43,11 @@ int main (int argc, char *argv[])
     factory["FedeCpp2_R"] = GreedyBuilder(new Builder<Greedy_version2, Heuristic>);
     factory["FedeCpp3_R"] = GreedyBuilder(new Builder<Greedy_version3, Heuristic>);
     factory["FedeCpp4_R"] = GreedyBuilder(new Builder<Greedy_version4, Heuristic>);
+    factory["BySwap1"] = GreedyBuilder(new Builder<LocalSearchbySwap1, Heuristic>);
+    factory["BySwap2"] = GreedyBuilder(new Builder<LocalSearchbySwap2, Heuristic>);
+    factory["BySwap3"] = GreedyBuilder(new Builder<LocalSearchbySwap3, Heuristic>);
+    factory["GPU1"] = GreedyBuilder(new Builder<LocalSearchGPU1, Heuristic>);
+    factory["GPU2"] = GreedyBuilder(new Builder<LocalSearchGPU2, Heuristic>);
 
     // method
     std::string method = argv[1];
@@ -72,7 +85,9 @@ int main (int argc, char *argv[])
       std::string result_filename = method + "_schedule.csv";
       if (method == "FedeCpp_R"  || method == "FedeCpp1_R" || 
           method == "FedeCpp2_R" || method == "FedeCpp3_R" ||
-          method == "FedeCpp4_R")
+          method == "FedeCpp4_R" || method == "LocalSearchbySwap1" ||
+          method == "LocalSearchbySwap2" || method == "LocalSearchbySwap3" ||
+          method == "LocalSearchGPU1" || method == "LocalSearchGPU2" )
       {
         if (argc < 10)
           std::cerr << "\nERROR: additional arguments are required "
