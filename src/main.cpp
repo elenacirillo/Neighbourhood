@@ -8,6 +8,8 @@
 #include "greedy_version4.hpp"
 #include "LocalSearchbySwap.hpp"
 #include "LocalSearchGPU.hpp"
+#include "LocalSearchGPU1.hpp"
+#include "LocalSearchGPU2.hpp"
 #include "analysis.hpp"
 #include "builders.hpp"
 
@@ -40,8 +42,8 @@ int main (int argc, char *argv[])
     factory["FedeCpp3_R"] = GreedyBuilder(new Builder<Greedy_version3, Heuristic>);
     factory["FedeCpp4_R"] = GreedyBuilder(new Builder<Greedy_version4, Heuristic>);
     factory["LocalSearchbySwap"] = GreedyBuilder(new Builder<LocalSearchbySwap, Heuristic>);
-    factory["LocalSearchGPU"] = GreedyBuilder(new Builder<LocalSearchGPU, Heuristic>);
-
+    factory["LocalSearchGPU1"] = GreedyBuilder(new Builder<LocalSearchGPU1, Heuristic>);
+    factory["LocalSearchGPU2"] = GreedyBuilder(new Builder<LocalSearchGPU2, Heuristic>);  
     // method
     std::string method = argv[1];
 
@@ -80,7 +82,7 @@ int main (int argc, char *argv[])
       if (method == "FedeCpp_R"  || method == "FedeCpp1_R" ||
           method == "FedeCpp2_R" || method == "FedeCpp3_R" ||
           method == "FedeCpp4_R" || method == "LocalSearchbySwap" ||
-          method == "LocalSearchGPU")
+          method == "LocalSearchGPU1" || method == "LocalSearchGPU2")
       {
         if (argc < 10)
           std::cerr << "\nERROR: additional arguments are required "
