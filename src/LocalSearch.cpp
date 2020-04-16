@@ -71,7 +71,9 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
   std::swap(opened_nodes, nodes);
   last_node_idx = best_lni;
 
-  double temp = objective_function(best_schedule, find_first_finish_time(best_schedule));
+  //double temp = objective_function(best_schedule, find_first_finish_time(best_schedule));
+  double temp = evaluate_objective(best_schedule);
+  
   // Perform Local Search
   bool ls_updated = perform_local_search(best_schedule);
 
@@ -84,7 +86,8 @@ LocalSearch::perform_scheduling (unsigned max_random_iter)
 
       std::ofstream ofs;
       ofs.open("../TEST_OUTPUTS_2.csv",std::ios_base::app);
-      ofs << "\n" << temp << ", " << objective_function(best_schedule, find_first_finish_time(best_schedule));
+      //ofs << "\n" << temp << ", " << objective_function(best_schedule, find_first_finish_time(best_schedule));
+      ofs << "\n" << temp << ", " << evaluate_objective(best_schedule);
       ofs.close();
 
   }
