@@ -12,9 +12,6 @@
     enum neigh_type {
         neigh_1,
         neigh_2,
-        neigh_3
-        // ...
-        //TODO cambiare i nomi dei neig_type con qualcosa di sensato
         };
 
 class LocalSearchbySwap : public LocalSearch
@@ -22,7 +19,7 @@ class LocalSearchbySwap : public LocalSearch
 
 private:
     // Neighbourhood definition
-    neigh_type neigh_def = neigh_1;
+    neigh_type neigh_def = neigh_2;
     row_j A_job_ids;
     row_j B_job_ids;
     vecvec possible_swap_indices;

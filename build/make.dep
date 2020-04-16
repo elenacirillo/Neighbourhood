@@ -66,6 +66,24 @@ LocalSearch.o: ../src/LocalSearch.cpp ../include/LocalSearch.hpp \
  ../include/utilities.hpp ../include/job.hpp ../include/setup.hpp \
  ../include/node.hpp ../include/configuration.hpp ../include/schedule.hpp \
  ../include/dstar.hpp
+LocalSearchGPU1.o: ../src/LocalSearchGPU1.cpp \
+ ../include/LocalSearchGPU1.hpp ../include/LocalSearchGPU.hpp \
+ ../include/LocalSearch.hpp ../include/greedy_version4.hpp \
+ ../include/greedy_version3.hpp ../include/greedy_version2.hpp \
+ ../include/greedy_version1.hpp ../include/greedy.hpp \
+ ../include/heuristic.hpp ../include/fileIO.hpp ../include/utilities.hpp \
+ ../include/job.hpp ../include/setup.hpp ../include/node.hpp \
+ ../include/configuration.hpp ../include/schedule.hpp \
+ ../include/dstar.hpp
+LocalSearchGPU2.o: ../src/LocalSearchGPU2.cpp \
+ ../include/LocalSearchGPU2.hpp ../include/LocalSearchGPU.hpp \
+ ../include/LocalSearch.hpp ../include/greedy_version4.hpp \
+ ../include/greedy_version3.hpp ../include/greedy_version2.hpp \
+ ../include/greedy_version1.hpp ../include/greedy.hpp \
+ ../include/heuristic.hpp ../include/fileIO.hpp ../include/utilities.hpp \
+ ../include/job.hpp ../include/setup.hpp ../include/node.hpp \
+ ../include/configuration.hpp ../include/schedule.hpp \
+ ../include/dstar.hpp
 LocalSearchGPU.o: ../src/LocalSearchGPU.cpp ../include/LocalSearchGPU.hpp \
  ../include/LocalSearch.hpp ../include/greedy_version4.hpp \
  ../include/greedy_version3.hpp ../include/greedy_version2.hpp \
@@ -84,7 +102,9 @@ main.o: ../src/main.cpp ../include/greedy_version0.hpp \
  ../include/greedy_version4.hpp ../include/greedy_version3.hpp \
  ../include/LocalSearchbySwap.hpp ../include/LocalSearch.hpp \
  ../include/greedy_version4.hpp ../include/LocalSearchGPU.hpp \
- ../include/analysis.hpp ../include/builders.hpp
+ ../include/LocalSearchGPU1.hpp ../include/LocalSearchGPU.hpp \
+ ../include/LocalSearchGPU2.hpp ../include/analysis.hpp \
+ ../include/builders.hpp
 node.o: ../src/node.cpp ../include/node.hpp ../include/utilities.hpp \
  ../include/setup.hpp ../include/configuration.hpp
 schedule.o: ../src/schedule.cpp ../include/schedule.hpp \

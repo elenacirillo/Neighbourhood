@@ -154,7 +154,7 @@ LocalSearchbySwap::fill_swapping_sets(void)
 {
   //std::cout << "   --- Sono nel neigh numero: " << neigh_def << std::endl;
 
-  if (neigh_def != neigh_2 && neigh_def != neigh_3)
+  if (neigh_def != neigh_2)
   {
     A_job_ids = top_tardiness_jobs();
     B_job_ids = top_cost_jobs();
@@ -162,17 +162,18 @@ LocalSearchbySwap::fill_swapping_sets(void)
     //std::cout << "  -- A size: " << A_job_ids.size() << std::endl;
   }
 
-  if (neigh_def == neigh_2)
+  else
   {
     A_job_ids = top_tardiness_jobs();
     B_job_ids = top_margin_jobs();
   }
 
-  if (neigh_def == neigh_3) // A e B hanno dimensioni diverse !
+  /* if (neigh_def == neigh_3) // A e B hanno dimensioni diverse !
   {
     // A è la coda, cioò submitted_jobs ?
     B_job_ids = top_cost_jobs();
   }
+  */ 
 }
 
 bool
