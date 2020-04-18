@@ -58,6 +58,7 @@ LocalSearchGPU::get_tardiness_nodes(unsigned top)
   if( !multi_indices.empty())
   {
     indices_vec.assign(multi_indices.begin(),multi_indices.end());
+    std::sort (indices_vec.begin(),indices_vec.end());
     auto it=std::unique(indices_vec.begin(), indices_vec.end());
     indices_vec.resize(static_cast<int>(std::distance(indices_vec.begin(),it)));
     std::sort(indices_vec.begin(),indices_vec.end(),[&] ( const unsigned &u1,const unsigned &u2 )
