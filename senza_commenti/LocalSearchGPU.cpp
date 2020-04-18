@@ -36,7 +36,7 @@ LocalSearchGPU::get_tardiness_nodes(unsigned top)
   std::uniform_int_distribution<unsigned> distribution(0,last_node_idx-1);
 
   // Cycle over the schedule to create the multimap of nodes having at least one job in tardiness
-  std::multiset<unsigned> multi_indices;
+  std::map<unsigned, unsigned> multi_indices;
   for(auto js: local_best_schedule)
   {
     const Job & j = js.first;
@@ -47,7 +47,7 @@ LocalSearchGPU::get_tardiness_nodes(unsigned top)
       if(j.get_deadline() < current_time)
       {
         // ..add its node index to the list of indices
-        multi_indices.insert(sch.get_node_idx());
+        multi_indices[sch.get_node_idx()]++;
       }
     }
   }
